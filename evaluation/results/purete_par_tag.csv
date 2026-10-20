@@ -1,0 +1,80 @@
+tag,phrases,purete,intentions_massive
+GENERAL_QUERY,61,0.279,"general_quirky (17), qa_factoid (16), datetime_query (12)"
+OBJET_MODIFIER,10,0.300,"general_quirky (3), play_music (2), iot_hue_lightchange (2)"
+INFO_QUERY,22,0.318,"general_quirky (7), news_query (6), qa_factoid (3)"
+LUMIERE_MODIFIER,35,0.400,"iot_hue_lightchange (14), iot_hue_lightup (7), iot_hue_lightdim (6)"
+DIVERTISSEMENT_QUERY,15,0.400,"datetime_query (6), general_quirky (2), calendar_set (2)"
+APPLICATION_OUVRIR,5,0.400,"social_post (2), takeaway_order (1), play_music (1)"
+CONTACT_QUERY,16,0.438,"email_querycontact (7), email_addcontact (5), email_query (2)"
+LIVRE_QUERY,31,0.452,"play_audiobook (14), general_quirky (7), play_music (2)"
+PERSONNEL_QUERY,11,0.455,"social_query (5), social_post (3), general_quirky (2)"
+CELEBRITE_QUERY,11,0.455,"qa_factoid (5), news_query (4), calendar_query (1)"
+RESTAURATION_COMMANDE,25,0.480,"takeaway_order (12), takeaway_query (7), recommendation_locations (4)"
+CINEMA_QUERY,20,0.500,"recommendation_movies (10), qa_factoid (8), music_query (1)"
+VOLUME_ATTENUE,16,0.500,"audio_volume_mute (8), audio_volume_down (6), audio_volume_up (1)"
+WIKIPEDIA_QUERY,2,0.500,"general_quirky (1), qa_definition (1)"
+MUSIQUE_QUERY,41,0.537,"music_query (22), music_likeness (10), play_music (4)"
+SOCIALMEDIA_UPDATE,10,0.600,"social_query (6), social_post (4)"
+CONCERT_QUERY,13,0.615,"recommendation_events (8), calendar_query (4), recommendation_movies (1)"
+EMAIL_QUERY,106,0.632,"email_query (67), email_sendemail (32), general_quirky (2)"
+DOMINO_COMMANDER,11,0.636,"takeaway_query (7), takeaway_order (4)"
+MATHEMATIQUE_QUERY,14,0.643,"qa_maths (9), general_quirky (2), qa_factoid (2)"
+BOURSE_QUERY,9,0.667,"news_query (6), qa_stock (3)"
+NAVIGATION_QUERY,9,0.667,"transport_query (6), qa_factoid (1), qa_maths (1)"
+LOCAL_QUERY,6,0.667,"recommendation_events (4), general_quirky (1), calendar_query (1)"
+POLITIQUE_QUERY,22,0.682,"news_query (15), qa_factoid (5), general_quirky (2)"
+CALENDRIER_QUERY,26,0.692,"calendar_query (18), general_quirky (3), lists_query (2)"
+HEURE_QUERY,30,0.700,"datetime_query (21), datetime_convert (9)"
+VILLE_ACTUALITE,10,0.700,"recommendation_events (7), calendar_query (1), qa_factoid (1)"
+PODCAST_QUERY,7,0.714,"play_podcasts (5), play_music (1), play_radio (1)"
+DATE_QUERY,26,0.731,"datetime_query (19), calendar_query (5), calendar_set (1)"
+ACTION_QUERY,19,0.737,"iot_coffee (14), news_query (1), play_music (1)"
+MUSIQUE_JOUER,148,0.743,"play_music (110), play_podcasts (13), play_radio (9)"
+EVENEMENT_QUERY,40,0.750,"calendar_query (30), recommendation_events (5), calendar_set (2)"
+OBJET_QUERY,41,0.756,"qa_definition (31), general_quirky (5), qa_factoid (3)"
+TRANSPORT_QUERY,30,0.767,"transport_query (23), transport_ticket (3), general_quirky (2)"
+ACTUALITE_QUERY,33,0.788,"news_query (26), general_quirky (3), calendar_query (1)"
+DEFINITION_QUERY,5,0.800,"qa_definition (4), general_quirky (1)"
+ALARME_CREER,35,0.829,"alarm_set (29), alarm_query (3), datetime_query (1)"
+CUISINE_QUERY,44,0.841,"cooking_recipe (37), general_quirky (3), cooking_query (2)"
+LISTE_CREER,26,0.846,"lists_createoradd (22), lists_query (3), general_quirky (1)"
+PERSONNE_QUERY,7,0.857,"qa_factoid (6), email_querycontact (1)"
+GOOGLE_QUERY,22,0.864,"qa_stock (19), general_quirky (1), lists_query (1)"
+CALENDRIER_TOUTSUPPRIMER,17,0.882,"calendar_remove (15), calendar_set (1), email_querycontact (1)"
+GEOGRAPHIE_QUERY,19,0.895,"qa_factoid (17), qa_maths (1), transport_query (1)"
+CALENDRIER_CREE,42,0.905,"calendar_set (38), calendar_query (2), calendar_remove (1)"
+TRAIN_RESERVER,21,0.905,"transport_ticket (19), transport_query (2)"
+VOLUME_MODIFIER,11,0.909,"audio_volume_up (10), audio_volume_down (1)"
+SOCIALMEDIA_QUERY,23,0.913,"social_post (21), general_quirky (1), calendar_set (1)"
+ECONOMIE_QUERY,35,0.914,"qa_currency (32), news_query (1), general_quirky (1)"
+RADIO_ECOUSER,13,0.923,"play_radio (12), music_query (1)"
+CALENDRIER_REUNION,14,0.929,"calendar_query (13), general_quirky (1)"
+LISTE_QUERY,43,0.930,"lists_query (40), general_quirky (2), lists_createoradd (1)"
+RESTAURATION_QUERY,21,0.952,"recommendation_locations (20), social_query (1)"
+TRAFFIC_QUERY,23,0.957,"transport_traffic (22), qa_definition (1)"
+METEO_QUERY,123,0.959,"weather_query (118), general_quirky (3), calendar_query (1)"
+CALENDRIER_REMINDER,26,0.962,"calendar_set (25), alarm_set (1)"
+REMINDER_CREER,31,0.968,"calendar_set (30), lists_createoradd (1)"
+LISTE_SUPPRIMER,27,1.000,lists_remove (27)
+TRANSPORT_RESERVER,26,1.000,transport_taxi (26)
+RADIO_ACTIVER,20,1.000,play_radio (20)
+LECTURE_COMMENCER,16,1.000,play_audiobook (16)
+DOMESTIQUE_ACTIVER,15,1.000,iot_cleaning (15)
+ACTUALITE_RECENTE,15,1.000,news_query (15)
+ALARME_QUERY,14,1.000,alarm_query (14)
+BLAGUE_QUERY,14,1.000,general_joke (14)
+ALARME_SUPPRIMER,12,1.000,alarm_remove (12)
+CALENDRIER_SUPPRIMER,12,1.000,calendar_remove (12)
+EMAIL_CREER,12,1.000,email_sendemail (12)
+MEDIA_PASSER,8,1.000,play_podcasts (8)
+NEIGE_QUERY,7,1.000,weather_query (7)
+JEUX_JOUER,7,1.000,play_game (7)
+CALENDRIER_RECURRENT,6,1.000,calendar_set (6)
+NETTOYAGE_COMMENCER,4,1.000,iot_cleaning (4)
+SERIE_QUERY,2,1.000,play_podcasts (2)
+TECHNIQUE_QUERY,2,1.000,qa_definition (2)
+OBJET_SUPPRIMER,1,1.000,lists_remove (1)
+ASSISTANT_QUERY,1,1.000,news_query (1)
+LISTE_MODIFIER,1,1.000,lists_createoradd (1)
+SOMMEIL_CREER,1,1.000,audio_volume_mute (1)
+RESTAURATION_ORGANISER,1,1.000,general_quirky (1)

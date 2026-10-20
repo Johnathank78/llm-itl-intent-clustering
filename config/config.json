@@ -1,0 +1,53 @@
+{
+  "llm": {
+    "model": "qwen2.5:14b",
+    "base_url": "http://localhost:11434/v1",
+    "temperature_juge": 0.0,
+    "temperature_nommeur": 0.1,
+    "timeout_s": 300,
+    "tentatives": 3
+  },
+  "donnees": {
+    "dossier": "data",
+    "locale": "fr-FR",
+    "partition": "validation",
+    "taille_echantillon": null
+  },
+  "embeddings": {
+    "modele": "gemini-embedding-2-preview",
+    "task_type": "CLUSTERING",
+    "taille_lot": 100,
+    "pause_entre_lots_s": 62,
+    "fichier": "embeddings_massive.npy"
+  },
+  "umap": {
+    "grille_n_neighbors": [15, 50, 100],
+    "grille_min_dist": [0.0, 0.1, 0.5],
+    "grille_n_components": [2, 3, 4, 5, 8, 10, 12, 15, 20, 25, 30, 35, 40, 45, 50],
+    "k_trustworthiness": 15,
+    "tolerance_trustworthiness": 0.005,
+    "dimension_sans_penalite": 15,
+    "max_echantillons": 5000,
+    "random_state": 42
+  },
+  "kmeans": {
+    "budget_llm_s": 1800,
+    "k_max_reference_lambda": 200,
+    "k_max_plafond": 210,
+    "phrases_min_par_cluster": 10,
+    "pas": 10,
+    "gain_rayon_min": 0.05,
+    "n_init": 10,
+    "random_state": 42,
+    "appels_profilage": 5
+  },
+  "tamis": {
+    "seuil_confiance": 80,
+    "n_extremes": 3,
+    "phrases_restantes_min": 10
+  },
+  "sorties": {
+    "dossier_run": "outputs/run_courant",
+    "sauver_figures": true
+  }
+}

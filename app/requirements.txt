@@ -1,0 +1,4 @@
+# Dépendances de l'application uniquement (aucun LLM, aucun calcul lourd)
+streamlit>=1.50
+plotly>=5.24
+pandas>=2.0

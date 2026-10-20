@@ -1,0 +1,17 @@
+{
+  "modele": "qwen2.5:14b",
+  "prompts": "config/prompts.json",
+  "n_cas": 90,
+  "graine": 1,
+  "decisions_corrigees_par_les_verdicts": 0,
+  "precision_pur": 0.8,
+  "rappel_pur": 0.26666666666666666,
+  "taux_bonnes_decisions_par_type": {
+    "pollue_difficile": 0.9666666666666667,
+    "pollue_facile": 0.9666666666666667,
+    "pur": 0.26666666666666666
+  },
+  "taux_reponses_invalides": 0.011111111111111112,
+  "latence_moyenne_s": 4.359,
+  "note": "précision_pur = part des clusters acceptés qui étaient vraiment purs ; rappel_pur = part des clusters purs que le juge a acceptés."
+}

@@ -1,0 +1,3483 @@
+[
+  {
+    "phrases": [
+      "supprimer un objet de la liste",
+      "ouvrir les listes supprimer la liste",
+      "réorganiser cela hors de la liste",
+      "supprimez-le de la liste",
+      "s'il vous plaît dites-moi comment puis-je supprimer l'objet"
+    ],
+    "action_centroide": "LISTE_SUPPRIMER",
+    "analyse_extremes": "Le centroïde demande la suppression via l'API ListManagement (RemoveListItem). Les 3 extrêmes suivants ciblent cette même API destructive. Cependant, le dernier extrême ('dites-moi comment puis-je supprimer l'objet') est une requête d'aide (AMAZON.HelpIntent) et non une commande de suppression. L'action système n'est pas la même.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "régler une alarme pour cinq heures du matin",
+      "veuillez régler une alarme pour dix p. m.",
+      "régler une alarme pour cinq minutes à partir de maintenant",
+      "régler une alarme pour six heures du matin",
+      "mettre l'alarme le vingt-cinq mai à cinq p. m."
+    ],
+    "action_centroide": "ALARME_CREER",
+    "analyse_extremes": "Toutes les phrases ciblent la création d'une alarme. L'action système déclenchée est l'appel au Built-in Intent 'AMAZON.SetAlarmIntent'. Les paramètres de temps ('cinq minutes', 'six heures', 'vingt-cinq mai') sont des entités horaires ('AMAZON.TIME', 'AMAZON.DATE'). Action unique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "ce que j'ai fait à cette fois",
+      "mets les programmes dans ce requis de pad",
+      "qu'est-ce que j'ai à faire la semaine prochaine",
+      "quel est mon programme pour aujourd'hui",
+      "à quoi ressemble le programme d'aujourd'hui"
+    ],
+    "action_centroide": "CALENDRIER_QUERY",
+    "analyse_extremes": "Le centroïde et les 3 derniers extrêmes interrogent l'API d'agenda via 'AMAZON.SearchAction' (GET). L'extrême 'mets les programmes dans ce requis de pad' est ambigu mais indique une action d'écriture (POST/PUT) ou d'interaction avec une autre application ('pad'). Mélange de lecture et d'écriture. Impur.",
+    "niveau_confiance": 90,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quand les trains circulent-ils demain",
+      "quand est le prochain train pour cornwall",
+      "où est la gare du train",
+      "quelle est l'heure prévue du courrier de lyon pour atteindre marseille",
+      "quand est le prochain train pour b. rue"
+    ],
+    "action_centroide": "TRANSPORT_QUERY",
+    "analyse_extremes": "Les requêtes portent sur la recherche d'horaires ou de lieux liés au transport ferroviaire (Local Search API ou Transport Skill). Les variables 'cornwall', 'lyon', 'marseille' sont des 'AMAZON.City'. Le domaine est homogène. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "olly réserve un billet pour paris sur eurostar à cinq heures du soir ce vendredi",
+      "réserve-moi un ticket d'avion",
+      "obtenez-moi un billet amtrak pour paris pour jeudi prochain le plus tard sera le mieux",
+      "chercher deux billets dans le train du mardi pour paris",
+      "achetez moi aujourd'hui un billet de train pour la ville de leeds"
+    ],
+    "action_centroide": "TRAIN_RESERVER",
+    "analyse_extremes": "Le centroïde déclenche une réservation de train (Transaction via 'AMAZON.BookAction' sur une Skill ferroviaire). L'extrême 'réserve-moi un ticket d'avion' cible les vols ('AMAZON.FlightReservation'). Bien que ce soit de la réservation, les API partenaires (ex: SNCF vs Skyscanner) diffèrent. Impur.",
+    "niveau_confiance": 95,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "pouvez-vous s'il vous plaît me dire ce que j'ai sur ma liste",
+      "relisez ce que j'ai mis sur ma liste de choses à faire pour cette semaine",
+      "pouvez-vous s'il vous plaît me montrer mes listes",
+      "olly quelle est la prochaine chose sur ma liste",
+      "s'il vous plaît dites -moi quelles listes je ai faites"
+    ],
+    "action_centroide": "LISTE_QUERY",
+    "analyse_extremes": "Toutes les phrases exigent la lecture ou l'affichage de listes existantes. L'action système correspondante est 'AMAZON.ReadListIntent' sur l'API List Management. Les formulations varient mais l'action finale est identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "que faites-vous de mes données personnelles",
+      "quelle a été la dernière chose que ma mère a dit",
+      "qu'est-ce que la clinique a dit à propos de mes examens"
+    ],
+    "action_centroide": "CONFIDENTIALITE_QUERY",
+    "analyse_extremes": "Le centroïde ('que faites-vous de mes données') interroge la FAQ/politique de l'assistant (AMAZON.HelpIntent ou Custom FAQ). Les deux autres phrases ciblent des messages personnels ('mère a dit') ou médicaux ('clinique a dit'), sollicitant la 'Communications API'. Domaines de recherche différents. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "vérifie et regarde si j'ai reçu des e-mails d'eddie richards concernant les budgets",
+      "fais-moi savoir quand casey m'envoie un e-mail",
+      "faites-moi savoir ce qui s'est accumulé dans ma boîte de réception depuis quinze heures",
+      "veuillez actualisez ma boîte de réception gmail",
+      "affiche le dernier e-mail de mark"
+    ],
+    "action_centroide": "EMAIL_QUERY",
+    "analyse_extremes": "Toutes les phrases demandent de consulter la boîte de réception (GET sur l'API Communications/Mail). Les noms 'eddie', 'casey', 'mark' sont des entités (AMAZON.Person), et 'gmail' est le service. L'action métier est unique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "combien de réunions ai-je cette semaine",
+      "quand est cette réunion avec mon boss la semaine prochaine",
+      "parlez-moi de la réunion que j'ai cette semaine",
+      "ai-je une réunion pour aujourd'hui dans mon calendrier",
+      "combien de réunions ai je la semaine prochaine"
+    ],
+    "action_centroide": "CALENDRIER_QUERY",
+    "analyse_extremes": "Toutes les phrases interrogent l'agenda (Calendar API via AMAZON.SearchAction) pour le type d'événement 'réunion'. L'intention de consultation temporelle est strictement homogène. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quelle chanson est en cours de lecture",
+      "vérifier le titre de la musique récemment joué",
+      "quel est le titre de la chanson qui passe",
+      "quel est le nom de la musique qui joué maintenant",
+      "quelle est cette chanson"
+    ],
+    "action_centroide": "MUSIQUE_QUERY",
+    "analyse_extremes": "Toutes les phrases demandent de lire les métadonnées (tags ID3) du flux audio en cours via l'interface AudioPlayer. Aucune ne demande de jouer ou d'arrêter la musique. Action métier de requête identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "ai- je une liste de contacts pour la fête que j'organise",
+      "s'il te plaît ajoute tom à ma liste de contacts",
+      "s'il te plaît donne-moi les détails de mon contact allen",
+      "y a-t-il un contact nommé allen dans ma liste",
+      "alexa ajoute erosser à hotmail dot com comme nouveau contact pour emily rosser"
+    ],
+    "action_centroide": "CONTACT_QUERY",
+    "analyse_extremes": "Le centroïde et les extrêmes 3 et 4 demandent la lecture de la liste de contacts (GET). Les extrêmes 2 et 5 demandent l'ajout d'un contact (POST via Communications API). Lecture vs Écriture = Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "je veux écouter ne me quitte pas jacques brel",
+      "s'il te plaît fais-moi écouter ne me quitte pas",
+      "je veux écouter jacques brel maintenant",
+      "jouer ne me quitte pas par jacques brel maintenant",
+      "quelles sont les paroles de la chanson ne me quitte pas de jacques brel"
+    ],
+    "action_centroide": "MUSIQUE_JOUER",
+    "analyse_extremes": "Les 4 premières phrases déclenchent l'action de jouer de la musique (AMAZON.PlayMusicIntent). Le dernier extrême ('quelles sont les paroles') est une recherche de texte/métadonnées (MUSIQUE_QUERY) qui ne lance pas la lecture audio. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "pouvez-vous mettre le livre audio ça peut faire de mal",
+      "mets le livre audio snow white",
+      "recherche ce playback dans livre audio et joue le moi",
+      "continuer avec mon livre audio s'il te plait",
+      "jouer à partir de ce point de ce livre audio"
+    ],
+    "action_centroide": "LECTURE_COMMENCER",
+    "analyse_extremes": "Toutes les phrases exigent la lecture ou la reprise d'un livre audio (AMAZON.ResumeIntent ciblant Audible/Kindle). Bien que la 3ème phrase mentionne 'recherche', la finalité est 'et joue le moi'. L'action finale est la lecture. Pur.",
+    "niveau_confiance": 90,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "envoyer un email au boss pour qu'il se rencontre pour une évaluation des performances",
+      "commencer e-mail",
+      "envoie un e-mail à mon chef disant que je serai en retard",
+      "envoyer un e mail à tous mes travailleurs de l'entreprise",
+      "je veux envoyer un e-mail à jack arobase gmail point com"
+    ],
+    "action_centroide": "EMAIL_CREER",
+    "analyse_extremes": "Toutes les phrases requièrent l'ouverture d'un prompt pour composer et envoyer un e-mail (SendEmail via Communications API). Les destinataires et les sujets sont des entités (AMAZON.Person/Organization). Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "comment faire des biscuits",
+      "comment faire cuire une pomme de terre",
+      "chercher une recette de pizza",
+      "comment faire du pain de viande",
+      "trouve moi une recette de soupe de nouilles au poulet"
+    ],
+    "action_centroide": "CUISINE_QUERY",
+    "analyse_extremes": "Les phrases demandent des recettes ou des instructions de cuisson. Cela cible les Skills de cuisine (ex: AMAZON.Food) pour une lecture guidée. Les plats sont des variables. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quel est le pub le plus proche dans la ville",
+      "je cherche des défilés vestimentaires pouvez vous trouver des magasins de vêtements à moins d'un kilomètre",
+      "olly indique-moi l'emplacement de la boutique",
+      "montrez moi quelques aires de restauration les plus proche de mon emplacement",
+      "tous les bons magasins de vélos à oxford"
+    ],
+    "action_centroide": "RESTAURATION_QUERY",
+    "analyse_extremes": "Le centroïde et le 4ème extrême ciblent des lieux de restauration (AMAZON.LocalBusiness de type Pub/Food court). Les autres ciblent des magasins de vêtements et de vélos. Bien que tous utilisent la 'Local Search API', la catégorisation sémantique diverge fortement (Restauration vs Retail). Selon la règle stricte du QUERY, c'est impur.",
+    "niveau_confiance": 95,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "comment est la situation de la circulation à rue de houston",
+      "y a-t-il plus de circulation dans la place de la concorde",
+      "combien de trafic y a-t-il en ce moment dans la rue bowery",
+      "comment il est le trafic à la route milligrams",
+      "comment est le trafic"
+    ],
+    "action_centroide": "NAVIGATION_QUERY",
+    "analyse_extremes": "Toutes les requêtes portent sur l'état du trafic (AMAZON.GetDirectionsIntent ou Traffic API). Le domaine d'information est unique et cohéent. Les lieux sont des entités ignorables. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "dis-moi tous les événements locaux",
+      "chercher des évènements récents à des dates précises",
+      "évènements locaux aujourd'hui",
+      "quand commence le match de hockey vendredi",
+      "ce qui se passe ce week-end"
+    ],
+    "action_centroide": "EVENEMENT_QUERY",
+    "analyse_extremes": "Toutes les phrases sollicitent l'API de Local Search pour trouver des entités de type événement (AMAZON.Event ou AMAZON.SportsEvent). Le domaine est l'agenda culturel/local. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "j'aimerais écouter ne me quitte pas de jacques brel",
+      "jouer moi jacques brel ne me quitte pas",
+      "joue ne me quitte pas",
+      "jouer la chanson ne me quitte pas",
+      "joue un peu de jaques brel"
+    ],
+    "action_centroide": "MUSIQUE_JOUER",
+    "analyse_extremes": "Toutes les phrases demandent le déclenchement du lecteur audio pour une chanson ou un artiste spécifique (AMAZON.PlayMusicIntent avec 'AMAZON.MusicCreativeWork'). Action identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "ajouter cet objet à la liste",
+      "veuillez ajouter cet objet à la liste",
+      "inclure un objet dans une liste"
+    ],
+    "action_centroide": "LISTE_MODIFIER",
+    "analyse_extremes": "Toutes les phrases invoquent l'API ListManagement avec l'action d'ajouter un item (AddListItem). L'action base de données est identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "sens d'un mot particulier",
+      "trouve jeu",
+      "pouvez-vous jouer le rôle de l'ennemie dans le jeu de coc",
+      "trouve une définition",
+      "dans quel scénario utiliseriez-vous le mot inconvénient"
+    ],
+    "action_centroide": "DEFINITION_QUERY",
+    "analyse_extremes": "Le centroïde et les extrêmes 4 et 5 ciblent le Knowledge Graph (Dictionnaire). Les extrêmes 2 et 3 ciblent l'univers du jeu vidéo ('jouer le rôle'). Mélange total de domaines d'information/action. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "trouver un contact",
+      "merci d'ouvrir ma liste de contacts",
+      "enregistrer l'e-mail dans mon contact",
+      "enregistre dans les contacts",
+      "donnez-moi l'identifiant de l'adresse e-mail de contact"
+    ],
+    "action_centroide": "CONTACT_QUERY",
+    "analyse_extremes": "Les phrases 1, 2 et 5 interrogent le carnet d'adresses (Lecture/GET). Les phrases 3 et 4 demandent la création/mise à jour d'un contact (Écriture/POST). Actions opposées. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "peux-tu trouver une blague sur les animaux pour moi",
+      "trouve-moi la meilleure blague toc toc sur internet",
+      "recherche de nouvelles blagues",
+      "une blague amusante",
+      "hé partagez-moi une blague pour me faire plaisir"
+    ],
+    "action_centroide": "BLAGUE_QUERY",
+    "analyse_extremes": "Toutes sollicitent l'API d'humour natif de l'assistant (AMAZON.TellJokeIntent). Le thème de la blague est une entité. L'action système est identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "réserve mon billet de chaise classe a. c. du train de monaco à lyon",
+      "pouvez-vous s'il vous plaît me faire savoir les quatre prochains trains prévus pour paris",
+      "combien pour un billet de train",
+      "dites-moi comment aller à bali sans avion avec l'option la moins chère, le temps n'a pas d'importance, j'ai deux cents jours de voyage et seulement des dollars à dépenser",
+      "hey olly je veux prendre les trains pour paris mercredi"
+    ],
+    "action_centroide": "TRAIN_RESERVER",
+    "analyse_extremes": "Le centroïde et le dernier extrême sont des transactions (AMAZON.BookAction). Les autres sont des consultations (prix, horaires) ou une demande complexe d'itinéraire de voyage sans avion. Transaction vs Consultation = Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quel temps fait-il à québec",
+      "quel temps fait-il demain",
+      "quelles sont les prévisions dans ma région aujourd'hui",
+      "dix jours de prévisions météos",
+      "quelle est la température actuelle"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Toutes les phrases déclenchent l'intention météo (AMAZON.WeatherIntent). Les variables spatiales (Québec, ma région) et temporelles (dix jours, demain) sont gérées par les slots de l'API. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "après cette chanson jouer ne me quitte pas",
+      "jouer ne me quitte pas jacques brel",
+      "joue savoir aimer de florent pagny",
+      "jacques brel",
+      "s'il te plait rejoue-moi la chanson de lorie pester"
+    ],
+    "action_centroide": "MUSIQUE_JOUER",
+    "analyse_extremes": "Toutes les phrases, y compris le simple nom 'jacques brel' qui dans ce contexte NLU est un raccourci pour jouer l'artiste, déclenchent la lecture musicale via AMAZON.PlayMusicIntent. Les artistes et chansons sont des variables. Pur.",
+    "niveau_confiance": 95,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "tamiser les lumières au niveau deux",
+      "veuillez éteindre les lumières de la chambre",
+      "les lumières peuvent-elles être changées en vertes",
+      "changer l'opacité de la couleur",
+      "remplace la couleur de la lumière au foncé"
+    ],
+    "action_centroide": "LUMIERE_MODIFIER",
+    "analyse_extremes": "Le centroïde et les extrêmes 3, 4 et 5 modifient l'état (intensité, couleur) d'une lumière (Smart Home Skill API avec les directives SetPercentage ou SetColor). L'extrême 2 demande d'éteindre (TurnOff). Le changement d'état et l'extinction totale (antonyme de l'allumage) sont souvent séparés dans les API domotiques strictes. Impur.",
+    "niveau_confiance": 90,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "à quoi ressemblerait la voiture de golf volkswagen"
+    ],
+    "action_centroide": "RECHERCHE_WEB",
+    "analyse_extremes": "Une seule phrase dans le cluster. Il est pur par définition.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "jouer ma deuxième playlist",
+      "ok google joue de la musique",
+      "je veux écouter love me",
+      "assistant mélange la bibliothèque entière",
+      "jouer le son"
+    ],
+    "action_centroide": "MUSIQUE_JOUER",
+    "analyse_extremes": "Toutes les phrases déclenchent l'interface audio (AMAZON.PlayMusicIntent). 'Mélange la bibliothèque' active en plus un slot (Shuffle=True), mais l'action principale reste la lecture musicale. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quel jour il est le cinq décembre",
+      "quel jour était ma date de naissance",
+      "combien de semaines reste-t-il pour noël",
+      "quel jour de la semaine est la saint valentin",
+      "quelle est la date de samedi prochain"
+    ],
+    "action_centroide": "DATE_QUERY",
+    "analyse_extremes": "Toutes les phrases interrogent le système de conversion calendaire/temporel de l'OS. Le but est d'obtenir une date ou un calcul de délai temporel. Les fêtes (Noël, St Valentin) sont des ancres temporelles. L'intention métier est identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "meilleur bar local",
+      "épicerie à proximité",
+      "qui vend les netbooks les moins chers à austin du sud",
+      "quel est la meilleure boutique de vêtements ici",
+      "trouve un magasin qui vende de la bière"
+    ],
+    "action_centroide": "RESTAURATION_QUERY",
+    "analyse_extremes": "Le centroïde cherche un bar. Les autres phrases ciblent des épiceries, des magasins d'informatique ('netbooks') ou des boutiques de vêtements. Bien qu'ils relèvent de la recherche locale, les domaines catégoriels sont multiples (Bars, Supermarchés, Tech, Mode). Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "tamiser les lumières dans la salle",
+      "il fait trop sombre ici",
+      "pouvez-vous éclairer les lumières s'il vous plaît",
+      "s'il te plait baisse un peu les lumières",
+      "rends le salon bleu"
+    ],
+    "action_centroide": "LUMIERE_MODIFIER",
+    "analyse_extremes": "Ce cluster montre le piège des antonymes. Il y a des directives pour diminuer la luminosité ('tamiser', 'baisse') et des directives pour l'augmenter ('éclairer', 'trop sombre'). Les actions sur le périphérique (DecreasePercentage vs IncreasePercentage) sont opposées. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "joue l' épisode de trucs que vous devriez savoir dans la file d'attente",
+      "passe au prochain podcast",
+      "joue le dernier podcast de raison",
+      "passe à l'épisode suivant",
+      "jouer le prochain épisode"
+    ],
+    "action_centroide": "PODCAST_JOUER",
+    "analyse_extremes": "Le centroïde et le 3ème extrême demandent la lecture initiale d'un média (PlayMusicIntent ciblant des podcasts). Les autres demandent le contrôle du lecteur actif (AMAZON.NextIntent ou Skip). Lecture vs Contrôle = Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quand est-ce que cotillard et canet se marier",
+      "depuis combien de temps la princesse kate est-elle enceinte",
+      "en quelle année jean reno est-il né",
+      "de quel état est jean-luc godard",
+      "quel est le nom de famille de jean"
+    ],
+    "action_centroide": "CELEBRITE_QUERY",
+    "analyse_extremes": "Toutes les requêtes ciblent le Knowledge Graph d'Amazon pour l'entité 'AMAZON.Person'. Que ce soit pour une naissance, un état ou un nom, l'API interrogée et le domaine d'information sont identiques. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "nettoyer la télévision"
+    ],
+    "action_centroide": "NETTOYAGE_COMMENCER",
+    "analyse_extremes": "Une seule phrase dans le cluster. Pur par défaut.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "donne-moi un billet de train pour montréal aujourd'hui",
+      "ouvre l'application irctc et allez réserver un billet",
+      "réserve-moi un ticket de train bruxelles",
+      "réserve mon billet de train pour rosanne",
+      "réserve une place pour moi dans le train du vingtième mars"
+    ],
+    "action_centroide": "TRAIN_RESERVER",
+    "analyse_extremes": "Toutes les phrases exigent une action transactionnelle (AMAZON.BookAction) liée au transport ferroviaire. L'application 'irctc' est le nom d'un service de train, et les lieux sont des entités. L'action finale de réservation est la même. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "donne moi l activité récente de mes mails",
+      "merci de me signaler les nouveaux emails de michael",
+      "informe moi les nouveaux e-mails de sara",
+      "ai je reçu de nouveau email depuis dix-sept heures",
+      "ai- je reçu des e-mails de samantha aujourd’hui"
+    ],
+    "action_centroide": "EMAIL_QUERY",
+    "analyse_extremes": "Toutes ces phrases interrogent l'état de la boîte de réception via la 'Communications API' (requête GET). Les variables temporelles ('dix-sept heures') et les expéditeurs ('sara') sont ignorés (Règle 3). Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "taux de change dollar roupies",
+      "convertir une livre en dollar convertir une livre sterling en dollar américain",
+      "si j'ai cinq dollar combien ça fait en euro",
+      "combien coûte la roupie indienne contre dollar américain",
+      "quel est le taux du dollar américain aujourd'hui"
+    ],
+    "action_centroide": "ECONOMIE_QUERY",
+    "analyse_extremes": "Toutes les phrases requièrent le système de conversion monétaire ou l'API des marchés financiers de l'assistant (FinancialOrganization/ExchangeRate). Le domaine est la finance/devise pour toutes. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "j'ai besoin du cours de l'action pour amazon",
+      "quel est le taux d'action actuel de facebook",
+      "où en est le dow jones aujourd'hui",
+      "s'il te plaît dis-moi quand je peux devenir riche si j'investis dans les actions dow aujourd'hui et quel sera le retour après cinq ans",
+      "comment va le stock de coca-cola aujourd'hui"
+    ],
+    "action_centroide": "BOURSE_QUERY",
+    "analyse_extremes": "Les phrases 1, 2, 3 et 5 ciblent la cotation boursière en temps réel (StockTicker). Le 4ème extrême ('quand je peux devenir riche...') nécessite un modèle de prévision financière et des conseils en investissement, ce que l'API de cotation simple ne gère pas. Impur.",
+    "niveau_confiance": 95,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "obtenez-moi le numéro du service de taxi local",
+      "j'ai besoin d'aller sur place appeler un taxi",
+      "j'ai besoin d'un taxi à huit heures demain matin pour me rendre au travail",
+      "configure uber",
+      "appelle un taxi pour qu'il vienne me chercher tout de suite"
+    ],
+    "action_centroide": "TRANSPORT_QUERY",
+    "analyse_extremes": "Le centroïde demande un numéro de téléphone (Local Search). Les extrêmes 2, 3 et 5 demandent l'action transactionnelle d'appeler ou réserver un véhicule (BookRide). 'Configure uber' est une action de paramétrage de Skill. Actions multiples. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "comment définissez-vous textuel",
+      "quelle est la définition de coup de circuit",
+      "quelle est la description d'un casque de réalité virtuelle",
+      "qu'est-ce qu'un ossau",
+      "qu'elle est la définition de incomplet"
+    ],
+    "action_centroide": "DEFINITION_QUERY",
+    "analyse_extremes": "Toutes les phrases demandent le sens ou la définition d'un mot ou d'un concept via l'API encyclopédique (Knowledge Graph). Le domaine de recherche (Linguistique/Définition) est identique. Les mots cibles sont des entités. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "où se trouve le centre de convention",
+      "dirigez-moi vers la gare la plus proche",
+      "les directions vers le magasin apple le plus proche",
+      "donnez-moi des indications pour l'endroit",
+      "je veux aller à bank of america donne moi l'itinéraire"
+    ],
+    "action_centroide": "NAVIGATION_QUERY",
+    "analyse_extremes": "Le centroïde demande un emplacement statique (Où est... ? via Local Search). Les autres extrêmes demandent un itinéraire de navigation actif (Dirigez-moi, Itinéraire via AMAZON.GetDirectionsIntent). Localisation vs Navigation. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "olly augmente le volume"
+    ],
+    "action_centroide": "VOLUME_AUGMENTER",
+    "analyse_extremes": "Une seule phrase dans le cluster. Pur par défaut.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "combien de points cheteshwar pujara a-t-il marqués hier",
+      "les yankees ont-ils gagné dernier nuit",
+      "je veux jouer à mon match de football à partir du cinquième niveau",
+      "je veux savoir qui est au sommet de la english premier league en ce moment",
+      "quels étaient winning powerball numbers hier soir"
+    ],
+    "action_centroide": "SPORT_QUERY",
+    "analyse_extremes": "Le centroïde et les extrêmes 2 et 4 ciblent l'API de statistiques sportives. L'extrême 3 demande de lancer un jeu vidéo (JEUX_JOUER). L'extrême 5 cherche les résultats de loterie. Domaines complètement dissemblables. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "dis-moi une bonne boisson alcoolisée",
+      "sois drôle pour moi",
+      "lis un poème pour moi",
+      "quand je veux qu'il prenne des notes",
+      "bons assistants"
+    ],
+    "action_centroide": "CUISINE_QUERY",
+    "analyse_extremes": "Le centroïde cible une recette. Les extrêmes sollicitent de l'humour ('sois drôle', AMAZON.TellJokeIntent), de la poésie, ou la création de notes (List Management). Aucun point commun d'action métier. C'est un cluster poubelle. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quelle sera la température la plus élevée dans la semaine à venir",
+      "quelles seront les conditions météorologiques de cette semaine",
+      "quelle journée ensoleillée",
+      "il fait nuageux aujourd'hui",
+      "dis-moi la météo pour strasbourg olly"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Le centroïde, le 2ème et le 5ème extrême interrogent l'API météo (AMAZON.WeatherIntent). Les 3ème et 4ème phrases sont des constatations passives ou conversationnelles ('quelle journée', 'il fait nuageux'), elles ne formulent pas de requête explicite à l'assistant. Par rigueur d'action déclenchée, c'est impur.",
+    "niveau_confiance": 90,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "rappelez-moi de tweeter à cette entreprise",
+      "tweet plainte à burger king",
+      "tweeter une plainte concernant mon réfrigérateur à l. g.",
+      "tweet le service client n'est pas bon pour le service litre par gramme dans mon compte twitter",
+      "plainte de tweet"
+    ],
+    "action_centroide": "RAPPEL_CREER",
+    "analyse_extremes": "Le centroïde invoque l'API de Rappels (Reminders API) pour que l'utilisateur n'oublie pas de tweeter. Les autres extrêmes ordonnent à l'assistant d'exécuter la publication d'un tweet directement (via une Skill Twitter/Social Media). Rappel vs Action sociale. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quel est le programme du prochain concert de maggie rogers",
+      "donne moi des informations sur le concert de mardi soir",
+      "en savoir plus sur le concert de rue pete",
+      "quels concerts sont prévus à proximité",
+      "quels spectacles ou expositions sont prévus au théâtre métropolitain"
+    ],
+    "action_centroide": "CONCERT_QUERY",
+    "analyse_extremes": "Toutes les requêtes filtrent les événements locaux avec le type 'AMAZON.MusicEvent' ou assimilés (spectacles) via l'API Local Search. Le domaine est les sorties culturelles en direct. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "les horaires de train de paris à créteil",
+      "car et tarif",
+      "comment puis-je me rendre à marseille",
+      "quels sont les horaires de train pour voyager de paris à marseille",
+      "quels sont les horaires de train pour le vingt trois à paris"
+    ],
+    "action_centroide": "TRANSPORT_QUERY",
+    "analyse_extremes": "Le centroïde et les deux derniers extrêmes cherchent des horaires de train. L'extrême 3 ('comment puis-je me rendre...') est une requête de calcul d'itinéraire global (GetDirectionsIntent). L'extrême 2 mélange bus ('car') et tarification. Mélange de Guidage et d'Horaires. Impur.",
+    "niveau_confiance": 95,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "qu'est-ce que j' ai comme email",
+      "regarde si il y a de nouveaux emails de janne dupont",
+      "y a-t-il de nouveaux e-mails",
+      "vérifie par boîte de réception pour moi",
+      "donne moi tous mes e-mails récents"
+    ],
+    "action_centroide": "EMAIL_QUERY",
+    "analyse_extremes": "Toutes les phrases déclenchent l'action système de consultation de la boîte de réception via l'API Communications. L'intention de lecture est absolue. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quels sont le cours boursier actuels de google",
+      "conseils récents concernant le référencement google",
+      "google traduction",
+      "google le mot",
+      "cours des actions chez walmart"
+    ],
+    "action_centroide": "BOURSE_QUERY",
+    "analyse_extremes": "Le centroïde demande la cotation financière de l'entreprise Google. Les extrêmes ciblent des astuces de SEO (Knowledge), l'API de traduction (AMAZON.TranslateIntent), ou une simple recherche web ('google le mot'). Les API cibles (Finance vs Traduction vs Web) sont totalement distinctes. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "qu'est ce que s. d. en francs",
+      "quel est le taux de change de dollar américain à dollar canadien",
+      "quel est le taux de change entre france et chine",
+      "quel est le taux de change état unis et la france",
+      "siri qu'est-ce qu'un dollar américain en yen japonais"
+    ],
+    "action_centroide": "ECONOMIE_QUERY",
+    "analyse_extremes": "Toutes les phrases interrogent le module de conversion monétaire ou l'API de finance (taux de change/devises). Les pays et les devises sont des entités gérées par l'API. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "commerce international et marché des affaires",
+      "les taux prévisionnels",
+      "quelle monnaie utilise la croatie",
+      "quel est le taux de change entre le dollar et l'euro actuellement",
+      "quel est le taux de change du yen dollar américain"
+    ],
+    "action_centroide": "ECONOMIE_QUERY",
+    "analyse_extremes": "Les deux premières phrases sont des requêtes d'actualité macro-économique générales. La 3ème est une requête encyclopédique (quelle monnaie). Les deux dernières sont des requêtes au convertisseur de devises financier. Multiplication des domaines. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "olly envoie un e-mail à mes rendez-vous pour les reporter",
+      "peux-tu envoyer un e-mail à mon ami pierre pour dire que je suis occupé demain",
+      "hé commence un e-mail à un collaborateur",
+      "ouvrir un nouveau e-mail à ce collègue à cet e-mail",
+      "envoie un e-mail à mon manager"
+    ],
+    "action_centroide": "EMAIL_CREER",
+    "analyse_extremes": "L'action globale est de créer ou démarrer la composition d'un email. Le centroïde ('mes rendez-vous') pourrait nécessiter d'interroger d'abord le calendrier pour récupérer la liste des contacts, ce qui ajoute une action (Calendar API + Communications API), tandis que les autres ont des destinataires directs. Action finale identique (Envoyer Email). Pur.",
+    "niveau_confiance": 90,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quel est le meilleur chemin vers la france"
+    ],
+    "action_centroide": "NAVIGATION_QUERY",
+    "analyse_extremes": "Une seule phrase dans ce cluster. Pur par défaut.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "rien",
+      "c'est trop clair",
+      "plus doux",
+      "va te coucher",
+      "c'est très dur"
+    ],
+    "action_centroide": "BRUIT_SEMANTIQUE",
+    "analyse_extremes": "Aucune action système identifiable ('rien', 'c'est très dur'). 'Plus doux' pourrait être un réglage de volume ou de lumière. 'Va te coucher' est conversationnel. Règle 5 violée en totalité. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "définis-toi en un mot",
+      "pouvez-vous me dire à quoi ressemble le haggis",
+      "définition du nom de l'objet",
+      "trouve la signification du mot monde dans le dictionnaire",
+      "pouvez-vous me dire ce que signifie hypertrophie"
+    ],
+    "action_centroide": "ASSISTANT_QUERY",
+    "analyse_extremes": "Le centroïde est une meta-question posée à l'IA sur elle-même (Persona/Chit-chat). Les extrêmes ciblent le dictionnaire encyclopédique (Knowledge Graph) pour définir le monde ou l'hypertrophie. Le domaine d'information diffère totalement. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "supprimer une liste de choses à acheter",
+      "effacer la liste",
+      "trouver la liste et supprimer la pomme",
+      "effacer ma liste de chansons en ancien anglais",
+      "veuillez supprimer une liste"
+    ],
+    "action_centroide": "LISTE_SUPPRIMER",
+    "analyse_extremes": "Le centroïde et les extrêmes 2 et 5 demandent la suppression d'un objet 'Liste' entier (DeleteList). L'extrême 3 demande la suppression d'un élément *dans* une liste (RemoveListItem). L'extrême 4 cible potentiellement une playlist musicale, ce qui implique l'API audio. Actions multiples. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "fera-t-il beau à la plage vendredi",
+      "quel temps fera-t-il vendredi",
+      "quand est le coucher du soleil",
+      "est-ce qu'il pleut dehors",
+      "va t'il faire beau demain"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Toutes les phrases déclenchent l'API météo (AMAZON.WeatherIntent). 'Coucher du soleil' est une information temporelle/astronomique spécifiquement fournie par la majorité des API météo standard. Le domaine d'information est identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "changer les couleurs de la lumière claire du bleu au blanc",
+      "rendre les lumières de la maison rouges",
+      "règle les lumières du salon au rouge",
+      "changer la couleur de la lumière en bleu",
+      "alexa éteins le ventilateur dans la chambre principale"
+    ],
+    "action_centroide": "LUMIERE_MODIFIER",
+    "analyse_extremes": "Les quatre premières phrases ordonnent le changement de couleur d'un objet domotique 'lumière' via la directive 'SetColor'. Le dernier extrême demande d'éteindre (TurnOff) un objet 'ventilateur'. Les objets cibles et les actions système sont différents. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "calculer la distance entre paris et marseille",
+      "quelle est la population de paris",
+      "combien de miles en cinq kilomètres",
+      "combien de miles est la ville de new york de paris",
+      "quelle est l'altitude moyenne des etats-unis"
+    ],
+    "action_centroide": "NAVIGATION_QUERY",
+    "analyse_extremes": "Le centroïde et le 4ème extrême demandent un calcul de distance spatiale (souvent lié à l'API de Routage/Maps). Les autres extrêmes demandent des informations démographiques ('population'), topographiques ('altitude') ou des conversions mathématiques pures (kilomètres en miles). Domaines d'information trop variés (Règle 2). Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "s'il est huit heures d'après-midi la côte est quelle heure est-il à sacramento en californie",
+      "pouvez-vous me dire quelle heure est-il à paris",
+      "s'il est dix d'après midi en californie quelle heures est-il à paris",
+      "quelle heure est-il à paris à l'heure actuelle",
+      "convertir l'heure de paris à londres"
+    ],
+    "action_centroide": "HEURE_QUERY",
+    "analyse_extremes": "Toutes les phrases demandent l'heure dans un lieu spécifique ou une conversion de fuseaux horaires (AMAZON.TimeIntent avec slot de localisation). L'action métier est homogène. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "ouvre internet",
+      "ouvre ma musique",
+      "ouvre papa pear saga",
+      "diffuse une vidéo sur youtube",
+      "ouvre la galerie et poste le nom de la vidéo"
+    ],
+    "action_centroide": "APPLICATION_OUVRIR",
+    "analyse_extremes": "Les 3 premières phrases lancent une application au niveau du système d'exploitation ('LaunchRequest'). L'extrême 4 lance spécifiquement un flux multimédia ('VideoSkill API'). L'extrême 5 demande une action complexe impliquant la publication ('poster'). L'API cible est éclatée. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "mets en silencieux toutes les réponses maintenant",
+      "peux-tu être mis en sourdine pendant un moment s'il te plaît",
+      "peux-tu mettre le son en pause"
+    ],
+    "action_centroide": "VOLUME_ATTENUER",
+    "analyse_extremes": "Toutes les phrases déclenchent la commande Mute (mise en sourdine) du haut-parleur. Bien que la 3ème mentionne 'pause', dans le contexte du son, cela s'apparente à couper le son (Mute). Action homogène. Pur.",
+    "niveau_confiance": 95,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "combien de personnes vivent à paris",
+      "combien de miles y a-t-il entre lyon et la louisiane",
+      "quelle est la plus grande ville du new hampshire",
+      "où est le danemark",
+      "où est le dakota du nord"
+    ],
+    "action_centroide": "GEOGRAPHIE_QUERY",
+    "analyse_extremes": "Le centroïde demande la démographie (Population). Le 2ème demande la distance GPS (Routage). Les 3, 4 et 5 demandent la localisation spatiale ou la topologie (Knowledge Graph géographique). Les sources d'informations sont multiples (Règle 2). Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quels événements se déroulent à paris",
+      "ce qui se passe à la la",
+      "ce qui se passe en amérique",
+      "qu'est ce qui se passe dans le quartier",
+      "qu'est ce qui était en train de se passer"
+    ],
+    "action_centroide": "EVENEMENT_QUERY",
+    "analyse_extremes": "Les 4 premières phrases interrogent l'API de Local Search pour trouver des événements locaux (Agenda public). La dernière ('qu'est ce qui était en train de se passer') est sans contexte spatial ou temporel précis, et s'apparente à une question de conversation ou d'actualité globale. Impur.",
+    "niveau_confiance": 95,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "donne-moi ma liste",
+      "ai- je quelque chose sur ma liste de choses à faire",
+      "quelles listes sont actuellement disponibles en ce moment",
+      "pouvez-vous me lire mes listes",
+      "hey quelles sont mes listes"
+    ],
+    "action_centroide": "LISTE_QUERY",
+    "analyse_extremes": "Toutes les phrases exigent du système l'énumération ou la lecture de l'inventaire des listes utilisateur existantes (AMAZON.ReadListIntent). Action identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "dis-moi comment faire du pain à l'ail",
+      "combien de temps pour cuisiner le pasta",
+      "que puis-je cuisiner avec du brocoli et du poulet",
+      "comment puis-je faire cuire des pâtes",
+      "quel ingrédient peut-on utiliser pour remplacer le vin blanc"
+    ],
+    "action_centroide": "CUISINE_QUERY",
+    "analyse_extremes": "Toutes les phrases sont orientées vers les Skills de cuisine (AMAZON.Food) pour obtenir des temps de cuisson, des recettes ou des substitutions d'ingrédients. Le domaine culinaire est strictement respecté pour toutes les phrases. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "merci d'envoyer un tweet à la société dell au sujet du service défectueux de l'ordinateur portable",
+      "tweetez walmart et dites-leur que leur service client est horrible",
+      "olly envoie un tweet à meijer pour leur dire qu'ils ont le pire service client",
+      "plainte du service client tweet ce qui suit",
+      "envoyer un tweet aux dominoes à propos d'une mauvaise livraison"
+    ],
+    "action_centroide": "RESEAUX_PUBLIER",
+    "analyse_extremes": "Toutes les phrases exigent que l'assistant publie (WRITE/POST) un message vers le réseau social Twitter (via une Skill tierce connectée). Les destinataires et le sujet des plaintes sont des entités (Règle 3). Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quel état américain est le plus au nord",
+      "où est stonehenge",
+      "quelle est la taille de angleterre",
+      "quand la statue de la liberté a-t-elle fait",
+      "quelle est la hauteur de l'empire state building"
+    ],
+    "action_centroide": "GEOGRAPHIE_QUERY",
+    "analyse_extremes": "Toutes les phrases interrogent le Knowledge Graph sur des entités géographiques, architecturales ou monumentales pour obtenir une métadonnée fixe (Nord, Taille, Date, Hauteur). Le domaine (Savoir encyclopédique spatial/architectural) est homogène. Pur.",
+    "niveau_confiance": 95,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "j'ai un vol à prendre le quinze",
+      "qu'est-ce qui s'est passé entre la deuxième et la quinzième",
+      "qu'est-ce qu'il y a le vingt novembre",
+      "dites-moi tous les détails connus sur le tournoi du vingt-deux mars",
+      "quand sommes-nous en vacances ce mois-ci"
+    ],
+    "action_centroide": "CALENDRIER_CREER",
+    "analyse_extremes": "Le centroïde suggère l'enregistrement d'un vol dans l'agenda. L'extrême 2 demande les actualités historiques/informations entre deux dates. L'extrême 3 interroge l'agenda (GET). L'extrême 4 cherche des informations sur un événement public ('tournoi'). Le cluster est en chaos total. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "reprend mon livre audio là où nous nous sommes arrêtés la dernière fois",
+      "reprends le dernier livre audio joué",
+      "lire le cercle",
+      "commence à lire le livre",
+      "reprendre le petit chaperon rouge pour moi"
+    ],
+    "action_centroide": "LECTURE_COMMENCER",
+    "analyse_extremes": "Toutes les phrases demandent de commencer ou de reprendre la lecture (AMAZON.ResumeIntent/PlayIntent) d'un livre/livre audio. Le type de contenu (littérature) et l'action (jouer) sont parfaitement alignés. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "dis-moi et les cours des actions d'amd",
+      "quels sont les cours des actions amd",
+      "quelle est la valeur des actions de google",
+      "cours d' actions en bourse élevé",
+      "quel est le cours de l'action tesco"
+    ],
+    "action_centroide": "BOURSE_QUERY",
+    "analyse_extremes": "Toutes les phrases interrogent l'API financière pour obtenir le prix de marché des actions (StockTicker). Les entreprises (AMD, Google, Tesco) sont des entités ignorables. Le domaine métier d'information est unique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "enregistre cet email parmi le contact",
+      "je voudrais ajouter ce nouvel email à mes contacts",
+      "puis-je trouver des informations sur un contact",
+      "combien de contacts ai- je dans mon répertoire",
+      "recherche l' e-mail pour contact"
+    ],
+    "action_centroide": "CONTACT_CREER",
+    "analyse_extremes": "Les phrases 1 et 2 demandent l'enregistrement d'une information (POST). Les phrases 3, 4 et 5 demandent la recherche ou le comptage d'informations existantes dans le répertoire (GET). Actions de base de données opposées (Créer vs Lire). Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "s'il te plait montre ma liste",
+      "remonter ma liste",
+      "dis-moi quelles listes j'ai",
+      "qu'est-ce qu'il y a sur la liste",
+      "afficher les listes disponibles"
+    ],
+    "action_centroide": "LISTE_QUERY",
+    "analyse_extremes": "L'action demandée par toutes les phrases est la lecture/l'affichage visuel ou vocal (ReadListIntent) des listes configurées dans le compte de l'utilisateur. Action homogène. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "hey quels sont les bons films qui sortent bientôt",
+      "quels films sont projetés au cinéma de pathé beaugrenelle",
+      "films avec de bonnes notes de tomates pourries",
+      "quels sont les films à l'affiche dans les cinémas proche de chez moi",
+      "ce qui mérite d'être regardé"
+    ],
+    "action_centroide": "CINEMA_QUERY",
+    "analyse_extremes": "Le centroïde, le 2ème et le 4ème extrême demandent les horaires des salles de cinéma (Local Search/Event API). L'extrême 3 demande des critiques ('tomates pourries' = Rotten Tomatoes). L'extrême 5 est une demande de recommandation générale (VOD/TV). Multiplexage des requêtes de l'écosystème Divertissement. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quelle est la météo aujourd'hui",
+      "quel est le bulletin météo pour mardi",
+      "quelle sera la météo de lundi midi",
+      "quel temps fera-t-il lundi cette semaine",
+      "quel temps fait-il aujourd'hui"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Toutes les phrases déclenchent l'intention Météo de l'assistant (AMAZON.WeatherIntent). Les variations de jours (Aujourd'hui, Mardi, Lundi midi) sont des entités temporelles prévues par l'API. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "pouvez-vous remonter une recette de spaghetti",
+      "faits apparaître une recette de boulettes de dinde",
+      "recettes",
+      "combien de temps dois-je rôtir des poitrines de poulet",
+      "recette de la chair de crabe"
+    ],
+    "action_centroide": "CUISINE_QUERY",
+    "analyse_extremes": "L'ensemble des phrases demande la récupération d'instructions culinaires ou de paramètres de cuisson. Cela déclenche le domaine de Cooking/Recipes (AMAZON.Food). Les plats sont des variables. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "y a-t-il des e-mails concernant ma promotion",
+      "hé vérifier les e-mails",
+      "fais-moi la liste des objets et expéditeurs de tous les e-mails de la semaine dernière",
+      "qui m'a envoyé un e-mail récemment et à propos de quoi ont-ils envoyé un e-mail",
+      "combien de emails non lus ai je"
+    ],
+    "action_centroide": "EMAIL_QUERY",
+    "analyse_extremes": "L'action dominante est d'interroger la boîte de réception (GET sur Communications API). Que ce soit pour l'objet, l'expéditeur, le sujet (promotion) ou le statut (non lu), l'API interrogée est la même pour tous. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "olly qu'est-ce que je ai d'autre sur la liste",
+      "puis-je vérifier mes listes",
+      "est-ce que j'ai fait une liste de courses",
+      "indique-moi la liste sur",
+      "lis-moi ma liste"
+    ],
+    "action_centroide": "LISTE_QUERY",
+    "analyse_extremes": "Toutes les phrases sollicitent l'API ListManagement en lecture seule (AMAZON.ReadListIntent). 'courses' est une entité pour le nom de la liste. L'intention NLU est unique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "envoie une réclamation via le service client de twitter",
+      "pouvez-vous tweeter une plainte au service client du magasin de meubles",
+      "écrirs une réclamation à alzacz pour la tablette que j'ai achetée aujourd'hui",
+      "contacter le service client amazon via twitter",
+      "plainte tweet à samsung"
+    ],
+    "action_centroide": "RESEAUX_PUBLIER",
+    "analyse_extremes": "Les phrases 1, 2, 4 et 5 envoient un message vers la plateforme externe Twitter. La phrase 3 ('écrirs une réclamation à alzacz') implique potentiellement l'ouverture d'un e-mail (EMAIL_CREER) ou le passage par un formulaire de site marchand si Twitter n'est pas spécifié. Par rigueur API, il y a une potentielle divergence de canal. Impur.",
+    "niveau_confiance": 90,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "effacer ma journée des réunions",
+      "supprimer la fête d'anniversaire demain à deux heures du soir",
+      "supprime la réunion aujourd'hui le soir",
+      "supprimer le prochain événement du calendrier",
+      "supprimer mon événement à une p. m. dans mon calendrier"
+    ],
+    "action_centroide": "CALENDRIER_SUPPRIMER",
+    "analyse_extremes": "Toutes les phrases commandent la suppression d'un item dans l'agenda de l'utilisateur (DeleteEvent de la Calendar API). Le type d'événement (réunions, fête) et le moment sont des entités (Règle 3). Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "trouve moi des célébrités capricornes",
+      "quel est le problème le plus préoccupant chez la france aujourd'hui et que peut-on faire pour y faire face efficacement",
+      "alexa donne moi tout ce que tu sais sur jean-claude anglars",
+      "quels sont les derniers potins hollywood qui se passent",
+      "combien de fois adele a eu un disc de diamant"
+    ],
+    "action_centroide": "CELEBRITE_QUERY",
+    "analyse_extremes": "Les requêtes 1, 3, 4 et 5 ciblent des entités 'People/Celebrity' dans le Knowledge Graph. La 2ème phrase exige une analyse complexe sur la politique et la sociologie de la France (Actualités / Recherche IA générative). Selon la Règle 2, le domaine diverge totalement. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "qu'est-ce que la météo de la ville natale",
+      "quelle sera la météo du lendemain",
+      "pouvez-vous s'il vous plait me donner les previsions météo de cette semaine",
+      "quel temps fera-t-il cette semaine",
+      "comment c'est dehors"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Toutes les phrases déclenchent l'API Weather. Les variations géographiques ('ville natale', 'dehors') et temporelles sont gérées par les slots. 'Comment c'est dehors' est une tournure de NLU standard pour la météo. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "je vais au quartier chinois dans une demi-heure réserve un uber pour moi",
+      "appelle moi un uber pour le moment",
+      "envoie moi un uber tout de suite",
+      "peux-tu s'il te plaît avoir uber chez moi dans quinze minutes",
+      "j'ai besoin d'un taxi pour m'emmener à l' aéroport s'il vous plaît"
+    ],
+    "action_centroide": "TRANSPORT_RESERVER",
+    "action_alexa": "Déclenchement du flux transactionnel 'BookRide' via des Skills de mobilité comme Uber ou des compagnies de taxi.",
+    "analyse_extremes": "Toutes les phrases visent à accomplir une réservation de course (Ride Hailing). Les contraintes temporelles (demi-heure, de suite) et les destinations (aéroport) sont des slots. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "régler la situation",
+      "trouve ma nourriture",
+      "définir le cadre",
+      "comment épeler le mot girafe",
+      "olly trouver une description sur un télévision samsung"
+    ],
+    "action_centroide": "INCONNU",
+    "analyse_extremes": "Le centroïde et l'extrême 3 n'ont pas d'action API propre (sémantique floue/mots de liaison NLU). 'Épeler' active l'API Dictionnaire. 'Description télévision samsung' active l'API Shopping/Amazon Store. Cluster 'Fourre-tout' et Bruit (Règle 5). Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "créer une nouvelle liste d'ici demain",
+      "efface l' ancienne liste de lecture et crées-en une nouvelle",
+      "crée une liste pour le travail",
+      "ajouter du lait à ma liste d' épicerie",
+      "crée une nouvelle liste"
+    ],
+    "action_centroide": "LISTE_CREER",
+    "analyse_extremes": "Les phrases 1, 3 et 5 demandent la création d'une nouvelle liste (CreateList API). L'extrême 2 demande d'effacer AVANT de créer (deux actions sérielles, et touche potentiellement l'API musicale si 'lecture'). L'extrême 4 ajoute un item à une liste existante (AddListItem). Règle 1 violée : mix de Create/Delete/Update. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "citer les disponibles",
+      "vérifier la liste",
+      "combien d'objets sont sur ma liste de choses à faire",
+      "vérifier ma liste",
+      "résumer toutes les choses pour moi que je pourrais faire pour me faire plus heureux"
+    ],
+    "action_centroide": "LISTE_QUERY",
+    "analyse_extremes": "Les phrases 2, 3 et 4 interrogent l'état de la To-Do List via ListManagement API (GET/Count). Le centroïde est très vague. L'extrême 5 demande des conseils psychologiques/bien-être ('me faire plus heureux') ce qui n'a rien à voir avec une To-Do List système. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "j'ai besoin d'idées pour le dîner qui sont mexicaines",
+      "quel est le temps de cuisson des oeufs durs",
+      "trouver une recette facile pour le lait d'amande",
+      "trouver recette casserole de poulet",
+      "rechercher une recette de repas"
+    ],
+    "action_centroide": "CUISINE_QUERY",
+    "analyse_extremes": "Toutes les phrases sont des sollicitations de l'API Cooking (AMAZON.Food) pour récupérer de l'inspiration, des paramètres de temps, ou des recettes. Domaine strictement culinaire. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "cent mille deux cent dix sept",
+      "calcule la résistance de cette résistance",
+      "combien c' est trois fois sept",
+      "quelle est la racine carrée de quarante deux",
+      "résout le calcul"
+    ],
+    "action_centroide": "MATHEMATIQUE_QUERY",
+    "analyse_extremes": "Le centroïde est un dicté de nombre (pas de verbe d'action claire, potentiellement du TTS dictation). Les extrêmes demandent au moteur logique de l'OS (Calculator) de résoudre des équations arithmétiques. L'extrême 2 ('calcule la résistance') pourrait être une simple multiplication (loi d'Ohm) ou nécessiter une API spécialisée en électronique. Par précaution (Règle 1 stricte), impur.",
+    "niveau_confiance": 90,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "tout nouvel e mail du patron",
+      "ai- je reçu un e-mail au cours de la dernière heure",
+      "des e-mails personnels sont-ils déjà arrivés",
+      "peux-tu voir à propos de quoi andrew m'a envoyé un e-mail",
+      "je veux trouver des emails de bob avec le sujet qui contient le mot réunion"
+    ],
+    "action_centroide": "EMAIL_QUERY",
+    "analyse_extremes": "Toutes les phrases demandent de lire, rechercher ou filtrer des messages entrants dans l'API de messagerie (Communications API). L'action de consultation est unique, les filtres ('patron', 'réunion') sont des paramètres. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quelle heure est-il à marseille",
+      "quelle heure est-il à ottawa",
+      "quelle heure est-il à bruxelles maintenant",
+      "quelle heure est-il maintenant en californie",
+      "définir le fuseau horaire"
+    ],
+    "action_centroide": "HEURE_QUERY",
+    "analyse_extremes": "Les 4 premières phrases interrogent l'horloge mondiale (AMAZON.TimeIntent). L'extrême 5 'définir le fuseau horaire' modifie la configuration matérielle de l'OS (Paramétrages système). Consultation vs Paramétrage. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quel est l'état du trafic du travail à au domicile",
+      "dites moi l'état du trafic d'ici à la domicile",
+      "à paris le niveau de trafic est trop élevé",
+      "j'aimerais connaitre l'état du trafic",
+      "donne-moi une idée de l'état actuel du trafic"
+    ],
+    "action_centroide": "NAVIGATION_QUERY",
+    "analyse_extremes": "Toutes ces phrases sauf la 3ème demandent le rapport de circulation (Traffic API). La 3ème phrase ('le niveau est trop élevé') est une plainte ou une constatation, mais l'intention NLU sous-jacente est souvent associée à cette même intention. Les lieux sont des entités (Work, Home, Paris). Pur.",
+    "niveau_confiance": 90,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "suivre les nouvelles sur le problème d'email hilarant à future",
+      "ai-je de nouveaux matchs tinder",
+      "quand ai-je reçu un e-mail de john smith au sujet d'un accident de voiture",
+      "faites-moi savoir si je ai de nouveaux e-mails",
+      "il y a t il de nouveaux e-mail d émilie"
+    ],
+    "action_centroide": "ACTUALITE_QUERY",
+    "analyse_extremes": "Le centroïde demande le suivi d'une actualité (News API). L'extrême 2 interroge une API tierce très spécifique (Tinder/Rencontres). Les extrêmes 3, 4 et 5 interrogent l'API de messagerie/E-mails (Communications). Violation de la Règle 5 (Sujets multiples). Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "dit moi quelle heure est il",
+      "combien de temps dure une journee terrestre",
+      "dit moi quelle heure il est",
+      "peux tu mentir",
+      "dis moi la couleur porte bonheur d' aujourd'hui"
+    ],
+    "action_centroide": "HEURE_QUERY",
+    "analyse_extremes": "Le centroïde demande l'heure. L'extrême 2 demande une info astronomique. L'extrême 4 s'adresse au comportement de l'IA (Persona). L'extrême 5 demande de l'astrologie/horoscope. Bruit sémantique lourd. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "sympa peux-tu poster ça sur mon facebook",
+      "il y a t-il quelque nouveau",
+      "pas d'autres commentaires",
+      "veuillez me mettre à jour sur mes comptes de médias sociaux",
+      "montre moi une liste des endroits où mes proches ont été basés sur leurs photos"
+    ],
+    "action_centroide": "RESEAUX_PUBLIER",
+    "analyse_extremes": "Le centroïde demande la publication d'un message sur Facebook (POST). L'extrême 4 et 5 demandent la consultation d'un flux ou d'images de proches (GET). Les extrêmes 2 et 3 sont des phrases de liaison du dialogue conversationnel. Lecture vs Écriture. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quelle heure est-il maintenant à bordeaux",
+      "olly quelle heure est-il au belgique en ce moment",
+      "quelle heure est-il à paris",
+      "l'heure est-elle différente à paris",
+      "convertit le fuseau horaire"
+    ],
+    "action_centroide": "HEURE_QUERY",
+    "analyse_extremes": "Toutes ces phrases interrogent le module système pour obtenir l'heure dans différentes zones géographiques (AMAZON.TimeIntent + lieux). L'action de conversion (calcul) appartient au même module. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "fait-il chaud à l'extérieur",
+      "quel est le statut de la météo actuelle",
+      "quel temps fait t'il cette semaine",
+      "regarde la météo de la semaine prochaine pour moi s'il te plait",
+      "comment il fait chaud dehors"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "L'ensemble du cluster cible la vérification des prévisions ou des conditions météorologiques actuelles (Weather API). Aucune ambiguïté d'intention. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quel est mon programme d'événements demain",
+      "ai-je des événements de calendrier aujourd'hui",
+      "ai-je quelque chose de prévu pour le sept mars",
+      "quand est le prochain rendez-vous sur mon calendrier",
+      "ai-je des événements à venir dans mon calendrier"
+    ],
+    "action_centroide": "CALENDRIER_QUERY",
+    "analyse_extremes": "L'action système déclenchée pour toutes les phrases est la lecture des événements programmés dans l'agenda (AMAZON.SearchAction sur Calendar). Les notions temporelles sont gérées en paramètres. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "pourriez-vous s'il vous plaît affiche les vidéos pour cuisiner des plats italien",
+      "olly comment faire de la bisque de homard",
+      "comment est cuit le pav bhaji",
+      "quel est la nourriture la plus sexy à cuisiner à un rendez-vous",
+      "pendant combien de temps dois-je cuire une pizza au four pour qu'elle soit parfaitement croustillante"
+    ],
+    "action_centroide": "CUISINE_QUERY",
+    "analyse_extremes": "Le cluster rassemble des requêtes d'assistance culinaire, de recherche de vidéos de recettes, de conseils ou de temps de cuisson. Toutes ces requêtes sont servies par les Skills de cuisine vidéo/texte de l'assistant (AMAZON.Food). Domaine respecté. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "je suis allé chez walmart aujourd'hui",
+      "cite les articles sur ma liste de shopping olly",
+      "qu'est-ce qu'il y a sur ma liste de course aujourd'hui",
+      "quelles sont mes listes",
+      "quelles sont les listes disponibles"
+    ],
+    "action_centroide": "ACTUALITE_QUERY",
+    "analyse_extremes": "Le centroïde est une affirmation passive de l'utilisateur ('je suis allé chez walmart') sans requête API. Les autres phrases demandent explicitement la lecture de la base de données ListManagement de l'assistant (AMAZON.ReadListIntent). Divergence majeure d'intention. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quelles sont les prévisions de cette semaine",
+      "quelle sera la température dehors demain",
+      "quelles sont les prévisions météorologiques pour demain",
+      "quel temps fait-il à paris",
+      "est-ce qu'il fait ensoleillé à nice maintenant"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Toutes les phrases déclenchent l'intention Météo (Weather API). 'Ensoleillé' et 'température' ciblent le même service. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quel est le groupe qui chante maintenant",
+      "qu'elle est cette chanson",
+      "envoie-moi les paroles de cette chanson",
+      "qui est le chanteur de cette chanson",
+      "ma chanteuse préférée est shakira"
+    ],
+    "action_centroide": "MUSIQUE_QUERY",
+    "analyse_extremes": "Le centroïde et les 3 phrases suivantes interrogent les métadonnées (ID3) du lecteur musical actif (AMAZON.SearchAction sur AudioPlayer). La dernière phrase est déclarative ('ma préférée est...') potentiellement pour une base de préférences (Persona/Settings) mais ne déclenche pas de requête au moment T. Impur.",
+    "niveau_confiance": 95,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "rappelle-moi dans une heure ma réunion",
+      "rappelle moi le calendrier",
+      "rappelle-moi d'aller au magasin tous les vendredis",
+      "n'oubliez pas de me le rappeler",
+      "définir un rappel que je dois rendre visite à mon père demain"
+    ],
+    "action_centroide": "RAPPEL_CREER",
+    "analyse_extremes": "Les phrases 1, 3, 4 et 5 ordonnent l'enregistrement d'un trigger dans l'API Reminders. La phrase 2 ('rappelle moi le calendrier') demande probablement de lui 'lire' son agenda, ou une erreur de formulation. La Règle 1 impose une rigueur d'API. Impur.",
+    "niveau_confiance": 90,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "supprimer un objet de ma liste",
+      "veuillez supprimer la première liste",
+      "veuillez supprimer la liste intitulée kickball",
+      "je ne veux plus de cette liste",
+      "supprime la dernière ligne"
+    ],
+    "action_centroide": "LISTE_MODIFIER",
+    "analyse_extremes": "Le centroïde et l'extrême 5 demandent la suppression d'un objet (item) *dans* une liste existante (RemoveListItem). Les phrases 2, 3 et 4 demandent la destruction totale d'une Liste globale (DeleteList). Ces actions nécessitent des paramètres et des endpoints d'API distincts. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "lance mon aspirateur robot",
+      "salut olly comment puis-je démarrer le robot aspirateur",
+      "aidez-moi à allumer l' aspirateur robot s'il vous plaît",
+      "s'il vous plaît démarre l' aspirateur",
+      "démarrer l' aspirateur maintenant"
+    ],
+    "action_centroide": "NETTOYAGE_COMMENCER",
+    "analyse_extremes": "Toutes ces phrases déclenchent une commande d'allumage ('TurnOn') via l'API Smart Home, spécifiquement dirigée vers le device 'Aspirateur' (Vacuum cleaner). Action commune validée. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "vérifie tous les e-mails de tom brady",
+      "salut ai- je reçu de nouveaux e-mails",
+      "regarde mes mail",
+      "affiche les non lus",
+      "y a-t-il de nouveaux e-mails dans ma boite de réception"
+    ],
+    "action_centroide": "EMAIL_QUERY",
+    "analyse_extremes": "L'action demandée par l'ensemble des phrases est la consultation (GET) des données de l'API Email. 'Tom Brady' et 'non lus' sont de simples filtres de requête. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "supprimer mon événement de calendrier à une p. m. aujourd'hui",
+      "supprime le prochain événement du calendrier",
+      "veuillez annuler le prochain événement du calendrier",
+      "supprimer la réunion",
+      "supprimer du calendrier le prochain événement"
+    ],
+    "action_centroide": "CALENDRIER_SUPPRIMER",
+    "analyse_extremes": "Toutes les phrases exigent la suppression d'un bloc de l'agenda (DeleteEvent sur la Calendar API). Le type ou l'heure de l'événement sont des slots. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quel est le taux de change du euro",
+      "euro à u. s. d.",
+      "olly est-ce qu'un dollar vaut plus ou moins au brésil",
+      "combien vaut l'euro par rapport au dollar canadien",
+      "quel est le taux de change entre le dollar américain et l'euro"
+    ],
+    "action_centroide": "ECONOMIE_QUERY",
+    "analyse_extremes": "Toutes ces questions ciblent l'API de conversion des devises ou le marché des changes (ExchangeRate). Les monnaies sont des entités (Règle 3). Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "qui a chanté ça",
+      "quelle est la chanson en cours",
+      "donne moi des informations sur la chanson en cours de lecture",
+      "qui et pourquoi est au théâtre ce soir",
+      "qui était dans les superbus"
+    ],
+    "action_centroide": "MUSIQUE_QUERY",
+    "analyse_extremes": "Les phrases 1, 2 et 3 ciblent les métadonnées du lecteur musical. L'extrême 4 interroge les événements locaux ('théâtre ce soir'). L'extrême 5 ('superbus') est une requête encyclopédique ou musicale sans lien avec le flux actif. Diversité d'actions. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "olly death metal maintenant",
+      "olly rends le salon bleu",
+      "olly trending topics d'actualité chauds",
+      "olly active une autre couleur de lumière",
+      "olly comment ça va"
+    ],
+    "action_centroide": "MUSIQUE_JOUER",
+    "analyse_extremes": "Le centroïde demande la lecture d'un genre musical. Les phrases suivantes demandent respectivement : le contrôle domotique (Lumière bleue), les informations (Actualité), et du dialogue ouvert ('comment ça va'). Le cluster est chaotique et viole fondamentalement la Règle 5. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "comment est le trafic de la maison au travail",
+      "le trafic actuel",
+      "pourriez-vous s'il vous plaît vérifier le trafic vers notre maison",
+      "le trafic est dense",
+      "quel est le trafic habituel de bruxelles belgique"
+    ],
+    "action_centroide": "NAVIGATION_QUERY",
+    "analyse_extremes": "Toutes les phrases demandent de rapporter l'état de la circulation (Traffic API), soit de manière générique, soit entre deux lieux donnés (A to B via GetDirections). Le domaine est respecté. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quelle est la date et l'heure d' aujourd'hui",
+      "quelle est la semaine aujourd'hui",
+      "puis-je avoir la date d'aujourd'hui",
+      "qu'y a t il aujourd'hui",
+      "comment est la journée aujourdhui"
+    ],
+    "action_centroide": "DATE_QUERY",
+    "analyse_extremes": "Le centroïde et les extrêmes 2 et 3 interrogent l'horloge/date système de l'OS. Les extrêmes 4 et 5 ('qu'y a-t-il aujourd'hui', 'comment est la journée') sont plus larges et peuvent déclencher l'API d'agenda (Events) ou l'API News (Flash Info). Divergence d'intention possible. Impur.",
+    "niveau_confiance": 95,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "qu'est-ce qui est sur la liste pour aujourd'hui",
+      "ouvrir ma liste",
+      "lis la liste",
+      "pouvez-vous me dire quels sont les articles sur ma liste d' épicerie",
+      "lire ma liste de course pour aujourd'hui"
+    ],
+    "action_centroide": "LISTE_QUERY",
+    "analyse_extremes": "Toutes les phrases déclenchent l'action 'AMAZON.ReadListIntent' de la part du système pour énoncer le contenu des listes liées. Action strictement commune. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quelle est l'heure centrale actuelle",
+      "quelle heure est-il à lyon",
+      "quel est le décalage horaire entre l' est et le pacifique",
+      "quelle heure est-il à paris étage",
+      "quelle heure est-il à sol orlando"
+    ],
+    "action_centroide": "HEURE_QUERY",
+    "analyse_extremes": "Toutes ces phrases interrogent l'API d'horloge de l'assistant (AMAZON.TimeIntent) avec différents paramètres géographiques (lieux ou fuseaux horaires). Le moteur d'intention système est le même. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quelles sont les cinq dernières listes que j'ai faites",
+      "envoyez-moi la dernière liste téléchargée",
+      "fais-moi une liste de nombres",
+      "qu'est-ce qui est sur ma liste de choses à faire pour aujourd'hui",
+      "vérifiez le point cinq sur ma liste de choses à faire"
+    ],
+    "action_centroide": "LISTE_QUERY",
+    "analyse_extremes": "Le centroïde et le 4ème extrême demandent de consulter des listes (GET). L'extrême 2 demande d'envoyer un fichier téléchargé (Action de partage). L'extrême 3 ('fais-moi une liste') demande une création. L'extrême 5 demande la validation (Update) d'une tâche. Mélange d'actions (CRUD complet). Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quel temps fait-il ici",
+      "est-il ensoleillé quel est la température au sud",
+      "va-t-il pleuvoir demain à paris",
+      "quelle est la météo à paris",
+      "ok google quel temps fait-il"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Toutes les requêtes portent sur la Météo (Weather API). 'Ici', 'paris' et 'demain' sont des variables spatio-temporelles. Le trigger NLU est homogène. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quel est le temps en inde quand le temps aux états-unis est douze heures de l'après-midi",
+      "dis-moi l'heure actuelle à ottawa",
+      "donne-moi le temps à londres",
+      "s'il vous plaît convertir neuf heures du matin h.n.c à h.n.e.",
+      "laissez-moi savoir l'heure en inde"
+    ],
+    "action_centroide": "HEURE_QUERY",
+    "analyse_extremes": "Le centroïde et la 4ème phrase sont des calculs ou conversions de fuseaux horaires gérés par l'API Horloge (AMAZON.TimeIntent). Les autres demandent l'heure simple. C'est le même moteur fonctionnel pour toutes les phrases. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "directions vers hôtel plaza athénée",
+      "trouvez-moi un tour au centre commercial d'amérique s'il vous plaît"
+    ],
+    "action_centroide": "NAVIGATION_QUERY",
+    "analyse_extremes": "La première phrase est un calcul d'itinéraire vers un hôtel (Maps API). La deuxième ('trouvez un tour') peut vouloir dire 'réserve un VTC' (Transportation API) ou lancer une recherche locale (Local Search). Ambigu et actions potentiellement dissemblables. Impur.",
+    "niveau_confiance": 90,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "s'il s'agit d'un bien de consommation quel est le retour client",
+      "je ne suis pas satisfait de tesco s'il vous plaît aidez-moi",
+      "tweete une réclamation à au site internet de old navy",
+      "envoie un tweet à united airlines je suis en colère que vous avez perdu mes bagages",
+      "j'ai eu un service horrible à olive garden je dois les tweeter"
+    ],
+    "action_centroide": "RECHERCHE_WEB",
+    "analyse_extremes": "Le centroïde demande un retour client (Review Search). L'extrême 2 demande de l'aide au support client de Tesco. Les extrêmes 3, 4 et 5 sont des publications sur le réseau social Twitter (POST sur Social Media API). Mélange de Query Web et d'action Sociale. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "montre moi les derniers e-mails seulement",
+      "de nouveau emails dans les cinq dernières minutes",
+      "afficher tous les e-mails reçus récemment avec horodatage",
+      "montre moi un nouvel e mail",
+      "qui m'ont envoyé un e-mail récemment et quels sont les sujets de chaque e-mail"
+    ],
+    "action_centroide": "EMAIL_QUERY",
+    "analyse_extremes": "Toutes les phrases déclenchent l'API de consultation de messagerie pour lister ou résumer des messages. Les contraintes de temps ('cinq dernières minutes') ne changent pas l'action principale. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "dis-moi la brève définition de évacuation",
+      "peux-tu dire le mot démonétisation",
+      "la question suivante vous demande d'analyser les objectifs de l'enseignant et les actions prévues",
+      "utiliser dans une phrase",
+      "en définissant des mots propose le dictionnaire et utilise les dans une phrase pour rendre cela plus clair"
+    ],
+    "action_centroide": "DEFINITION_QUERY",
+    "analyse_extremes": "Le centroïde, l'extrême 4 et 5 sollicitent l'API d'encyclopédie ou de dictionnaire. L'extrême 2 demande de prononcer un mot (Text-To-Speech API simple). L'extrême 3 est la description d'une tâche éducative hors contexte Assistant. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "supprimer le fichier excel de la liste",
+      "veuillez supprimer cet objet de la liste",
+      "supprimer l'objet trois",
+      "supprimer cet objet de ma liste",
+      "supprimer ma liste de choses à faire"
+    ],
+    "action_centroide": "LISTE_MODIFIER",
+    "analyse_extremes": "Le centroïde demande la suppression d'un élément d'une liste ('fichier excel' est utilisé comme nom d'item). Les phrases 2, 3 et 4 retirent aussi un élément (RemoveListItem). Le dernier extrême demande la suppression entière de la Liste (DeleteList). Actions sur la BDD distinctes. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "demande un taxi au service de udrive",
+      "réserver un taxi pour une prise en charge à mon emplacement actuel dans une heure",
+      "prends-moi un taxi pour m'emmener à l'aéroport vendredi à cinq heures trente du matin",
+      "veuillez réserver le prochain taxi",
+      "ouvrez l'application uber et procurez-moi une voiture s'il vous plaît"
+    ],
+    "action_centroide": "TRANSPORT_RESERVER",
+    "analyse_extremes": "Toutes ces phrases exigent du système de lancer une transaction pour appeler/réserver un véhicule (AMAZON.BookAction) auprès de diverses Skills partenaires (Udrive, Uber, Taxi local). L'action est la même. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quand commencera le match",
+      "quand est prévu le mariage",
+      "à quelle heure commence le dîner de la fête ce soir",
+      "que se passe-t-il à cet événement",
+      "quand est l'événement"
+    ],
+    "action_centroide": "SPORT_QUERY",
+    "analyse_extremes": "Le centroïde cible l'horaire d'un 'match' (Sports API). Les extrêmes 2, 3 et 5 demandent les horaires d'événements privés ('mariage', 'dîner') via le Calendar API. Les sources d'informations diffèrent (Événements publics vs Agenda privé). Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "siri comment est la température à l'extérieur",
+      "météo du lundi",
+      "météo du mardi",
+      "peux tu me dire s'il te plait les conditions météos actuelles",
+      "météo à homestead"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Toutes les phrases déclenchent l'intention de météo (Weather API). 'Siri' est simplement l'invocation du système. Les entités de jour (Lundi, Mardi) sont de simples paramètres. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "va-t-il neiger cette semaine",
+      "va-t-il neiger la semaine prochaine",
+      "olly accumulation de prévisions de neige à buffle",
+      "y aura-t-il de la neige la semaine prochaine",
+      "combien de neige ontario a-t-il reçu jusqu'à aujourd'hui"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Toutes les requêtes cherchent les prévisions ou historiques météorologiques pour le paramètre spécifique 'Neige' (Snow). L'intention NLU sous-jacente reste toujours la météo. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "commence le chapitre sept de l'agent secret",
+      "reprends le livre audio l'agent secret",
+      "continue à lire mon livre audio",
+      "mets en pause le livre audio",
+      "commence à jouer le livre audio de johns"
+    ],
+    "action_centroide": "LECTURE_COMMENCER",
+    "analyse_extremes": "Le centroïde et les extrêmes 2, 3 et 5 commandent le déclenchement de la lecture (AMAZON.ResumeIntent/Play). Le 4ème extrême exige de mettre en pause (AMAZON.PauseIntent), qui est l'action opposée (Arrêter le flux vs Démarrer le flux). Piège des antonymes (Règle 4). Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quels événements se passent près de moi",
+      "théâtres proche de chez moi",
+      "parle moi des activités dans ma région ce week end",
+      "montre-moi tous les événements qui se passent à rhône-alpes",
+      "s'il vous plaît rechercher des événements dans mon emplacement"
+    ],
+    "action_centroide": "EVENEMENT_QUERY",
+    "analyse_extremes": "Les 5 phrases requièrent l'assistant d'interroger la 'Local Search API' pour lister des entités de type événement ou loisir dans le secteur de l'utilisateur. Domaine cohérent. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "olly éteindre les lumières",
+      "voulez-vous éteindre toutes les lumières",
+      "s'il vous plaît tamiser les lumières dans la chambre",
+      "éteins ma lampe de chevet s'il te plait",
+      "augmente la luminosité du salon"
+    ],
+    "action_centroide": "LUMIERE_MODIFIER",
+    "analyse_extremes": "Cas d'antonymes caractérisé (Règle 4). Les phrases 1, 2 et 4 commandent l'extinction du périphérique (TurnOff). Les phrases 3 et 5 commandent l'augmentation ou la baisse de l'intensité, ce qui maintient ou met l'appareil dans l'état Allumé (SetPercentage). Actions différentes. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "le jouet suivant ne me quitte pas",
+      "joue s'il te plaît ma chanson préférée de jacques brel",
+      "olly mets ne me quitte pas de jacques brel",
+      "s'il te plaît joue je t'aime de lara fabian",
+      "après celui-ci joues moi la chanson ne me quitte pas"
+    ],
+    "action_centroide": "MUSIQUE_JOUER",
+    "analyse_extremes": "Le centroïde est une mauvaise transcription probable (jouet au lieu de jouer). L'intention commune est d'écouter de la musique via l'API multimédia. Les chanteurs et chansons sont des variables ignorables. L'action est identique. Pur.",
+    "niveau_confiance": 95,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "merci de vérifier les e-mails récents sur les études de cet expéditeur",
+      "ouvre mon compte e-mail et vérifie les nouveaux e-mails",
+      "quels nouveaux messages j' ai",
+      "ouvre mes nouveaux e-mails",
+      "vérifie les e-mails de cindy"
+    ],
+    "action_centroide": "EMAIL_QUERY",
+    "analyse_extremes": "Toutes les phrases déclenchent l'action de consultation et de lecture du courrier entrant (Communications API). L'action demandée est strictement de niveau GET pour l'application messagerie. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "pouvez-vous me suggérer des aliments sains pour le dîner",
+      "ta recette de steak était superbe",
+      "des oeufs et des patisseries",
+      "niveaux de chauffage à quelles heures dans l' appartement",
+      "cuisson"
+    ],
+    "action_centroide": "CUISINE_QUERY",
+    "analyse_extremes": "Le centroïde et les extrêmes 2, 3, 5 ciblent le domaine culinaire. L'extrême 4 ('niveaux de chauffage... dans l'appartement') est une requête liée à la Domotique ou Smart Home pour le réglage des températures. Mixage de catégories. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "cherche un taxi pour rentrer à la maison",
+      "réserve uber de chez ma maison",
+      "prenons un taxi",
+      "réserver un taxi pour l' aéroport pour demain matin",
+      "réserver mon taxi disponible le plus proche"
+    ],
+    "action_centroide": "TRANSPORT_RESERVER",
+    "analyse_extremes": "L'intention de l'utilisateur est de commander/réserver une course automobile via les Skills associées. Les lieux ('aéroport', 'maison') et l'heure ('demain matin') sont paramétriques. Action de commande unique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "pouvez-vous supprimer tous les événements de mon calendrier",
+      "supprimer tous les événements et informations",
+      "hé siri assurez-vous que mon calendrier est complètement vide demain",
+      "pouvez-vous effacer l'événement passé que j'ai visité",
+      "s'il vous plaît supprimer tous les rappels de dimanche"
+    ],
+    "action_centroide": "CALENDRIER_SUPPRIMER",
+    "analyse_extremes": "Le centroïde et les extrêmes 2, 3, 4 ciblent l'API de calendrier (DeleteEvent). Le 5ème extrême demande la suppression des 'rappels' (Reminders API). Ces deux fonctions système ne ciblent pas la même base de données. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "combien d e-mails aujourd'hui",
+      "vérifier tous les e-mails d'eric",
+      "olly s'il te plaît vérifie si j'ai reçu des e-mails de maman",
+      "google trouve la nouvelle adresse e-mail pour bill que j'ai ajoutée vendredi",
+      "s'il vous plaît dites -moi si july m'a envoyé des e-mails"
+    ],
+    "action_centroide": "EMAIL_QUERY",
+    "analyse_extremes": "Le centroïde et les phrases 2, 3 et 5 ciblent la boîte de réception (Lecture du contenu des e-mails). L'extrême 4 ('trouve la nouvelle adresse e-mail pour bill') cible l'API de Contacts (Carnet d'adresses). Ces API sont connexes mais techniquement différentes. Impur.",
+    "niveau_confiance": 95,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "le nettoyage est bon la poussière est si mauvaise fais maintenant ta magie nettoie mon tapis",
+      "démarrez le robot aspirateur à treize heures aujourd'hui",
+      "olly démarrer l' aspirateur",
+      "pouvez-vous démarrer le roomba",
+      "démarrer mon aspirateur tous les jours de dix heures du matin à onze heures du matin"
+    ],
+    "action_centroide": "NETTOYAGE_COMMENCER",
+    "analyse_extremes": "Toutes ces phrases sont dirigées vers le même sous-domaine de Smart Home (Smart Vacuum) via la directive TurnOn (Démarrer/Nettoyer). La planification horaire est un paramètre du webhook. Action identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "commande deux grandes pizzas et des morceaux d'ailes chaudes chez dominoes",
+      "j'ai besoin de me faire livrer une pizza à lyon",
+      "domino's fait des plats à emporter",
+      "état de la commande au restaurant",
+      "commande un hamburger au fromage avec double bacon et fromage américain blanc"
+    ],
+    "action_centroide": "RESTAURATION_COMMANDER",
+    "analyse_extremes": "Le centroïde, le 2ème et le 5ème extrême sont des créations de commande (POST) auprès de services de livraison. Le 3ème extrême est une demande d'info générale. Le 4ème extrême ('état de la commande') est un suivi logistique (GET). Différentes actions API. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "races de chiens les plus hypoallergéniques",
+      "combien de tasses y a-t-il dans un quart",
+      "où est bordeaux",
+      "qui est le gouverneur de paris",
+      "l'animal le plus long"
+    ],
+    "action_centroide": "ENCYCLOPEDIE_QUERY",
+    "analyse_extremes": "Les recherches portent sur la biologie animale (chiens, animal long), la géographie, la politique, et la conversion de volumes (tasses). Le domaine thématique exigé par la Règle 2 n'est pas homogène. Ces phrases nécessiteraient un graphe de connaissances diversifié. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "caisse aujourd'hui régler l'alarme de dix heures du matin",
+      "est-ce que j'ai mis une alarme pour se réveiller le matin",
+      "s'il vous plaît régler l'alarme pour",
+      "dis moi mes alarmes",
+      "supprime mes premières alarmes"
+    ],
+    "action_centroide": "ALARME_CREER",
+    "analyse_extremes": "Le centroïde exige la création d'alarme (SetAlarm). Les extrêmes 2 et 4 exigent la lecture des alarmes (GetAlarm). L'extrême 5 demande la suppression (CancelAlarm). Mixage complet des types d'opérations (CRUD). Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quelle heure est-il dans une autre ville",
+      "quelle heure est-il pour le fuseau horaire de l' est",
+      "passer au fuseau horaire de l' est",
+      "quelle heure est-il à tokyo japon",
+      "salut olly quelle heure est-il à orlando floride"
+    ],
+    "action_centroide": "HEURE_QUERY",
+    "analyse_extremes": "La plupart des requêtes ciblent l'horloge mondiale (AMAZON.TimeIntent). L'extrême 3 ('passer au fuseau horaire') est une directive de paramétrage de l'OS système, modifiant l'état interne de l'assistant, plutôt qu'une demande d'heure. Consultation vs Modification. Impur.",
+    "niveau_confiance": 95,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "comment cuisiner des pois aux yeux noirs",
+      "donne moi des recettes",
+      "utilise google pour me montrer comment cuisiner",
+      "donne moi les meilleures idées de cuisine",
+      "montre moi la recette des biscuits"
+    ],
+    "action_centroide": "CUISINE_QUERY",
+    "analyse_extremes": "Toutes ces requêtes appellent les outils d'apprentissage culinaire de l'assistant, y compris celle mentionnant 'google' qui est un passe-plat vers la recette. Le domaine NLU ciblé est homogène. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quelle sera la météo la semaine prochaine",
+      "quel temps fait-il cette semaine",
+      "est-ce que aujourd'hui sera un jour ensoleillé",
+      "quel temps fait-il à nice maintenant",
+      "quelle chaleur fait-il à paris"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Toutes les phrases de ce groupe invoquent le composant Météo de l'assistant (Weather API) pour des informations thermiques, solaires ou générales. Action métier commune. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "marquer deux jours après celui ci comme mes vacances",
+      "ajouter un événement à partir de trois heures du soir à goshen new york le cinq mai pour la remise des diplômes de dan",
+      "je veux ajouter une date de déjeuner avec mike jim et bob",
+      "pouvez-vous s'il vous plaît ajouter mes réservations pour le dîner à mon calendrier",
+      "avez-vous ajouté la réunion de demain à mon calendrier"
+    ],
+    "action_centroide": "CALENDRIER_CREER",
+    "analyse_extremes": "Les 4 premières phrases ajoutent une entrée dans l'agenda (Calendar API via POST/CreateEvent). La dernière ('avez-vous ajouté...') est une question de vérification, qui requiert une lecture de l'agenda (GET/SearchEvent). Écriture vs Lecture = Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "y a-t-il des problèmes de circulation",
+      "quel est le trafic ce matin",
+      "quel est le trafic maintenant",
+      "comment est le trafic près de chez moi",
+      "quel est le trafic actuel à paris"
+    ],
+    "action_centroide": "NAVIGATION_QUERY",
+    "analyse_extremes": "Toutes les phrases sont orientées vers l'API d'état du trafic routier (Traffic/Maps). Le moment (matin, maintenant) ou le lieu (paris, chez moi) sont des entités qui n'altèrent pas l'action de consultation des bouchons. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "envoie un e-mail à suzanne et jean",
+      "envoie le message suivant à ce contact s'il te plaît",
+      "envoie un email à maman avec pour sujet temps et pour corps il fait quel temps cette semaine",
+      "envoie un e-mail à jean",
+      "envoie bonne année à john at gmail dot com"
+    ],
+    "action_centroide": "EMAIL_CREER",
+    "analyse_extremes": "L'action demandée par l'intégralité du groupe est d'envoyer un message via le client mail (Communications API). La présence ou l'absence du corps de texte ou du sujet ne sont que des paramètres de la même action globale. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "taux de change",
+      "dites-moi le taux de change de dix dollars à l'euro",
+      "olly quel est le taux de change entre le dollar américain et le dollar australien",
+      "s'il te plaît recherche l'échange entre les états-unis et le mexique",
+      "quel est le taux de change pour samsung"
+    ],
+    "action_centroide": "ECONOMIE_QUERY",
+    "analyse_extremes": "Les 4 premières requêtes s'adressent à l'outil de conversion de devises. La dernière ('taux de change pour samsung') est une erreur de formulation ou cherche la valeur d'une action en bourse. Par précaution sur la variation du type d'entité, le cluster est légèrement impur.",
+    "niveau_confiance": 85,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "augmenter les lumières s'il vous plaît",
+      "s'il te plait augmente la lumière",
+      "peux-tu éteindre ma lampe de bureau",
+      "augmenter la lumière de la lampe",
+      "allume les lumières ici s'il te plait"
+    ],
+    "action_centroide": "LUMIERE_MODIFIER",
+    "analyse_extremes": "Nouveau cas d'antonymes liés à la Smart Home (Règle 4). Le centroïde et les extrêmes 2, 4 et 5 commandent l'augmentation de la luminosité ou l'allumage ('TurnOn'). L'extrême 3 ordonne l'extinction ('TurnOff'). Directions de commande matériel opposées. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "joue alizée"
+    ],
+    "action_centroide": "MUSIQUE_JOUER",
+    "analyse_extremes": "Phrase unique. Pur par défaut.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "donne-moi l'état de ma mémoire disponible",
+      "olly quel est mon agenda pour le rappel de la semaine",
+      "ai-je des rappels aujourd'hui",
+      "quelles sont mes alertes actuelles",
+      "ai-je un rappel en attente"
+    ],
+    "action_centroide": "SYSTEME_QUERY",
+    "analyse_extremes": "Le centroïde demande le statut du matériel (stockage mémoire). Les 4 autres phrases interrogent la base de données logicielle des Rappels/Alertes en attente (Reminders API). Ces actions visent des composants de l'assistant complètement dissemblables. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "montre moi comment cuisiner une recette",
+      "combien de temps dois-je refroidir une tarte glacière",
+      "comment cuisiner quatre omelette au fromage",
+      "obtenir la recette pour faire un hot-dog",
+      "recette de mijoteuse pour le poulet alfredo"
+    ],
+    "action_centroide": "CUISINE_QUERY",
+    "analyse_extremes": "Tout le cluster cible l'API de recettes et d'instructions culinaires. Le 2ème extrême est une étape technique spécifique (temps de refroidissement), géré par le même type de bases de connaissances que la cuisson de l'omelette. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quel jour est le seize avril",
+      "quel jour de la semaine tombe le vingt-deux ce mois",
+      "jour du vingt-deux avril",
+      "quel jour de la semaine est le vingt-sept juin de cette année",
+      "est le vingt-trois avril un samedi"
+    ],
+    "action_centroide": "DATE_QUERY",
+    "analyse_extremes": "Toutes ces phrases interrogent la fonction du calendrier perpétuel système pour obtenir la correspondance entre une date numérique et un jour de la semaine. Fonctionnement univoque de l'API. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quel genre de magasins sont près de ma localité",
+      "olly quels sont les restaurants près de moi",
+      "où puis-je trouver le irish pub le plus proche dans ma région",
+      "olly quels bars sont autour de moi",
+      "combien y a-t-il d' épiceries dans mon quartier"
+    ],
+    "action_centroide": "LOCAL_QUERY",
+    "analyse_extremes": "Toutes les phrases déclenchent l'API de 'Local Search'. Cependant, les catégories de lieux diffèrent : Magasins, Restaurants, Pub, Épiceries. La Règle 2 exige que pour un QUERY, le domaine d'information soit strictement le même. Retail vs Food & Beverage les rend impurs selon la nomenclature.",
+    "niveau_confiance": 95,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "cours de clôture d'aujourd'hui pour google",
+      "mentionner le cours de l'action hdfc",
+      "quand les stocks d' iphone baissent-ils souvent",
+      "nom de la société en bourse",
+      "donne moi le cours d'ouverture d'apple"
+    ],
+    "action_centroide": "BOURSE_QUERY",
+    "analyse_extremes": "Les phrases 1, 2, 4 et 5 sont des requêtes simples à la bourse (Stock API). La phrase 3 ('quand les stocks baissent-ils souvent') est une requête d'analyse prédictive ou d'historique de marché qui n'est pas supportée par une simple lecture du 'cours'. Impur.",
+    "niveau_confiance": 90,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "hey olly dis moi une blague",
+      "je veux une blague de nerd",
+      "peux-tu me raconter une bonne blague",
+      "ouvre certains blagues sympas",
+      "dis-moi une blague"
+    ],
+    "action_centroide": "BLAGUE_QUERY",
+    "analyse_extremes": "L'intention de l'utilisateur est de générer une blague via l'Easter Egg (AMAZON.TellJokeIntent) pour toutes les phrases de ce cluster. Action parfaitement homogène. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "mode",
+      "voitures",
+      "google",
+      "des sports",
+      "explique"
+    ],
+    "action_centroide": "BRUIT_SEMANTIQUE",
+    "analyse_extremes": "Aucun verbe d'action clair à l'exception de 'explique' (qui n'a pas d'objet défini). Les autres sont des mots clefs aléatoires appartenant à des univers complètement dissociés (Mode, Web, Automobile, Sports). Règle 5 de sujets multiples non respectée. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "regarde mon email",
+      "ouvrir l'e-mail de terry",
+      "fait apparaît mon e-mail",
+      "a qui ai je envoyé un e-mail récemment",
+      "quels sont les objets et expéditeurs dans la boite de réception d' aujourd'hui"
+    ],
+    "action_centroide": "EMAIL_QUERY",
+    "analyse_extremes": "Toutes les phrases commandent à l'assistant de lire et d'afficher le contenu de la boîte mail (Communications API). L'action applicative est identique pour toutes. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quel temps fera-t-il le sept",
+      "dis-moi le temps qu'il fera cette semaine",
+      "quel temps fait-il dehors",
+      "dis moi la météo à bordeaux",
+      "quelles sont les prévisions météorologiques pour paris"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Toutes les requêtes cherchent des informations climatiques à court ou moyen terme en sollicitant l'API Weather. Action commune indiscutable. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "dis-moi qu'un euro équivaut à des dollars",
+      "quel est le taux de change entre euro et dollar canadien",
+      "taux de change que j'obtiendrai avec une devise étrangère",
+      "taux de change entre dollar et euro",
+      "changer les taux du dollar en roupies"
+    ],
+    "action_centroide": "ECONOMIE_QUERY",
+    "analyse_extremes": "Les cinq phrases de ce groupe ciblent le convertisseur financier ou l'API des marchés des devises pour un taux de change. L'intention de la requête et le type d'API appelé sont alignés. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quel jour est le jour du souvenir cette année",
+      "quel jour de la semaine tombe le vingt deux mars",
+      "quel jour de la semaine est action de grâces",
+      "quel sera le jour du quinze mars",
+      "je veux la date du dernier lundi de ce mois"
+    ],
+    "action_centroide": "DATE_QUERY",
+    "analyse_extremes": "Toutes ces phrases interrogent la fonction du calendrier perpétuel pour mapper un nom de jour (lundi), une fête (jour du souvenir) ou un numéro (quinze) avec le jour réel de la semaine/année. Action de calcul temporel identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "est la réunion prévue pour demain",
+      "j'ai eu beaucoup de réunions aujourd'hui",
+      "agenda",
+      "quand est ma prochaine réunion",
+      "ai-je des réunions demain à neuve heure du soir"
+    ],
+    "action_centroide": "CALENDRIER_QUERY",
+    "analyse_extremes": "Les phrases 1, 4 et 5 posent une question sur l'agenda (SearchEvent). 'Agenda' seul (phrase 3) déclenche souvent la vue du jour (ReadEvent). La 2ème phrase ('j'ai eu beaucoup de réunions aujourd'hui') est conversationnelle et non commanditaire. Dissonance d'actions. Impur.",
+    "niveau_confiance": 95,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "commence la lecture de la fille au sous sol du chapitre quatre",
+      "livre audio joue le petit chaperon rouge",
+      "reprends la lecture de la leçon de français",
+      "s'il vous plaît lire le petit chaperon rouge",
+      "commencer la lecture de ce livre d' alan partridge"
+    ],
+    "action_centroide": "LECTURE_COMMENCER",
+    "analyse_extremes": "Toutes les phrases exigent le démarrage de l'AudioPlayer (Play/Resume) pour consommer un média littéraire ou éducatif (livre audio, leçon de français). Domaine et action technique de lecture cohérents. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "olly lance le podcast histoire de"
+    ],
+    "action_centroide": "PODCAST_JOUER",
+    "analyse_extremes": "Phrase unique. Pur par défaut.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quelle sera la température aujourd'hui pour lyon",
+      "vais je avoir besoin d'apporter un parapluie pour travailler aujourd'hui",
+      "les prévisions météorologiques que vous m'avez données sont pour la mauvaise ville je veux connaître la température là où je me trouve",
+      "est ce que le ciel sera couvert",
+      "quelles sont les prévisions météorologiques de cette semaine"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Toutes les phrases concernent la Météo (API Weather). La phrase 3 est une correction d'une erreur passée par l'utilisateur mais sa finalité ('je veux connaître la température') déclenche bien la même recherche météo que les autres, avec une variable de localisation mise à jour ('là où je me trouve'). Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "j'ai besoin de plus de lumières",
+      "donne-moi un faible éclairage dans la cuisine",
+      "tourner les lumières en bleu",
+      "allumer les lumières du salon en rouge",
+      "pouvez-vous s'il vous plaît éteindre la lumière de ma chambre"
+    ],
+    "action_centroide": "LUMIERE_MODIFIER",
+    "analyse_extremes": "Les 4 premières phrases modifient l'état d'un appareil allumé (Intensité ou Couleur). L'extrême 5 demande l'extinction totale du périphérique (TurnOff vs SetPercentage). Ces actions s'opposent matériellement. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "dis-moi qui a envoyé l'e-mail au sujet du patron hier",
+      "lis mes e mails non lus",
+      "vérifie les nouveaux e-mails",
+      "peux-tu vérifier si j' ai reçu des notifications d' e-mails récent",
+      "est-ce que j'ai de nouveaux e mails de john smith"
+    ],
+    "action_centroide": "EMAIL_QUERY",
+    "analyse_extremes": "Toutes ces phrases exigent la lecture ou la notification du courrier entrant (GET sur l'API Communications). Les filtres sont des slots (Sujet, Non lus, Nouveaux, Expéditeur). Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "olly dois-je porter des gants aujourd'hui",
+      "est-ce qu'il fera plus de quatre-vingt-dix degrés demain",
+      "est-ce que le parapluie est nécessaire pour ma sortie",
+      "dois-je porter une veste aujourd'hui",
+      "va-t-il pleuvoir demain"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Toutes les phrases appellent l'API météo. Demander si on a besoin de 'gants', 'parapluie' ou 'veste' est le cas d'usage conversationnel typique déclenchant l'intention Weather. L'action système est identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quelle est la définition d'assistant personnel",
+      "veuillez rechercher ce mot",
+      "rechercher la définition d'une ambulance",
+      "que signifie patate",
+      "décrire une pomme de terre"
+    ],
+    "action_centroide": "DEFINITION_QUERY",
+    "analyse_extremes": "Toutes les phrases déclenchent le module encyclopédique ou le dictionnaire système (Knowledge Graph) pour expliquer le sens sémantique ou visuel d'un concept/mot. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "affiche mes évènements à venir",
+      "où est le festival de la gastronomie ce soir",
+      "événements à venir",
+      "événement à venir",
+      "que faire ensuite sur les événements"
+    ],
+    "action_centroide": "EVENEMENT_QUERY",
+    "analyse_extremes": "Les phrases 1, 3 et 4 interrogent l'agenda privé du compte (Calendar API - Mes événements). La phrase 2 interroge la Local Search (Agenda public). Domaines de requêtes divergents. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "faites passer l' aspirateur pendant une heure s'il vous plaît",
+      "allumer le roomba",
+      "prends le roomba pour nettoyer la cuisine",
+      "active le robot aspirateur",
+      "allume l'aspirateur"
+    ],
+    "action_centroide": "NETTOYAGE_COMMENCER",
+    "analyse_extremes": "Toutes les requêtes appellent la 'Smart Home Skill API' avec la directive 'TurnOn' sur le device 'Robot aspirateur' (Roomba est une entité de marque). Action unique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "olly j'aime écouter le jazz",
+      "je veux écouter du rock",
+      "joue à snake avec moi",
+      "je veux écouter du soft rock",
+      "alexa joue aux échecs avec moi"
+    ],
+    "action_centroide": "MUSIQUE_JOUER",
+    "analyse_extremes": "Le centroïde et les extrêmes 2 et 4 commandent l'API de Streaming musical. Les extrêmes 3 ('snake') et 5 ('échecs') ordonnent le lancement de Skills ludiques (JEUX_JOUER). Domaines totalement séparés. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "dis-moi ce qui se passe quand nous mourons",
+      "le monde prendra-t-il fin quand",
+      "dis-moi comment le monde a commencé"
+    ],
+    "action_centroide": "PHILOSOPHIE_QUERY",
+    "analyse_extremes": "Ces trois requêtes s'adressent au Knowledge Graph pour des questions existentielles profondes sur l'univers et la vie. Elles requièrent le même domaine d'analyse documentaire ou d'IA conversationnelle. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "s'il te plaît commande un billet de train pour marseille",
+      "achète moi un billet pour prendre le train pour paris",
+      "réserver un ticket de train pour cette fois",
+      "je dois acheter un billet de train",
+      "réserve un billet de train pour"
+    ],
+    "action_centroide": "TRAIN_RESERVER",
+    "analyse_extremes": "Toutes les phrases sont la déclenchement explicite d'une transaction via l'intention AMAZON.BookAction auprès d'un prestataire ferroviaire. Les lieux sont des paramètres. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "pouvez-vous me donner les horaires de train pour ann arbor",
+      "quels sont les horaires de train pour",
+      "combien coûte un billet de train pour paris",
+      "liste tous les horaires de train pour new york",
+      "s'il vous plaît laissez-moi savoir l'heure du train du northern rail"
+    ],
+    "action_centroide": "TRANSPORT_QUERY",
+    "analyse_extremes": "Toutes les phrases sollicitent une recherche (GET) sur les API de transport ferroviaire. Qu'il s'agisse des horaires ('heure du train') ou de la tarification ('combien coûte'), ce sont des interrogations du domaine voyage non transactionnelles. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "commencer le nettoyage de la maison",
+      "démarrer le robot aspirateur pour nettoyer la maison",
+      "démarrer le café",
+      "salut"
+    ],
+    "action_centroide": "DOMOTIQUE_ACTIVER",
+    "analyse_extremes": "Le centroïde et la deuxième phrase demandent l'allumage d'un robot aspirateur via la directive 'TurnOn' de la Smart Home Skill API. Cependant, l'extrême 'démarrer le café' cible une cafetière connectée, et 'salut' déclenche l'API de conversation sociale (AMAZON.GreetingIntent). Selon la Règle 5 (Sujets multiples), le cluster est totalement impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "montre moi la météo de lyon d' une semaine",
+      "quel est le temps pour le reste de la semaine",
+      "quel est le temps qu'il fait maintenant",
+      "quel temps fait-il maintenant",
+      "quel type de temps puis-je attendre aujourd'hui"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Toutes les phrases déclenchent l'intention Météo native (AMAZON.WeatherIntent). Les paramètres de temps ('une semaine', 'maintenant') et de lieu ('lyon') sont de simples variables/entités gérées par l'API (Règle 3). L'action métier est unique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "supprimer le journal d'appels de ma liste de vacances",
+      "retirer les achats d' épicerie de la liste",
+      "nous n'avons plus de peinture alors enlevez la peinture de la salle de bain de la liste",
+      "supprimer une liste",
+      "supprimer la liste de musique de santana"
+    ],
+    "action_centroide": "LISTE_MODIFIER",
+    "analyse_extremes": "Le centroïde demande la suppression d'un élément précis dans une liste existante (RemoveListItem). L'extrême 'supprimer une liste' exige la destruction totale de la liste (DeleteList). L'extrême 'supprimer la liste de musique' cible l'API de streaming musical pour une playlist, et non l'API de gestion des tâches. Conflit total d'API (Règle 1). Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quel type d'outil est un poulet de chair et comment l'utiliser",
+      "définir grilloir pour moi",
+      "décrivez-moi à quoi ressemble une balle",
+      "pourriez-vous décrire cet objet s'il vous plaît",
+      "s'il te plait décris-moi un éléphant"
+    ],
+    "action_centroide": "DEFINITION_QUERY",
+    "analyse_extremes": "L'ensemble du cluster interroge le dictionnaire ou le Knowledge Graph d'Amazon pour obtenir la définition ou la description d'un objet (grilloir, balle, éléphant). Le domaine d'information est strictement encyclopédique. Les objets sont des entités ignorables (Règle 3). Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "je veux entendre ce podcast",
+      "démarre le podcast m. l. b. daily",
+      "écoute le dernier podcast de vincent cassel",
+      "pouvez-vous avancer un épisode dans le podcast",
+      "met le podcast"
+    ],
+    "action_centroide": "PODCAST_JOUER",
+    "analyse_extremes": "Le centroïde et les extrêmes 2, 3 et 5 commandent le déclenchement initial d'un flux audio (AMAZON.PlayMusicIntent ciblant les podcasts). En revanche, l'extrême 'avancer un épisode' est une commande de contrôle du lecteur (AMAZON.NextIntent). Lancer la lecture vs Contrôler la lecture sont deux actions système distinctes. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quoi de neuf sur itunes",
+      "quelles sont les mises à jour de news express",
+      "dis moi s'il y a quelque nouvelles sur ce sujet",
+      "avez-vous des nouvelles l'actualité fournit",
+      "titres technologie récent"
+    ],
+    "action_centroide": "MUSIQUE_QUERY",
+    "analyse_extremes": "Le centroïde ('quoi de neuf sur itunes') interroge l'App Store ou les sorties musicales. Les autres phrases interrogent l'API d'actualités mondiales ou technologiques (Flash Briefing/NewsIntent). Selon la Règle 2 des 'Query', mélanger la recherche de médias musicaux et l'actualité journalistique rend le cluster impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quel temps fait-il à bordeaux aujourd'hui",
+      "s'il te plaît montre moi la météo du vingt-sept mars deux mille dix-sept",
+      "la température actuelle",
+      "aurais-je besoin de crème solaire ce weekend",
+      "la météo mise à jour à l'aide de secondes par bit météo soit des prévisions mises à jour intellicast ou de weathercom toutes deux plutôt médiocres pour mon site"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Toutes les requêtes, y compris celle conversationnelle sur la 'crème solaire' ou la critique très verbeuse d'Intellicast, sont routées en bout de chaîne vers AMAZON.WeatherIntent. Le domaine d'information est 100% météorologique. Pur.",
+    "niveau_confiance": 95,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "il fait chaud aujourd'hui n'est-ce pas",
+      "il fait très chaud aujourd'hui n'est-ce pas",
+      "puis-je avoir les prévisions à dix jours pour ma région",
+      "donne les prévisions météorologiques pour cette semaine s'il te plaît",
+      "quelle est la météo de cette semaine"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Les deux premières phrases sont des constatations passives qui, dans le NLU d'un assistant, sollicitent une confirmation via l'API Météo. Les autres sont des requêtes explicites. Le domaine de l'intention finale est identique. Pur.",
+    "niveau_confiance": 95,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "trouve-moi un uber",
+      "réserve un taxi",
+      "commande moi un taxi",
+      "besoin d'un taxi demain à huit heures du matin",
+      "retrouvez un chauffeur uber disponible pour ce soir après vingt deux heures"
+    ],
+    "action_centroide": "TRANSPORT_RESERVER",
+    "analyse_extremes": "Toutes les phrases exigent l'action transactionnelle d'appeler ou de réserver un véhicule via les Skills de mobilité (AMAZON.BookAction / Ride Hailing API). L'heure de réservation ('demain', 'vingt deux heures') est une simple variable (Règle 3). Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "je voudrais du café maintenant",
+      "s'il vous plaît avance",
+      "c'est l'heure du café",
+      "la bourse s'il te plaît",
+      "faire du café maintenant"
+    ],
+    "action_centroide": "DOMOTIQUE_ACTIVER",
+    "analyse_extremes": "Le centroïde exige l'allumage d'une cafetière connectée (Smart Home). L'extrême 'avance' commande le lecteur média (AMAZON.NextIntent). L'extrême 'la bourse' interroge le cours financier (Stock API). Mélange chaotique de domaines. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "climat",
+      "il fait froid dehors",
+      "météo dans la ville natale",
+      "est-ce le jour le plus chaud à paris",
+      "hé est-ce qu'il va pleuvoir aujourd'hui à paris"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "L'ensemble du cluster cible la consultation météorologique. Même le simple mot-clé 'climat' ou la question comparative 'jour le plus chaud' déclenchent l'interrogation de l'API Weather. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "dis moi le nom de l'artiste",
+      "quel est le nom de la chanson",
+      "en quelle année la chanson a-t-elle été crée",
+      "quel est le nom du chanteur de ce groupe",
+      "quelle musique est elle"
+    ],
+    "action_centroide": "MUSIQUE_QUERY",
+    "analyse_extremes": "Toutes ces phrases demandent à l'assistant de lire les métadonnées (tags ID3) du flux audio en cours de lecture via AMAZON.SearchAction sur l'AudioPlayer. Action de consultation parfaitement unifiée. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "ingrédients nécessaires à épicerie",
+      "où devrais je aller pour manger mexicain dans ma région"
+    ],
+    "action_centroide": "LISTE_QUERY",
+    "analyse_extremes": "Le centroïde cible la consultation d'une liste de courses (ListManagement) ou l'API de cuisine. L'extrême 'manger mexicain' lance une recherche de point d'intérêt local (Restaurant via Local Search API). Domaines de requête divergents. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "répond a cette question quel est le premier boss dans super mario bros",
+      "quelle est la réponse à deux plus deux",
+      "peux tu me dire comment trouver la réponse à ceci",
+      "résoudre un problème de maths",
+      "combien c'est vingt-quatre fois vingt-quatre"
+    ],
+    "action_centroide": "ENCYCLOPEDIE_QUERY",
+    "analyse_extremes": "Le centroïde demande un fait précis lié au jeu vidéo (Knowledge Graph). Les extrêmes 'deux plus deux' et 'problème de maths' sollicitent le moteur logique natif (Calculatrice). Base de connaissances vs Outil de calcul arithmétique. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "joue ma station favoris à vingt et une heure",
+      "aller sur ma radio chaîne préférée",
+      "joue la station france trois sur cent deux virgule quatre",
+      "active la chaîne neuf cent cinquante et un",
+      "allume la radio"
+    ],
+    "action_centroide": "ALARME_CREER",
+    "analyse_extremes": "Le centroïde programme le lancement de la radio dans le futur ('à vingt et une heure'), déclenchant l'API d'Alarme/Routine. Les autres phrases commandent le démarrage synchrone et immédiat du flux (TuneIn/Radio API). Programmer une action vs L'exécuter maintenant. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "baisser le volume du haut parleur",
+      "règle le volume sur le niveau bas",
+      "coupe le son pour la prochaine heure s'il vous plaît",
+      "baisse le volume des haut-parleurs s'il vous plaît",
+      "pourriez-vous baisser le ton s'il vous plaît"
+    ],
+    "action_centroide": "VOLUME_ATTENUER",
+    "analyse_extremes": "Le centroïde et les extrêmes 2, 4 et 5 commandent la baisse du volume (VolumeLevelIntent). L'extrême 3 ('coupe le son pour la prochaine heure') ordonne une mise en sourdine temporisée, combinant AMAZON.MuteIntent et SetTimer. La mise au silence total temporisé est une action différente de la baisse d'intensité. Impur.",
+    "niveau_confiance": 95,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quelle personne a produit la chanson qui passe à la radio",
+      "télécharger spotify",
+      "j'ai entendu ce riff avant quelle chanson a volé ce riff c'est exactement la même chose",
+      "quel est le nom de ce groupe musical",
+      "connais-tu ces paroles"
+    ],
+    "action_centroide": "MUSIQUE_QUERY",
+    "analyse_extremes": "La plupart des requêtes ciblent les métadonnées de la musique via le Knowledge Graph ou l'AudioPlayer. En revanche, l'extrême 'télécharger spotify' est une commande d'installation de logiciel (App Store / Enable Skill). Recherche d'infos vs Action système OS. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quand arrive le vingt-quatre la semaine prochaine",
+      "quel jour est le vingt-deux mai",
+      "quel jour tombe mon anniversaire l'année prochaine",
+      "quel jour de la semaine est le douze",
+      "quand est le cycle de facturation"
+    ],
+    "action_centroide": "DATE_QUERY",
+    "analyse_extremes": "Les 4 premières phrases interrogent le calendrier universel pour mapper une date. Le dernier extrême ('cycle de facturation') cible l'API de gestion du compte utilisateur (Billing/Account). Le domaine d'information diffère totalement. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "salut olly quelles sont mes listes",
+      "c'est quoi sur la liste",
+      "dis-moi ce qu'il y a sur ma liste",
+      "qu'est-ce qui est sur cette liste spécifique",
+      "puis-je voir mes listes de travail"
+    ],
+    "action_centroide": "LISTE_QUERY",
+    "analyse_extremes": "L'ensemble du groupe exige du système la lecture vocale ou visuelle du contenu des listes via AMAZON.ReadListIntent. L'action API est strictement la même pour tous. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "je veux écouter la chanson ne me quitte pas de jacques brel",
+      "s'il vous plaît jouer la chanson ne me quitte pas",
+      "joue jacques brel",
+      "joue-moi une nouvelle reprise de lorie pester",
+      "mets la musique de jacques brel"
+    ],
+    "action_centroide": "MUSIQUE_JOUER",
+    "analyse_extremes": "Toutes ces phrases appellent l'action 'AMAZON.PlayMusicIntent' pour démarrer un flux musical. L'artiste et la chanson sont des entités ignorables selon la Règle 3. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "ai-je des rappels en attente",
+      "s'il vous plaît dites-moi les rappels en attente",
+      "quels rappels sont à venir cette semaine",
+      "y a-t-il quelque rappels pour aujourd'hui",
+      "quand est mon prochain rappel"
+    ],
+    "action_centroide": "RAPPEL_QUERY",
+    "analyse_extremes": "Toutes les phrases de ce cluster interrogent la base de données des alertes système (Reminders API) avec un accès en lecture (GET). 'Aujourd'hui' ou 'cette semaine' sont des filtres d'entités. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "racontez-moi histoire de cédric villani et son parcours mathématique"
+    ],
+    "action_centroide": "CELEBRITE_QUERY",
+    "analyse_extremes": "Une seule phrase présente dans ce cluster, interrogeant le Knowledge Graph (AMAZON.Person). Il est mécaniquement pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "à quelle heure part le train pour chicago",
+      "à quelle heure part le train de marseille",
+      "quand est le prochain train septa pour philadelphie",
+      "je voudrais une liste de tous les prix de billet de train pour cette localisation s'il vous plaît",
+      "quels sont les horaires de train de lyon à montpellier"
+    ],
+    "action_centroide": "TRANSPORT_QUERY",
+    "analyse_extremes": "Toutes les phrases sollicitent une recherche (GET) sur les horaires ou la tarification auprès des API de transport ferroviaire. L'action est uniquement informative et non transactionnelle. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quel type de pantalon est une culotte",
+      "à quoi ressemble la chemise",
+      "qu'est-ce qu'un ordinateur",
+      "qu'est-ce qu'une antenne-relais de téléphonie mobile",
+      "caractéristiques de l' ipad air"
+    ],
+    "action_centroide": "DEFINITION_QUERY",
+    "analyse_extremes": "Toutes les requêtes demandent au Knowledge Graph d'Amazon de fournir une définition ou les caractéristiques descriptives d'un objet matériel (ordinateur, chemise, iPad). Le domaine d'information encyclopédique est identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "achète un billet de train",
+      "réserver un billet pour partir le matin",
+      "pouvez-vous me réserver un ticket de train pour montréal pour mardi prochain",
+      "olly s'il te plait achète-moi un billet de train pour marseille",
+      "réserve-moi un billet de train pour montréal pour demain matin avant dix heures"
+    ],
+    "action_centroide": "TRAIN_RESERVER",
+    "analyse_extremes": "Chaque phrase de ce cluster demande l'exécution d'une transaction de réservation (AMAZON.BookAction) ciblant le domaine ferroviaire. L'action finale est strictement la même, avec diverses entités de lieu ou de temps. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "dis moi le taux de change du euro",
+      "combien coûte le dollar américain par rapport à la roupie",
+      "veuillez me montrer le taux de change entre le dollar et le yen",
+      "pouvez-vous me donner le taux de change du dollar en roupies",
+      "quel est le taux de euro"
+    ],
+    "action_centroide": "ECONOMIE_QUERY",
+    "analyse_extremes": "Toutes les phrases font appel à l'API de conversion des devises ou à l'API financière d'Amazon. La thématique et la source d'information sont parfaitement alignées. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "regarde ma boîte de réception",
+      "vérifie mes e-mails pour des e-mails non lus de maman",
+      "vérifie les e-mails des deux dernières heures",
+      "vérifier les e-mails des dernier douze heures",
+      "faites-moi savoir s'il y a de nouveaux e-mails de ebay"
+    ],
+    "action_centroide": "EMAIL_QUERY",
+    "analyse_extremes": "L'action métier pour l'intégralité du groupe est d'interroger la boîte mail liée au compte (Communications API) en lecture seule (GET). Les expéditeurs ou les délais sont des paramètres. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "am ou p. m.",
+      "dit moi l'heure actuelle",
+      "montre moi l'heure",
+      "dit moi l'heure",
+      "montre -nous le rouge"
+    ],
+    "action_centroide": "HEURE_QUERY",
+    "analyse_extremes": "Les 4 premières phrases appellent l'horloge système (AMAZON.TimeIntent). En revanche, l'extrême 'montre-nous le rouge' est une directive de contrôle domotique (SetColor) pour modifier la couleur d'une ampoule intelligente. Violation flagrante de la Règle 5. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "salut olly quel temps fait-il à paris île de france",
+      "dis moi la météo pour le mois suivant",
+      "consultez le bulletin météo de cette semaine",
+      "montre moi les prévisions à une semaine",
+      "le temps est ensoleillé aujourd'hui"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "L'ensemble des phrases converge vers une seule action finale de la part de l'assistant : l'interrogation de l'API Météo. Les variations de lieux et de plages horaires sont de simples slots. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "éteins la lumière du salon",
+      "coupe l'éclairage de la chambre",
+      "désactive la lampe de chevet",
+      "supprime l'éclairage du couloir",
+      "coupez les lumières s'il vous plaît"
+    ],
+    "action_centroide": "LUMIERE_ETEINDRE",
+    "analyse_extremes": "Toutes les phrases déclenchent la directive TurnOff de la Smart Home Skill API sur des dispositifs d'éclairage. Les verbes 'éteins', 'coupe', 'désactive', 'supprime' sont des synonymes lexicaux de la même action système. Les pièces (salon, chambre, couloir) sont des entités ignorables (Règle 3). Action unique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "allume la lumière de la cuisine",
+      "active l'éclairage du bureau",
+      "mets la lumière dans le salon",
+      "démarre la lampe du couloir",
+      "enclenche les lumières s'il te plaît"
+    ],
+    "action_centroide": "LUMIERE_ALLUMER",
+    "analyse_extremes": "Les verbes 'allume', 'active', 'mets', 'démarre', 'enclenche' sont tous des synonymes lexicaux de la directive TurnOn de la Smart Home Skill API. Les pièces sont des entités ignorables. Action système strictement identique pour toutes les phrases. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "éteins la lumière du salon",
+      "allume la lampe de bureau",
+      "coupe l'éclairage de la chambre",
+      "active les lumières du couloir",
+      "désactive la veilleuse"
+    ],
+    "action_centroide": "LUMIERE_ETEINDRE",
+    "analyse_extremes": "Cas d'antonymes caractérisé (Règle 4). Les phrases 1, 3 et 5 commandent l'extinction (TurnOff). Les phrases 2 et 4 commandent l'allumage (TurnOn). Ces deux directives Smart Home sont opposées au niveau matériel. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "tamise les lumières du salon",
+      "baisse l'intensité de l'éclairage",
+      "diminue la luminosité s'il te plaît",
+      "mets les lumières en mode nuit",
+      "réduis l'éclairage à vingt pourcent"
+    ],
+    "action_centroide": "LUMIERE_MODIFIER",
+    "analyse_extremes": "Toutes les phrases commandent la réduction d'intensité lumineuse via la directive SetPercentage ou SetBrightness de la Smart Home Skill API. Les verbes 'tamise', 'baisse', 'diminue', 'réduis' et l'expression 'mode nuit' sont des synonymes de la même action de gradation. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "tamise les lumières du salon",
+      "augmente la luminosité au maximum",
+      "baisse l'éclairage s'il te plaît",
+      "monte la lumière dans la cuisine",
+      "diminue l'intensité des spots"
+    ],
+    "action_centroide": "LUMIERE_MODIFIER",
+    "analyse_extremes": "Piège des antonymes dans le domaine de la gradation lumineuse (Règle 4). Les phrases 1, 3 et 5 commandent une réduction d'intensité (DecreasePercentage). Les phrases 2 et 4 commandent une augmentation (IncreasePercentage). Les directives Smart Home appelées sont opposées. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quels sont les horaires de train pour paris",
+      "à quelle heure part le prochain train pour lyon",
+      "combien coûte un billet de train pour bordeaux",
+      "liste les trains disponibles pour marseille demain",
+      "donne-moi les horaires ferroviaires pour nice"
+    ],
+    "action_centroide": "TRANSPORT_QUERY",
+    "analyse_extremes": "Toutes les phrases sont des requêtes informatives (GET) sur les données ferroviaires via une Skill de Transport. Qu'il s'agisse des horaires ou du prix, ces requêtes ne déclenchent aucune transaction. Les villes de destination sont des entités ignorables (Règle 3). Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quels sont les horaires de train pour paris",
+      "réserve-moi un billet pour lyon demain",
+      "à quelle heure part le prochain train",
+      "achète deux billets pour bordeaux vendredi",
+      "combien coûte le trajet pour marseille"
+    ],
+    "action_centroide": "TRANSPORT_QUERY",
+    "analyse_extremes": "Les phrases 1, 3 et 5 sont des consultations informatives (GET sur Transport API). Les phrases 2 et 4 déclenchent des transactions de réservation (AMAZON.BookAction). Consultation vs Transaction = deux endpoints API distincts. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "réserve-moi un billet de train pour paris",
+      "achète un ticket pour bordeaux vendredi",
+      "commande deux places dans le train pour lyon",
+      "procure-moi un billet pour marseille demain matin",
+      "obtiens-moi un siège dans le tgv pour nice"
+    ],
+    "action_centroide": "TRANSPORT_RESERVER",
+    "analyse_extremes": "Les verbes 'réserve', 'achète', 'commande', 'procure', 'obtiens' déclenchent tous une transaction de réservation (AMAZON.BookAction) auprès d'une Skill ferroviaire. Les destinations et dates sont des slots ignorables. Action transactionnelle unique et homogène. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "réserve un taxi pour huit heures demain",
+      "commande un uber maintenant",
+      "appelle une voiture pour l'aéroport",
+      "prends-moi un vtc pour ce soir",
+      "book un chauffeur pour dix huit heures"
+    ],
+    "action_centroide": "TRANSPORT_RESERVER",
+    "analyse_extremes": "Les verbes 'réserve', 'commande', 'appelle', 'prends', 'book' sont tous des synonymes de l'action de réservation d'un véhicule (AMAZON.BookAction via Ride Hailing Skill). Les horaires et destinations sont des paramètres ignorables. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "réserve un taxi pour huit heures",
+      "combien coûte un uber jusqu'à l'aéroport",
+      "commande une voiture pour ce soir",
+      "quelle est l'heure d'arrivée estimée pour un vtc",
+      "appelle un chauffeur maintenant"
+    ],
+    "action_centroide": "TRANSPORT_RESERVER",
+    "analyse_extremes": "Les phrases 1, 3 et 5 déclenchent une transaction de réservation (AMAZON.BookAction). Les phrases 2 et 4 sont des requêtes informatives sur le prix ou l'ETA (GET sur Ride Hailing API). Transaction vs Consultation = actions système différentes. Impur.",
+    "niveau_confiance": 95,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "mets de la musique",
+      "lance une chanson",
+      "joue de la musique s'il te plaît",
+      "démarre la lecture musicale",
+      "active le lecteur de musique"
+    ],
+    "action_centroide": "MUSIQUE_JOUER",
+    "analyse_extremes": "Les verbes 'mets', 'lance', 'joue', 'démarre', 'active' sont tous des synonymes lexicaux du déclenchement du lecteur audio (AMAZON.PlayMusicIntent). Aucun genre ni artiste n'est spécifié, ce sont des commandes génériques de lecture. Action unique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "joue la prochaine chanson",
+      "passe au titre suivant",
+      "skip cette musique",
+      "change de chanson s'il te plaît",
+      "avance au morceau d'après"
+    ],
+    "action_centroide": "MUSIQUE_SUIVANT",
+    "analyse_extremes": "Les verbes 'joue la prochaine', 'passe', 'skip', 'change', 'avance' déclenchent tous la directive AMAZON.NextIntent sur le lecteur audio actif. Ce sont des synonymes lexicaux d'une même commande de contrôle du flux. Action système identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "joue la prochaine chanson",
+      "reviens à la chanson précédente",
+      "passe au titre suivant",
+      "rejoue le morceau d'avant",
+      "skip cette musique"
+    ],
+    "action_centroide": "MUSIQUE_SUIVANT",
+    "analyse_extremes": "Piège des antonymes dans le contrôle du lecteur audio (Règle 4). Les phrases 1, 3 et 5 déclenchent AMAZON.NextIntent (avancer). Les phrases 2 et 4 déclenchent AMAZON.PreviousIntent (reculer). Ces deux directives de navigation audio sont opposées. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "mets la musique en pause",
+      "stoppe la lecture",
+      "arrête la musique s'il te plaît",
+      "suspends la chanson",
+      "coupe la lecture audio"
+    ],
+    "action_centroide": "MUSIQUE_PAUSE",
+    "analyse_extremes": "Les verbes 'mets en pause', 'stoppe', 'arrête', 'suspends', 'coupe' sont des synonymes de la directive AMAZON.PauseIntent sur le lecteur audio. Tous interrompent temporairement le flux sans le terminer. Action système unique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "mets la musique en pause",
+      "reprends la lecture",
+      "stoppe la chanson",
+      "continue la musique s'il te plaît",
+      "arrête la lecture"
+    ],
+    "action_centroide": "MUSIQUE_PAUSE",
+    "analyse_extremes": "Piège des antonymes sur le contrôle du lecteur (Règle 4). Les phrases 1, 3 et 5 déclenchent AMAZON.PauseIntent. Les phrases 2 et 4 déclenchent AMAZON.ResumeIntent. Interrompre vs Reprendre = directives opposées sur l'AudioPlayer. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "monte le volume",
+      "augmente le son s'il te plaît",
+      "mets le volume plus fort",
+      "hausse le son",
+      "élève le volume de la musique"
+    ],
+    "action_centroide": "VOLUME_AUGMENTER",
+    "analyse_extremes": "Les verbes 'monte', 'augmente', 'mets plus fort', 'hausse', 'élève' sont tous des synonymes de la directive AMAZON.VolumeLevelIntent avec paramètre Increase. Action système strictement identique pour toutes les phrases. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "baisse le volume",
+      "diminue le son s'il te plaît",
+      "mets le volume moins fort",
+      "réduis le son",
+      "descends le volume de la musique"
+    ],
+    "action_centroide": "VOLUME_ATTENUER",
+    "analyse_extremes": "Les verbes 'baisse', 'diminue', 'mets moins fort', 'réduis', 'descends' sont des synonymes de la directive AMAZON.VolumeLevelIntent avec paramètre Decrease. Action système identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "monte le volume",
+      "baisse le son s'il te plaît",
+      "augmente la musique",
+      "diminue le volume",
+      "mets le son plus fort"
+    ],
+    "action_centroide": "VOLUME_AUGMENTER",
+    "analyse_extremes": "Piège des antonymes sur le contrôle du volume (Règle 4). Les phrases 1, 3 et 5 déclenchent VolumeLevelIntent avec Increase. Les phrases 2 et 4 déclenchent VolumeLevelIntent avec Decrease. Les paramètres matériels sont opposés. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "envoie un email à paul",
+      "écris un message à marie",
+      "rédige un mail pour jean",
+      "compose un email à destination de sophie",
+      "prépare un message pour mon chef"
+    ],
+    "action_centroide": "EMAIL_CREER",
+    "analyse_extremes": "Les verbes 'envoie', 'écris', 'rédige', 'compose', 'prépare' déclenchent tous l'ouverture du formulaire de composition d'email (SendEmail via Communications API). Les destinataires sont des entités ignorables (Règle 3). Action de création identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "envoie un email à paul",
+      "lis mes emails non lus",
+      "écris un message à marie",
+      "vérifie ma boîte de réception",
+      "rédige un mail pour jean"
+    ],
+    "action_centroide": "EMAIL_CREER",
+    "analyse_extremes": "Les phrases 1, 3 et 5 déclenchent la création et l'envoi d'email (POST via Communications API). Les phrases 2 et 4 consultent la boîte de réception (GET via Communications API). Écriture vs Lecture = endpoints API distincts. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "règle une alarme pour sept heures",
+      "programme un réveil à six heures trente",
+      "configure une alarme pour demain matin",
+      "définis un réveil à cinq heures",
+      "mets une alarme pour huit heures du matin"
+    ],
+    "action_centroide": "ALARME_CREER",
+    "analyse_extremes": "Les verbes 'règle', 'programme', 'configure', 'définis', 'mets' sont tous des synonymes du déclenchement de AMAZON.SetAlarmIntent. Les horaires sont des entités ignorables (Règle 3). Action de création identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "règle une alarme pour sept heures",
+      "supprime mon réveil du matin",
+      "programme une alarme à six heures",
+      "annule toutes mes alarmes",
+      "configure un réveil pour demain"
+    ],
+    "action_centroide": "ALARME_CREER",
+    "analyse_extremes": "Les phrases 1, 3 et 5 déclenchent AMAZON.SetAlarmIntent (création). Les phrases 2 et 4 déclenchent AMAZON.CancelAlarmIntent (suppression). Créer vs Supprimer = opérations CRUD opposées sur la base des alarmes. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "ajoute du lait à ma liste de courses",
+      "mets des œufs sur la liste",
+      "rajoute du pain à mes achats",
+      "inscris du beurre sur ma liste de courses",
+      "note le jus d'orange pour la liste"
+    ],
+    "action_centroide": "LISTE_MODIFIER",
+    "analyse_extremes": "Les verbes 'ajoute', 'mets', 'rajoute', 'inscris', 'note' sont des synonymes de la directive AddListItem via l'API ListManagement. Les produits (lait, œufs, pain) sont des entités ignorables (Règle 3). Action d'écriture identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "ajoute du lait à ma liste de courses",
+      "qu'est-ce qui est sur ma liste",
+      "mets des œufs sur ma liste",
+      "lis-moi ma liste de courses",
+      "rajoute du pain à mes achats"
+    ],
+    "action_centroide": "LISTE_MODIFIER",
+    "analyse_extremes": "Les phrases 1, 3 et 5 ajoutent des éléments à une liste (AddListItem via ListManagement). Les phrases 2 et 4 lisent le contenu de la liste (AMAZON.ReadListIntent). Écriture vs Lecture = opérations opposées sur la même base de données. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "qu'est-ce qui est sur ma liste de courses",
+      "lis-moi ma liste de choses à faire",
+      "montre-moi le contenu de ma liste",
+      "dis-moi ce que j'ai sur ma liste",
+      "énumère les éléments de ma liste"
+    ],
+    "action_centroide": "LISTE_QUERY",
+    "analyse_extremes": "Les verbes 'lis', 'montre', 'dis', 'énumère' et la formulation interrogative 'qu'est-ce qui est' déclenchent tous AMAZON.ReadListIntent sur l'API ListManagement. Action de lecture identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "crée un rappel pour demain à neuf heures",
+      "programme un rappel pour ma réunion",
+      "mets un rappel dans deux heures",
+      "configure une alerte pour vendredi matin",
+      "définis un rappel pour prendre mon médicament"
+    ],
+    "action_centroide": "RAPPEL_CREER",
+    "analyse_extremes": "Les verbes 'crée', 'programme', 'mets', 'configure', 'définis' sont des synonymes du déclenchement de CreateReminder via l'API Reminders. Les contenus des rappels sont des entités ignorables (Règle 3). Action de création identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "crée un rappel pour demain",
+      "quels sont mes rappels aujourd'hui",
+      "programme une alerte pour vendredi",
+      "ai-je des rappels en attente",
+      "mets un rappel dans deux heures"
+    ],
+    "action_centroide": "RAPPEL_CREER",
+    "analyse_extremes": "Les phrases 1, 3 et 5 créent des rappels (CreateReminder). Les phrases 2 et 4 consultent les rappels existants (AMAZON.SearchAction sur Reminders API). Création vs Consultation = opérations CRUD opposées. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "ajoute un événement à mon calendrier demain à quinze heures",
+      "planifie une réunion vendredi matin",
+      "crée un rendez-vous pour lundi à dix heures",
+      "note un déjeuner avec paul jeudi midi",
+      "programme une réunion d'équipe pour la semaine prochaine"
+    ],
+    "action_centroide": "CALENDRIER_CREER",
+    "analyse_extremes": "Les verbes 'ajoute', 'planifie', 'crée', 'note', 'programme' sont des synonymes de CreateEvent via la Calendar API. Les horaires et noms de personnes sont des entités ignorables (Règle 3). Action de création identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "ajoute un événement demain à quinze heures",
+      "qu'est-ce que j'ai de prévu demain",
+      "planifie une réunion vendredi",
+      "quel est mon programme de la semaine",
+      "crée un rendez-vous pour lundi"
+    ],
+    "action_centroide": "CALENDRIER_CREER",
+    "analyse_extremes": "Les phrases 1, 3 et 5 créent des événements dans l'agenda (CreateEvent via Calendar API). Les phrases 2 et 4 consultent les événements existants (AMAZON.SearchAction). Création vs Lecture = opérations CRUD opposées. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quel est mon programme pour aujourd'hui",
+      "dis-moi ce que j'ai de prévu demain",
+      "quels sont mes rendez-vous de la semaine",
+      "montre-moi mon agenda pour lundi",
+      "qu'est-ce que j'ai de planifié ce soir"
+    ],
+    "action_centroide": "CALENDRIER_QUERY",
+    "analyse_extremes": "Toutes les phrases interrogent la Calendar API en lecture seule (AMAZON.SearchAction). Les verbes 'dis-moi', 'montre-moi', 'quels sont' et les formulations interrogatives déclenchent le même endpoint de consultation. Les jours sont des paramètres ignorables. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quelle est la météo à paris",
+      "quel temps fait-il à lyon",
+      "donne-moi les prévisions pour bordeaux",
+      "est-ce qu'il pleut à marseille aujourd'hui",
+      "quelle température à nice ce soir"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Toutes les phrases déclenchent AMAZON.WeatherIntent avec des slots géographiques différents (Paris, Lyon, Bordeaux, Marseille, Nice). Les villes sont des entités ignorables selon la Règle 3. L'action météo est strictement identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "demande à alexa quelle est la météo",
+      "dis-moi le temps qu'il fait",
+      "interroge l'assistant sur la météo",
+      "renseigne-moi sur les prévisions",
+      "informe-moi de la météo de demain"
+    ],
+    "action_centroide": "METEO_QUERY",
+    "analyse_extremes": "Les formulations 'demande à alexa', 'dis-moi', 'interroge', 'renseigne-moi', 'informe-moi' sont toutes des modalités d'invocation différentes pour la même requête météo (AMAZON.WeatherIntent). Les variations de surface ne changent pas l'action système. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "cherche la définition de photosynthèse",
+      "qu'est-ce que la démocratie",
+      "explique-moi ce qu'est le capitalisme",
+      "donne-moi la définition d'oligarchie",
+      "c'est quoi l'entropie"
+    ],
+    "action_centroide": "DEFINITION_QUERY",
+    "analyse_extremes": "Toutes les phrases interrogent le Knowledge Graph pour obtenir la définition d'un concept abstrait via AMAZON.SearchAction. Les verbes 'cherche', 'qu'est-ce que', 'explique', 'donne-moi', 'c'est quoi' sont des synonymes d'une requête encyclopédique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "cherche la définition de photosynthèse",
+      "joue une chanson de jazz",
+      "qu'est-ce que la démocratie",
+      "allume la lumière du salon",
+      "explique-moi ce qu'est le capitalisme"
+    ],
+    "action_centroide": "DEFINITION_QUERY",
+    "analyse_extremes": "Les phrases 1, 3 et 5 interrogent le Knowledge Graph (Définition). La phrase 2 déclenche AMAZON.PlayMusicIntent. La phrase 4 déclenche la Smart Home API (TurnOn). Violation totale de la Règle 5. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quel est le cours de l'action apple",
+      "donne-moi le prix de l'action google",
+      "où en est le titre tesla aujourd'hui",
+      "quelle est la cotation amazon en bourse",
+      "combien vaut l'action microsoft maintenant"
+    ],
+    "action_centroide": "BOURSE_QUERY",
+    "analyse_extremes": "Toutes les phrases interrogent le StockTicker via la Finance API. Les verbes 'quel est', 'donne-moi', 'où en est', 'quelle est', 'combien vaut' sont des synonymes d'une requête de cotation boursière. Les entreprises sont des entités ignorables. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quel est le cours de l'action apple",
+      "achète dix actions tesla pour moi",
+      "donne-moi le prix de l'action google",
+      "vends mes actions amazon",
+      "où en est le titre microsoft"
+    ],
+    "action_centroide": "BOURSE_QUERY",
+    "analyse_extremes": "Les phrases 1, 3 et 5 consultent la cotation boursière (GET sur Finance API). Les phrases 2 et 4 déclenchent des transactions financières d'achat et de vente (POST sur Trading API). Consultation vs Transaction = APIs différentes. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "commande une pizza margherita",
+      "passe une commande de sushi",
+      "je voudrais commander un burger",
+      "fais-moi livrer des pâtes",
+      "réserve une commande de nourriture chinoise"
+    ],
+    "action_centroide": "RESTAURATION_COMMANDER",
+    "analyse_extremes": "Les verbes 'commande', 'passe une commande', 'je voudrais commander', 'fais livrer', 'réserve' déclenchent tous le flux transactionnel de commande alimentaire (OrderAction via Food Delivery Skill). Les plats sont des entités ignorables. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "commande une pizza",
+      "quel est le statut de ma commande",
+      "fais-moi livrer des sushis",
+      "où en est ma livraison",
+      "je voudrais commander un burger"
+    ],
+    "action_centroide": "RESTAURATION_COMMANDER",
+    "analyse_extremes": "Les phrases 1, 3 et 5 créent une nouvelle commande (OrderAction). Les phrases 2 et 4 consultent le statut d'une commande existante (GetOrderStatus). Création vs Consultation = endpoints différents sur la Food Delivery Skill. Impur.",
+    "niveau_confiance": 95,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "publie un tweet disant que je suis en vacances",
+      "poste sur twitter que j'ai fini mon marathon",
+      "envoie un tweet à mes abonnés",
+      "partage sur twitter ma nouvelle photo",
+      "tweetez que je viens de finir mon livre"
+    ],
+    "action_centroide": "RESEAUX_PUBLIER",
+    "analyse_extremes": "Toutes les phrases déclenchent une publication (POST) sur la plateforme Twitter via une Skill Social Media. Les verbes 'publie', 'poste', 'envoie', 'partage', 'tweetez' sont des synonymes de la même action d'écriture. Le contenu est une entité ignorable. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "publie un tweet",
+      "combien de j'aime a mon dernier tweet",
+      "poste sur twitter",
+      "lis-moi mon fil twitter",
+      "envoie un tweet à mes abonnés"
+    ],
+    "action_centroide": "RESEAUX_PUBLIER",
+    "analyse_extremes": "Les phrases 1, 3 et 5 publient du contenu (POST sur Twitter Skill). Les phrases 2 et 4 consultent des données existantes (GET sur Twitter Skill). Publication vs Consultation = opérations opposées sur la même API sociale. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "lance un podcast sur l'histoire",
+      "joue le podcast du jour",
+      "démarre le podcast de science",
+      "mets un épisode de ce podcast",
+      "commence la lecture du podcast france culture"
+    ],
+    "action_centroide": "PODCAST_JOUER",
+    "analyse_extremes": "Les verbes 'lance', 'joue', 'démarre', 'mets', 'commence' sont des synonymes du déclenchement du lecteur de podcast (AMAZON.PlayMusicIntent ciblant les podcasts). Les thèmes et stations sont des entités ignorables. Action de lecture identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "lance un podcast sur l'histoire",
+      "passe à l'épisode suivant",
+      "joue le podcast du jour",
+      "reviens à l'épisode précédent",
+      "démarre le podcast de science"
+    ],
+    "action_centroide": "PODCAST_JOUER",
+    "analyse_extremes": "Les phrases 1, 3 et 5 déclenchent la lecture initiale d'un podcast (PlayMusicIntent). Les phrases 2 et 4 contrôlent la navigation entre épisodes (AMAZON.NextIntent et AMAZON.PreviousIntent). Lancer vs Naviguer = directives AudioPlayer distinctes. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "démarre l'aspirateur robot",
+      "lance le roomba",
+      "active l'aspirateur automatique",
+      "mets en marche le robot de nettoyage",
+      "allume l'aspirateur connecté"
+    ],
+    "action_centroide": "NETTOYAGE_COMMENCER",
+    "analyse_extremes": "Les verbes 'démarre', 'lance', 'active', 'mets en marche', 'allume' sont des synonymes de la directive TurnOn adressée au device Smart Home de type aspirateur robot. Les noms de marque sont des entités ignorables. Action unique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "démarre l'aspirateur robot",
+      "arrête l'aspirateur",
+      "lance le roomba",
+      "stoppe le robot de nettoyage",
+      "active l'aspirateur automatique"
+    ],
+    "action_centroide": "NETTOYAGE_COMMENCER",
+    "analyse_extremes": "Piège des antonymes dans la domotique (Règle 4). Les phrases 1, 3 et 5 déclenchent TurnOn sur le device aspirateur. Les phrases 2 et 4 déclenchent TurnOff. Ces directives Smart Home sont opposées. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "allume la cafetière",
+      "démarre le café",
+      "active la machine à café",
+      "mets la cafetière en marche",
+      "lance la préparation du café"
+    ],
+    "action_centroide": "DOMOTIQUE_ACTIVER",
+    "analyse_extremes": "Les verbes 'allume', 'démarre', 'active', 'mets en marche', 'lance' sont des synonymes de la directive TurnOn adressée au device Smart Home de type cafetière. Action unique et homogène. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quelle heure est-il",
+      "dis-moi l'heure",
+      "donne-moi l'heure actuelle",
+      "c'est quoi l'heure",
+      "tu peux me dire l'heure"
+    ],
+    "action_centroide": "HEURE_QUERY",
+    "analyse_extremes": "Toutes ces formulations interrogent le module horloge système (AMAZON.TimeIntent). 'Quelle heure est-il', 'dis-moi l'heure', 'donne-moi l'heure', 'c'est quoi l'heure', 'tu peux me dire l'heure' sont des variations de surface d'une même requête temporelle. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quelle heure est-il",
+      "quelle est la date d'aujourd'hui",
+      "dis-moi l'heure",
+      "quel jour sommes-nous",
+      "donne-moi l'heure actuelle"
+    ],
+    "action_centroide": "HEURE_QUERY",
+    "analyse_extremes": "Les phrases 1, 3 et 5 interrogent AMAZON.TimeIntent pour l'heure précise. Les phrases 2 et 4 interrogent le calendrier système pour la date ou le jour (AMAZON.DateIntent). Heure vs Date = deux modules système distincts. Impur.",
+    "niveau_confiance": 95,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quelle est la date aujourd'hui",
+      "quel jour sommes-nous",
+      "dis-moi la date du jour",
+      "donne-moi la date actuelle",
+      "c'est quel jour aujourd'hui"
+    ],
+    "action_centroide": "DATE_QUERY",
+    "analyse_extremes": "Toutes les phrases interrogent le calendrier système pour la date courante (AMAZON.DateIntent). Les formulations 'quelle est la date', 'quel jour', 'dis-moi la date', 'donne-moi la date', 'c'est quel jour' sont des synonymes d'une même requête calendaire. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "trouve un restaurant italien près de chez moi",
+      "cherche un bon sushi bar dans le quartier",
+      "où manger une pizza ce soir",
+      "quel restaurant mexicain est ouvert maintenant",
+      "indique-moi une brasserie à proximité"
+    ],
+    "action_centroide": "RESTAURATION_QUERY",
+    "analyse_extremes": "Toutes les phrases interrogent la Local Search API pour trouver des établissements de restauration. Les cuisines (italienne, japonaise, mexicaine) et l'urgence temporelle (ce soir, maintenant) sont des paramètres ignorables. Action de recherche locale unique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "trouve un restaurant italien",
+      "réserve une table pour ce soir",
+      "cherche un bon sushi bar",
+      "commande-moi une pizza à livrer",
+      "où manger mexicain ce soir"
+    ],
+    "action_centroide": "RESTAURATION_QUERY",
+    "analyse_extremes": "Les phrases 1, 3 et 5 cherchent des établissements via la Local Search API (GET). La phrase 2 réserve une table (BookAction sur Restaurant Skill). La phrase 4 commande une livraison (OrderAction). Trois APIs distinctes mélangées. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "qui a gagné le match de foot hier soir",
+      "quel est le score du psg",
+      "dis-moi les résultats du tour de france",
+      "comment s'est passé le match de rugby",
+      "quelle équipe a remporté le championnat"
+    ],
+    "action_centroide": "SPORT_QUERY",
+    "analyse_extremes": "Toutes les phrases interrogent le Knowledge Graph sportif pour des résultats ou scores (Sports Data API). Les sports (foot, cyclisme, rugby) sont des entités ignorables. Action de consultation sportive identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "qui a gagné le match de foot",
+      "joue à un jeu avec moi",
+      "quel est le score du psg",
+      "lance une partie d'échecs",
+      "comment s'est passé le match de rugby"
+    ],
+    "action_centroide": "SPORT_QUERY",
+    "analyse_extremes": "Les phrases 1, 3 et 5 interrogent les résultats sportifs via le Knowledge Graph. Les phrases 2 et 4 lancent une Skill de jeu vidéo (AMAZON.PlayGameIntent). Données sportives vs Jeu interactif = APIs totalement distinctes. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "dis-moi une blague",
+      "raconte-moi quelque chose de drôle",
+      "fais-moi rire",
+      "j'ai besoin d'une blague",
+      "tu connais une bonne blague"
+    ],
+    "action_centroide": "BLAGUE_QUERY",
+    "analyse_extremes": "Les formulations 'dis-moi une blague', 'raconte-moi quelque chose de drôle', 'fais-moi rire', 'j'ai besoin d'une blague', 'tu connais une bonne blague' déclenchent toutes AMAZON.TellJokeIntent. Ce sont des synonymes d'une même requête humoristique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "lance une radio jazz",
+      "mets une station de musique classique",
+      "joue une radio pop sur nrj",
+      "active une chaîne de radio rock",
+      "démarre une station de radio française"
+    ],
+    "action_centroide": "RADIO_JOUER",
+    "analyse_extremes": "Les verbes 'lance', 'mets', 'joue', 'active', 'démarre' déclenchent tous le flux audio d'une station radio via TuneIn ou une Radio Skill. Les genres musicaux et noms de stations sont des entités ignorables. Action de démarrage identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "lis mon livre audio le petit prince",
+      "reprends la lecture de mon roman",
+      "joue mon livre audio là où je me suis arrêté",
+      "continue le livre audio que j'écoutais",
+      "démarre la lecture de l'étranger de camus"
+    ],
+    "action_centroide": "LIVRE_JOUER",
+    "analyse_extremes": "Les verbes 'lis', 'reprends', 'joue', 'continue', 'démarre' déclenchent tous AMAZON.ResumeIntent ou PlayIntent ciblant la Skill Audible. Les titres sont des entités ignorables. Action de lecture identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "lis mon livre audio",
+      "mets le livre audio en pause",
+      "reprends la lecture de mon roman",
+      "arrête le livre audio",
+      "continue mon livre audio"
+    ],
+    "action_centroide": "LIVRE_JOUER",
+    "analyse_extremes": "Les phrases 1, 3 et 5 déclenchent la lecture ou reprise (Play/Resume sur Audible Skill). Les phrases 2 et 4 interrompent la lecture (AMAZON.PauseIntent). Lire vs Interrompre = directives opposées sur l'AudioPlayer. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quelle est la date d'aujourd'hui",
+      "quel jour sommes-nous",
+      "donne-moi la date du jour",
+      "c'est quel jour aujourd'hui",
+      "dis-moi la date actuelle"
+    ],
+    "action_centroide": "DATE_QUERY",
+    "analyse_extremes": "Les 5 phrases interrogent toutes le module calendrier système (AMAZON.DateIntent) pour obtenir la date courante. Les formulations 'quelle est', 'quel jour', 'donne-moi', 'c'est quel jour', 'dis-moi' sont des synonymes d'une même requête. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quelle est la date d'aujourd'hui",
+      "quelle heure est-il maintenant",
+      "donne-moi la date du jour",
+      "dis-moi l'heure actuelle",
+      "c'est quel jour aujourd'hui"
+    ],
+    "action_centroide": "DATE_QUERY",
+    "analyse_extremes": "Les phrases 1, 3 et 5 interrogent AMAZON.DateIntent pour la date. Les phrases 2 et 4 interrogent AMAZON.TimeIntent pour l'heure. Date vs Heure = deux modules système distincts dans l'OS. Impur.",
+    "niveau_confiance": 95,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "quel est le taux de change du dollar en euro",
+      "convertis cent dollars en euros",
+      "combien vaut un yen en euro",
+      "donne-moi le taux euro contre livre sterling",
+      "quelle est la valeur du franc suisse en euro"
+    ],
+    "action_centroide": "ECONOMIE_QUERY",
+    "analyse_extremes": "Toutes les phrases interrogent l'API de conversion monétaire (ExchangeRate). Les devises sont des entités ignorables (Règle 3). Action de consultation financière strictement identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "quel est le taux de change euro dollar",
+      "quel est le cours de l'action apple",
+      "convertis cent dollars en euros",
+      "combien vaut bitcoin aujourd'hui",
+      "donne-moi le taux yen euro"
+    ],
+    "action_centroide": "ECONOMIE_QUERY",
+    "analyse_extremes": "Les phrases 1, 3 et 5 ciblent l'API de conversion de devises (ExchangeRate). Les phrases 2 et 4 ciblent l'API de cotation boursière (StockTicker / Crypto). Devises vs Bourse/Crypto = sources financières distinctes. Impur.",
+    "niveau_confiance": 95,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "lis-moi le petit prince",
+      "reprends mon livre audio",
+      "joue le chapitre suivant de mon roman",
+      "continue la lecture de l'étranger",
+      "démarre mon audiobook là où je me suis arrêté"
+    ],
+    "action_centroide": "LIVRE_JOUER",
+    "analyse_extremes": "Toutes les phrases déclenchent l'AudioPlayer pour lire un livre audio (AMAZON.ResumeIntent / PlayIntent sur Audible Skill). Les titres sont des entités ignorables. Action de lecture homogène. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "lis-moi mon livre audio",
+      "qui est l'auteur de ce livre",
+      "reprends la lecture de mon roman",
+      "combien de pages a ce livre",
+      "démarre mon audiobook"
+    ],
+    "action_centroide": "LIVRE_JOUER",
+    "analyse_extremes": "Les phrases 1, 3 et 5 déclenchent la lecture audio (Play/Resume sur Audible). Les phrases 2 et 4 interrogent les métadonnées du livre (Knowledge Graph). Lecture audio vs Consultation d'infos = APIs distinctes. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "appelle marie sur son portable",
+      "téléphone à paul",
+      "passe un appel à mon père",
+      "compose le numéro de jean",
+      "lance un appel vers sophie"
+    ],
+    "action_centroide": "APPEL_CREER",
+    "analyse_extremes": "Toutes les phrases déclenchent l'API Communications pour passer un appel (AMAZON.CallIntent). Les contacts sont des entités ignorables (Règle 3). Action transactionnelle de téléphonie identique. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "appelle marie",
+      "envoie un sms à paul",
+      "téléphone à mon père",
+      "écris un message à jean",
+      "passe un appel à sophie"
+    ],
+    "action_centroide": "APPEL_CREER",
+    "analyse_extremes": "Les phrases 1, 3 et 5 déclenchent un appel vocal (CallIntent). Les phrases 2 et 4 envoient un message texte (SendMessage). Appel vocal vs Message texte = deux endpoints distincts de l'API Communications. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "ouvre les volets du salon",
+      "remonte les volets de la chambre",
+      "lève les stores du bureau",
+      "déploie les volets roulants",
+      "active l'ouverture des volets"
+    ],
+    "action_centroide": "VOLET_OUVRIR",
+    "analyse_extremes": "Toutes les phrases déclenchent une directive Smart Home d'ouverture sur des dispositifs de type volet/store. Les verbes 'ouvre', 'remonte', 'lève', 'déploie', 'active l'ouverture' sont des synonymes lexicaux. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "ouvre les volets du salon",
+      "ferme les volets de la chambre",
+      "remonte les stores",
+      "baisse les volets roulants",
+      "lève les volets de la cuisine"
+    ],
+    "action_centroide": "VOLET_OUVRIR",
+    "analyse_extremes": "Piège des antonymes (Règle 4). Les phrases 1, 3 et 5 ouvrent les volets (TurnOn / OpenAction). Les phrases 2 et 4 ferment les volets (TurnOff / CloseAction). Directives Smart Home opposées. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  },
+  {
+    "phrases": [
+      "règle le thermostat à vingt degrés",
+      "mets le chauffage à dix-neuf degrés",
+      "configure la température à vingt-et-un",
+      "passe le thermostat à dix-huit degrés",
+      "ajuste le chauffage à vingt-deux"
+    ],
+    "action_centroide": "THERMOSTAT_MODIFIER",
+    "analyse_extremes": "Toutes les phrases déclenchent la directive SetTargetTemperature sur le thermostat connecté. Les verbes 'règle', 'mets', 'configure', 'passe', 'ajuste' sont des synonymes de la même action. Les températures sont des entités ignorables. Pur.",
+    "niveau_confiance": 100,
+    "reclusteriser": false
+  },
+  {
+    "phrases": [
+      "règle le thermostat à vingt degrés",
+      "quelle est la température actuelle dans la maison",
+      "mets le chauffage à dix-neuf",
+      "il fait combien dans le salon",
+      "configure le thermostat à vingt-et-un"
+    ],
+    "action_centroide": "THERMOSTAT_MODIFIER",
+    "analyse_extremes": "Les phrases 1, 3 et 5 modifient la consigne du thermostat (SetTargetTemperature). Les phrases 2 et 4 interrogent le capteur de température (GetTemperatureReading). Modification vs Lecture = directives Smart Home opposées. Impur.",
+    "niveau_confiance": 100,
+    "reclusteriser": true
+  }
+]

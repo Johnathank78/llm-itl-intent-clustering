@@ -1,0 +1,27 @@
+# Environnements et caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.DS_Store
+
+# Secrets : ne jamais versionner
+.env
+
+# Runs locaux (le run de référence est dans outputs/run_mars_2026)
+outputs/run_courant/
+*.log
+data/embeddings_partiel.npy
+data/*.ancien.npy
+
+# Poids de modèles et adaptateurs LoRA (trop lourds pour GitHub)
+*.gguf
+*.safetensors
+qwen-base-4bit/
+qwen-*-fused/
+adapters_juge/
+adapters_nommeur/
+
+outputs/oracle/

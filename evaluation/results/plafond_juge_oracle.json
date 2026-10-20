@@ -1,0 +1,9 @@
+{
+  "parametres": "rapide",
+  "lambda": 1.32,
+  "couverture": 0.7230693556320709,
+  "n_tags": 40,
+  "ARI_phrases_retenues": 0.8258526555130258,
+  "NMI_phrases_retenues": 0.8949453374635614,
+  "purete_phrases_retenues": 0.8891156462585034
+}

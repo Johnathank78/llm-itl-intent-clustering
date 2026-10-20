@@ -1,0 +1,17 @@
+# Pipeline et évaluation (Windows, macOS, Linux)
+# Versions reprises du run de mars 2026, complétées des dépendances qui manquaient.
+numpy==2.4.4
+pandas==3.0.2
+scikit_learn==1.8.0
+umap_learn==0.5.11
+matplotlib==3.10.8
+seaborn==0.13.2
+tqdm==4.67.3
+openai==2.31.0
+python-dotenv>=1.0
+
+# Uniquement pour recalculer les données ou les embeddings (étape 1)
+datasets==2.19.1
+google-genai>=1.0
+
+# Le fine-tuning (MLX) ne tourne que sur Mac Apple Silicon : voir fine_tuning/requirements-mlx.txt

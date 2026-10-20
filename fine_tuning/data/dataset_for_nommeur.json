@@ -1,0 +1,2003 @@
+[
+  {
+    "phrases": [
+      "ai-je des rappels aujourd'hui",
+      "y a-t-il quelque rappels pour aujourd'hui",
+      "quels rappels ai-je défini",
+      "ai-je des rappels en attente"
+    ],
+    "tag": "CALENDRIER_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Le domaine est incorrect. Les rappels (Reminders) diffèrent du calendrier (Events). Le tag correct est RAPPEL_QUERY.",
+    "action_alexa": "Consultation via l'API Reminders (AMAZON.SearchAction)."
+  },
+  {
+    "phrases": [
+      "ai-je un rappel en attente",
+      "s'il vous plaît dites-moi les rappels en attente",
+      "ai-je des rappels sur ma liste",
+      "quel est mon programme pour aujourd'hui"
+    ],
+    "tag": "CALENDRIER_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Même erreur, majorité de requêtes sur les rappels. Doit être RAPPEL_QUERY.",
+    "action_alexa": "Consultation via l'API Reminders."
+  },
+  {
+    "phrases": [
+      "commande moi des plats chinois",
+      "je veux commander de la nourriture chinoise ce soir qui peut me livrer",
+      "dans quels endroits puis je commander des plats à emporter à proximité",
+      "commande un repas dans un bon restaurant"
+    ],
+    "tag": "RESTAURATION_COMMANDE",
+    "statut": "MAUVAIS",
+    "justification": "L'action doit obligatoirement être un verbe à l'infinitif. Doit être RESTAURATION_COMMANDER.",
+    "action_alexa": "Déclenchement d'une Skill de livraison (Food/OrderAction)."
+  },
+  {
+    "phrases": [
+      "commande des plats à emporter",
+      "liste les options de livraison les plus notées pour la nourriture chinois",
+      "j'ai vraiment envie des plats chinois en ce moment s'il te plaît laisse-moi commander à emporter",
+      "appelle pf chang's pour me commander des œufs foo young"
+    ],
+    "tag": "RESTAURATION_COMMANDE",
+    "statut": "MAUVAIS",
+    "justification": "Verbe non infinitif. Doit être RESTAURATION_COMMANDER.",
+    "action_alexa": "Déclenchement d'une Skill de livraison (Food/OrderAction)."
+  },
+  {
+    "phrases": [
+      "joue une musique",
+      "après cette chanson jouer ne me quitte pas",
+      "joue ma chanson de country que je préfère la plus",
+      "je veux écouter la chanson ne me quitte pas de jacques brel"
+    ],
+    "tag": "MUSIQUE_JOUER",
+    "statut": "BON",
+    "justification": "Domaine générique (MUSIQUE) et verbe d'action correct (JOUER). Les artistes sont des slots ignorés.",
+    "action_alexa": "Déclenchement du lecteur audio avec AMAZON.PlayMusicIntent."
+  },
+  {
+    "phrases": [
+      "mets la musique de jacques brel",
+      "j'aimerais écouter ne me quitte pas de jacques brel",
+      "ok google joue de la musique",
+      "jouer une chanson de mes favoris"
+    ],
+    "tag": "MUSIQUE_JOUER",
+    "statut": "BON",
+    "justification": "Respect parfait de la taxonomie [DOMAINE]_[ACTION].",
+    "action_alexa": "Déclenchement du lecteur audio avec AMAZON.PlayMusicIntent."
+  },
+  {
+    "phrases": [
+      "quelle est cette chanson",
+      "quel est le nom de la chanson",
+      "quelle est la chanson en cours",
+      "qui est le chanteur de cette chanson"
+    ],
+    "tag": "MUSIQUE_QUERY",
+    "statut": "BON",
+    "justification": "Consultation d'informations (QUERY) sur le domaine musical actif.",
+    "action_alexa": "Recherche de métadonnées audio (ID3 Tags) via l'interface AudioPlayer."
+  },
+  {
+    "phrases": [
+      "quel est le titre de la chanson qui passe",
+      "qu'elle est cette chanson",
+      "quel est le nom de la musique qui joué maintenant",
+      "quelle chanson est en cours de lecture"
+    ],
+    "tag": "MUSIQUE_QUERY",
+    "statut": "BON",
+    "justification": "Consultation valide avec utilisation du mot clé QUERY.",
+    "action_alexa": "Recherche de métadonnées audio via l'interface AudioPlayer."
+  },
+  {
+    "phrases": [
+      "quelle sera la température dehors demain",
+      "quelle est la météo de cette semaine",
+      "va t'il faire beau demain",
+      "quelle sera la météo la semaine prochaine"
+    ],
+    "tag": "METEO_QUERY",
+    "statut": "BON",
+    "justification": "Domaine générique METEO avec action de consultation (QUERY).",
+    "action_alexa": "Appel natif de AMAZON.WeatherIntent."
+  },
+  {
+    "phrases": [
+      "quelle est la météo aujourd'hui",
+      "quelles sont les prévisions météorologiques de cette semaine",
+      "quel est le temps pour le reste de la semaine",
+      "quelle sera la météo du lendemain"
+    ],
+    "tag": "METEO_QUERY",
+    "statut": "BON",
+    "justification": "Format correct. Les marqueurs temporels sont des slots.",
+    "action_alexa": "Appel natif de AMAZON.WeatherIntent."
+  },
+  {
+    "phrases": [
+      "olly comment ça va",
+      "olly j'ai eu une épave aujourd'hui",
+      "olly envoyer un tweet à l'entreprise",
+      "olly reprends les deux tours"
+    ],
+    "tag": "OBJET_MODIFIER",
+    "statut": "MAUVAIS",
+    "justification": "Cluster extrêmement bruité (Sujets multiples : social, tweet, film). De plus, OBJET est trop générique.",
+    "action_alexa": "Multiples intentions (Greeting, Tweet, ResumeIntent)."
+  },
+  {
+    "phrases": [
+      "olly j'aime écouter le jazz",
+      "olly rends le salon bleu",
+      "olly trending topics d'actualité chauds",
+      "aujourd'hui j'ai eu des récompenses olly"
+    ],
+    "tag": "OBJET_MODIFIER",
+    "statut": "MAUVAIS",
+    "justification": "Sujets multiples (Musique, Domotique, Actualité). Règle 5 violée.",
+    "action_alexa": "Multiples intentions (PlayMusic, SetColor, News)."
+  },
+  {
+    "phrases": [
+      "régler une alarme pour cinq heures du matin",
+      "régler une alarme pour six heures du matin",
+      "régler une alarme pour demain matin à huit heures",
+      "régler une alarme pour cinq heures trente"
+    ],
+    "tag": "ALARME_CREER",
+    "statut": "BON",
+    "justification": "Action claire (CREER) sur un domaine précis (ALARME).",
+    "action_alexa": "Appel natif à AMAZON.SetAlarmIntent."
+  },
+  {
+    "phrases": [
+      "régler une alarme à six heures du matin",
+      "régler une alarme pour dix heures demain matin",
+      "régler une alarme dans deux heures à partir de maintenant s'il vous plaît",
+      "régler une alarme pour une heure du soir"
+    ],
+    "tag": "ALARME_CREER",
+    "statut": "BON",
+    "justification": "Format standard respecté.",
+    "action_alexa": "Appel natif à AMAZON.SetAlarmIntent."
+  },
+  {
+    "phrases": [
+      "monte le volume",
+      "monter le volume",
+      "augmente le volume s'il te plaît"
+    ],
+    "tag": "VOLUME_MODIFIER",
+    "statut": "MAUVAIS",
+    "justification": "L'action précise est l'augmentation. Il est préférable d'utiliser VOLUME_AUGMENTER pour éviter la collision d'antonymes.",
+    "action_alexa": "Appel de AMAZON.VolumeLevelIntent avec directive Increase."
+  },
+  {
+    "phrases": [
+      "quelle heure est-il à paris à l'heure actuelle",
+      "quelle heure est-il à paris",
+      "l'heure est-elle différente à paris",
+      "pouvez-vous me dire quelle heure est-il à paris"
+    ],
+    "tag": "HEURE_QUERY",
+    "statut": "BON",
+    "justification": "Recherche d'information (QUERY) sur le domaine temporel (HEURE).",
+    "action_alexa": "Appel natif à AMAZON.TimeIntent."
+  },
+  {
+    "phrases": [
+      "quelle heure est-il maintenant en californie",
+      "quelle heure est-il pour le fuseau horaire de l' est",
+      "s'il est dix d'après midi en californie quelle heures est-il à paris",
+      "dis-moi l'heure actuelle à ottawa"
+    ],
+    "tag": "HEURE_QUERY",
+    "statut": "BON",
+    "justification": "Les fuseaux et villes sont des entités ignorées lors du nommage.",
+    "action_alexa": "Appel natif à AMAZON.TimeIntent avec slot géographique."
+  },
+  {
+    "phrases": [
+      "quelles alarmes ai-je définies en ce moment",
+      "ai-je des alarmes pour demain matin",
+      "a quel heure mon réveil est-il réglé",
+      "à quelle heure m'as-tu programmé l' alarme"
+    ],
+    "tag": "ALARME_QUERY",
+    "statut": "BON",
+    "justification": "Consultation (QUERY) de l'état des alarmes.",
+    "action_alexa": "Lecture de base de données via AMAZON.GetAlarmIntent."
+  },
+  {
+    "phrases": [
+      "ai-je une alarme réglée",
+      "fournissez-moi les heures d'alarme que vous avez définies",
+      "combien d'alarmes ai-je réglées pour les heures du matin entre six et neuf heures du matin",
+      "dis moi mes alarmes"
+    ],
+    "tag": "ALARME_QUERY",
+    "statut": "BON",
+    "justification": "Consultation valide, format correct.",
+    "action_alexa": "Lecture de base de données via AMAZON.GetAlarmIntent."
+  },
+  {
+    "phrases": [
+      "quels événements ai-je à venir",
+      "quel est mon programme d'événements demain",
+      "ai-je des événements à venir dans mon calendrier",
+      "ai-je des événements aujourd'hui"
+    ],
+    "tag": "EVENEMENT_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "L'utilisateur interroge son agenda privé (mon programme/calendrier). Le domaine standardisé est CALENDRIER_QUERY.",
+    "action_alexa": "Recherche d'évènements privés (Calendar API / SearchEvent)."
+  },
+  {
+    "phrases": [
+      "y a-t-il des événements à venir sur mon calendrier",
+      "quels événements sont dans mon calendrier pour aujourd'hui",
+      "informez-moi de tous les événements de la semaine prochaine",
+      "ai-je des événements de calendrier aujourd'hui"
+    ],
+    "tag": "EVENEMENT_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Erreur de domaine. Interroge le calendrier de l'utilisateur, donc CALENDRIER_QUERY.",
+    "action_alexa": "Recherche d'évènements privés (Calendar API)."
+  },
+  {
+    "phrases": [
+      "donne moi les nouvelles les plus récentes",
+      "dis-moi quelles sont les dernières nouvelles",
+      "dites-moi des nouvelles importantes aujourd'hui",
+      "dis-moi les gros titres de journal aujourd'hui"
+    ],
+    "tag": "ACTUALITE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine générique correct (ACTUALITE) pour remplacer 'nouvelles'/'gros titres', avec action QUERY.",
+    "action_alexa": "Déclenchement du Flash Briefing / NewsIntent."
+  },
+  {
+    "phrases": [
+      "quelles sont les dernières nouvelles internationales",
+      "lis moi les nouvelles du jour",
+      "ce qui se passe dans les nouvelles du monde aujourd'hui",
+      "dis moi s'il y a quelque nouvelles sur ce sujet"
+    ],
+    "tag": "ACTUALITE_QUERY",
+    "statut": "BON",
+    "justification": "Format de taxonomie parfaitement respecté.",
+    "action_alexa": "Déclenchement du Flash Briefing / NewsIntent."
+  },
+  {
+    "phrases": [
+      "voitures",
+      "rien",
+      "livres",
+      "mobile"
+    ],
+    "tag": "LIVRE_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Mots-clés aléatoires sans cohérence (Bruit). Le domaine LIVRE ne s'applique pas à 'voitures' ou 'mobile'.",
+    "action_alexa": "Inconnu (FallbackIntent)."
+  },
+  {
+    "phrases": [
+      "la nuit",
+      "téléphoner",
+      "mode",
+      "google"
+    ],
+    "tag": "LIVRE_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Bruit absolu sans rapport avec les livres. Règle 5 violée.",
+    "action_alexa": "Inconnu (FallbackIntent)."
+  },
+  {
+    "phrases": [
+      "me notifie les dernières nouvelles du marché boursier",
+      "me dire quand il y a de nouvelles nouvelles de mes nouvelles locales",
+      "activer la notification pour toutes les nouvelles sur le marché boursier",
+      "faites-moi savoir dès qu'il y a plus de nouvelles sur le brexit"
+    ],
+    "tag": "BOURSE_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Il s'agit d'une action d'alerte (NOTIFICATION/ALERTE), pas d'un QUERY. Le tag correct serait ALERTE_CREER ou ACTUALITE_ALERTE.",
+    "action_alexa": "Déclenchement d'une routine ou Skill de notification."
+  },
+  {
+    "phrases": [
+      "envoyez-moi les mises à jour bourse pour aujourd'hui",
+      "envoyez-moi une alerte sur tout nouveau sujet sur la politique",
+      "dis-moi si un earthquake se produit dans le monde",
+      "veuillez afficher l'article sur le chien assis dans les informations du matin"
+    ],
+    "tag": "BOURSE_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Sujets multiples (bourse, politique, séisme). Tag inapproprié pour la globalité du cluster (ACTUALITE_ALERTE).",
+    "action_alexa": "Multiples abonnements à des alertes (Notifications API)."
+  },
+  {
+    "phrases": [
+      "désactiver toutes les alarmes du matin après vendredi",
+      "veuillez supprimer toutes les alarmes que j'ai définies",
+      "retirer l'alarme réglée pour quatre cents heures du matin",
+      "annuler l'alarme pour demain"
+    ],
+    "tag": "ALARME_SUPPRIMER",
+    "statut": "BON",
+    "justification": "Domaine et verbe d'action à l'infinitif exacts (SUPPRIMER).",
+    "action_alexa": "Appel natif à AMAZON.CancelAlarmIntent."
+  },
+  {
+    "phrases": [
+      "retire les alarmes créés pour demain",
+      "me débarrasser de mon alarme de huit heures du matin",
+      "veuillez supprimer l'alarme du mercredi soir",
+      "olly annuler les alarmes"
+    ],
+    "tag": "ALARME_SUPPRIMER",
+    "statut": "BON",
+    "justification": "Respect de la taxonomie [DOMAINE]_[ACTION].",
+    "action_alexa": "Appel natif à AMAZON.CancelAlarmIntent."
+  },
+  {
+    "phrases": [
+      "qu'est-ce que j' ai comme email",
+      "il y a t il de nouveaux e-mail d émilie",
+      "faites-moi savoir si je ai de nouveaux e-mails",
+      "y a-t-il de nouveaux e-mails dans ma boite de réception"
+    ],
+    "tag": "EMAIL_QUERY",
+    "statut": "BON",
+    "justification": "Domaine correct (EMAIL) avec action de lecture/consultation (QUERY).",
+    "action_alexa": "Consultation d'emails via l'API Communications."
+  },
+  {
+    "phrases": [
+      "est-ce que j'ai de nouveaux e mails de john smith",
+      "montre moi un nouvel e mail",
+      "ouvre mes nouveaux e-mails",
+      "ouvre mon compte e-mail et vérifie les nouveaux e-mails"
+    ],
+    "tag": "EMAIL_QUERY",
+    "statut": "BON",
+    "justification": "Format de taxonomie parfaitement respecté.",
+    "action_alexa": "Consultation d'emails via l'API Communications."
+  },
+  {
+    "phrases": [
+      "quels sont les scores des deux jeux ucl en ce moment",
+      "quels ont été les moments forts du match de football de ce soir",
+      "je veux savoir qui est au sommet de la english premier league en ce moment",
+      "quels étaient winning powerball numbers hier soir"
+    ],
+    "tag": "INFO_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Le domaine INFO est beaucoup trop générique. Ces requêtes concernent le sport. Le tag correct est SPORT_QUERY.",
+    "action_alexa": "Interrogation du Knowledge Graph (Sports)."
+  },
+  {
+    "phrases": [
+      "qui mène actuellement la course de formule un",
+      "je veux jouer à mon match de football à partir du cinquième niveau",
+      "les yankees ont-ils gagné dernier nuit",
+      "qui sont les cinq premiers de tous les temps n. h. l. buteurs"
+    ],
+    "tag": "INFO_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Même erreur : généralisation excessive. Doit être nommé SPORT_QUERY.",
+    "action_alexa": "Interrogation du Knowledge Graph (Sports)."
+  },
+  {
+    "phrases": [
+      "s'il te plait fais-moi un café",
+      "fais-moi une tasse de café",
+      "préparer du café",
+      "s'il te plait démarrer le café"
+    ],
+    "tag": "ACTION_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Le verbe 'ACTION' est proscrit car générique, et ce n'est pas un QUERY (consultation) mais une activation domotique. Doit être DOMOTIQUE_ACTIVER.",
+    "action_alexa": "Déclenchement Smart Home (TurnOn) sur cafetière."
+  },
+  {
+    "phrases": [
+      "puis-je avoir un espresso s'il vous plaît",
+      "préparer mon café du matin",
+      "faire du café maintenant",
+      "je voudrais du café maintenant"
+    ],
+    "tag": "ACTION_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Faux domaine et fausse action (ce n'est pas une recherche). Le tag correct est DOMOTIQUE_ACTIVER.",
+    "action_alexa": "Déclenchement Smart Home (TurnOn)."
+  },
+  {
+    "phrases": [
+      "quels sont les derniers potins hollywood qui se passent",
+      "entertainment nouvelles",
+      "je veux des nouvelles sur oscars",
+      "raconte moi les derniers évènements"
+    ],
+    "tag": "CELEBRITE_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Généralisation requise. Les potins et les Oscars relèvent de l'actualité du divertissement. Le tag général standard est ACTUALITE_QUERY.",
+    "action_alexa": "Déclenchement du Flash Briefing / NewsIntent."
+  },
+  {
+    "phrases": [
+      "montre moi comment cuisiner une recette",
+      "donne moi des recettes",
+      "recettes",
+      "montre moi la recette des biscuits"
+    ],
+    "tag": "CUISINE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine (CUISINE) et Action (QUERY) respectent totalement la charte.",
+    "action_alexa": "Déclenchement d'une Skill de recettes (AMAZON.Food)."
+  },
+  {
+    "phrases": [
+      "utilise google pour me montrer comment cuisiner",
+      "ok google quel est le moyen le plus simple et le plus rapide de faire cuire une dinde",
+      "donne moi les meilleures idées de cuisine",
+      "trouver recette casserole de poulet"
+    ],
+    "tag": "CUISINE_QUERY",
+    "statut": "BON",
+    "justification": "Format correct. La mention de 'google' est une variable/entité ignorée.",
+    "action_alexa": "Déclenchement d'une Skill de recettes (AMAZON.Food)."
+  },
+  {
+    "phrases": [
+      "va-t-il neiger cette semaine",
+      "va-t-il neiger la semaine prochaine",
+      "y aura-t-il de la neige la semaine prochaine",
+      "est-ce qu'il doit neige cette semaine"
+    ],
+    "tag": "NEIGE_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "La neige est une variable/entité météorologique. Le domaine générique est METEO_QUERY.",
+    "action_alexa": "Appel natif de AMAZON.WeatherIntent."
+  },
+  {
+    "phrases": [
+      "joue la station france trois sur cent deux virgule quatre",
+      "aller sur ma radio chaîne préférée",
+      "pouvez vous commencer la chaîne de radio f. m. huit cent quatre vingt dix",
+      "olly je veux écouter une station radio qui joue r n b"
+    ],
+    "tag": "RADIO_ECOUSER",
+    "statut": "MAUVAIS",
+    "justification": "Faute d'orthographe (ECOUSER) et verbe non standard. L'action correcte pour lancer un média est JOUER ou ACTIVER. Doit être RADIO_JOUER.",
+    "action_alexa": "Lancement d'un flux audio via TuneIn/Radio Skill."
+  },
+  {
+    "phrases": [
+      "joue ma station favoris à vingt et une heure",
+      "je souhaite écouter cette radio",
+      "joue les programmes de musique en radio",
+      "changer la radio sur la fréquence good jokes"
+    ],
+    "tag": "RADIO_ECOUSER",
+    "statut": "MAUVAIS",
+    "justification": "Verbe inexistant/non-standard. Doit être RADIO_JOUER.",
+    "action_alexa": "Lancement d'un flux audio via TuneIn/Radio Skill."
+  },
+  {
+    "phrases": [
+      "quels événements se déroulent à paris",
+      "qu'est ce qui se passe à paris",
+      "que se passe t il à paris aujourd'hui",
+      "quels événements du salon du livre auront lieu la semaine prochaine à paris"
+    ],
+    "tag": "VILLE_ACTUALITE",
+    "statut": "MAUVAIS",
+    "justification": "Ne respecte pas le suffixe _QUERY pour les recherches, et VILLE est un slot (entité géographique). Doit être EVENEMENT_QUERY ou LOCAL_QUERY.",
+    "action_alexa": "Recherche d'évènements locaux via l'API Local Search."
+  },
+  {
+    "phrases": [
+      "quand est-ce que bruno mars vient à paris",
+      "que se passe-t-il à new york",
+      "qui est le gouverneur de paris",
+      "faire une liste de choses à faire lors de la visite du parc montsouris"
+    ],
+    "tag": "VILLE_ACTUALITE",
+    "statut": "MAUVAIS",
+    "justification": "Format _QUERY non respecté et VILLE est un slot. Doit être EVENEMENT_QUERY ou ENCYCLOPEDIE_QUERY selon l'intention exacte.",
+    "action_alexa": "Recherche via Local Search ou Knowledge Graph."
+  },
+  {
+    "phrases": [
+      "quelles sont les dernières nouvelles à propos des élections aux etats-unis",
+      "olly donne moi des nouvelles sur donald trump",
+      "quoi de neuf en politique aujourd'hui peux-tu filtrer les nouvelles de trump",
+      "quelles sont les nouvelles en politique"
+    ],
+    "tag": "POLITIQUE_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "POLITIQUE est une catégorie (slot) d'actualité. Le domaine générique dicté par la règle 5 est ACTUALITE_QUERY.",
+    "action_alexa": "Déclenchement du Flash Briefing / NewsIntent filtré."
+  },
+  {
+    "phrases": [
+      "quel est le dernier sondage sur l'opinion publique du président trump",
+      "olly y a-t-il des nouvelles actuelles sur les élections présidentielles",
+      "s'il vous plaît dites-moi les dernières nouvelles sur scénario des élections dans notre état",
+      "me tenir au courant des résultats de élection"
+    ],
+    "tag": "POLITIQUE_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Manque de généralisation du domaine. Doit être ACTUALITE_QUERY.",
+    "action_alexa": "Déclenchement du Flash Briefing / NewsIntent."
+  },
+  {
+    "phrases": [
+      "aidez-moi à allumer l' aspirateur robot s'il vous plaît",
+      "s'il vous plaît démarre l' aspirateur"
+    ],
+    "tag": "DOMESTIQUE_ACTIVER",
+    "statut": "MAUVAIS",
+    "justification": "Le terme DOMESTIQUE n'est pas le standard industriel habituel, on préfère DOMOTIQUE. Le tag optimal serait NETTOYAGE_COMMENCER ou DOMOTIQUE_ACTIVER.",
+    "action_alexa": "Activation Smart Home (TurnOn) sur un device spécifique."
+  },
+  {
+    "phrases": [
+      "quelle est la valeur des actions de google",
+      "quels sont le cours boursier actuels de google",
+      "quels sont les cours des actions amd",
+      "quel est le taux d'action actuel de facebook"
+    ],
+    "tag": "GOOGLE_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Google est une entité commerciale (slot) et non un domaine NLU. Le domaine correct est BOURSE_QUERY.",
+    "action_alexa": "Consultation des marchés financiers via Stock API."
+  },
+  {
+    "phrases": [
+      "cours de clôture d'aujourd'hui pour google",
+      "comment va le stock de coca-cola aujourd'hui",
+      "où en est le dow jones aujourd'hui",
+      "cours des actions chez walmart"
+    ],
+    "tag": "GOOGLE_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Même erreur, la marque est utilisée comme domaine. Doit être BOURSE_QUERY.",
+    "action_alexa": "Consultation des marchés financiers via Stock API."
+  },
+  {
+    "phrases": [
+      "montre moi les nouvelles du new york times"
+    ],
+    "tag": "ACTUALITE_RECENTE",
+    "statut": "MAUVAIS",
+    "justification": "Une consultation (montre moi) doit obligatoirement avoir l'action _QUERY. RECENTE est un adjectif. Doit être ACTUALITE_QUERY.",
+    "action_alexa": "Déclenchement du Flash Briefing / NewsIntent."
+  },
+  {
+    "phrases": [
+      "dis-moi une blague"
+    ],
+    "tag": "BLAGUE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine et mot-clé QUERY respectés pour la recherche d'une réponse humoristique.",
+    "action_alexa": "Appel natif de AMAZON.TellJokeIntent."
+  },
+  {
+    "phrases": [
+      "quelles sont les dernières photos sur mon compte instagram",
+      "quelle est la dernière de mon flux",
+      "combien de j'aime a obtenu ma dernière photo postée sur instagram",
+      "peux-tu me dire ce qui est arrivé à mes réseaux sociaux"
+    ],
+    "tag": "PERSONNEL_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Le domaine PERSONNEL est trop vague. L'intention cible spécifiquement les réseaux sociaux. Doit être RESEAUX_QUERY.",
+    "action_alexa": "Consultation d'API tierce (Social Media Skill)."
+  },
+  {
+    "phrases": [
+      "quelle a été la dernière chose que ma mère a dit",
+      "que faites-vous de mes données personnelles",
+      "dis à comcast que je suis toujours en attente",
+      "qu'est-ce que la clinique a dit à propos de mes examens"
+    ],
+    "tag": "PERSONNEL_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Le domaine est flou et le cluster est totalement impur (mélange vie privée, clinique, comcast).",
+    "action_alexa": "Multiples appels (Communications API, HelpIntent, etc.)."
+  },
+  {
+    "phrases": [
+      "en définissant des mots propose le dictionnaire et utilise les dans une phrase pour rendre cela plus clair",
+      "trouve une définition",
+      "trouve la signification du mot monde dans le dictionnaire",
+      "olly quelle est la définition du mot communément situation normal"
+    ],
+    "tag": "OBJET_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "L'action recherchée est spécifiquement une définition textuelle, 'OBJET' est inapproprié. Doit être DEFINITION_QUERY.",
+    "action_alexa": "Appel d'encyclopédie ou dictionnaire (Knowledge Graph)."
+  },
+  {
+    "phrases": [
+      "veuillez rechercher ce mot",
+      "rechercher la définition d'une ambulance",
+      "quelle est la définition de coup de circuit",
+      "pourriez-vous décrire cet objet s'il vous plaît"
+    ],
+    "tag": "OBJET_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Mauvais domaine. La requête vise le sens des mots. Doit être DEFINITION_QUERY.",
+    "action_alexa": "Appel d'encyclopédie ou dictionnaire (Knowledge Graph)."
+  },
+  {
+    "phrases": [
+      "taux de change entre dollar et euro",
+      "quel est le taux de change du euro",
+      "quel est le taux de change entre le dollar américain et l'euro",
+      "quel est le taux de change entre le dollar et l'euro actuellement"
+    ],
+    "tag": "ECONOMIE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine global valide (ECONOMIE) ou DEVISE_QUERY, avec le suffixe correct.",
+    "action_alexa": "Conversion financière (ExchangeRate API)."
+  },
+  {
+    "phrases": [
+      "dis moi le taux de change du euro",
+      "quel est le taux de change de dollar américain à dollar canadien",
+      "quel est le taux de change du yen dollar américain",
+      "quel est le taux de change entre euro et dollar canadien"
+    ],
+    "tag": "ECONOMIE_QUERY",
+    "statut": "BON",
+    "justification": "Format de taxonomie parfaitement respecté.",
+    "action_alexa": "Conversion financière (ExchangeRate API)."
+  },
+  {
+    "phrases": [
+      "qui était les bâtiments les plus longs du monde",
+      "pourquoi le ciel est bleu",
+      "bâtiment le plus haut",
+      "qui est la plus petite île du monde"
+    ],
+    "tag": "GENERAL_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "GENERAL est un mot fourre-tout proscrit. Ce sont des requêtes encyclopédiques. Doit être ENCYCLOPEDIE_QUERY.",
+    "action_alexa": "Interrogation du Knowledge Graph (Facts)."
+  },
+  {
+    "phrases": [
+      "quelle taille a une girafe",
+      "est-ce qu'il y a de la vie sur les autres planètes",
+      "trouve moi des information sur",
+      "à quelle distance est"
+    ],
+    "tag": "GENERAL_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Le domaine doit refléter la consultation de la base de connaissance : ENCYCLOPEDIE_QUERY ou CONNAISSANCE_QUERY.",
+    "action_alexa": "Interrogation du Knowledge Graph (Facts)."
+  },
+  {
+    "phrases": [
+      "sujets wikipédia",
+      "essayer sur wikipédia"
+    ],
+    "tag": "WIKIPEDIA_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Wikipedia est une entité/marque, pas un domaine générique. Doit être RECHERCHE_WEB ou ENCYCLOPEDIE_QUERY.",
+    "action_alexa": "Lancement d'une recherche externe via SearchAction."
+  },
+  {
+    "phrases": [
+      "pouvez-vous s'il vous plaît me dire ce que j'ai sur ma liste",
+      "pouvez-vous s'il vous plaît me montrer mes listes",
+      "quelles sont mes listes",
+      "hey quelles sont mes listes"
+    ],
+    "tag": "LISTE_QUERY",
+    "statut": "BON",
+    "justification": "Demande de consultation d'information sur le domaine des listes.",
+    "action_alexa": "Appel de AMAZON.ReadListIntent sur l'API ListManagement."
+  },
+  {
+    "phrases": [
+      "dis-moi ce qu'il y a sur ma liste",
+      "s'il vous plaît dites -moi quelles listes je ai faites",
+      "qu'est-ce qu'il y a sur la liste",
+      "pouvez-vous me lire mes listes"
+    ],
+    "tag": "LISTE_QUERY",
+    "statut": "BON",
+    "justification": "Respect de la taxonomie [DOMAINE]_[ACTION].",
+    "action_alexa": "Appel de AMAZON.ReadListIntent."
+  },
+  {
+    "phrases": [
+      "supprimer le prochain événement du calendrier",
+      "supprime le prochain événement du calendrier",
+      "supprimer du calendrier le prochain événement",
+      "supprimer mon événement de calendrier à une p. m. aujourd'hui"
+    ],
+    "tag": "CALENDRIER_SUPPRIMER",
+    "statut": "BON",
+    "justification": "Action claire (SUPPRIMER) sur un domaine précis (CALENDRIER).",
+    "action_alexa": "Appel natif de DeleteEvent (Calendar API)."
+  },
+  {
+    "phrases": [
+      "supprimer mon événement à une p. m. dans mon calendrier",
+      "supprimer la réunion",
+      "effacer ma journée des réunions",
+      "supprimer la réunion du mercredi matin"
+    ],
+    "tag": "CALENDRIER_SUPPRIMER",
+    "statut": "BON",
+    "justification": "Respect du format et du verbe d'action.",
+    "action_alexa": "Appel natif de DeleteEvent (Calendar API)."
+  },
+  {
+    "phrases": [
+      "rappelle-moi dans une heure ma réunion",
+      "rappelle-moi la réunion de demain à dix heures du matin",
+      "rappelez-moi la prochaine réunion à quatre heures du matin aujourd'hui",
+      "rappelle-moi la réunion dans une heure"
+    ],
+    "tag": "REMINDER_CREER",
+    "statut": "MAUVAIS",
+    "justification": "Le domaine REMINDER est un anglicisme. La nomenclature NLU française exige RAPPEL_CREER.",
+    "action_alexa": "Appel de l'API Reminders (CreateReminder)."
+  },
+  {
+    "phrases": [
+      "j'ai rendez-vous demain rappelle moi",
+      "rappelle-moi de rencontrer joe pour le déjeuner demain",
+      "rappelle moi que j'ai rendez-vous samedi midi",
+      "rappelle moi de rencontrer reveca aujourd'hui à dix huit heures"
+    ],
+    "tag": "REMINDER_CREER",
+    "statut": "MAUVAIS",
+    "justification": "Anglicisme prohibé. Le tag doit être RAPPEL_CREER.",
+    "action_alexa": "Appel de l'API Reminders (CreateReminder)."
+  },
+  {
+    "phrases": [
+      "ai-je une réunion pour aujourd'hui dans mon calendrier",
+      "ai-je des réunions demain à neuve heure du soir",
+      "quelles réunions ai-je entre huit heures dix heures aujourd'hui",
+      "combien de réunions ai-je cette semaine"
+    ],
+    "tag": "CALENDRIER_REUNION",
+    "statut": "MAUVAIS",
+    "justification": "Manque le verbe d'action (_QUERY) car il s'agit d'une consultation. 'Réunion' est un slot. Doit être CALENDRIER_QUERY.",
+    "action_alexa": "Recherche d'événements privés via Calendar API."
+  },
+  {
+    "phrases": [
+      "veuillez supprimer tous les événements de mon calendrier",
+      "pouvez-vous supprimer tous les événements de mon calendrier",
+      "supprime tous les événements de mon agenda",
+      "supprimer tous les événements des cinq prochains jours"
+    ],
+    "tag": "CALENDRIER_TOUTSUPPRIMER",
+    "statut": "MAUVAIS",
+    "justification": "'TOUTSUPPRIMER' n'est pas un verbe d'action valide. 'Tout' est une variable de quantité. Le tag est CALENDRIER_SUPPRIMER.",
+    "action_alexa": "Appel natif de DeleteEvent (avec filtre bulk) sur Calendar API."
+  },
+  {
+    "phrases": [
+      "définis un rappel pour une réunion à quinze heures demain",
+      "définir un rappel que je dois rendre visite à mon père demain",
+      "définir un rappel tous les mercredis à quatorze heures",
+      "fixer un rappel pour la réunion de vendredi à quinze heure"
+    ],
+    "tag": "CALENDRIER_REMINDER",
+    "statut": "MAUVAIS",
+    "justification": "Anglicisme et absence de verbe d'action clair (CREER). Doit être RAPPEL_CREER.",
+    "action_alexa": "Appel de l'API Reminders (CreateReminder)."
+  },
+  {
+    "phrases": [
+      "définir un rappel pour samedi prochain aller à la librairie à cinq heures",
+      "envoie-moi un rappel pour récupérer mon chien chez le toiletteur à treize heures",
+      "s'il vous plaît définissez un rappel pour moi de aller au travaille dans dix minutes",
+      "hey olly s'il te plait met un rappel pour demain dix heure du matin réunion"
+    ],
+    "tag": "CALENDRIER_REMINDER",
+    "statut": "MAUVAIS",
+    "justification": "Anglicisme et violation du format. Doit être RAPPEL_CREER.",
+    "action_alexa": "Appel de l'API Reminders (CreateReminder)."
+  },
+  {
+    "phrases": [
+      "dans le calendrier mettre le dîner avec frank à vingt heures le neuf août",
+      "ajouter au calendrier un événement de réunion pour cet après-midi",
+      "mettre en place l' évènement suivant dans le calendrier avec les personnes suivantes",
+      "ajouter ma prochaine réunion à mon calendrier"
+    ],
+    "tag": "CALENDRIER_CREE",
+    "statut": "MAUVAIS",
+    "justification": "Le verbe doit être à l'infinitif. CREE est une faute de frappe/conjugaison. Le tag correct est CALENDRIER_CREER.",
+    "action_alexa": "Création d'événement via CreateEvent (Calendar API)."
+  },
+  {
+    "phrases": [
+      "olly fait une entrée dans le calendrier pour samedi prochain à dix heure du matin s'il te plaît",
+      "je veux ajouter quelque chose à mon calendrier",
+      "ajouter un événement pratique de baseball cinq p. m. ce soir",
+      "planifier un événement dans mon calendrier pour la soirée piscine chez jack ce samedi"
+    ],
+    "tag": "CALENDRIER_CREE",
+    "statut": "MAUVAIS",
+    "justification": "Le verbe d'action doit être à l'infinitif. Doit être CALENDRIER_CREER.",
+    "action_alexa": "Création d'événement via CreateEvent (Calendar API)."
+  },
+  {
+    "phrases": [
+      "mettre un événement récurrent sur le calendrier",
+      "répéter un événement dans mon calendrier",
+      "définir un événement sur récurrent",
+      "événement après le déjeuner à répéter tous les vendredis"
+    ],
+    "tag": "CALENDRIER_RECURRENT",
+    "statut": "MAUVAIS",
+    "justification": "'RECURRENT' est un adjectif/paramètre, pas un verbe d'action. L'intention est de planifier, donc CALENDRIER_CREER.",
+    "action_alexa": "Création d'événement avec règle de récurrence (Calendar API)."
+  },
+  {
+    "phrases": [
+      "quels sont les horaires de train pour",
+      "à quelle heure part le train de marseille",
+      "quels sont les horaires de train pour voyager de paris à marseille",
+      "à quelle heure part le train pour chicago"
+    ],
+    "tag": "TRANSPORT_QUERY",
+    "statut": "BON",
+    "justification": "Généralisation correcte du domaine (TRANSPORT au lieu de TRAIN) et action QUERY respectée.",
+    "action_alexa": "Consultation informative via une Skill de Transport."
+  },
+  {
+    "phrases": [
+      "combien coûte un billet de train pour paris",
+      "quels sont les horaires de train pour le vingt trois à paris",
+      "liste tous les horaires de train pour new york",
+      "réserve mon billet de chaise classe a. c. du train de monaco à lyon"
+    ],
+    "tag": "TRANSPORT_QUERY",
+    "statut": "BON",
+    "justification": "Tag global correct, bien que la dernière phrase soit une réservation (cluster légèrement impur).",
+    "action_alexa": "Consultation informative via une Skill de Transport."
+  },
+  {
+    "phrases": [
+      "donnez-moi des indications pour l'endroit",
+      "quel est l'itinéraire le plus proche jusqu'au mcdonalds",
+      "dirigez-moi vers la gare la plus proche",
+      "quelle rue dois-je prendre pour aller au centre ville"
+    ],
+    "tag": "NAVIGATION_QUERY",
+    "statut": "BON",
+    "justification": "Recherche d'informations d'itinéraires et de guidage GPS via le suffixe QUERY.",
+    "action_alexa": "Appel natif de AMAZON.GetDirectionsIntent."
+  },
+  {
+    "phrases": [
+      "je veux aller à bank of america donne moi l'itinéraire",
+      "les directions vers le magasin apple le plus proche",
+      "trouver l'emplacement exact des lieux",
+      "où se trouve le centre de convention"
+    ],
+    "tag": "NAVIGATION_QUERY",
+    "statut": "BON",
+    "justification": "Format de taxonomie parfaitement respecté.",
+    "action_alexa": "Appel natif de AMAZON.GetDirectionsIntent."
+  },
+  {
+    "phrases": [
+      "allumez la radio",
+      "allume la radio",
+      "allumer la radio",
+      "radio allumée"
+    ],
+    "tag": "RADIO_ACTIVER",
+    "statut": "BON",
+    "justification": "Domaine (RADIO) et Action à l'infinitif (ACTIVER) respectent les règles.",
+    "action_alexa": "Lancement du flux avec TuneIn/Skill Radio."
+  },
+  {
+    "phrases": [
+      "jouer de la radio",
+      "s'il te plait lance la radio",
+      "jouer le match de football à la radio",
+      "jouer la radio famosa pour moi"
+    ],
+    "tag": "RADIO_ACTIVER",
+    "statut": "BON",
+    "justification": "L'action est valide (ACTIVER ou JOUER sont acceptables ici).",
+    "action_alexa": "Lancement du flux avec TuneIn/Skill Radio."
+  },
+  {
+    "phrases": [
+      "reprends le dernier livre audio joué",
+      "reprend mon livre audio là où nous nous sommes arrêtés la dernière fois",
+      "continue à lire mon livre audio",
+      "continue de lire le petit chaperon rouge"
+    ],
+    "tag": "LECTURE_COMMENCER",
+    "statut": "MAUVAIS",
+    "justification": "L'action de lire un livre audio est plutôt rattachée au domaine LIVRE et à l'action JOUER. LIVRE_JOUER est plus conforme.",
+    "action_alexa": "Appel de AMAZON.ResumeIntent ciblant Audible/livres."
+  },
+  {
+    "phrases": [
+      "commence à lire le livre",
+      "livre audio joue le petit chaperon rouge",
+      "reprends le livre audio l'agent secret",
+      "reprends la lecture de la leçon de français"
+    ],
+    "tag": "LECTURE_COMMENCER",
+    "statut": "MAUVAIS",
+    "justification": "Même règle, LIVRE_JOUER correspond mieux à l'API Multimédia sous-jacente.",
+    "action_alexa": "Appel de AMAZON.ResumeIntent ciblant Audible/livres."
+  },
+  {
+    "phrases": [
+      "supprimer une liste",
+      "supprimer un objet de ma liste",
+      "veuillez supprimer cet objet de la liste",
+      "supprimer une liste de choses à acheter"
+    ],
+    "tag": "LISTE_SUPPRIMER",
+    "statut": "BON",
+    "justification": "Domaine et verbe d'action à l'infinitif respectés pour la gestion des To-Do lists.",
+    "action_alexa": "Appel API ListManagement (RemoveListItem / DeleteList)."
+  },
+  {
+    "phrases": [
+      "veuillez supprimer une liste",
+      "supprimer cet objet de ma liste",
+      "supprimer un objet de la liste",
+      "ouvrir les listes supprimer la liste"
+    ],
+    "tag": "LISTE_SUPPRIMER",
+    "statut": "BON",
+    "justification": "Respect de la taxonomie globale [DOMAINE]_[ACTION].",
+    "action_alexa": "Appel API ListManagement (RemoveListItem / DeleteList)."
+  },
+  {
+    "phrases": [
+      "je ne veux pas d'œufs"
+    ],
+    "tag": "OBJET_SUPPRIMER",
+    "statut": "MAUVAIS",
+    "justification": "OBJET est beaucoup trop générique. Cela devrait cibler LISTE_MODIFIER (retirer de la liste de courses) ou RESTAURATION_MODIFIER.",
+    "action_alexa": "Modification via ListManagement ou Shopping API."
+  },
+  {
+    "phrases": [
+      "passe à l'épisode suivant"
+    ],
+    "tag": "MEDIA_PASSER",
+    "statut": "MAUVAIS",
+    "justification": "L'action 'PASSER' est floue. La taxonomie standard pour cela est MEDIA_SUIVANT ou MEDIA_CONTROLER.",
+    "action_alexa": "Appel natif de AMAZON.NextIntent."
+  },
+  {
+    "phrases": [
+      "quel genre de magasins sont près de ma localité",
+      "quel est le pub le plus proche dans la ville",
+      "olly quels sont les restaurants près de moi",
+      "olly quels bars sont autour de moi"
+    ],
+    "tag": "RESTAURATION_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Le domaine est trop spécifique (Restauration) alors que les phrases mentionnent aussi des 'magasins'. Le tag exact est LOCAL_QUERY.",
+    "action_alexa": "Recherche locale via Local Search API."
+  },
+  {
+    "phrases": [
+      "trouve un magasin qui vende de la bière",
+      "lister tous les magasins à proximité",
+      "montrez moi quelques aires de restauration les plus proche de mon emplacement",
+      "où puis-je trouver le irish pub le plus proche dans ma région"
+    ],
+    "tag": "RESTAURATION_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Mélange retail/restauration. L'intention de Local Search se nomme LOCAL_QUERY.",
+    "action_alexa": "Recherche locale via Local Search API."
+  },
+  {
+    "phrases": [
+      "quels événements se passent près de moi"
+    ],
+    "tag": "CONCERT_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Le mot 'Concert' est un slot (sous-catégorie d'événement). La règle exige de généraliser le domaine à EVENEMENT_QUERY.",
+    "action_alexa": "Recherche d'agenda public (Local Event Search)."
+  },
+  {
+    "phrases": [
+      "quel est le cinéma le plus proche qui joue le nouveau gérard depardieu",
+      "merci de me donner des informations sur le prochain film de guillaume canet",
+      "liste les cinq meilleurs films de isabelle huppert",
+      "dis moi pourquoi gad elmaleh est un meilleur comédien que camille lellouche"
+    ],
+    "tag": "CINEMA_QUERY",
+    "statut": "BON",
+    "justification": "Domaine spécifique (CINEMA) généralisé correctement avec le verbe d'action de recherche (QUERY).",
+    "action_alexa": "Recherche via Knowledge Graph / Movie API."
+  },
+  {
+    "phrases": [
+      "combien de fois adele a eu un disc de diamant",
+      "quel âge a léa seydoux",
+      "où est domicile de maître gims",
+      "quel âge sont christine et les reines"
+    ],
+    "tag": "CINEMA_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Il s'agit de questions sur des musiciens et célébrités en général, pas uniquement sur le cinéma. Doit être CELEBRITE_QUERY ou ENCYCLOPEDIE_QUERY.",
+    "action_alexa": "Recherche via Knowledge Graph (AMAZON.Person)."
+  },
+  {
+    "phrases": [
+      "j'ai besoin d'un taxi à huit heures demain matin pour me rendre au travail",
+      "j'ai besoin d'un taxi pour m'emmener à l' aéroport s'il vous plaît",
+      "appelle un taxi pour qu'il vienne me chercher tout de suite",
+      "prends-moi un taxi pour m'emmener à l'aéroport vendredi à cinq heures trente du matin"
+    ],
+    "tag": "TRANSPORT_RESERVER",
+    "statut": "BON",
+    "justification": "Domaine généralisé (TRANSPORT) et verbe transactionnel approprié (RESERVER).",
+    "action_alexa": "Déclenchement d'une Skill de mobilité (Ride Hailing / BookAction)."
+  },
+  {
+    "phrases": [
+      "réserver un taxi pour une prise en charge à mon emplacement actuel dans une heure",
+      "commande moi un taxi",
+      "réserver un taxi pour l' aéroport pour demain matin",
+      "veuillez réserver le prochain taxi"
+    ],
+    "tag": "TRANSPORT_RESERVER",
+    "statut": "BON",
+    "justification": "Format de taxonomie parfaitement respecté.",
+    "action_alexa": "Déclenchement d'une Skill de mobilité."
+  },
+  {
+    "phrases": [
+      "réserve un billet de train pour",
+      "réserve une place pour moi dans le train du vingtième mars",
+      "achète moi un billet pour prendre le train pour paris",
+      "s'il te plaît commande un billet de train pour marseille"
+    ],
+    "tag": "TRAIN_RESERVER",
+    "statut": "MAUVAIS",
+    "justification": "Train est un moyen (slot), la règle 5 impose de généraliser le domaine à TRANSPORT_RESERVER.",
+    "action_alexa": "Déclenchement d'une Skill de réservation ferroviaire (AMAZON.BookAction)."
+  },
+  {
+    "phrases": [
+      "réserve-moi un billet de train pour montréal pour demain matin avant dix heures",
+      "pouvez-vous me réserver un ticket de train pour montréal pour mardi prochain",
+      "chercher deux billets dans le train du mardi pour paris",
+      "olly s'il te plait achète-moi un billet de train pour marseille"
+    ],
+    "tag": "TRAIN_RESERVER",
+    "statut": "MAUVAIS",
+    "justification": "Même erreur : manque de généralisation du domaine. Doit être TRANSPORT_RESERVER.",
+    "action_alexa": "Déclenchement d'une Skill de réservation ferroviaire."
+  },
+  {
+    "phrases": [
+      "comment est le trafic",
+      "quel est le trafic ce matin",
+      "quel est l'état du trafic du travail à au domicile"
+    ],
+    "tag": "TRAFFIC_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Le domaine comporte un anglicisme ou une spécification floue. On standardise généralement par NAVIGATION_QUERY ou TRAFIC_QUERY (en français).",
+    "action_alexa": "Recherche de conditions de circulation via Traffic API."
+  },
+  {
+    "phrases": [
+      "dit moi l'heure qu'il est"
+    ],
+    "tag": "DIVERTISSEMENT_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Faux domaine. La requête porte strictement sur l'heure. Le tag correct est HEURE_QUERY.",
+    "action_alexa": "Appel natif de AMAZON.TimeIntent."
+  },
+  {
+    "phrases": [
+      "plainte du service client tweet ce qui suit",
+      "tweet service consommateur que je suis très déçu de ma récente interaction",
+      "pouvez-vous tweeter une plainte au service client du magasin de meubles",
+      "tweetez walmart et dites-leur que leur service client est horrible"
+    ],
+    "tag": "SOCIALMEDIA_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Ce n'est pas un QUERY (consultation) mais une écriture (POST). De plus, SOCIALMEDIA est un anglicisme. Doit être RESEAUX_PUBLIER.",
+    "action_alexa": "Déclenchement de Skill Twitter/Social avec intention de publication."
+  },
+  {
+    "phrases": [
+      "envoie une réclamation via le service client de twitter",
+      "tweet le service client n'est pas bon pour le service litre par gramme dans mon compte twitter",
+      "tweeter une plainte concernant mon réfrigérateur à l. g.",
+      "olly envoie un tweet à meijer pour leur dire qu'ils ont le pire service client"
+    ],
+    "tag": "SOCIALMEDIA_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Même violation : erreur d'action (pas un Query) et anglicisme. Le tag approprié est RESEAUX_PUBLIER.",
+    "action_alexa": "Déclenchement de Skill Twitter/Social avec intention de publication."
+  },
+  {
+    "phrases": ["allume la lumière du salon", "éclaire le salon", "active les lampes du salon", "lumière salon on"],
+    "tag": "DOMOTIQUE_ACTIVER",
+    "statut": "BON",
+    "justification": "Domaine généralisé (DOMOTIQUE) et action correcte (ACTIVER) pour un déclenchement smart home.",
+    "action_alexa": "Smart Home TurnOn"
+  },
+  {
+    "phrases": ["joue du jazz", "mets du jazz", "lance une playlist jazz", "je veux du jazz"],
+    "tag": "JAZZ_JOUER",
+    "statut": "MAUVAIS",
+    "justification": "Règle 4 et 8 violées : le genre musical est un slot, pas un domaine. Tag correct : MUSIQUE_JOUER.",
+    "action_alexa": "AMAZON.PlayMusicIntent"
+  },
+  {
+    "phrases": ["quelle est la météo à Paris", "il fait quel temps à Paris", "météo Paris", "prévisions Paris"],
+    "tag": "PARIS_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règle 4 violée : Paris est un slot. Tag correct : METEO_QUERY.",
+    "action_alexa": "Weather API"
+  },
+  {
+    "phrases": ["ajoute du lait à ma liste de courses", "mets du lait sur la liste", "note lait dans les courses", "rajoute lait"],
+    "tag": "LISTE_CREER",
+    "statut": "BON",
+    "justification": "Domaine généralisé et action correcte pour un ajout d'item.",
+    "action_alexa": "ListManagement AddItem"
+  },
+  {
+    "phrases": ["crée un événement demain à 14h", "ajoute un rdv demain 14h", "programme une réunion demain", "note un rdv demain"],
+    "tag": "CALENDRIER_CREE",
+    "statut": "MAUVAIS",
+    "justification": "Règle 1 violée : verbe conjugué. Tag correct : CALENDRIER_CREER.",
+    "action_alexa": "Calendar API CreateEvent"
+  },
+  {
+    "phrases": ["supprime toutes mes alarmes", "efface mes alarmes", "annule toutes les alarmes", "vire mes alarmes"],
+    "tag": "ALARME_TOUTSUPPRIMER",
+    "statut": "MAUVAIS",
+    "justification": "Règle 1 violée. Tag correct : ALARME_SUPPRIMER.",
+    "action_alexa": "AMAZON.DeleteAlarmIntent"
+  },
+  {
+    "phrases": ["cherche sur Google la tour Eiffel", "google la tour Eiffel", "recherche tour Eiffel", "trouve infos tour Eiffel"],
+    "tag": "GOOGLE_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règle 3 violée : marque comme domaine. Tag correct : RECHERCHE_WEB.",
+    "action_alexa": "AMAZON.SearchAction"
+  },
+  {
+    "phrases": ["c'est quoi la photosynthèse", "définis photosynthèse", "explique la photosynthèse", "donne-moi la définition de photosynthèse"],
+    "tag": "ENCYCLOPEDIE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine généralisé pour une question de connaissance.",
+    "action_alexa": "AMAZON.SearchAction"
+  },
+  {
+    "phrases": ["réserve un train pour Lyon", "achète un billet de train Lyon", "trouve un TGV Lyon", "réserve TGV Lyon"],
+    "tag": "TRAIN_RESERVER",
+    "statut": "MAUVAIS",
+    "justification": "Règle 4 violée. Tag correct : TRANSPORT_RESERVER.",
+    "action_alexa": "Custom Skill BookTransport"
+  },
+  {
+    "phrases": ["poste sur Twitter j'adore Alexa", "tweete j'adore Alexa", "publie sur Instagram", "partage sur Facebook"],
+    "tag": "TWITTER_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règles 3 et 7 violées. Tag correct : RESEAUX_PUBLIER.",
+    "action_alexa": "Custom Skill SocialPost"
+  },
+  {
+    "phrases": ["rappelle-moi d'appeler maman à 18h", "mets un rappel pour appeler maman", "crée un rappel appeler maman", "note rappel appeler maman"],
+    "tag": "RAPPEL_CREER",
+    "statut": "BON",
+    "justification": "Domaine en français, action infinitive correcte.",
+    "action_alexa": "Reminders API CreateReminder"
+  },
+  {
+    "phrases": ["donne-moi une recette de pizza", "comment faire une pizza", "recette pizza margherita", "je veux faire une pizza"],
+    "tag": "PIZZA_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règle 4 violée. Tag correct : CUISINE_QUERY.",
+    "action_alexa": "Custom Skill RecipeQuery"
+  },
+  {
+    "phrases": ["quel est le score du PSG", "résultat match PSG", "score football PSG", "comment joue le PSG"],
+    "tag": "FOOTBALL_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règle 4 violée. Tag correct : SPORT_QUERY.",
+    "action_alexa": "Custom Skill SportsScore"
+  },
+  {
+    "phrases": ["traduis bonjour en espagnol", "comment dit-on bonjour en espagnol", "traduction bonjour espagnol", "dis bonjour en espagnol"],
+    "tag": "TRADUCTION_QUERY",
+    "statut": "BON",
+    "justification": "Domaine et action corrects.",
+    "action_alexa": "AMAZON.TranslateIntent"
+  },
+  {
+    "phrases": ["combien font 25 fois 4", "calcule 25x4", "résultat de 25 multiplié par 4", "25 fois 4"],
+    "tag": "CALCUL_QUERY",
+    "statut": "BON",
+    "justification": "Domaine généralisé correct.",
+    "action_alexa": "AMAZON.CalculatorIntent"
+  },
+  {
+    "phrases": ["raconte-moi une blague", "fais-moi rire", "une blague stp", "dis une blague"],
+    "tag": "GENERAL_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règle 5 violée : trop générique. Tag correct : BLAGUE_QUERY.",
+    "action_alexa": "Custom Skill JokeIntent"
+  },
+  {
+    "phrases": ["mets une alarme à 7h", "réveille-moi à 7h", "programme alarme 7h", "alarme 7h du matin"],
+    "tag": "ALARME_CREER",
+    "statut": "BON",
+    "justification": "Domaine et action corrects.",
+    "action_alexa": "AMAZON.SetAlarmIntent"
+  },
+  {
+    "phrases": ["lance une partie de quiz", "démarre un jeu", "on joue à un quiz", "lance un jeu"],
+    "tag": "JEU_LANCE",
+    "statut": "MAUVAIS",
+    "justification": "Règle 1 violée. Tag correct : JEU_LANCER.",
+    "action_alexa": "AMAZON.LaunchRequest"
+  },
+  {
+    "phrases": ["quelle est la capitale du Japon", "capitale Japon", "dis-moi la capitale du Japon", "c'est quoi la capitale japonaise"],
+    "tag": "GEOGRAPHIE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine généralisé correct.",
+    "action_alexa": "AMAZON.QAIntent"
+  },
+  {
+    "phrases": ["mets un reminder pour demain", "set a reminder demain", "rappel demain", "reminder demain"],
+    "tag": "REMINDER_CREER",
+    "statut": "MAUVAIS",
+    "justification": "Règle 2 violée : anglicisme. Tag correct : RAPPEL_CREER.",
+    "action_alexa": "Reminders API CreateReminder"
+  },
+  {
+    "phrases": ["quel temps fera-t-il demain à Lyon", "météo Lyon demain", "il va pleuvoir demain à Lyon", "prévisions Lyon"],
+    "tag": "METEO_QUERY",
+    "statut": "BON",
+    "justification": "Domaine généralisé malgré la ville spécifique.",
+    "action_alexa": "Weather API"
+  },
+  {
+    "phrases": ["y a-t-il des bouchons sur l'A6", "trafic A6", "circulation autoroute A6", "info trafic A6"],
+    "tag": "TRAFFIC_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règle 2 violée : anglicisme. Tag correct : TRAFIC_QUERY.",
+    "action_alexa": "Traffic API"
+  },
+  {
+    "phrases": ["qui est Brad Pitt", "parle-moi de Brad Pitt", "Brad Pitt biographie", "c'est qui Brad Pitt"],
+    "tag": "ACTEUR_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règle 4 violée. Tag correct : CELEBRITE_QUERY.",
+    "action_alexa": "AMAZON.QAIntent"
+  },
+  {
+    "phrases": ["cours de l'action Apple", "prix action Tesla", "bourse Microsoft", "cotation CAC40"],
+    "tag": "BOURSE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine généralisé correct.",
+    "action_alexa": "Custom Skill StockQuote"
+  },
+  {
+    "phrases": ["mets de la musique classique", "joue du Mozart", "lance du classique", "playlist classique"],
+    "tag": "MUSIQUE_JOUER",
+    "statut": "BON",
+    "justification": "Domaine généralisé correct, malgré le genre/artiste spécifique.",
+    "action_alexa": "AMAZON.PlayMusicIntent"
+  },
+  {
+    "phrases": ["lance France Inter", "écoute RTL", "mets la radio", "joue Europe 1"],
+    "tag": "RADIO_JOUER",
+    "statut": "BON",
+    "justification": "Domaine et action corrects.",
+    "action_alexa": "AMAZON.PlayRadioIntent"
+  },
+  {
+    "phrases": ["lance le podcast Transfert", "écoute mon podcast", "joue un podcast", "mets un podcast"],
+    "tag": "PODCAST_JOUER",
+    "statut": "BON",
+    "justification": "Domaine et action corrects.",
+    "action_alexa": "AMAZON.PlayPodcastIntent"
+  },
+  {
+    "phrases": ["lis-moi mon livre audio", "reprends mon audiobook", "joue mon livre", "continue mon livre audio"],
+    "tag": "LIVREAUDIO_JOUER",
+    "statut": "BON",
+    "justification": "Domaine et action corrects.",
+    "action_alexa": "AudioPlayer PlayBook"
+  },
+  {
+    "phrases": ["envoie un email à Paul", "écris un mail à Paul", "envoie courriel à Paul", "compose mail Paul"],
+    "tag": "EMAIL_CREER",
+    "statut": "BON",
+    "justification": "Domaine et action corrects.",
+    "action_alexa": "Communications SendEmail"
+  },
+  {
+    "phrases": ["appelle Marie", "passe un appel à Marie", "téléphone à Marie", "compose Marie"],
+    "tag": "APPEL_CREER",
+    "statut": "BON",
+    "justification": "Domaine et action corrects.",
+    "action_alexa": "Communications Call"
+  },
+  {
+    "phrases": ["actualités du jour", "infos du matin", "donne-moi les news", "quoi de neuf aujourd'hui"],
+    "tag": "INFO_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règle 5 violée. Tag correct : ACTUALITE_QUERY.",
+    "action_alexa": "AMAZON.FlashBriefingIntent"
+  },
+  {
+    "phrases": ["commande du papier toilette sur Amazon", "achète du dentifrice", "passe commande shampoing", "commande des piles"],
+    "tag": "AMAZON_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règles 3 et 7 violées. Tag correct : SHOPPING_CREER.",
+    "action_alexa": "AMAZON.ShoppingAction"
+  },
+  {
+    "phrases": ["quels sont mes rappels", "liste mes rappels", "montre mes rappels", "dis-moi mes rappels"],
+    "tag": "CALENDRIER_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Confusion domaine. Tag correct : RAPPEL_QUERY.",
+    "action_alexa": "Reminders API GetReminders"
+  },
+  {
+    "phrases": ["supprime ma liste de courses", "efface la liste courses", "vide ma liste", "détruis la liste"],
+    "tag": "LISTE_SUPPRIMER",
+    "statut": "BON",
+    "justification": "Domaine et action corrects.",
+    "action_alexa": "ListManagement DeleteList"
+  },
+  {
+    "phrases": ["change l'heure de mon rdv à 15h", "modifie mon rdv pour 15h", "déplace mon rdv à 15h", "mets mon rdv à 15h"],
+    "tag": "CALENDRIER_MODIFIER",
+    "statut": "BON",
+    "justification": "Action MODIFIER appropriée pour un update.",
+    "action_alexa": "Calendar API UpdateEvent"
+  },
+  {
+    "phrases": ["éteins la télé", "coupe la télévision", "arrête la TV", "shutdown télé"],
+    "tag": "TV_DESACTIVER",
+    "statut": "MAUVAIS",
+    "justification": "Règle 4 violée. Tag correct : DOMOTIQUE_DESACTIVER.",
+    "action_alexa": "Smart Home TurnOff"
+  },
+  {
+    "phrases": ["mes pas du jour", "combien de pas aujourd'hui", "donne mon nombre de pas", "stats activité"],
+    "tag": "SANTE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine généralisé correct.",
+    "action_alexa": "Health API"
+  },
+  {
+    "phrases": ["recherche un hôtel à Rome", "trouve hôtel Rome", "réserve hôtel Rome", "booking hôtel Rome"],
+    "tag": "HOTEL_RESERVER",
+    "statut": "MAUVAIS",
+    "justification": "Règle 4 violée. Tag correct : VOYAGE_RESERVER.",
+    "action_alexa": "Custom Skill BookHotel"
+  },
+  {
+    "phrases": ["crée un événement récurrent", "événement chaque lundi", "rdv qui se répète", "rendez-vous récurrent"],
+    "tag": "CALENDRIER_RECURRENT",
+    "statut": "MAUVAIS",
+    "justification": "Règle 6 violée : adjectif comme action. Tag correct : CALENDRIER_CREER.",
+    "action_alexa": "Calendar API CreateEvent"
+  },
+  {
+    "phrases": ["augmente le volume", "monte le son", "plus fort", "volume plus haut"],
+    "tag": "VOLUME_MODIFIER",
+    "statut": "BON",
+    "justification": "Domaine et action corrects.",
+    "action_alexa": "AMAZON.VolumeUpIntent"
+  },
+  {
+    "phrases": ["c'est quoi la définition de sérendipité", "définis sérendipité", "que veut dire sérendipité", "sens du mot sérendipité"],
+    "tag": "DEFINITION_QUERY",
+    "statut": "BON",
+    "justification": "Domaine spécifique et action correcte.",
+    "action_alexa": "AMAZON.QAIntent"
+  },
+  {
+    "phrases": ["wikipedia Napoléon", "cherche Napoléon sur Wikipedia", "wiki Napoléon", "Napoléon Wikipedia"],
+    "tag": "WIKIPEDIA_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règle 3 violée. Tag correct : ENCYCLOPEDIE_QUERY.",
+    "action_alexa": "AMAZON.SearchAction"
+  },
+  {
+    "phrases": ["va-t-il neiger demain", "neige demain", "y aura-t-il de la neige", "prévisions neige"],
+    "tag": "NEIGE_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règle 4 violée. Tag correct : METEO_QUERY.",
+    "action_alexa": "Weather API"
+  },
+  {
+    "phrases": ["réserve un Uber", "commande un taxi", "appelle un VTC", "trouve un Uber"],
+    "tag": "UBER_RESERVER",
+    "statut": "MAUVAIS",
+    "justification": "Règles 3 et 4 violées. Tag correct : TRANSPORT_RESERVER.",
+    "action_alexa": "Custom Skill BookRide"
+  },
+  {
+    "phrases": ["allume la cafetière", "démarre la cafetière", "active la machine à café", "lance la cafetière"],
+    "tag": "DOMOTIQUE_ACTIVER",
+    "statut": "BON",
+    "justification": "Domaine généralisé correct.",
+    "action_alexa": "Smart Home TurnOn"
+  },
+  {
+    "phrases": ["objet bouge le rideau", "modifie le rideau", "change rideau", "action rideau"],
+    "tag": "OBJET_MODIFIER",
+    "statut": "MAUVAIS",
+    "justification": "Règle 5 violée. Tag correct : DOMOTIQUE_MODIFIER.",
+    "action_alexa": "Smart Home SetState"
+  },
+  {
+    "phrases": ["quel concert ce soir à Paris", "événements ce soir", "concerts ce week-end", "spectacles ce soir"],
+    "tag": "CONCERT_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règle 4 violée. Tag correct : EVENEMENT_QUERY.",
+    "action_alexa": "Custom Skill EventQuery"
+  },
+  {
+    "phrases": ["annule mon rappel de 18h", "supprime mon rappel", "efface le rappel", "enlève rappel 18h"],
+    "tag": "RAPPEL_SUPPRIMER",
+    "statut": "BON",
+    "justification": "Domaine et action corrects.",
+    "action_alexa": "Reminders API DeleteReminder"
+  },
+  {
+    "phrases": ["lance Spotify", "ouvre Spotify", "démarre Spotify", "Spotify on"],
+    "tag": "SPOTIFY_LANCER",
+    "statut": "MAUVAIS",
+    "justification": "Règle 3 violée. Tag correct : MUSIQUE_JOUER.",
+    "action_alexa": "AMAZON.PlayMusicIntent"
+  },
+  {
+    "phrases": ["mes prochains rdv", "agenda de demain", "qu'ai-je demain", "programme de demain"],
+    "tag": "CALENDRIER_QUERY",
+    "statut": "BON",
+    "justification": "Domaine et action corrects.",
+    "action_alexa": "Calendar API GetEvents"
+  },
+  {
+    "phrases": ["tweete bonjour le monde", "publie sur les réseaux", "poste un statut", "partage sur réseaux"],
+    "tag": "RESEAUX_PUBLIER",
+    "statut": "BON",
+    "justification": "Domaine généralisé et action PUBLIER correctes.",
+    "action_alexa": "Custom Skill SocialPost"
+  },
+  {
+    "phrases": ["chronomètre 5 minutes", "minuteur 5 min", "lance un timer 5 minutes", "5 minutes timer"],
+    "tag": "TIMER_CREER",
+    "statut": "MAUVAIS",
+    "justification": "Règle 2 violée. Tag correct : MINUTEUR_CREER.",
+    "action_alexa": "AMAZON.SetTimerIntent"
+  },
+  {
+    "phrases": ["lance le minuteur 10 min", "minuteur 10 minutes", "démarre minuteur 10 minutes", "compte 10 minutes"],
+    "tag": "MINUTEUR_CREER",
+    "statut": "BON",
+    "justification": "Domaine en français correct.",
+    "action_alexa": "AMAZON.SetTimerIntent"
+  },
+  {
+    "phrases": ["navigation vers Marseille", "itinéraire pour Marseille", "guide-moi à Marseille", "GPS Marseille"],
+    "tag": "NAVIGATION_QUERY",
+    "statut": "BON",
+    "justification": "Domaine et action corrects.",
+    "action_alexa": "AMAZON.GetDirectionsIntent"
+  },
+  {
+    "phrases": ["quelle est l'action Tesla", "prix Tesla bourse", "cours Tesla", "Tesla cotation"],
+    "tag": "TESLA_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règles 3 et 4 violées. Tag correct : BOURSE_QUERY.",
+    "action_alexa": "Custom Skill StockQuote"
+  },
+  {
+    "phrases": ["info query du jour", "general query news", "action query infos", "query du matin"],
+    "tag": "ACTION_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règle 5 violée. Tag correct : ACTUALITE_QUERY.",
+    "action_alexa": "AMAZON.FlashBriefingIntent"
+  },
+  {
+    "phrases": ["modifie mon alarme de 7h à 8h", "change l'alarme à 8h", "déplace alarme à 8h", "passe alarme à 8h"],
+    "tag": "ALARME_MODIFIER",
+    "statut": "BON",
+    "justification": "Action MODIFIER appropriée.",
+    "action_alexa": "AMAZON.SnoozeAlarmIntent"
+  },
+  {
+    "phrases": ["ferme les volets", "baisse les volets", "descends les volets", "volets fermés"],
+    "tag": "VOLETS_FERME",
+    "statut": "MAUVAIS",
+    "justification": "Règles 1, 4 et 6 violées. Tag correct : DOMOTIQUE_DESACTIVER.",
+    "action_alexa": "Smart Home TurnOff"
+  },
+  {
+    "phrases": ["quel film est sorti cette semaine", "films au cinéma", "nouveautés ciné", "films récents"],
+    "tag": "CINEMA_QUERY",
+    "statut": "BON",
+    "justification": "Domaine et action corrects.",
+    "action_alexa": "Custom Skill MovieQuery"
+  },
+  {
+    "phrases": ["annule mon abonnement Netflix", "résilie Netflix", "stop Netflix", "supprime Netflix"],
+    "tag": "NETFLIX_SUPPRIMER",
+    "statut": "MAUVAIS",
+    "justification": "Règle 3 violée. Tag correct : ABONNEMENT_SUPPRIMER.",
+    "action_alexa": "Custom Skill ManageSubscription"
+  },
+  {
+    "phrases": ["pause la musique", "stop musique", "arrête la chanson", "mets pause"],
+    "tag": "MUSIQUE_PAUSE",
+    "statut": "MAUVAIS",
+    "justification": "Règle 1 violée. Tag correct : MUSIQUE_PAUSER.",
+    "action_alexa": "AMAZON.PauseIntent"
+  },
+  {
+    "phrases": ["chanson suivante", "passe à la suivante", "next song", "morceau suivant"],
+    "tag": "MUSIQUE_SUIVANT",
+    "statut": "MAUVAIS",
+    "justification": "Règle 6 violée : adjectif. Tag correct : MUSIQUE_PASSER.",
+    "action_alexa": "AMAZON.NextIntent"
+  },
+  {
+    "phrases": ["liste mes courses", "qu'y a-t-il sur ma liste", "lis ma liste", "montre liste courses"],
+    "tag": "LISTE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine et action corrects.",
+    "action_alexa": "ListManagement GetList"
+  },
+  {
+    "phrases": ["reminder query mes rappels", "social media query", "traffic query A1", "reminder list"],
+    "tag": "SOCIALMEDIA_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règle 2 violée : anglicisme. Tag correct : RESEAUX_QUERY.",
+    "action_alexa": "Custom Skill SocialQuery"
+  },
+  {
+    "phrases": ["heure à Tokyo", "quelle heure il est à Tokyo", "heure locale Tokyo", "time Tokyo"],
+    "tag": "HEURE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine généralisé correct.",
+    "action_alexa": "AMAZON.GetTimeIntent"
+  },
+  {
+    "phrases": ["date de Pâques 2026", "quel jour est Noël", "date du nouvel an chinois", "quand tombe Pâques"],
+    "tag": "DATE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine et action corrects.",
+    "action_alexa": "AMAZON.GetDateIntent"
+  },
+  {
+    "phrases": ["chante-moi une berceuse", "joue une berceuse", "berceuse pour dormir", "lance une berceuse"],
+    "tag": "BERCEUSE_JOUER",
+    "statut": "MAUVAIS",
+    "justification": "Règle 4 violée. Tag correct : MUSIQUE_JOUER.",
+    "action_alexa": "AMAZON.PlayMusicIntent"
+  },
+  {
+    "phrases": ["lance Pokémon Quiz", "ouvre la skill quiz", "démarre skill jeu", "lance skill"],
+    "tag": "SKILL_LANCER",
+    "statut": "BON",
+    "justification": "Domaine et action corrects.",
+    "action_alexa": "AMAZON.LaunchRequest"
+  },
+  {
+    "phrases": ["objet allume cuisine", "objet ferme volet", "objet active lampe", "objet contrôle"],
+    "tag": "OBJET_ACTIVER",
+    "statut": "MAUVAIS",
+    "justification": "Règle 5 violée. Tag correct : DOMOTIQUE_ACTIVER.",
+    "action_alexa": "Smart Home TurnOn"
+  },
+  {
+    "phrases": ["mets le chauffage à 21 degrés", "règle thermostat 21", "21 degrés salon", "chauffage à 21"],
+    "tag": "DOMOTIQUE_MODIFIER",
+    "statut": "BON",
+    "justification": "Action MODIFIER appropriée pour un setpoint.",
+    "action_alexa": "Smart Home SetTargetTemperature"
+  },
+  {
+    "phrases": ["envoie un sms à Paul", "texto à Paul", "message à Paul", "SMS Paul"],
+    "tag": "MESSAGE_CREER",
+    "statut": "BON",
+    "justification": "Domaine généralisé et action correcte.",
+    "action_alexa": "Communications SendMessage"
+  },
+  {
+    "phrases": ["donne-moi les horaires de la pharmacie", "horaires pharmacie", "ouverture pharmacie", "pharmacie ouverte"],
+    "tag": "COMMERCE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine généralisé correct.",
+    "action_alexa": "Custom Skill LocalSearch"
+  },
+  {
+    "phrases": ["query general aide", "general query info", "info query générale", "general help"],
+    "tag": "GENERAL_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règle 5 violée. Tag correct : AIDE_QUERY.",
+    "action_alexa": "AMAZON.HelpIntent"
+  },
+  {
+    "phrases": ["arrête tout", "stop", "annule", "cancel"],
+    "tag": "SYSTEME_ARRETER",
+    "statut": "BON",
+    "justification": "Domaine système et action correcte.",
+    "action_alexa": "AMAZON.StopIntent"
+  },
+  {
+    "phrases": ["alarme déclenche maintenant", "alarme déclenchée", "alarme sonne", "alarme active"],
+    "tag": "ALARME_DECLENCHEE",
+    "statut": "MAUVAIS",
+    "justification": "Règles 1 et 6 violées : participe passé. Tag correct : ALARME_CREER.",
+    "action_alexa": "AMAZON.SetAlarmIntent"
+  },
+  {
+    "phrases": ["chèque mon solde bancaire", "solde compte", "combien j'ai en banque", "balance compte"],
+    "tag": "BANQUE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine et action corrects.",
+    "action_alexa": "Custom Skill BankBalance"
+  },
+  {
+    "phrases": ["traffic query autoroute", "reminder query liste", "weather query Paris", "search query truc"],
+    "tag": "TRAFFIC_QUERY",
+    "statut": "MAUVAIS",
+    "justification": "Règle 2 violée. Tag correct : TRAFIC_QUERY.",
+    "action_alexa": "Traffic API"
+  },
+  {
+    "phrases": ["modifie ma liste de courses ajoute pain", "change ma liste ajoute pain", "update liste pain", "ajoute pain liste"],
+    "tag": "LISTE_MODIFIER",
+    "statut": "BON",
+    "justification": "Action MODIFIER appropriée pour update de liste.",
+    "action_alexa": "ListManagement UpdateList"
+  },
+  {
+    "phrases": ["liste toutsupprimer", "alarme toutsupprimer", "rappel toutsupprimer", "calendrier toutsupprimer"],
+    "tag": "LISTE_TOUTSUPPRIMER",
+    "statut": "MAUVAIS",
+    "justification": "Règle 1 violée : pas un infinitif propre. Tag correct : LISTE_SUPPRIMER.",
+    "action_alexa": "ListManagement ClearList"
+  },
+  {
+    "phrases": ["rappelle-moi d'appeler maman demain à 18h", "mets un rappel pour acheter du pain", "crée un rappel pour mon rendez-vous médical", "programme un rappel dans deux heures"],
+    "tag": "RAPPEL_CREER",
+    "statut": "BON",
+    "justification": "Domaine en français (RAPPEL, pas REMINDER) et action infinitive correcte (CREER).",
+    "action_alexa": "Reminders API CreateReminder"
+  },
+  {
+    "phrases": ["rappelle-moi de prendre mes médicaments", "ajoute un rappel pour la réunion", "définis un rappel pour vendredi matin", "note un rappel pour le déjeuner"],
+    "tag": "RAPPEL_CREER",
+    "statut": "BON",
+    "justification": "Format français correct pour la création d'un rappel.",
+    "action_alexa": "Reminders API CreateReminder"
+  },
+  {
+    "phrases": ["quels sont mes rappels d'aujourd'hui", "liste mes rappels en attente", "montre-moi mes prochains rappels", "ai-je des rappels cette semaine"],
+    "tag": "RAPPEL_QUERY",
+    "statut": "BON",
+    "justification": "Domaine français RAPPEL et action de consultation (QUERY) correcte.",
+    "action_alexa": "Reminders API GetReminders"
+  },
+  {
+    "phrases": ["supprime mon rappel de 18h", "annule le rappel pour la réunion", "efface tous mes rappels", "enlève le rappel du déjeuner"],
+    "tag": "RAPPEL_SUPPRIMER",
+    "statut": "BON",
+    "justification": "Domaine français avec verbe d'action infinitif correct.",
+    "action_alexa": "Reminders API DeleteReminder"
+  },
+  {
+    "phrases": ["crée un événement demain à 14h", "ajoute une réunion vendredi matin", "planifie un rendez-vous lundi", "programme un événement pour la semaine prochaine"],
+    "tag": "CALENDRIER_CREER",
+    "statut": "BON",
+    "justification": "Verbe à l'infinitif correct (CREER, pas CREE) pour la création d'événement.",
+    "action_alexa": "Calendar API CreateEvent"
+  },
+  {
+    "phrases": ["note un déjeuner avec paul jeudi midi", "inscris une réunion d'équipe vendredi", "planifie mon rendez-vous médical", "ajoute un anniversaire au calendrier"],
+    "tag": "CALENDRIER_CREER",
+    "statut": "BON",
+    "justification": "Action infinitive correcte pour CreateEvent.",
+    "action_alexa": "Calendar API CreateEvent"
+  },
+  {
+    "phrases": ["commande une pizza margherita", "passe une commande de sushis", "fais-moi livrer un burger", "commande un repas chinois ce soir"],
+    "tag": "RESTAURATION_COMMANDER",
+    "statut": "BON",
+    "justification": "Verbe à l'infinitif (COMMANDER, pas COMMANDE) sur le domaine restauration.",
+    "action_alexa": "Food Delivery Skill OrderAction"
+  },
+  {
+    "phrases": ["je voudrais commander des pâtes", "passe commande de tacos", "fais livrer une pizza quatre fromages", "commande à manger pour ce soir"],
+    "tag": "RESTAURATION_COMMANDER",
+    "statut": "BON",
+    "justification": "Format infinitif respecté pour l'action de commande alimentaire.",
+    "action_alexa": "Food Delivery Skill OrderAction"
+  },
+  {
+    "phrases": ["lis-moi le petit prince", "reprends mon livre audio", "joue mon audiobook", "continue la lecture de mon roman"],
+    "tag": "LIVRE_JOUER",
+    "statut": "BON",
+    "justification": "Domaine LIVRE avec action JOUER appropriée pour la lecture audio.",
+    "action_alexa": "AudioPlayer Audible Skill"
+  },
+  {
+    "phrases": ["démarre la lecture de l'étranger", "lance mon livre audio", "reprends ma lecture là où je me suis arrêté", "joue le chapitre suivant"],
+    "tag": "LIVRE_JOUER",
+    "statut": "BON",
+    "justification": "Action de lecture audio sur le domaine LIVRE.",
+    "action_alexa": "AudioPlayer Audible Skill"
+  },
+  {
+    "phrases": ["c'est quoi la photosynthèse", "explique-moi la théorie de la relativité", "qu'est-ce que la démocratie", "donne-moi des informations sur la révolution française"],
+    "tag": "ENCYCLOPEDIE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine généralisé pour les questions de connaissance (pas GENERAL_QUERY).",
+    "action_alexa": "AMAZON.QAIntent / Knowledge Graph"
+  },
+  {
+    "phrases": ["combien mesure la tour eiffel", "quelle est la population de paris", "qui a inventé l'ampoule", "en quelle année a eu lieu la révolution"],
+    "tag": "ENCYCLOPEDIE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine encyclopédique correct pour des questions factuelles.",
+    "action_alexa": "AMAZON.QAIntent / Knowledge Graph"
+  },
+  {
+    "phrases": ["raconte-moi une blague", "fais-moi rire", "dis-moi quelque chose de drôle", "tu connais une bonne blague"],
+    "tag": "BLAGUE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine spécifique BLAGUE plutôt que le générique GENERAL_QUERY.",
+    "action_alexa": "AMAZON.TellJokeIntent"
+  },
+  {
+    "phrases": ["définis sérendipité", "que veut dire ubiquité", "quelle est la définition de paradigme", "explique le mot épistémologie"],
+    "tag": "DEFINITION_QUERY",
+    "statut": "BON",
+    "justification": "Domaine spécifique aux définitions lexicales, distinct d'ENCYCLOPEDIE.",
+    "action_alexa": "Dictionary API"
+  },
+  {
+    "phrases": ["éteins la lumière du salon", "coupe l'éclairage de la chambre", "désactive la lampe de bureau", "éteins toutes les lumières de la maison"],
+    "tag": "LUMIERE_ETEINDRE",
+    "statut": "BON",
+    "justification": "Action spécifique d'extinction pour éviter le piège des antonymes de LUMIERE_MODIFIER.",
+    "action_alexa": "Smart Home TurnOff"
+  },
+  {
+    "phrases": ["allume la lumière de la cuisine", "active l'éclairage du salon", "mets la lampe de chevet", "allume toutes les lumières"],
+    "tag": "LUMIERE_ALLUMER",
+    "statut": "BON",
+    "justification": "Action spécifique d'allumage, distincte de LUMIERE_ETEINDRE.",
+    "action_alexa": "Smart Home TurnOn"
+  },
+  {
+    "phrases": ["réserve un train pour lyon demain", "achète un billet pour bordeaux", "réserve un taxi pour l'aéroport", "commande un uber maintenant"],
+    "tag": "TRANSPORT_RESERVER",
+    "statut": "BON",
+    "justification": "Domaine généralisé (TRANSPORT, pas TRAIN/UBER) avec action transactionnelle.",
+    "action_alexa": "Transport Skill BookAction"
+  },
+  {
+    "phrases": ["réserve-moi un billet de tgv pour paris", "commande un vtc pour ce soir", "achète un ticket de bus pour marseille", "réserve une place dans le train de mardi"],
+    "tag": "TRANSPORT_RESERVER",
+    "statut": "BON",
+    "justification": "Domaine généralisé respectant la règle 4 (pas de moyen comme domaine).",
+    "action_alexa": "Transport Skill BookAction"
+  },
+  {
+    "phrases": ["quels sont les horaires de train pour lyon", "à quelle heure part le prochain bus", "combien coûte un billet pour bordeaux", "donne-moi les horaires du tgv pour nice"],
+    "tag": "TRANSPORT_QUERY",
+    "statut": "BON",
+    "justification": "Consultation d'informations sur le domaine généralisé du transport.",
+    "action_alexa": "Transport Skill GetSchedule"
+  },
+  {
+    "phrases": ["règle le thermostat à 20 degrés", "mets le chauffage à 19", "passe la température à 21", "configure le chauffage à 18 degrés"],
+    "tag": "THERMOSTAT_MODIFIER",
+    "statut": "BON",
+    "justification": "Domaine spécifique au thermostat avec action MODIFIER.",
+    "action_alexa": "Smart Home SetTargetTemperature"
+  },
+  {
+    "phrases": ["ouvre les volets du salon", "remonte les stores", "lève les volets roulants", "déploie les volets de la chambre"],
+    "tag": "VOLET_OUVRIR",
+    "statut": "BON",
+    "justification": "Domaine spécifique aux volets avec action d'ouverture infinitive.",
+    "action_alexa": "Smart Home OpenAction"
+  },
+  {
+    "phrases": ["ferme les volets", "baisse les stores", "descends les volets roulants", "ferme les volets de la chambre"],
+    "tag": "VOLET_FERMER",
+    "statut": "BON",
+    "justification": "Action distincte de VOLET_OUVRIR pour éviter les antonymes dans un même tag.",
+    "action_alexa": "Smart Home CloseAction"
+  },
+  {
+    "phrases": ["allume la cafetière", "démarre la machine à café", "active la cafetière connectée", "lance la préparation du café"],
+    "tag": "DOMOTIQUE_ACTIVER",
+    "statut": "BON",
+    "justification": "Domaine généralisé pour activation d'un appareil smart home.",
+    "action_alexa": "Smart Home TurnOn"
+  },
+  {
+    "phrases": ["éteins la télévision", "coupe la tv", "désactive l'enceinte connectée", "éteins le ventilateur"],
+    "tag": "DOMOTIQUE_DESACTIVER",
+    "statut": "BON",
+    "justification": "Domaine généralisé pour désactivation d'appareils smart home.",
+    "action_alexa": "Smart Home TurnOff"
+  },
+  {
+    "phrases": ["envoie un sms à paul", "écris un texto à marie", "message à mon père", "envoie un message à sophie"],
+    "tag": "MESSAGE_CREER",
+    "statut": "BON",
+    "justification": "Domaine généralisé MESSAGE pour SMS/texto avec action CREER.",
+    "action_alexa": "Communications SendMessage"
+  },
+  {
+    "phrases": ["appelle marie", "téléphone à paul", "passe un appel à mon père", "compose le numéro de jean"],
+    "tag": "APPEL_CREER",
+    "statut": "BON",
+    "justification": "Domaine APPEL distinct de MESSAGE pour les appels vocaux.",
+    "action_alexa": "Communications Call"
+  },
+  {
+    "phrases": ["lance un podcast d'histoire", "joue mon podcast préféré", "mets un épisode du podcast france culture", "démarre la lecture du podcast"],
+    "tag": "PODCAST_JOUER",
+    "statut": "BON",
+    "justification": "Domaine spécifique aux podcasts avec action de lecture.",
+    "action_alexa": "AudioPlayer PlayPodcast"
+  },
+  {
+    "phrases": ["lance france inter", "écoute rtl", "mets nrj", "joue europe 1"],
+    "tag": "RADIO_JOUER",
+    "statut": "BON",
+    "justification": "Domaine RADIO généralisé malgré les noms de stations spécifiques.",
+    "action_alexa": "TuneIn Radio Skill"
+  },
+  {
+    "phrases": ["traduis bonjour en espagnol", "comment dit-on merci en italien", "traduction de bonjour en allemand", "dis hello en japonais"],
+    "tag": "TRADUCTION_QUERY",
+    "statut": "BON",
+    "justification": "Domaine TRADUCTION avec action de consultation correcte.",
+    "action_alexa": "AMAZON.TranslateIntent"
+  },
+  {
+    "phrases": ["combien font 25 fois 4", "calcule la racine carrée de 144", "résultat de 3 plus 5", "combien font 100 divisé par 4"],
+    "tag": "CALCUL_QUERY",
+    "statut": "BON",
+    "justification": "Domaine CALCUL pour les opérations arithmétiques.",
+    "action_alexa": "AMAZON.CalculatorIntent"
+  },
+  {
+    "phrases": ["démarre l'aspirateur robot", "lance le roomba", "active l'aspirateur connecté", "mets en route le robot de nettoyage"],
+    "tag": "NETTOYAGE_COMMENCER",
+    "statut": "BON",
+    "justification": "Domaine spécifique au nettoyage avec action COMMENCER infinitive.",
+    "action_alexa": "Smart Home TurnOn (Vacuum)"
+  },
+  {
+    "phrases": ["mets une alarme à 7h", "règle un réveil à 6h30", "programme une alarme pour demain matin", "configure un réveil à 8h"],
+    "tag": "ALARME_CREER",
+    "statut": "BON",
+    "justification": "Action CREER infinitive sur le domaine ALARME.",
+    "action_alexa": "AMAZON.SetAlarmIntent"
+  },
+  {
+    "phrases": ["lance un minuteur de 10 minutes", "démarre un minuteur de 5 minutes", "minuteur 15 minutes", "compte 20 minutes"],
+    "tag": "MINUTEUR_CREER",
+    "statut": "BON",
+    "justification": "Domaine MINUTEUR en français (pas TIMER) avec action CREER.",
+    "action_alexa": "AMAZON.SetTimerIntent"
+  },
+  {
+    "phrases": ["publie un tweet", "poste sur twitter que je suis en vacances", "tweet à mes abonnés", "partage sur les réseaux"],
+    "tag": "RESEAUX_PUBLIER",
+    "statut": "BON",
+    "justification": "Domaine RESEAUX généralisé (pas TWITTER) avec action PUBLIER.",
+    "action_alexa": "Social Media Skill Post"
+  },
+  {
+    "phrases": ["quel est le score du psg", "résultat du match de rugby", "qui a gagné le match hier soir", "score de la finale de tennis"],
+    "tag": "SPORT_QUERY",
+    "statut": "BON",
+    "justification": "Domaine SPORT généralisé (pas FOOTBALL/TENNIS).",
+    "action_alexa": "Sports Data API"
+  },
+  {
+    "phrases": ["quel est le cours de l'action apple", "prix de l'action tesla", "cotation google en bourse", "combien vaut l'action microsoft"],
+    "tag": "BOURSE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine BOURSE généralisé pour la cotation boursière.",
+    "action_alexa": "Stock Quote API"
+  },
+  {
+    "phrases": ["donne-moi les actualités du jour", "quelles sont les infos du matin", "lis les dernières nouvelles", "que se passe-t-il dans le monde"],
+    "tag": "ACTUALITE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine ACTUALITE généralisé (pas INFO/NEWS).",
+    "action_alexa": "AMAZON.FlashBriefingIntent"
+  },
+  {
+    "phrases": ["quelle heure est-il à tokyo", "donne-moi l'heure à new york", "quelle heure il est en californie", "heure actuelle à londres"],
+    "tag": "HEURE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine HEURE pour interrogation horaire avec slots géographiques.",
+    "action_alexa": "AMAZON.TimeIntent"
+  },
+  {
+    "phrases": ["quelle est la date d'aujourd'hui", "quel jour sommes-nous", "donne-moi la date du jour", "c'est quel jour aujourd'hui"],
+    "tag": "DATE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine DATE distinct de HEURE pour la consultation calendaire.",
+    "action_alexa": "AMAZON.DateIntent"
+  },
+  {
+    "phrases": ["quel est le taux de change euro dollar", "convertis 100 dollars en euros", "combien vaut le yen en euro", "taux du franc suisse"],
+    "tag": "ECONOMIE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine ECONOMIE pour la conversion de devises.",
+    "action_alexa": "ExchangeRate API"
+  },
+  {
+    "phrases": ["combien de pas j'ai fait aujourd'hui", "donne-moi mes statistiques d'activité", "combien de calories j'ai brûlé", "mon rythme cardiaque actuel"],
+    "tag": "SANTE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine SANTE pour les données de fitness/santé.",
+    "action_alexa": "Health Tracking API"
+  },
+  {
+    "phrases": ["quel temps fait-il à paris", "météo à lyon demain", "il pleut à marseille", "prévisions météo pour bordeaux"],
+    "tag": "METEO_QUERY",
+    "statut": "BON",
+    "justification": "Domaine METEO généralisé malgré les villes spécifiques (Règle 8).",
+    "action_alexa": "AMAZON.WeatherIntent"
+  },
+  {
+    "phrases": ["recette de pizza margherita", "comment faire un gâteau au chocolat", "ingrédients pour une quiche lorraine", "donne-moi une recette de pâtes"],
+    "tag": "CUISINE_QUERY",
+    "statut": "BON",
+    "justification": "Domaine CUISINE généralisé malgré les plats spécifiques.",
+    "action_alexa": "Recipe Skill"
+  },
+  {
+    "phrases": ["mets de la musique classique", "joue du jazz", "lance une playlist rock", "mets une chanson de jacques brel"],
+    "tag": "MUSIQUE_JOUER",
+    "statut": "BON",
+    "justification": "Domaine MUSIQUE généralisé malgré les genres et artistes spécifiques.",
+    "action_alexa": "AMAZON.PlayMusicIntent"
+  }
+]

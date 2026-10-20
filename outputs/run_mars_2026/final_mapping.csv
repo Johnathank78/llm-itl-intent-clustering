@@ -1,0 +1,1757 @@
+text,intent,iteration_found
+quelle heure est-il à marseille,HEURE_QUERY,1
+quelle heure est-il à ottawa,HEURE_QUERY,1
+quelle heure est-il à bruxelles maintenant,HEURE_QUERY,1
+quelle heure est-il maintenant en californie,HEURE_QUERY,1
+définir le fuseau horaire,HEURE_QUERY,1
+s'il est huit heures d'après-midi la côte est quelle heure est-il à sacramento en californie,HEURE_QUERY,1
+pouvez-vous me dire quelle heure est-il à paris,HEURE_QUERY,1
+s'il est dix d'après midi en californie quelle heures est-il à paris,HEURE_QUERY,1
+quelle heure est-il à paris à l'heure actuelle,HEURE_QUERY,1
+convertir l'heure de paris à londres,HEURE_QUERY,1
+quel est le temps en inde quand le temps aux états-unis est douze heures de l'après-midi,HEURE_QUERY,1
+dis-moi l'heure actuelle à ottawa,HEURE_QUERY,1
+donne-moi le temps à londres,HEURE_QUERY,1
+s'il vous plaît convertir neuf heures du matin h.n.c à h.n.e.,HEURE_QUERY,1
+laissez-moi savoir l'heure en inde,HEURE_QUERY,1
+quelle est l'heure centrale actuelle,HEURE_QUERY,1
+quelle heure est-il à lyon,HEURE_QUERY,1
+quel est le décalage horaire entre l' est et le pacifique,HEURE_QUERY,1
+quelle heure est-il à paris étage,HEURE_QUERY,1
+quelle heure est-il à sol orlando,HEURE_QUERY,1
+quelle heure est-il maintenant à bordeaux,HEURE_QUERY,1
+olly quelle heure est-il au belgique en ce moment,HEURE_QUERY,1
+quelle heure est-il à paris,HEURE_QUERY,1
+l'heure est-elle différente à paris,HEURE_QUERY,1
+convertit le fuseau horaire,HEURE_QUERY,1
+quelle heure est-il dans une autre ville,HEURE_QUERY,1
+quelle heure est-il pour le fuseau horaire de l' est,HEURE_QUERY,1
+passer au fuseau horaire de l' est,HEURE_QUERY,1
+quelle heure est-il à tokyo japon,HEURE_QUERY,1
+salut olly quelle heure est-il à orlando floride,HEURE_QUERY,1
+préparer du café,ACTION_QUERY,1
+faire du café maintenant,ACTION_QUERY,1
+faites les gros titres s'il vous plait,ACTION_QUERY,1
+puis-je avoir un espresso s'il vous plaît,ACTION_QUERY,1
+s'il te plait fais du rap,ACTION_QUERY,1
+je voudrais du café maintenant,ACTION_QUERY,1
+fais-moi une tasse de café,ACTION_QUERY,1
+démarrer la cafetière,ACTION_QUERY,1
+préparer du café,ACTION_QUERY,1
+s'il te plait démarrer le café,ACTION_QUERY,1
+s'il te plait fais-moi un café,ACTION_QUERY,1
+s'il te plait fais-moi un café,ACTION_QUERY,1
+veux-tu mettre en marche la cafetière,ACTION_QUERY,1
+je voudrais du café maintenant,ACTION_QUERY,1
+préparer mon café du matin,ACTION_QUERY,1
+c'est l'heure du café,ACTION_QUERY,1
+s'il vous plaît avance,ACTION_QUERY,1
+la bourse s'il te plaît,ACTION_QUERY,1
+s'il vous plaît faire une réclamation à levis,ACTION_QUERY,1
+commence le chapitre sept de l'agent secret,LECTURE_COMMENCER,1
+reprends le livre audio l'agent secret,LECTURE_COMMENCER,1
+continue à lire mon livre audio,LECTURE_COMMENCER,1
+mets en pause le livre audio,LECTURE_COMMENCER,1
+commence à jouer le livre audio de johns,LECTURE_COMMENCER,1
+reprend mon livre audio là où nous nous sommes arrêtés la dernière fois,LECTURE_COMMENCER,1
+reprends le dernier livre audio joué,LECTURE_COMMENCER,1
+lire le cercle,LECTURE_COMMENCER,1
+commence à lire le livre,LECTURE_COMMENCER,1
+reprendre le petit chaperon rouge pour moi,LECTURE_COMMENCER,1
+commence la lecture de la fille au sous sol du chapitre quatre,LECTURE_COMMENCER,1
+livre audio joue le petit chaperon rouge,LECTURE_COMMENCER,1
+reprends la lecture de la leçon de français,LECTURE_COMMENCER,1
+s'il vous plaît lire le petit chaperon rouge,LECTURE_COMMENCER,1
+commencer la lecture de ce livre d' alan partridge,LECTURE_COMMENCER,1
+continue de lire le petit chaperon rouge,LECTURE_COMMENCER,1
+races de chiens les plus hypoallergéniques,GENERAL_QUERY,1
+le cosmos,GENERAL_QUERY,1
+recherche spatiale,GENERAL_QUERY,1
+combien de tasses y a-t-il dans un quart,GENERAL_QUERY,1
+quelle taille a une girafe,GENERAL_QUERY,1
+dis-moi ce qui se passe quand nous mourons,GENERAL_QUERY,1
+qui était les bâtiments les plus longs du monde,GENERAL_QUERY,1
+l'animal le plus long,GENERAL_QUERY,1
+bâtiment le plus haut,GENERAL_QUERY,1
+est-ce qu'il y a de la vie sur les autres planètes,GENERAL_QUERY,1
+pourquoi le ciel est bleu,GENERAL_QUERY,1
+le monde prendra-t-il fin quand,GENERAL_QUERY,1
+que savez-vous de la statue de la liberté,GENERAL_QUERY,1
+qu'est-ce que le triangle des bermudes,GENERAL_QUERY,1
+combien de pouces font un pied,GENERAL_QUERY,1
+dis-moi la distance entre le soleil et la lune,GENERAL_QUERY,1
+prédiction de tremblement de terre,GENERAL_QUERY,1
+combien de rivières y a-t-il dans le monde,GENERAL_QUERY,1
+quel a été le premier satellite lancé par la nasa,GENERAL_QUERY,1
+dis-moi comment le monde a commencé,GENERAL_QUERY,1
+qui est la plus petite île du monde,GENERAL_QUERY,1
+quel âge avait albert einstein quand il a proposé la théorie de la relativité,GENERAL_QUERY,1
+à quelle distance est,GENERAL_QUERY,1
+événements à venir,EVENEMENT_QUERY,1
+derniers évènements,EVENEMENT_QUERY,1
+que faire ensuite sur les événements,EVENEMENT_QUERY,1
+quand commencera le match,EVENEMENT_QUERY,1
+quand est prévu le mariage,EVENEMENT_QUERY,1
+événement à venir,EVENEMENT_QUERY,1
+quand commence le match de hockey vendredi,EVENEMENT_QUERY,1
+organiser un événement pour le soir,EVENEMENT_QUERY,1
+dis-moi tous les événements entre aujourd'hui et le vingt un,EVENEMENT_QUERY,1
+à quelle heure commence le dîner de la fête ce soir,EVENEMENT_QUERY,1
+que se passe-t-il à cet événement,EVENEMENT_QUERY,1
+quels événements ai-je à venir,EVENEMENT_QUERY,1
+quand est l'événement,EVENEMENT_QUERY,1
+affiche mes évènements à venir,EVENEMENT_QUERY,1
+chercher des évènements récents à des dates précises,EVENEMENT_QUERY,1
+quand est prévue la fête,EVENEMENT_QUERY,1
+informez-moi de tous les événements de la semaine prochaine,EVENEMENT_QUERY,1
+où est le festival de la gastronomie ce soir,EVENEMENT_QUERY,1
+quand est la prochaine tournée,EVENEMENT_QUERY,1
+joue à chopin,MUSIQUE_JOUER,1
+jouer la chanson immédiatement,MUSIQUE_JOUER,1
+mettre la musique,MUSIQUE_JOUER,1
+jouer michael jackson,MUSIQUE_JOUER,1
+joue de la musique,MUSIQUE_JOUER,1
+joue de la pop,MUSIQUE_JOUER,1
+joue alizée,MUSIQUE_JOUER,1
+joue de la musique de style jazz,MUSIQUE_JOUER,1
+joue une musique,MUSIQUE_JOUER,1
+joue-moi de la musique,MUSIQUE_JOUER,1
+mets de la musique par phoenix,MUSIQUE_JOUER,1
+jouer à écrasement des citrouilles,MUSIQUE_JOUER,1
+joue un peu de musique,MUSIQUE_JOUER,1
+joue du rap old school,MUSIQUE_JOUER,1
+allume s'il te plait ma musique,MUSIQUE_JOUER,1
+joue l' artiste,MUSIQUE_JOUER,1
+met tunes,MUSIQUE_JOUER,1
+jouer le son,MUSIQUE_JOUER,1
+jouer solitaire,MUSIQUE_JOUER,1
+joue un jeu de course,MUSIQUE_JOUER,1
+commencer à jouer du spider,MUSIQUE_JOUER,1
+jouer aux jeux,MUSIQUE_JOUER,1
+acteur qui joue un rôle,MUSIQUE_JOUER,1
+merci ally pour les photos,PERSONNEL_QUERY,1
+que faites-vous de mes données personnelles,PERSONNEL_QUERY,1
+quelle a été la dernière chose que ma mère a dit,PERSONNEL_QUERY,1
+combien de j'aime a obtenu ma dernière photo postée sur instagram,PERSONNEL_QUERY,1
+peux-tu me dire ce qui est arrivé à mes réseaux sociaux,PERSONNEL_QUERY,1
+quelle est la dernière de mon flux,PERSONNEL_QUERY,1
+dis leur que leurs lignes étaient trop longues,PERSONNEL_QUERY,1
+poster une photo sur mon téléphone sur facebook alexa,PERSONNEL_QUERY,1
+dis à comcast que je suis toujours en attente,PERSONNEL_QUERY,1
+quelles sont les dernières photos sur mon compte instagram,PERSONNEL_QUERY,1
+qu'est-ce que la clinique a dit à propos de mes examens,PERSONNEL_QUERY,1
+sens d'un mot particulier,OBJET_QUERY,1
+trouve jeu,OBJET_QUERY,1
+pouvez-vous jouer le rôle de l'ennemie dans le jeu de coc,OBJET_QUERY,1
+trouve une définition,OBJET_QUERY,1
+dans quel scénario utiliseriez-vous le mot inconvénient,OBJET_QUERY,1
+dis-moi la brève définition de évacuation,OBJET_QUERY,1
+peux-tu dire le mot démonétisation,OBJET_QUERY,1
+la question suivante vous demande d'analyser les objectifs de l'enseignant et les actions prévues,OBJET_QUERY,1
+utiliser dans une phrase,OBJET_QUERY,1
+en définissant des mots propose le dictionnaire et utilise les dans une phrase pour rendre cela plus clair,OBJET_QUERY,1
+quelle est la définition d'assistant personnel,OBJET_QUERY,1
+veuillez rechercher ce mot,OBJET_QUERY,1
+rechercher la définition d'une ambulance,OBJET_QUERY,1
+que signifie patate,OBJET_QUERY,1
+décrire une pomme de terre,OBJET_QUERY,1
+comment définissez-vous textuel,OBJET_QUERY,1
+quelle est la définition de coup de circuit,OBJET_QUERY,1
+quelle est la description d'un casque de réalité virtuelle,OBJET_QUERY,1
+qu'elle est la définition de incomplet,OBJET_QUERY,1
+définis-toi en un mot,OBJET_QUERY,1
+pouvez-vous me dire à quoi ressemble le haggis,OBJET_QUERY,1
+définition du nom de l'objet,OBJET_QUERY,1
+trouve la signification du mot monde dans le dictionnaire,OBJET_QUERY,1
+pouvez-vous me dire ce que signifie hypertrophie,OBJET_QUERY,1
+quel type d'outil est un poulet de chair et comment l'utiliser,OBJET_QUERY,1
+définir grilloir pour moi,OBJET_QUERY,1
+décrivez-moi à quoi ressemble une balle,OBJET_QUERY,1
+pourriez-vous décrire cet objet s'il vous plaît,OBJET_QUERY,1
+s'il te plait décris-moi un éléphant,OBJET_QUERY,1
+quelle est la définition de marinara,OBJET_QUERY,1
+olly quelle est la définition du mot communément situation normal,OBJET_QUERY,1
+hey olly quelle est la définition de passif,OBJET_QUERY,1
+quelles sont mes listes,LISTE_QUERY,1
+quelles sont les listes disponibles,LISTE_QUERY,1
+quelles sont les cinq dernières listes que j'ai faites,LISTE_QUERY,1
+envoyez-moi la dernière liste téléchargée,LISTE_QUERY,1
+fais-moi une liste de nombres,LISTE_QUERY,1
+s'il te plait montre ma liste,LISTE_QUERY,1
+lis la liste,LISTE_QUERY,1
+remonter ma liste,LISTE_QUERY,1
+dis-moi quelles listes j'ai,LISTE_QUERY,1
+qu'est-ce qu'il y a sur la liste,LISTE_QUERY,1
+afficher les listes disponibles,LISTE_QUERY,1
+pouvez-vous s'il vous plaît me dire ce que j'ai sur ma liste,LISTE_QUERY,1
+pouvez-vous s'il vous plaît me montrer mes listes,LISTE_QUERY,1
+puis-je vérifier mes listes,LISTE_QUERY,1
+indique-moi la liste sur,LISTE_QUERY,1
+lis-moi ma liste,LISTE_QUERY,1
+donne-moi ma liste,LISTE_QUERY,1
+quelles listes sont actuellement disponibles en ce moment,LISTE_QUERY,1
+ouvrir ma liste,LISTE_QUERY,1
+c'est quoi sur la liste,LISTE_QUERY,1
+dis-moi ce qu'il y a sur ma liste,LISTE_QUERY,1
+qu'est-ce qui est sur cette liste spécifique,LISTE_QUERY,1
+puis-je voir mes listes de travail,LISTE_QUERY,1
+citer les disponibles,LISTE_QUERY,1
+vérifier la liste,LISTE_QUERY,1
+vérifier ma liste,LISTE_QUERY,1
+nouvelles actuelles c. n. n.,ACTUALITE_QUERY,2
+dis-moi les gros titres de journal aujourd'hui,ACTUALITE_QUERY,2
+s'il te plaît dis-moi des nouvelles au niveau international,ACTUALITE_QUERY,2
+envoyez-moi des nouvelles du jour,ACTUALITE_QUERY,2
+ce qui se passe dans le monde aujourd'hui,ACTUALITE_QUERY,2
+ce qui se passe dans les nouvelles du monde aujourd'hui,ACTUALITE_QUERY,2
+dis-moi ce qui se passe dans la politique européenne,ACTUALITE_QUERY,2
+dis-moi quelles sont les dernières nouvelles,ACTUALITE_QUERY,2
+donnez-moi des mises à jour sur les nouvelles de hurricane,ACTUALITE_QUERY,2
+dolores as tu remarqué quelque chose d'étrange à propos de ton monde,ACTUALITE_QUERY,2
+voulez-vous entendre ce qui s'est passé aujourd'hui,ACTUALITE_QUERY,2
+dites-moi des nouvelles importantes aujourd'hui,ACTUALITE_QUERY,2
+quelque chose d'intéressant dans les nouvelles aujourd'hui,ACTUALITE_QUERY,2
+quelles sont les nouvelles pour six heures quarante cinq du matin aujourd'hui,ACTUALITE_QUERY,2
+dis-moi la chose la plus étrange qui se passe dans le monde aujourd'hui,ACTUALITE_QUERY,2
+décris-moi l'état actuel de la politique,ACTUALITE_QUERY,2
+apportez-moi les dernières nouvelles technologie,ACTUALITE_QUERY,2
+quelles sont les dernières nouvelles internationales,ACTUALITE_QUERY,2
+est-ce qu'il pleut dehors,METEO_QUERY,2
+quelle sera la température dehors demain,METEO_QUERY,2
+quelles sont les prévisions météorologiques pour demain,METEO_QUERY,2
+est ce qu'il pleut,METEO_QUERY,2
+est-ce c'est un oui ou un non que la température de demain sera chaude,METEO_QUERY,2
+est-il ensoleillé quel est la température au sud,METEO_QUERY,2
+est-ce que aujourd'hui sera un jour ensoleillé,METEO_QUERY,2
+quel type de temps puis-je attendre aujourd'hui,METEO_QUERY,2
+quel temps fait-il demain,METEO_QUERY,2
+va t'il faire beau demain,METEO_QUERY,2
+quelles sont les prévisions dans ma région aujourd'hui,METEO_QUERY,2
+quelle sera la météo du lendemain,METEO_QUERY,2
+quel temps fera-t-il dans ma région aujourd'hui,METEO_QUERY,2
+y aura-t-il du brouillard après le coucher du soleil,METEO_QUERY,2
+à quoi ressemble demain matin,METEO_QUERY,2
+est-ce que mon jeu de golf va être plu,METEO_QUERY,2
+dois-je prendre un parapluie avec moi cet après-midi,METEO_QUERY,2
+je me suis trempé sous la pluie,METEO_QUERY,2
+s'il vous plaît dites-moi de prendre mon ombrelle car il fera très chaud aujourd'hui,METEO_QUERY,2
+va-t-il pleuvoir demain,METEO_QUERY,2
+va-t-il pleuvoir demain,METEO_QUERY,2
+va-t-il pleuvoir,METEO_QUERY,2
+est-ce qu'il va bientôt y avoir météo flip flop,METEO_QUERY,2
+est-ce qu'il fera plus de quatre-vingt-dix degrés demain,METEO_QUERY,2
+météo dans la ville natale,METEO_QUERY,2
+commerce international et marché des affaires,ECONOMIE_QUERY,2
+les taux prévisionnels,ECONOMIE_QUERY,2
+quelle monnaie utilise la croatie,ECONOMIE_QUERY,2
+quel est le taux de change entre le dollar et l'euro actuellement,ECONOMIE_QUERY,2
+quel est le taux de change du yen dollar américain,ECONOMIE_QUERY,2
+qu'est ce que s. d. en francs,ECONOMIE_QUERY,2
+quel est le taux de change de dollar américain à dollar canadien,ECONOMIE_QUERY,2
+quel est le taux de change entre france et chine,ECONOMIE_QUERY,2
+quel est le taux de change état unis et la france,ECONOMIE_QUERY,2
+siri qu'est-ce qu'un dollar américain en yen japonais,ECONOMIE_QUERY,2
+dis moi le taux de change du euro,ECONOMIE_QUERY,2
+combien coûte le dollar américain par rapport à la roupie,ECONOMIE_QUERY,2
+veuillez me montrer le taux de change entre le dollar et le yen,ECONOMIE_QUERY,2
+pouvez-vous me donner le taux de change du dollar en roupies,ECONOMIE_QUERY,2
+quel est le taux de euro,ECONOMIE_QUERY,2
+quel est le taux de change du euro,ECONOMIE_QUERY,2
+euro à u. s. d.,ECONOMIE_QUERY,2
+olly est-ce qu'un dollar vaut plus ou moins au brésil,ECONOMIE_QUERY,2
+combien vaut l'euro par rapport au dollar canadien,ECONOMIE_QUERY,2
+quel est le taux de change entre le dollar américain et l'euro,ECONOMIE_QUERY,2
+dis-moi qu'un euro équivaut à des dollars,ECONOMIE_QUERY,2
+quel est le taux de change entre euro et dollar canadien,ECONOMIE_QUERY,2
+taux de change que j'obtiendrai avec une devise étrangère,ECONOMIE_QUERY,2
+taux de change entre dollar et euro,ECONOMIE_QUERY,2
+changer les taux du dollar en roupies,ECONOMIE_QUERY,2
+taux de change dollar roupies,ECONOMIE_QUERY,2
+convertir une livre en dollar convertir une livre sterling en dollar américain,ECONOMIE_QUERY,2
+si j'ai cinq dollar combien ça fait en euro,ECONOMIE_QUERY,2
+combien coûte la roupie indienne contre dollar américain,ECONOMIE_QUERY,2
+quel est le taux du dollar américain aujourd'hui,ECONOMIE_QUERY,2
+taux de change,ECONOMIE_QUERY,2
+dites-moi le taux de change de dix dollars à l'euro,ECONOMIE_QUERY,2
+olly quel est le taux de change entre le dollar américain et le dollar australien,ECONOMIE_QUERY,2
+s'il te plaît recherche l'échange entre les états-unis et le mexique,ECONOMIE_QUERY,2
+quel est le taux de change pour samsung,ECONOMIE_QUERY,2
+combien de méga pixel est répertorié dans la description du canon,GENERAL_QUERY,2
+olly trouver une description sur un télévision samsung,GENERAL_QUERY,2
+dis moi quelque chose sur la france,GENERAL_QUERY,2
+racontez-moi histoire de cédric villani et son parcours mathématique,GENERAL_QUERY,2
+trouve moi des information sur,GENERAL_QUERY,2
+alexa donne moi tout ce que tu sais sur jean-claude anglars,GENERAL_QUERY,2
+recherche le délais de matthew,GENERAL_QUERY,2
+bob habite -il en france,GENERAL_QUERY,2
+comment épeler le mot girafe,GENERAL_QUERY,2
+qui mène actuellement la course de formule un,INFO_QUERY,2
+les yankees ont-ils gagné dernier nuit,INFO_QUERY,2
+quels sont les scores des deux jeux ucl en ce moment,INFO_QUERY,2
+je veux savoir qui est au sommet de la english premier league en ce moment,INFO_QUERY,2
+quels étaient winning powerball numbers hier soir,INFO_QUERY,2
+combien de points cheteshwar pujara a-t-il marqués hier,INFO_QUERY,2
+hé google j'ai touché un jackpot de loterie d'un million de dollars,INFO_QUERY,2
+quels ont été les moments forts du match de football de ce soir,INFO_QUERY,2
+je veux jouer à mon match de football à partir du cinquième niveau,INFO_QUERY,2
+qui sont les cinq premiers de tous les temps n. h. l. buteurs,INFO_QUERY,2
+est-ce qu'il fait ensoleillé à nice maintenant,METEO_QUERY,2
+dis-moi la météo pour strasbourg olly,METEO_QUERY,2
+peux tu me dire s'il te plait les conditions météos actuelles,METEO_QUERY,2
+dis moi la météo à bordeaux,METEO_QUERY,2
+quel temps fait-il à paris,METEO_QUERY,2
+quelles sont les prévisions météorologiques pour paris,METEO_QUERY,2
+va-t-il pleuvoir demain à paris,METEO_QUERY,2
+quelle est la météo à paris,METEO_QUERY,2
+quel temps fait-il à nice maintenant,METEO_QUERY,2
+quelle chaleur fait-il à paris,METEO_QUERY,2
+quel temps fait-il à québec,METEO_QUERY,2
+quel temps fait-il à bordeaux aujourd'hui,METEO_QUERY,2
+est-ce le jour le plus chaud à paris,METEO_QUERY,2
+hé est-ce qu'il va pleuvoir aujourd'hui à paris,METEO_QUERY,2
+salut olly quel temps fait-il à paris île de france,METEO_QUERY,2
+je vais au quartier chinois dans une demi-heure réserve un uber pour moi,TRANSPORT_RESERVER,3
+appelle moi un uber pour le moment,TRANSPORT_RESERVER,3
+envoie moi un uber tout de suite,TRANSPORT_RESERVER,3
+peux-tu s'il te plaît avoir uber chez moi dans quinze minutes,TRANSPORT_RESERVER,3
+j'ai besoin d'un taxi pour m'emmener à l' aéroport s'il vous plaît,TRANSPORT_RESERVER,3
+cherche un taxi pour rentrer à la maison,TRANSPORT_RESERVER,3
+réserve uber de chez ma maison,TRANSPORT_RESERVER,3
+prenons un taxi,TRANSPORT_RESERVER,3
+réserve un taxi,TRANSPORT_RESERVER,3
+réserver un taxi pour l' aéroport pour demain matin,TRANSPORT_RESERVER,3
+réserver mon taxi disponible le plus proche,TRANSPORT_RESERVER,3
+trouve-moi un uber,TRANSPORT_RESERVER,3
+réserve un taxi,TRANSPORT_RESERVER,3
+commande moi un taxi,TRANSPORT_RESERVER,3
+besoin d'un taxi demain à huit heures du matin,TRANSPORT_RESERVER,3
+retrouvez un chauffeur uber disponible pour ce soir après vingt deux heures,TRANSPORT_RESERVER,3
+obtenez-moi le numéro du service de taxi local,TRANSPORT_RESERVER,3
+j'ai besoin d'aller sur place appeler un taxi,TRANSPORT_RESERVER,3
+j'ai besoin d'un taxi à huit heures demain matin pour me rendre au travail,TRANSPORT_RESERVER,3
+configure uber,TRANSPORT_RESERVER,3
+appelle un taxi pour qu'il vienne me chercher tout de suite,TRANSPORT_RESERVER,3
+demande un taxi au service de udrive,TRANSPORT_RESERVER,3
+réserver un taxi pour une prise en charge à mon emplacement actuel dans une heure,TRANSPORT_RESERVER,3
+prends-moi un taxi pour m'emmener à l'aéroport vendredi à cinq heures trente du matin,TRANSPORT_RESERVER,3
+veuillez réserver le prochain taxi,TRANSPORT_RESERVER,3
+ouvrez l'application uber et procurez-moi une voiture s'il vous plaît,TRANSPORT_RESERVER,3
+de nouveau emails dans les cinq dernières minutes,EMAIL_QUERY,3
+merci de me signaler les nouveaux emails de michael,EMAIL_QUERY,3
+suivre les nouvelles sur le problème d'email hilarant à future,EMAIL_QUERY,3
+il y a t il de nouveaux e-mail d émilie,EMAIL_QUERY,3
+regarde ma boîte de réception,EMAIL_QUERY,3
+lis mes e mails non lus,EMAIL_QUERY,3
+peux-tu vérifier si j' ai reçu des notifications d' e-mails récent,EMAIL_QUERY,3
+combien d e-mails aujourd'hui,EMAIL_QUERY,3
+s'il vous plaît dites -moi si july m'a envoyé des e-mails,EMAIL_QUERY,3
+ai- je reçu un e-mail au cours de la dernière heure,EMAIL_QUERY,3
+regarde mon email,EMAIL_QUERY,3
+fait apparaître mon e-mail,EMAIL_QUERY,3
+qu'est-ce que j' ai comme email,EMAIL_QUERY,3
+regarde si il y a de nouveaux emails de janne dupont,EMAIL_QUERY,3
+ai je reçu de nouveau email depuis dix-sept heures,EMAIL_QUERY,3
+est-ce que j' ai reçu de nouveaux e-mails de claire aujourd’hui,EMAIL_QUERY,3
+combien ai- je de messages non lus,EMAIL_QUERY,3
+veuillez actualisez ma boîte de réception gmail,EMAIL_QUERY,3
+montre moi un nouvel e mail,EMAIL_QUERY,3
+combien de emails non lus ai je,EMAIL_QUERY,3
+quels nouveaux messages j' ai,EMAIL_QUERY,3
+tout nouvel e mail du patron,EMAIL_QUERY,3
+je veux trouver des emails de bob avec le sujet qui contient le mot réunion,EMAIL_QUERY,3
+a qui ai je envoyé un e-mail récemment,EMAIL_QUERY,3
+regarde mes mail,EMAIL_QUERY,3
+affiche les non lus,EMAIL_QUERY,3
+donne moi l activité récente de mes mails,EMAIL_QUERY,3
+vérifie par boîte de réception pour moi,EMAIL_QUERY,3
+faire une entrée de calendrier pour le brunch du samedi matin avec chris kimberly et aaronson,CALENDRIER_CREE,3
+olly je verrai mon thérapeute tous les jeudis à quatorze heure,CALENDRIER_CREE,3
+je veux aller à l'anniversaire de sally samedi à vingt deux heures,CALENDRIER_CREE,3
+s'il vous plaît marquer mon calendrier pour de vacance à cuba le deux avril,CALENDRIER_CREE,3
+ajouter au calendrier un événement de réunion pour cet après-midi,CALENDRIER_CREE,3
+ajouter l' anniversaire de bola du douze juillet à mon calendrier,CALENDRIER_CREE,3
+dans le calendrier mettre le dîner avec frank à vingt heures le neuf août,CALENDRIER_CREE,3
+ajouter un anniversaire avec maman pour le mois prochain,CALENDRIER_CREE,3
+veuillez créer un événement avec ces personnes uniquement,CALENDRIER_CREE,3
+je veux ajouter une date de déjeuner avec mike jim et bob,CALENDRIER_CREE,3
+j'ai un anniversaire le lundi définir l'événement,CALENDRIER_CREE,3
+fixer l'anniversaire de bob pour chaque troisième juin,CALENDRIER_CREE,3
+ajouter ma pratique au parc malbosc le quatre février à quatorze heures,CALENDRIER_CREE,3
+ajouter un événement pratique de baseball cinq p. m. ce soir,CALENDRIER_CREE,3
+s'il vous plaît ajouter un rendez-vous mercredi à neuf heures du matin au bureau du docteur greens,CALENDRIER_CREE,3
+je veux ajouter quelque chose à mon calendrier,CALENDRIER_CREE,3
+planifier un événement dans mon calendrier pour la soirée piscine chez jack ce samedi,CALENDRIER_CREE,3
+programme l'événement pour le quinze de chaque mois afin de me rappeler de payer ma facture internet,CALENDRIER_CREE,3
+ajouter un événement à partir de trois heures du soir à goshen new york le cinq mai pour la remise des diplômes de dan,CALENDRIER_CREE,3
+marquer deux jours après celui ci comme mes vacances,CALENDRIER_CREE,3
+olly programme mon rendez-vous chez le médecin vendredi à deux heures du soir,CALENDRIER_CREE,3
+ajouter au calendrier le deux mai est l' anniversaire de marie répéter chaque année,CALENDRIER_CREE,3
+créer un événement de calendrier vide pour samedi prochain à dix heures du matin,CALENDRIER_CREE,3
+ajoute à mon calendrier que ma sœur doit rendre visite à notre famille,CALENDRIER_CREE,3
+olly fait une entrée dans le calendrier pour samedi prochain à dix heure du matin s'il te plaît,CALENDRIER_CREE,3
+avez-vous ajouté une réunion avec tom demain à neuf heures du soir . m.,CALENDRIER_CREE,3
+mettre en place l' évènement suivant dans le calendrier avec les personnes suivantes,CALENDRIER_CREE,3
+programmer le déjeuner à tomo à arcata en californie demain à midi,CALENDRIER_CREE,3
+y a-t-il des expositions canines près de la ville de new-york,VILLE_ACTUALITE,3
+qu'est ce qui se passe à paris,VILLE_ACTUALITE,3
+quand est-ce que bruno mars vient à paris,VILLE_ACTUALITE,3
+faire une liste de choses à faire lors de la visite du parc montsouris,VILLE_ACTUALITE,3
+quels événements du salon du livre auront lieu la semaine prochaine à paris,VILLE_ACTUALITE,3
+quels événements se déroulent à paris,VILLE_ACTUALITE,3
+que se passe t il à paris aujourd'hui,VILLE_ACTUALITE,3
+que dois-je faire lorsque je visite le parc national de yellowstone,VILLE_ACTUALITE,3
+qui est le gouverneur de paris,VILLE_ACTUALITE,3
+que se passe-t-il à new york,VILLE_ACTUALITE,3
+faites-moi savoir dès qu'il y a plus de nouvelles sur le brexit,BOURSE_QUERY,3
+dis-moi si un earthquake se produit dans le monde,BOURSE_QUERY,3
+envoyez-moi une alerte sur tout nouveau sujet sur la politique,BOURSE_QUERY,3
+activer la notification pour toutes les nouvelles sur le marché boursier,BOURSE_QUERY,3
+me notifie les dernières nouvelles du marché boursier,BOURSE_QUERY,3
+envoyez-moi les mises à jour bourse pour aujourd'hui,BOURSE_QUERY,3
+me dire quand il y a de nouvelles nouvelles de mes nouvelles locales,BOURSE_QUERY,3
+avez-vous des nouvelles l'actualité fournit,BOURSE_QUERY,3
+veuillez afficher l'article sur le chien assis dans les informations du matin,BOURSE_QUERY,3
+raconte moi les derniers évènements,CELEBRITE_QUERY,3
+je veux des nouvelles sur oscars,CELEBRITE_QUERY,3
+entertainment nouvelles,CELEBRITE_QUERY,3
+trouve moi des célébrités capricornes,CELEBRITE_QUERY,3
+quels sont les derniers potins hollywood qui se passent,CELEBRITE_QUERY,3
+commérages sur les célébrités,CELEBRITE_QUERY,3
+me débarrasser de mon alarme de huit heures du matin,ALARME_SUPPRIMER,4
+éteindre l'alarme de six heures du matin pour mercredi,ALARME_SUPPRIMER,4
+désactiver toutes les alarmes du matin après vendredi,ALARME_SUPPRIMER,4
+veuillez supprimer toutes les alarmes que j'ai définies,ALARME_SUPPRIMER,4
+supprime mes premières alarmes,ALARME_SUPPRIMER,4
+annuler l'alarme pour demain,ALARME_SUPPRIMER,4
+retire les alarmes créés pour demain,ALARME_SUPPRIMER,4
+veuillez supprimer l'alarme du mercredi soir,ALARME_SUPPRIMER,4
+retirer l'alarme réglée pour quatre cents heures du matin,ALARME_SUPPRIMER,4
+supprimer l'alarme d'heure du coucher de finlee,ALARME_SUPPRIMER,4
+olly annuler les alarmes,ALARME_SUPPRIMER,4
+siri annule les alarmes de yoga,ALARME_SUPPRIMER,4
+rappelle moi demain à quatorze heures,CALENDRIER_REMINDER,4
+olly je veux aller à la projection de film en plein air ce week-end rappel -moi,CALENDRIER_REMINDER,4
+faire un rappel d'événement pour le mariage de monas le mardi,CALENDRIER_REMINDER,4
+j'ai besoin d'un rappel chaque jours à neuf heures du matin,CALENDRIER_REMINDER,4
+s'il vous plaît rappel -moi une heure avant la réunion que je ai demain matin,CALENDRIER_REMINDER,4
+définir un rappel pour les vacances le mois prochain,CALENDRIER_REMINDER,4
+rappeler à vingt heure de prendre mon médicament,CALENDRIER_REMINDER,4
+définis un rappel pour une réunion à quinze heures demain,CALENDRIER_REMINDER,4
+rappelle moi de ramasser le linge lundi prochain,CALENDRIER_REMINDER,4
+définir un rappel que je dois rendre visite à mon père demain,CALENDRIER_REMINDER,4
+définir un rappel pour demain pour cet article,CALENDRIER_REMINDER,4
+rappelle moi de faire une pizza demain matin,CALENDRIER_REMINDER,4
+hey olly s'il te plait met un rappel pour demain dix heure du matin réunion,CALENDRIER_REMINDER,4
+faire un rappel répétitif pour mes tâches professionnelles chaque jour à huit heures du matin,CALENDRIER_REMINDER,4
+rappelle moi mon test de biologie à fsu vendredi,CALENDRIER_REMINDER,4
+s'il vous plaît définissez un rappel pour moi de aller au travaille dans dix minutes,CALENDRIER_REMINDER,4
+envoie-moi un rappel pour récupérer mon chien chez le toiletteur à treize heures,CALENDRIER_REMINDER,4
+définir un rappel je dois me réveiller à cinq heures du matin tous les matins,CALENDRIER_REMINDER,4
+définir un rappel tous les mercredis à quatorze heures,CALENDRIER_REMINDER,4
+fixer un rappel pour la réunion de vendredi à quinze heure,CALENDRIER_REMINDER,4
+définir un rappel pour samedi prochain aller à la librairie à cinq heures,CALENDRIER_REMINDER,4
+définir un rappel pour ma réunion à dix-sept heures,CALENDRIER_REMINDER,4
+définir un rappel de rendez-vous hebdomadaire,CALENDRIER_REMINDER,4
+je veux que tu me rappelles de prendre mon imperméable car il peut pleuvoir,CALENDRIER_REMINDER,4
+définit un rappel,CALENDRIER_REMINDER,4
+créer un rappel ce jeudi pour la demande de visa,CALENDRIER_REMINDER,4
+qu'est-ce qui est sur la liste pour aujourd'hui,CALENDRIER_QUERY,4
+ce que j'ai fait à cette fois,CALENDRIER_QUERY,4
+que dois-je faire lundi,CALENDRIER_QUERY,4
+qu'est-ce que je fais aujourd'hui,CALENDRIER_QUERY,4
+quel est mon programme pour aujourd'hui,CALENDRIER_QUERY,4
+à quoi ressemble le programme d'aujourd'hui,CALENDRIER_QUERY,4
+mets les programmes dans ce requis de pad,CALENDRIER_QUERY,4
+mets ce programme,CALENDRIER_QUERY,4
+supprimer une liste de choses à acheter,LISTE_SUPPRIMER,4
+effacer la liste,LISTE_SUPPRIMER,4
+trouver la liste et supprimer la pomme,LISTE_SUPPRIMER,4
+effacer ma liste de chansons en ancien anglais,LISTE_SUPPRIMER,4
+veuillez supprimer une liste,LISTE_SUPPRIMER,4
+supprimer le fichier excel de la liste,LISTE_SUPPRIMER,4
+veuillez supprimer cet objet de la liste,LISTE_SUPPRIMER,4
+supprimer l'objet trois,LISTE_SUPPRIMER,4
+supprimer cet objet de ma liste,LISTE_SUPPRIMER,4
+supprimer ma liste de choses à faire,LISTE_SUPPRIMER,4
+supprimer un objet de la liste,LISTE_SUPPRIMER,4
+ouvrir les listes supprimer la liste,LISTE_SUPPRIMER,4
+réorganiser cela hors de la liste,LISTE_SUPPRIMER,4
+supprimez-le de la liste,LISTE_SUPPRIMER,4
+s'il vous plaît dites-moi comment puis-je supprimer l'objet,LISTE_SUPPRIMER,4
+supprimer un objet de ma liste,LISTE_SUPPRIMER,4
+veuillez supprimer la première liste,LISTE_SUPPRIMER,4
+veuillez supprimer la liste intitulée kickball,LISTE_SUPPRIMER,4
+je ne veux plus de cette liste,LISTE_SUPPRIMER,4
+supprime la dernière ligne,LISTE_SUPPRIMER,4
+supprimer le journal d'appels de ma liste de vacances,LISTE_SUPPRIMER,4
+retirer les achats d' épicerie de la liste,LISTE_SUPPRIMER,4
+nous n'avons plus de peinture alors enlevez la peinture de la salle de bain de la liste,LISTE_SUPPRIMER,4
+supprimer une liste,LISTE_SUPPRIMER,4
+supprimer la liste de musique de santana,LISTE_SUPPRIMER,4
+supprimer ma liste de choses à faire à partir d' aujourd'hui s'il vous plaît,LISTE_SUPPRIMER,4
+supprimer la liste des choses à faire,LISTE_SUPPRIMER,4
+je veux écouter du jazz,MUSIQUE_JOUER,4
+siri mets ma playlist pop,MUSIQUE_JOUER,4
+je veux écouter du soft rock,MUSIQUE_JOUER,4
+je veux écouter de la musique up beat,MUSIQUE_JOUER,4
+je veux écouter love me,MUSIQUE_JOUER,4
+je veux écouter certain modern rock,MUSIQUE_JOUER,4
+je veux écouter du rock,MUSIQUE_JOUER,4
+ok google joue de la musique rock,MUSIQUE_JOUER,4
+mets la musique de phoenix,MUSIQUE_JOUER,4
+joue ma chanson de country que je préfère la plus,MUSIQUE_JOUER,4
+faites moi écouter de la miusique,MUSIQUE_JOUER,4
+je veux entendre de la bonne musique,MUSIQUE_JOUER,4
+mets la chanson indian folk vite,MUSIQUE_JOUER,4
+alexa mets du rock classique,MUSIQUE_JOUER,4
+ouvrez iheartradio rock,MUSIQUE_JOUER,4
+dis moi une liste de lecture,MUSIQUE_JOUER,4
+arranger et jouer toutes les musiques de la fouine,MUSIQUE_JOUER,4
+ouvre la play station rock de pandora,MUSIQUE_JOUER,4
+je voudrais écouter de la musique pop s'il te plaît,MUSIQUE_JOUER,4
+ok google joue de la musique,MUSIQUE_JOUER,4
+me tenir au courant des résultats de élection,POLITIQUE_QUERY,4
+y a-t-il un moyen d'obtenir les dernières nouvelles sur trump,POLITIQUE_QUERY,4
+quelles sont les nouvelles en politique,POLITIQUE_QUERY,4
+quoi de neuf en politique aujourd'hui peux-tu filtrer les nouvelles de trump,POLITIQUE_QUERY,4
+s'il vous plaît dites-moi les dernières nouvelles sur scénario des élections dans notre état,POLITIQUE_QUERY,4
+olly y a-t-il des nouvelles actuelles sur les élections présidentielles,POLITIQUE_QUERY,4
+olly donne moi des nouvelles sur donald trump,POLITIQUE_QUERY,4
+pouvez-vous me donner des nouvelles locales sur le wayne county sheriffs,POLITIQUE_QUERY,4
+que disent les analystes des nouvelles politique d'immigration,POLITIQUE_QUERY,4
+que fait le conseil municipal de seattle concernant l'itinérance,POLITIQUE_QUERY,4
+obtenir des nouvelles actuelles sur la fermeture du gouvernement,POLITIQUE_QUERY,4
+quelles sont les dernières nouvelles à propos des élections aux etats-unis,POLITIQUE_QUERY,4
+d.e.a l'abus de médicaments sur ordonnance à guam est en hausse,POLITIQUE_QUERY,4
+quel est le dernier sondage sur l'opinion publique du président trump,POLITIQUE_QUERY,4
+dit moi comment brexit va affecter les citoyens de l'union européenne dans le long et moyen terme,POLITIQUE_QUERY,4
+quand est la prochaine conférence de presse de trump,POLITIQUE_QUERY,4
+quelle est la cote d'approbation de françois,POLITIQUE_QUERY,4
+qui était le vingt-cinquième président des états-unis d'amérique,POLITIQUE_QUERY,4
+qui est le président de la pologne,POLITIQUE_QUERY,4
+avec toutes les informations que tu peux recueillir sur internet pourrais tu s'il te plaît me fournir la meilleure explication probable de qui a tué le président kennedy,POLITIQUE_QUERY,4
+quel est le problème le plus préoccupant chez la france aujourd'hui et que peut-on faire pour y faire face efficacement,POLITIQUE_QUERY,4
+quel facteur a permis à macron de gagner les élections,POLITIQUE_QUERY,4
+fait-il chaud à l'extérieur,METEO_QUERY,4
+quel est le statut de la météo actuelle,METEO_QUERY,4
+comment il fait chaud dehors,METEO_QUERY,4
+quelle est la météo aujourd'hui,METEO_QUERY,4
+quel temps fait-il aujourd'hui,METEO_QUERY,4
+il fait chaud aujourd'hui n'est-ce pas,METEO_QUERY,4
+il fait très chaud aujourd'hui n'est-ce pas,METEO_QUERY,4
+quelle journée ensoleillée,METEO_QUERY,4
+il fait nuageux aujourd'hui,METEO_QUERY,4
+siri comment est la température à l'extérieur,METEO_QUERY,4
+quel temps fait-il dehors,METEO_QUERY,4
+quel temps fait-il ici,METEO_QUERY,4
+ok google quel temps fait-il,METEO_QUERY,4
+quel est le temps qu'il fait maintenant,METEO_QUERY,4
+quel temps fait-il maintenant,METEO_QUERY,4
+quelle est la température actuelle,METEO_QUERY,4
+qu'est-ce que la météo de la ville natale,METEO_QUERY,4
+comment c'est dehors,METEO_QUERY,4
+il fait froid dehors,METEO_QUERY,4
+le temps est ensoleillé aujourd'hui,METEO_QUERY,4
+la température actuelle,METEO_QUERY,4
+dois-je porter une veste aujourd'hui,METEO_QUERY,4
+fera-t-il trop froid pour une robe dimanche,METEO_QUERY,4
+puis-je faire mon shopping en short aujourd'hui,METEO_QUERY,4
+est-ce que je pourrai m'en sortir avec un culotte aujourd'hui,METEO_QUERY,4
+dois-je m'habiller en plusieurs couches aujourd'hui,METEO_QUERY,4
+devrais je porter une culotte aujourd'hui,METEO_QUERY,4
+aurai-je besoin d'être chaud,METEO_QUERY,4
+olly dois-je porter des gants aujourd'hui,METEO_QUERY,4
+j'ai besoin d'une veste après dix heures du matin ou pas,METEO_QUERY,4
+dois-je apporter des gants avec moi ce soir,METEO_QUERY,4
+ai-je besoin d'un manteau aujourd'hui,METEO_QUERY,4
+dois-je porter une veste pour travailler,METEO_QUERY,4
+j'ai besoin du manteau de pluie du soir,METEO_QUERY,4
+olly devrais je porter mes gants ou non,METEO_QUERY,4
+devrais je porter plusieurs vêtements à un certain moment aujourd'hui,METEO_QUERY,4
+s'il s'agit d'un bien de consommation quel est le retour client,SOCIALMEDIA_QUERY,4
+je ne suis pas satisfait de tesco s'il vous plaît aidez-moi,SOCIALMEDIA_QUERY,4
+tweete une réclamation à au site internet de old navy,SOCIALMEDIA_QUERY,4
+envoie un tweet à united airlines je suis en colère que vous avez perdu mes bagages,SOCIALMEDIA_QUERY,4
+j'ai eu un service horrible à olive garden je dois les tweeter,SOCIALMEDIA_QUERY,4
+envoie une réclamation via le service client de twitter,SOCIALMEDIA_QUERY,4
+pouvez-vous tweeter une plainte au service client du magasin de meubles,SOCIALMEDIA_QUERY,4
+écrirs une réclamation à alzacz pour la tablette que j'ai achetée aujourd'hui,SOCIALMEDIA_QUERY,4
+contacter le service client amazon via twitter,SOCIALMEDIA_QUERY,4
+plainte tweet à samsung,SOCIALMEDIA_QUERY,4
+merci d'envoyer un tweet à la société dell au sujet du service défectueux de l'ordinateur portable,SOCIALMEDIA_QUERY,4
+tweetez walmart et dites-leur que leur service client est horrible,SOCIALMEDIA_QUERY,4
+olly envoie un tweet à meijer pour leur dire qu'ils ont le pire service client,SOCIALMEDIA_QUERY,4
+plainte du service client tweet ce qui suit,SOCIALMEDIA_QUERY,4
+envoyer un tweet aux dominoes à propos d'une mauvaise livraison,SOCIALMEDIA_QUERY,4
+rappelez-moi de tweeter à cette entreprise,SOCIALMEDIA_QUERY,4
+tweet plainte à burger king,SOCIALMEDIA_QUERY,4
+tweeter une plainte concernant mon réfrigérateur à l. g.,SOCIALMEDIA_QUERY,4
+tweet le service client n'est pas bon pour le service litre par gramme dans mon compte twitter,SOCIALMEDIA_QUERY,4
+plainte de tweet,SOCIALMEDIA_QUERY,4
+ok google tweet que le service au diner de moe est horrible,SOCIALMEDIA_QUERY,4
+tweete pour moi la plainte concernant l'étouffement du drainage,SOCIALMEDIA_QUERY,4
+tweet service consommateur que je suis très déçu de ma récente interaction,SOCIALMEDIA_QUERY,4
+envoie un email à maman avec pour sujet temps et pour corps il fait quel temps cette semaine,EMAIL_QUERY,4
+envoie un e mail à mon ami lui souhaitant joyeux anniversaire,EMAIL_QUERY,4
+e-mail message à adresse,EMAIL_QUERY,4
+anniversaire de mariage de john,EMAIL_QUERY,4
+je voudrais écrire des messages romantiques originaux pour ma femme,EMAIL_QUERY,4
+envoie moi un mail,EMAIL_QUERY,4
+veux tu bien m aider à écrire un mail à chelsea,EMAIL_QUERY,4
+envoie un email à marissa,EMAIL_QUERY,4
+envoie une réponse à mon dernier email,EMAIL_QUERY,4
+s'il te plaît poste à paul,EMAIL_QUERY,4
+e-mail l' ami,EMAIL_QUERY,4
+pouvez-vous envoyer un e-mail à chelsea s'il vous plaît,EMAIL_QUERY,4
+e-mail george brown,EMAIL_QUERY,4
+envoie un e-mail à jean,EMAIL_QUERY,4
+mike m'a-t-il envoyé un e-mail,EMAIL_QUERY,4
+envoie un e-mail à tom,EMAIL_QUERY,4
+envoie un e-mail à suzanne et jean,EMAIL_QUERY,4
+envoie ce contenu par e-mail,EMAIL_QUERY,4
+envoie bonne année à john at gmail dot com,EMAIL_QUERY,4
+envoie le message suivant à ce contact s'il te plaît,EMAIL_QUERY,4
+envoyer un bonjour à,EMAIL_QUERY,4
+envoyer ce message au groupe famille commence par un,EMAIL_QUERY,4
+envoie un e mail à comcast que leur service est nul,EMAIL_QUERY,4
+olly réserve un billet pour paris sur eurostar à cinq heures du soir ce vendredi,TRAIN_RESERVER,4
+réserve-moi un ticket d'avion,TRAIN_RESERVER,4
+obtenez-moi un billet amtrak pour paris pour jeudi prochain le plus tard sera le mieux,TRAIN_RESERVER,4
+chercher deux billets dans le train du mardi pour paris,TRAIN_RESERVER,4
+achetez moi aujourd'hui un billet de train pour la ville de leeds,TRAIN_RESERVER,4
+achète un billet de train,TRAIN_RESERVER,4
+réserver un billet pour partir le matin,TRAIN_RESERVER,4
+pouvez-vous me réserver un ticket de train pour montréal pour mardi prochain,TRAIN_RESERVER,4
+olly s'il te plait achète-moi un billet de train pour marseille,TRAIN_RESERVER,4
+s'il vous plaît envoyez-moi des informations sur la façon d'acheter un billet de train pour marseille,TRAIN_RESERVER,4
+réserve-moi un billet de train pour montréal pour demain matin avant dix heures,TRAIN_RESERVER,4
+s'il te plaît commande un billet de train pour marseille,TRAIN_RESERVER,4
+achète moi un billet pour prendre le train pour paris,TRAIN_RESERVER,4
+réserver un ticket de train pour cette fois,TRAIN_RESERVER,4
+je dois acheter un billet de train,TRAIN_RESERVER,4
+réserve un billet de train pour,TRAIN_RESERVER,4
+donne-moi un billet de train pour montréal aujourd'hui,TRAIN_RESERVER,4
+ouvre l'application irctc et allez réserver un billet,TRAIN_RESERVER,4
+réserve-moi un ticket de train bruxelles,TRAIN_RESERVER,4
+réserve mon billet de train pour rosanne,TRAIN_RESERVER,4
+réserve une place pour moi dans le train du vingtième mars,TRAIN_RESERVER,4
+quel est l'itinéraire le plus proche jusqu'au mcdonalds,NAVIGATION_QUERY,4
+où se trouve le centre de convention,NAVIGATION_QUERY,4
+dirigez-moi vers la gare la plus proche,NAVIGATION_QUERY,4
+les directions vers le magasin apple le plus proche,NAVIGATION_QUERY,4
+donnez-moi des indications pour l'endroit,NAVIGATION_QUERY,4
+je veux aller à bank of america donne moi l'itinéraire,NAVIGATION_QUERY,4
+quelle rue dois-je prendre pour aller au centre ville,NAVIGATION_QUERY,4
+centres de navigation,NAVIGATION_QUERY,4
+trouver l'emplacement exact des lieux,NAVIGATION_QUERY,4
+boogie in your butt par eddie murphy,MUSIQUE_JOUER,5
+s'il te plaît vérifie ma playlist,MUSIQUE_JOUER,5
+jouer une chanson de mes favoris,MUSIQUE_JOUER,5
+joue ma chanson préférée,MUSIQUE_JOUER,5
+olly joue des chansons de ma playlist,MUSIQUE_JOUER,5
+joue des chansons du genre soul et rnb,MUSIQUE_JOUER,5
+joue de la musique de mon artiste préféré,MUSIQUE_JOUER,5
+jouer quelque chose de pop pour moi,MUSIQUE_JOUER,5
+joue mes chansons pop les mieux notées s'il te plaît,MUSIQUE_JOUER,5
+joue quelque chose de romantique,MUSIQUE_JOUER,5
+je veux écouter ma liste de lecture vas-tu la jouer maintenant,MUSIQUE_JOUER,5
+jouer ma chanson préférée de l'année dernière,MUSIQUE_JOUER,5
+joue n'importe quoi sur ma playlist récente,MUSIQUE_JOUER,5
+olly joue n'importe quoi dans ma playlist récente,MUSIQUE_JOUER,5
+joue une chanson qui me fera sourire,MUSIQUE_JOUER,5
+pouvez-vous jouer ma musique,MUSIQUE_JOUER,5
+est-il possible pour toi de fournir les goûts de ma musique,MUSIQUE_JOUER,5
+quels sont le cours boursier actuels de google,GOOGLE_QUERY,5
+conseils récents concernant le référencement google,GOOGLE_QUERY,5
+google traduction,GOOGLE_QUERY,5
+google le mot,GOOGLE_QUERY,5
+cours des actions chez walmart,GOOGLE_QUERY,5
+j'ai besoin du cours de l'action pour amazon,GOOGLE_QUERY,5
+quel est le taux d'action actuel de facebook,GOOGLE_QUERY,5
+où en est le dow jones aujourd'hui,GOOGLE_QUERY,5
+s'il te plaît dis-moi quand je peux devenir riche si j'investis dans les actions dow aujourd'hui et quel sera le retour après cinq ans,GOOGLE_QUERY,5
+comment va le stock de coca-cola aujourd'hui,GOOGLE_QUERY,5
+cours de clôture d'aujourd'hui pour google,GOOGLE_QUERY,5
+mentionner le cours de l'action hdfc,GOOGLE_QUERY,5
+quand les stocks d' iphone baissent-ils souvent,GOOGLE_QUERY,5
+nom de la société en bourse,GOOGLE_QUERY,5
+donne moi le cours d'ouverture d'apple,GOOGLE_QUERY,5
+dis-moi et les cours des actions d'amd,GOOGLE_QUERY,5
+quels sont les cours des actions amd,GOOGLE_QUERY,5
+quelle est la valeur des actions de google,GOOGLE_QUERY,5
+cours d' actions en bourse élevé,GOOGLE_QUERY,5
+quel est le cours de l'action tesco,GOOGLE_QUERY,5
+à quelle apple commerce à,GOOGLE_QUERY,5
+qu'est-ce que i. b. m. stock à,GOOGLE_QUERY,5
+nouvelle notification de réunion dans deux heures,CALENDRIER_CREE,5
+ajoute la date et l'heure suivantes à mon calendrier,CALENDRIER_CREE,5
+pouvez-vous s'il vous plaît ajouter mes réservations pour le dîner à mon calendrier,CALENDRIER_CREE,5
+s'il vous plaît ajouter ma prochaine réunion,CALENDRIER_CREE,5
+ajouter ma prochaine réunion à mon calendrier,CALENDRIER_CREE,5
+avez-vous ajouté la réunion de demain à mon calendrier,CALENDRIER_CREE,5
+ok google planifier une réunion avec le v. p. du département le vingt et un mars deux mille dix-sept,CALENDRIER_CREE,5
+j'ai besoin d'une réunion avec le directeur financier jeudi,CALENDRIER_CREE,5
+planifier une réunion avec mon collègue,CALENDRIER_CREE,5
+mettre la réunion du lundi sur le calendrier chaque lundi,CALENDRIER_CREE,5
+ajouter des réunions déjeuner à midi chaque jour cette semaine,CALENDRIER_CREE,5
+noter cet événement dans mon agenda,CALENDRIER_CREE,5
+pensez à fixer une rencontre entre moi et les joueurs demain soir à sept heures,CALENDRIER_CREE,5
+est-ce que j'ai mis une alarme pour se réveiller le matin,ALARME_QUERY,5
+ai-je une alarme réglée,ALARME_QUERY,5
+mon alarme scolaire est-elle réglée,ALARME_QUERY,5
+quelles alarmes sont à venir,ALARME_QUERY,5
+combien d'alarmes ai-je réglées pour les heures du matin entre six et neuf heures du matin,ALARME_QUERY,5
+dis moi mes alarmes,ALARME_QUERY,5
+a quel heure mon réveil est-il réglé,ALARME_QUERY,5
+ai-je des alarmes pour demain matin,ALARME_QUERY,5
+quelles alarmes ai-je définies en ce moment,ALARME_QUERY,5
+liste mes différents alarme,ALARME_QUERY,5
+fournissez-moi les heures d'alarme que vous avez définies,ALARME_QUERY,5
+indique moi s'il te plait l'heure de l' alarme du matin pour les jours de la semaine,ALARME_QUERY,5
+parlez-moi des horaires d'alarme,ALARME_QUERY,5
+à quelle heure m'as-tu programmé l' alarme,ALARME_QUERY,5
+cherche si olive garden me laissera commander des plats à emporter,RESTAURATION_COMMANDE,5
+commande des plats à emporter,RESTAURATION_COMMANDE,5
+j'ai vraiment envie des plats chinois en ce moment s'il te plaît laisse-moi commander à emporter,RESTAURATION_COMMANDE,5
+commande moi des plats chinois,RESTAURATION_COMMANDE,5
+je veux commander de la nourriture chinoise ce soir qui peut me livrer,RESTAURATION_COMMANDE,5
+je veux commander à manger,RESTAURATION_COMMANDE,5
+j'ai besoin de me faire livrer une pizza à lyon,RESTAURATION_COMMANDE,5
+est-ce que peking garden livre,RESTAURATION_COMMANDE,5
+commande le pâté impérial du général t'so à emporter,RESTAURATION_COMMANDE,5
+commande un hamburger au fromage avec double bacon et fromage américain blanc,RESTAURATION_COMMANDE,5
+appelle pf chang's pour me commander des œufs foo young,RESTAURATION_COMMANDE,5
+quand puis-je récupérer mes plats chinois,RESTAURATION_COMMANDE,5
+salut olly commande deux ailes de poulet avec frites au magasin d'alimentation chinois,RESTAURATION_COMMANDE,5
+salut olly commande une pizza avec du extra fromage,RESTAURATION_COMMANDE,5
+liste les options de livraison les plus notées pour la nourriture chinois,RESTAURATION_COMMANDE,5
+trouve mes plats à emporter thaïlandais autour de la concorde,RESTAURATION_COMMANDE,5
+commande un repas dans un bon restaurant,RESTAURATION_COMMANDE,5
+y a-t-il des restaurants chinois à rohn d'alp,RESTAURATION_COMMANDE,5
+trouve ma nourriture,RESTAURATION_COMMANDE,5
+dans quels endroits puis je commander des plats à emporter à proximité,RESTAURATION_COMMANDE,5
+dis moi quels packs restauration sont disponibles,RESTAURATION_COMMANDE,5
+rechercher des restaurants chinois à proximité,RESTAURATION_COMMANDE,5
+je crève de faim qu'est-ce qu'il y a de bon à manger à rohn d'alp,RESTAURATION_COMMANDE,5
+j'ai besoin de manger,RESTAURATION_COMMANDE,5
+le quatorze février février faire des réservations pour le dîner au restaurant,RESTAURATION_COMMANDE,5
+ce qui se passe en amérique,EVENEMENT_QUERY,5
+qu'est ce qui était en train de se passer,EVENEMENT_QUERY,5
+ce qui se passe à la la,EVENEMENT_QUERY,5
+qu'est ce qui se passe dans le quartier,EVENEMENT_QUERY,5
+ne pas répondre s'il vous plait,EMAIL_QUERY,5
+obtenez-moi des réponses,EMAIL_QUERY,5
+envoie une réponse à mon ami pour sa question,EMAIL_QUERY,5
+réponse ouverte,EMAIL_QUERY,5
+écrire la réponse,EMAIL_QUERY,5
+répondre à tous,EMAIL_QUERY,5
+répondre avec merci,EMAIL_QUERY,5
+répond,EMAIL_QUERY,5
+envoie une réponse à mike,EMAIL_QUERY,5
+courrier de réponse,EMAIL_QUERY,5
+merci de répondre au email que je viens de lire,EMAIL_QUERY,5
+répond à l' e-mail de mark,EMAIL_QUERY,5
+je voudrais répondre à l'e-mail de jean e-mail,EMAIL_QUERY,5
+répondre à cet e-mail,EMAIL_QUERY,5
+événement de calendrier avec ces personnes,CALENDRIER_RECURRENT,5
+définir un événement sur récurrent,CALENDRIER_RECURRENT,5
+fixer la prière de midi pour chaque vendredi,CALENDRIER_RECURRENT,5
+répéter un événement dans mon calendrier,CALENDRIER_RECURRENT,5
+événement après le déjeuner à répéter tous les vendredis,CALENDRIER_RECURRENT,5
+mettre un événement récurrent sur le calendrier,CALENDRIER_RECURRENT,5
+je ne veux pas d'œufs,OBJET_SUPPRIMER,5
+réveil,ALARME_CREER,6
+régler l'alarme demain à six heures du matin,ALARME_CREER,6
+régler une alarme à six heures du matin,ALARME_CREER,6
+programmer un réveil téléphonique pour dix heures du matin,ALARME_CREER,6
+faire une alarme pour trois p. m.,ALARME_CREER,6
+régler une alarme pour une heure du soir,ALARME_CREER,6
+démarrer l'alarme,ALARME_CREER,6
+je veux me lever à six heures demain matin s'il vous plait,ALARME_CREER,6
+caisse aujourd'hui régler l'alarme de dix heures du matin,ALARME_CREER,6
+alerte moi à cinq heures,ALARME_CREER,6
+régler une alarme pour demain matin à huit heures,ALARME_CREER,6
+régler une alarme pour cinq heures trente,ALARME_CREER,6
+prochaine alarme,ALARME_CREER,6
+je voudrais un réveil à sept heures demain matin,ALARME_CREER,6
+mettre en place un réveil à une heure p. m.,ALARME_CREER,6
+alertez-moi dans trois heures,ALARME_CREER,6
+s'il vous plaît mettre une alarme pour huit heures du matin,ALARME_CREER,6
+régler une alarme pour dix heures demain matin,ALARME_CREER,6
+régler une alarme pour cinq heures du matin,ALARME_CREER,6
+veuillez régler une alarme pour dix p. m.,ALARME_CREER,6
+régler une alarme pour cinq minutes à partir de maintenant,ALARME_CREER,6
+s'il te plait met mon réveil,ALARME_CREER,6
+régler une alarme pour six heures du matin,ALARME_CREER,6
+mettre l'alarme le vingt-cinq mai à cinq p. m.,ALARME_CREER,6
+crée une alarme appelée taxi pour ce début de soirée à cinq heures,ALARME_CREER,6
+régler une alarme dans deux heures à partir de maintenant s'il vous plaît,ALARME_CREER,6
+régler un minuteur sur cinq minutes pour les cookies,ALARME_CREER,6
+s'il vous plaît régler l'alarme pour,ALARME_CREER,6
+régler une alarme pour quatre p. m. mardi,ALARME_CREER,6
+alarme réglée à huit heures du matin,ALARME_CREER,6
+pouvez-vous régler l'alarme pour cent trente,ALARME_CREER,6
+alarme,ALARME_CREER,6
+réveille moi à dix heures,ALARME_CREER,6
+se débarrasser des cinq p. m. alarme,ALARME_CREER,6
+signalée les alarmes,ALARME_CREER,6
+j'aimerais écouter ne me quitte pas de jacques brel,MUSIQUE_JOUER,6
+jouer moi jacques brel ne me quitte pas,MUSIQUE_JOUER,6
+joue ne me quitte pas,MUSIQUE_JOUER,6
+jouer la chanson ne me quitte pas,MUSIQUE_JOUER,6
+joue un peu de jaques brel,MUSIQUE_JOUER,6
+je veux écouter ne me quitte pas jacques brel,MUSIQUE_JOUER,6
+s'il te plaît fais-moi écouter ne me quitte pas,MUSIQUE_JOUER,6
+je veux écouter jacques brel maintenant,MUSIQUE_JOUER,6
+jouer ne me quitte pas par jacques brel maintenant,MUSIQUE_JOUER,6
+quelles sont les paroles de la chanson ne me quitte pas de jacques brel,MUSIQUE_JOUER,6
+je veux écouter la chanson ne me quitte pas de jacques brel,MUSIQUE_JOUER,6
+s'il vous plaît jouer la chanson ne me quitte pas,MUSIQUE_JOUER,6
+joue jacques brel,MUSIQUE_JOUER,6
+joue-moi une nouvelle reprise de lorie pester,MUSIQUE_JOUER,6
+mets la musique de jacques brel,MUSIQUE_JOUER,6
+le jouet suivant ne me quitte pas,MUSIQUE_JOUER,6
+joue s'il te plaît ma chanson préférée de jacques brel,MUSIQUE_JOUER,6
+olly mets ne me quitte pas de jacques brel,MUSIQUE_JOUER,6
+s'il te plaît joue je t'aime de lara fabian,MUSIQUE_JOUER,6
+après celui-ci joues moi la chanson ne me quitte pas,MUSIQUE_JOUER,6
+après cette chanson jouer ne me quitte pas,MUSIQUE_JOUER,6
+jouer ne me quitte pas jacques brel,MUSIQUE_JOUER,6
+joue savoir aimer de florent pagny,MUSIQUE_JOUER,6
+jacques brel,MUSIQUE_JOUER,6
+jouer un chant de jaques brel,MUSIQUE_JOUER,6
+joue jean jacques goldman je te donne,MUSIQUE_JOUER,6
+s'il te plait rejoue-moi la chanson de lorie pester,MUSIQUE_JOUER,6
+trouve et liste toutes les chansons de céline dion et jour-les toutes sans mélanger,MUSIQUE_JOUER,6
+puis-je entendre un peu de céline dion,MUSIQUE_JOUER,6
+il est temps d'écouter un peu de céline dion,MUSIQUE_JOUER,6
+ajoute plein de céline dion et de jacques brel à la liste de lecture,MUSIQUE_JOUER,6
+s'il te plaît donne-moi les détails de la chanson de céline dion,MUSIQUE_JOUER,6
+mélange et joue toutes les chansons de l' artiste céline dion,MUSIQUE_JOUER,6
+supprime la réunion aujourd'hui le soir,CALENDRIER_SUPPRIMER,6
+supprimer la réunion,CALENDRIER_SUPPRIMER,6
+supprimer la réunion du mercredi matin,CALENDRIER_SUPPRIMER,6
+effacer ma journée des réunions,CALENDRIER_SUPPRIMER,6
+je suis allé chez walmart aujourd'hui,LISTE_QUERY,6
+cite les articles sur ma liste de shopping olly,LISTE_QUERY,6
+qu'est-ce qu'il y a sur ma liste de course aujourd'hui,LISTE_QUERY,6
+vérifiez le point cinq sur ma liste de choses à faire,LISTE_QUERY,6
+relisez ce que j'ai mis sur ma liste de choses à faire pour cette semaine,LISTE_QUERY,6
+olly quelle est la prochaine chose sur ma liste,LISTE_QUERY,6
+s'il vous plaît dites -moi quelles listes je ai faites,LISTE_QUERY,6
+olly qu'est-ce que je ai d'autre sur la liste,LISTE_QUERY,6
+est-ce que j'ai fait une liste de courses,LISTE_QUERY,6
+ai- je quelque chose sur ma liste de choses à faire,LISTE_QUERY,6
+pouvez-vous me lire mes listes,LISTE_QUERY,6
+hey quelles sont mes listes,LISTE_QUERY,6
+salut olly quelles sont mes listes,LISTE_QUERY,6
+combien d'objets sont sur ma liste de choses à faire,LISTE_QUERY,6
+résumer toutes les choses pour moi que je pourrais faire pour me faire plus heureux,LISTE_QUERY,6
+qu'est-ce qui est sur ma liste de choses à faire pour aujourd'hui,LISTE_QUERY,6
+pouvez-vous me dire quels sont les articles sur ma liste d' épicerie,LISTE_QUERY,6
+jouer de la radio,RADIO_ACTIVER,6
+allumer la radio,RADIO_ACTIVER,6
+allume la radio,RADIO_ACTIVER,6
+s'il te plaît règle le canal radio,RADIO_ACTIVER,6
+allumez la radio,RADIO_ACTIVER,6
+s'il te plait lance la radio,RADIO_ACTIVER,6
+radio allumée,RADIO_ACTIVER,6
+jouer le match de football à la radio,RADIO_ACTIVER,6
+jouer la radio famosa pour moi,RADIO_ACTIVER,6
+plus doux,LIVRE_QUERY,7
+téléphoner,LIVRE_QUERY,7
+des sports,LIVRE_QUERY,7
+google,LIVRE_QUERY,7
+indie,LIVRE_QUERY,7
+mobile,LIVRE_QUERY,7
+mode,LIVRE_QUERY,7
+voitures,LIVRE_QUERY,7
+livres,LIVRE_QUERY,7
+logan,LIVRE_QUERY,7
+trivia,LIVRE_QUERY,7
+détailles,LIVRE_QUERY,7
+évaluation,LIVRE_QUERY,7
+la nuit,LIVRE_QUERY,7
+he,LIVRE_QUERY,7
+rien,LIVRE_QUERY,7
+pouvez-vous définir l'emplacement de la maison de mes sœurs pour cet événement,REMINDER_CREER,7
+rappelle moi de rencontrer reveca aujourd'hui à dix huit heures,REMINDER_CREER,7
+s'il vous plaît mettre à mon calendrie stand-up quotidiennement jusqu'à dix heures du matin,REMINDER_CREER,7
+olly rappelle-moi le pique-nique à regent park,REMINDER_CREER,7
+mettre une notification pour le six mars qu'il y a une réunion de la société à onze heures du matin,REMINDER_CREER,7
+rappelle-moi la réunion de demain à dix heures du matin,REMINDER_CREER,7
+faites-moi savoir le matin de mon rendez-vous chez le médecin le douze,REMINDER_CREER,7
+j'ai rendez-vous demain rappelle moi,REMINDER_CREER,7
+rappelle-moi de rencontrer joe pour le déjeuner demain,REMINDER_CREER,7
+n'oubliez pas de venir me chercher à midi à l'aéroport j'ai un rendez-vous a quinze heures,REMINDER_CREER,7
+rappelle moi pour l'interview de demain,REMINDER_CREER,7
+n'oublie pas de me rappeler l'anniversaire de mon frère le vingt avril,REMINDER_CREER,7
+rappelez-moi la prochaine réunion à quatre heures du matin aujourd'hui,REMINDER_CREER,7
+n'oubliez pas de me le rappeler,REMINDER_CREER,7
+rappelle-moi d'aller au magasin tous les vendredis,REMINDER_CREER,7
+s'il vous plaît rappelez-moi l'anniversaire des swatishs,REMINDER_CREER,7
+je dois me rappeler qu'il y a une réunion pour le rappel de départ à la retraite de paul pour mardi à trois heures du soir,REMINDER_CREER,7
+olly rappelle-moi la réunion de demain ce soir,REMINDER_CREER,7
+olly rappelle-moi que je dois être à la bibliothèque dans une semaine à partir d'aujourd'hui à cinq heures,REMINDER_CREER,7
+rappelle-moi la prochaine fête nationale,REMINDER_CREER,7
+définir les informations du calendrier pour le mariage d'albert,REMINDER_CREER,7
+s'il vous plaît rappelez -moi,REMINDER_CREER,7
+dois-je être rappelé de toutes les réunions le lundi,REMINDER_CREER,7
+souviens-toi du dîner du jeudi au bistro italia,REMINDER_CREER,7
+je veux que tu me rappelles le programme du soir,REMINDER_CREER,7
+rappelle-moi le cinq avril il y a une réunion avec le patron,REMINDER_CREER,7
+rappelle moi que j'ai rendez-vous samedi midi,REMINDER_CREER,7
+rappelle-moi la réunion du vingt-deux janvier,REMINDER_CREER,7
+rappelle-moi la réunion dans une heure,REMINDER_CREER,7
+rappelle-moi dans une heure ma réunion,REMINDER_CREER,7
+rappelle-moi de commander davantage de savons,REMINDER_CREER,7
+directions vers hôtel plaza athénée,TRANSPORT_QUERY,7
+comment puis-je me rendre à marseille,TRANSPORT_QUERY,7
+réserve mon billet de chaise classe a. c. du train de monaco à lyon,TRANSPORT_QUERY,7
+"dites-moi comment aller à bali sans avion avec l'option la moins chère, le temps n'a pas d'importance, j'ai deux cents jours de voyage et seulement des dollars à dépenser",TRANSPORT_QUERY,7
+je veux faire un voyage en suisse gratuitement pouvez vous m'y emmener,TRANSPORT_QUERY,7
+quel est le meilleur chemin vers la france,TRANSPORT_QUERY,7
+quelle est l'heure prévue du courrier de lyon pour atteindre marseille,TRANSPORT_QUERY,7
+les horaires de train de paris à créteil,TRANSPORT_QUERY,7
+car et tarif,TRANSPORT_QUERY,7
+quels sont les horaires de train pour voyager de paris à marseille,TRANSPORT_QUERY,7
+quels sont les horaires de train pour le vingt trois à paris,TRANSPORT_QUERY,7
+à quelle heure part le train de marseille,TRANSPORT_QUERY,7
+quels sont les horaires de train de lyon à montpellier,TRANSPORT_QUERY,7
+combien coûte un billet de train pour paris,TRANSPORT_QUERY,7
+hey olly je veux prendre les trains pour paris mercredi,TRANSPORT_QUERY,7
+quels sont les horaires de train pour,TRANSPORT_QUERY,7
+quand les trains circulent-ils demain,TRANSPORT_QUERY,7
+quand est le prochain train pour cornwall,TRANSPORT_QUERY,7
+où est la gare du train,TRANSPORT_QUERY,7
+quand est le prochain train pour b. rue,TRANSPORT_QUERY,7
+à quelle heure part le train pour chicago,TRANSPORT_QUERY,7
+pouvez-vous me donner les horaires de train pour ann arbor,TRANSPORT_QUERY,7
+liste tous les horaires de train pour new york,TRANSPORT_QUERY,7
+s'il vous plaît laissez-moi savoir l'heure du train du northern rail,TRANSPORT_QUERY,7
+hé à quelle heure puis-je prendre le train la plus proche de moi,TRANSPORT_QUERY,7
+combien pour un billet de train,TRANSPORT_QUERY,7
+je voudrais une liste de tous les prix de billet de train pour cette localisation s'il vous plaît,TRANSPORT_QUERY,7
+pouvez-vous s'il vous plaît me faire savoir les quatre prochains trains prévus pour paris,TRANSPORT_QUERY,7
+quand est le prochain train septa pour philadelphie,TRANSPORT_QUERY,7
+quelle est l'adresse de l'événement prévu le premier janvier,EVENEMENT_QUERY,8
+ai-je des événements aujourd'hui,EVENEMENT_QUERY,8
+ai-je des événements à venir dans mon calendrier,EVENEMENT_QUERY,8
+quand est le prochain rendez-vous sur mon calendrier,EVENEMENT_QUERY,8
+y a-t-il des événements à venir sur mon calendrier,EVENEMENT_QUERY,8
+est-ce que j'ai quelque chose à faire ce samedi entre deux et quatre heures du soir,EVENEMENT_QUERY,8
+quels événements sont dans mon calendrier pour aujourd'hui,EVENEMENT_QUERY,8
+ai-je des événements de calendrier aujourd'hui,EVENEMENT_QUERY,8
+quel est mon programme d'événements demain,EVENEMENT_QUERY,8
+qu'est-ce que j'ai ce matin entre dix heures douze,EVENEMENT_QUERY,8
+quel est mon programme pour le quatorze juin deux mille dix-sept,EVENEMENT_QUERY,8
+suis-je occupé ce week-end,EVENEMENT_QUERY,8
+y a-t-il un programme pour demain soir,EVENEMENT_QUERY,8
+quel est mon programme de après-midi demain,EVENEMENT_QUERY,8
+qu'est-ce que j'ai à faire la semaine prochaine,EVENEMENT_QUERY,8
+dis-moi quel est mon programme pour aujourd'hui,EVENEMENT_QUERY,8
+ai-je quelque chose de prévu pour le sept mars,EVENEMENT_QUERY,8
+sujets wikipédia,WIKIPEDIA_QUERY,8
+essayer sur wikipédia,WIKIPEDIA_QUERY,8
+chercher une recette de pizza,CUISINE_QUERY,8
+rechercher une recette de repas,CUISINE_QUERY,8
+faits apparaître une recette de boulettes de dinde,CUISINE_QUERY,8
+ta recette de steak était superbe,CUISINE_QUERY,8
+des oeufs et des patisseries,CUISINE_QUERY,8
+cuisson,CUISINE_QUERY,8
+pourriez-vous s'il vous plaît affiche les vidéos pour cuisiner des plats italien,CUISINE_QUERY,8
+olly comment faire de la bisque de homard,CUISINE_QUERY,8
+donne moi des recettes,CUISINE_QUERY,8
+utilise google pour me montrer comment cuisiner,CUISINE_QUERY,8
+donne moi les meilleures idées de cuisine,CUISINE_QUERY,8
+montre moi la recette des biscuits,CUISINE_QUERY,8
+trouve moi une recette de soupe de nouilles au poulet,CUISINE_QUERY,8
+montre moi comment cuisiner une recette,CUISINE_QUERY,8
+comment cuisiner quatre omelette au fromage,CUISINE_QUERY,8
+recettes,CUISINE_QUERY,8
+recette de la chair de crabe,CUISINE_QUERY,8
+trouver recette casserole de poulet,CUISINE_QUERY,8
+parle moi des champignons morilles,CUISINE_QUERY,8
+ok google quel est le moyen le plus simple et le plus rapide de faire cuire une dinde,CUISINE_QUERY,8
+olly quels sont les restaurants près de moi,RESTAURATION_QUERY,9
+où devrais je aller pour manger mexicain dans ma région,RESTAURATION_QUERY,9
+montrez moi quelques aires de restauration les plus proche de mon emplacement,RESTAURATION_QUERY,9
+quel est le pub le plus proche dans la ville,RESTAURATION_QUERY,9
+je cherche des défilés vestimentaires pouvez vous trouver des magasins de vêtements à moins d'un kilomètre,RESTAURATION_QUERY,9
+olly indique-moi l'emplacement de la boutique,RESTAURATION_QUERY,9
+tous les bons magasins de vélos à oxford,RESTAURATION_QUERY,9
+meilleur bar local,RESTAURATION_QUERY,9
+épicerie à proximité,RESTAURATION_QUERY,9
+qui vend les netbooks les moins chers à austin du sud,RESTAURATION_QUERY,9
+quel est la meilleure boutique de vêtements ici,RESTAURATION_QUERY,9
+trouve un magasin qui vende de la bière,RESTAURATION_QUERY,9
+quel genre de magasins sont près de ma localité,RESTAURATION_QUERY,9
+où puis-je trouver le irish pub le plus proche dans ma région,RESTAURATION_QUERY,9
+olly quels bars sont autour de moi,RESTAURATION_QUERY,9
+combien y a-t-il d' épiceries dans mon quartier,RESTAURATION_QUERY,9
+olly où puis-je acheter des boissons à montpellier,RESTAURATION_QUERY,9
+lister tous les magasins à proximité,RESTAURATION_QUERY,9
+pouvez-vous recommander n'importe quel pub place de la mairie,RESTAURATION_QUERY,9
+où puis-je me procurer du blé biologique,RESTAURATION_QUERY,9
+montre moi une liste des endroits où mes proches ont été basés sur leurs photos,RESTAURATION_QUERY,9
+quel temps fera-t-il vendredi,METEO_QUERY,9
+quel temps fera-t-il cette semaine,METEO_QUERY,9
+quel temps fera-t-il lundi cette semaine,METEO_QUERY,9
+quel temps fera-t-il cette semaine,METEO_QUERY,9
+quel temps fera-t-il le sept,METEO_QUERY,9
+quel temps fait-il cette semaine,METEO_QUERY,9
+dis-moi le temps qu'il fera cette semaine,METEO_QUERY,9
+fera-t-il beau à la plage vendredi,METEO_QUERY,9
+quel jour sera-t-il pluvieux dans cette semaine,METEO_QUERY,9
+quel temps fait-il cette semaine,METEO_QUERY,9
+pleuvra-t-il cette semaine,METEO_QUERY,9
+combien de temps pouvons-nous nous attendre à la pluie,METEO_QUERY,9
+quel temps fait-il près de chez moi cette semaine,METEO_QUERY,9
+quel temps fera-t-il cette semaine,METEO_QUERY,9
+est-ce qu'il va encore y avoir du vent jeudi,METEO_QUERY,9
+météo du lundi,METEO_QUERY,9
+trouvez-moi un tour au centre commercial d'amérique s'il vous plaît,TRANSPORT_QUERY,9
+météo du mardi,METEO_QUERY,9
+est-ce que le parapluie est nécessaire pour ma sortie,METEO_QUERY,9
+quelles sont les prévisions de cette semaine,METEO_QUERY,9
+quel temps fait t'il cette semaine,METEO_QUERY,9
+regarde la météo de la semaine prochaine pour moi s'il te plait,METEO_QUERY,9
+quel est le bulletin météo pour mardi,METEO_QUERY,9
+quelle sera la météo de lundi midi,METEO_QUERY,9
+puis-je avoir les prévisions à dix jours pour ma région,METEO_QUERY,9
+donne les prévisions météorologiques pour cette semaine s'il te plaît,METEO_QUERY,9
+quelle est la météo de cette semaine,METEO_QUERY,9
+quelle sera la température la plus élevée dans la semaine à venir,METEO_QUERY,9
+quelles seront les conditions météorologiques de cette semaine,METEO_QUERY,9
+météo à homestead,METEO_QUERY,9
+quelle sera la météo la semaine prochaine,METEO_QUERY,9
+montre moi la météo de lyon d' une semaine,METEO_QUERY,9
+quel est le temps pour le reste de la semaine,METEO_QUERY,9
+quelle sera la température aujourd'hui pour lyon,METEO_QUERY,9
+vais je avoir besoin d'apporter un parapluie pour travailler aujourd'hui,METEO_QUERY,9
+les prévisions météorologiques que vous m'avez données sont pour la mauvaise ville je veux connaître la température là où je me trouve,METEO_QUERY,9
+est ce que le ciel sera couvert,METEO_QUERY,9
+quelles sont les prévisions météorologiques de cette semaine,METEO_QUERY,9
+dix jours de prévisions météos,METEO_QUERY,9
+pouvez-vous s'il vous plait me donner les previsions météo de cette semaine,METEO_QUERY,9
+s'il te plaît montre moi la météo du vingt-sept mars deux mille dix-sept,METEO_QUERY,9
+aurais-je besoin de crème solaire ce weekend,METEO_QUERY,9
+la météo mise à jour à l'aide de secondes par bit météo soit des prévisions mises à jour intellicast ou de weathercom toutes deux plutôt médiocres pour mon site,METEO_QUERY,9
+climat,METEO_QUERY,9
+dis moi la météo pour le mois suivant,METEO_QUERY,9
+consultez le bulletin météo de cette semaine,METEO_QUERY,9
+montre moi les prévisions à une semaine,METEO_QUERY,9
+y a-t-il une corrélation entre la météo à pékin et les prix du nasdaq au cours de la semaine dernière,METEO_QUERY,9
+donne-moi l'état de ma mémoire disponible,CALENDRIER_QUERY,9
+ai-je des rappels aujourd'hui,CALENDRIER_QUERY,9
+quelles sont mes alertes actuelles,CALENDRIER_QUERY,9
+ai-je un rappel en attente,CALENDRIER_QUERY,9
+ai-je des rappels en attente,CALENDRIER_QUERY,9
+s'il vous plaît dites-moi les rappels en attente,CALENDRIER_QUERY,9
+quels rappels sont à venir cette semaine,CALENDRIER_QUERY,9
+y a-t-il quelque rappels pour aujourd'hui,CALENDRIER_QUERY,9
+quand est mon prochain rappel,CALENDRIER_QUERY,9
+y a-t-il des rendez-vous en attente ce matin,CALENDRIER_QUERY,9
+quels rappels ai-je défini,CALENDRIER_QUERY,9
+ai-je des rappels sur ma liste,CALENDRIER_QUERY,9
+quel est le cinéma le plus proche qui joue le nouveau gérard depardieu,CINEMA_QUERY,9
+dis moi pourquoi gad elmaleh est un meilleur comédien que camille lellouche,CINEMA_QUERY,9
+merci de me donner des informations sur le prochain film de guillaume canet,CINEMA_QUERY,9
+quel âge a léa seydoux,CINEMA_QUERY,9
+audrey tautou a-t-elle déjà remporté un prix de l'académie,CINEMA_QUERY,9
+liste les cinq meilleurs films de isabelle huppert,CINEMA_QUERY,9
+quel âge sont christine et les reines,CINEMA_QUERY,9
+où est domicile de maître gims,CINEMA_QUERY,9
+combien de fois adele a eu un disc de diamant,CINEMA_QUERY,9
+quel est le groupe qui chante maintenant,MUSIQUE_QUERY,10
+dis moi le nom de l'artiste,MUSIQUE_QUERY,10
+quel est le nom du chanteur de ce groupe,MUSIQUE_QUERY,10
+qui et pourquoi est au théâtre ce soir,MUSIQUE_QUERY,10
+qui était dans les superbus,MUSIQUE_QUERY,10
+peux-tu mettre le jeu name that tune,MUSIQUE_QUERY,10
+qu'elle est cette chanson,MUSIQUE_QUERY,10
+qui est le chanteur de cette chanson,MUSIQUE_QUERY,10
+ma chanteuse préférée est shakira,MUSIQUE_QUERY,10
+quelle chanson est en cours de lecture,MUSIQUE_QUERY,10
+vérifier le titre de la musique récemment joué,MUSIQUE_QUERY,10
+quel est le titre de la chanson qui passe,MUSIQUE_QUERY,10
+quel est le nom de la musique qui joué maintenant,MUSIQUE_QUERY,10
+quelle est cette chanson,MUSIQUE_QUERY,10
+quel est le nom de la chanson,MUSIQUE_QUERY,10
+en quelle année la chanson a-t-elle été crée,MUSIQUE_QUERY,10
+quelle musique est elle,MUSIQUE_QUERY,10
+j'ai entendu ce riff avant quelle chanson a volé ce riff c'est exactement la même chose,MUSIQUE_QUERY,10
+quel est le nom de ce groupe musical,MUSIQUE_QUERY,10
+connais-tu ces paroles,MUSIQUE_QUERY,10
+qui a chanté ça,MUSIQUE_QUERY,10
+quelle est la chanson en cours,MUSIQUE_QUERY,10
+donne moi des informations sur la chanson en cours de lecture,MUSIQUE_QUERY,10
+télécharger spotify,MUSIQUE_QUERY,10
+quelle personne a produit la chanson qui passe à la radio,MUSIQUE_QUERY,10
+qui sont les plus grands artistes hip hop,MUSIQUE_QUERY,10
+est-ce que j'ai de nouveaux e mails de john smith,EMAIL_QUERY,10
+ouvre mon compte e-mail et vérifie les nouveaux e-mails,EMAIL_QUERY,10
+y a-t-il des e-mails concernant ma promotion,EMAIL_QUERY,10
+quand ai-je reçu un e-mail de john smith au sujet d'un accident de voiture,EMAIL_QUERY,10
+montre moi les derniers e-mails seulement,EMAIL_QUERY,10
+afficher tous les e-mails reçus récemment avec horodatage,EMAIL_QUERY,10
+qui m'ont envoyé un e-mail récemment et quels sont les sujets de chaque e-mail,EMAIL_QUERY,10
+dis-moi qui a envoyé l'e-mail au sujet du patron hier,EMAIL_QUERY,10
+fais-moi la liste des objets et expéditeurs de tous les e-mails de la semaine dernière,EMAIL_QUERY,10
+qui m'a envoyé un e-mail récemment et à propos de quoi ont-ils envoyé un e-mail,EMAIL_QUERY,10
+merci de vérifier les e-mails récents sur les études de cet expéditeur,EMAIL_QUERY,10
+vérifie mes e-mails pour des e-mails non lus de maman,EMAIL_QUERY,10
+vérifie et regarde si j'ai reçu des e-mails d'eddie richards concernant les budgets,EMAIL_QUERY,10
+olly s'il te plaît vérifie si j'ai reçu des e-mails de maman,EMAIL_QUERY,10
+peux-tu voir à propos de quoi andrew m'a envoyé un e-mail,EMAIL_QUERY,10
+donne moi tous mes e-mails récents,EMAIL_QUERY,10
+est-ce que bert m'a écrit aujourd'hui,EMAIL_QUERY,10
+quels sont les objets et expéditeurs dans la boite de réception d' aujourd'hui,EMAIL_QUERY,10
+ai- je reçu des e-mails de samantha aujourd’hui,EMAIL_QUERY,10
+affiche le dernier e-mail de mark,EMAIL_QUERY,10
+ai-je de nouveaux matchs tinder,EMAIL_QUERY,10
+faites-moi savoir si je ai de nouveaux e-mails,EMAIL_QUERY,10
+faites-moi savoir s'il y a de nouveaux e-mails de ebay,EMAIL_QUERY,10
+fais-moi savoir quand casey m'envoie un e-mail,EMAIL_QUERY,10
+vérifie les nouveaux e-mails,EMAIL_QUERY,10
+hé vérifier les e-mails,EMAIL_QUERY,10
+vérifie les e-mails de cindy,EMAIL_QUERY,10
+vérifier tous les e-mails d'eric,EMAIL_QUERY,10
+google trouve la nouvelle adresse e-mail pour bill que j'ai ajoutée vendredi,EMAIL_QUERY,10
+des e-mails personnels sont-ils déjà arrivés,EMAIL_QUERY,10
+vérifie tous les e-mails de tom brady,EMAIL_QUERY,10
+salut ai- je reçu de nouveaux e-mails,EMAIL_QUERY,10
+y a-t-il de nouveaux e-mails dans ma boite de réception,EMAIL_QUERY,10
+y a-t-il de nouveaux e-mails,EMAIL_QUERY,10
+informe moi les nouveaux e-mails de sara,EMAIL_QUERY,10
+signale tout nouvel e-mail,EMAIL_QUERY,10
+vérifie les e-mails des deux dernières heures,EMAIL_QUERY,10
+ouvre mes nouveaux e-mails,EMAIL_QUERY,10
+vérifier les e-mails des dernier douze heures,EMAIL_QUERY,10
+faites-moi savoir ce qui s'est accumulé dans ma boîte de réception depuis quinze heures,EMAIL_QUERY,10
+ouvrir l'e-mail de terry,EMAIL_QUERY,10
+la fréquence neuf cent quatre vingt dix neuf fm joue quelle musique actuellement,RADIO_ECOUSER,10
+changer la radio sur la fréquence good jokes,RADIO_ECOUSER,10
+shoutcast point com,RADIO_ECOUSER,10
+je souhaite écouter cette radio,RADIO_ECOUSER,10
+pouvez vous commencer la chaîne de radio f. m. huit cent quatre vingt dix,RADIO_ECOUSER,10
+aller sur ma radio chaîne préférée,RADIO_ECOUSER,10
+olly je veux écouter une station radio qui joue r n b,RADIO_ECOUSER,10
+joue les programmes de musique en radio,RADIO_ECOUSER,10
+retrouvez l'émission de joel osteen sur sirius,RADIO_ECOUSER,10
+joue la station france trois sur cent deux virgule quatre,RADIO_ECOUSER,10
+joue ma station favoris à vingt et une heure,RADIO_ECOUSER,10
+quelles stations diffusent de la bonne musique ce matin,RADIO_ECOUSER,10
+active la chaîne neuf cent cinquante et un,RADIO_ECOUSER,10
+olly death metal maintenant,OBJET_MODIFIER,10
+olly rends le salon bleu,OBJET_MODIFIER,10
+olly trending topics d'actualité chauds,OBJET_MODIFIER,10
+olly comment ça va,OBJET_MODIFIER,10
+aujourd'hui j'ai eu des récompenses olly,OBJET_MODIFIER,10
+olly j'ai eu une épave aujourd'hui,OBJET_MODIFIER,10
+olly reprends les deux tours,OBJET_MODIFIER,10
+olly envoyer un tweet à l'entreprise,OBJET_MODIFIER,10
+olly active une autre couleur de lumière,OBJET_MODIFIER,10
+olly j'aime écouter le jazz,OBJET_MODIFIER,10
+quelles sont les mises à jour de news express,ACTUALITE_QUERY,10
+quoi de neuf dans nouvelles express,ACTUALITE_QUERY,10
+ce qui se passe dans news express,ACTUALITE_QUERY,10
+quelles sont les dernières nouvelles sur le sprint,ACTUALITE_QUERY,10
+donne moi les nouvelles les plus récentes,ACTUALITE_QUERY,10
+montre les nouvelles actuelles de france vingt-quatre,ACTUALITE_QUERY,10
+montre les informations sur france vingt-quatre,ACTUALITE_QUERY,10
+s'il vous plaît donnez-moi une mise à jour sur le élection toutes les trente minutes,ACTUALITE_QUERY,10
+dis moi s'il y a quelque nouvelles sur ce sujet,ACTUALITE_QUERY,10
+lis moi les nouvelles du jour,ACTUALITE_QUERY,10
+informations sociale,ACTUALITE_QUERY,10
+avons-nous reçu quelque mise à jour du new provider,ACTUALITE_QUERY,10
+mise à jour sur avril la giraffe,ACTUALITE_QUERY,10
+donne moi des nouvelles,ACTUALITE_QUERY,10
+tendances actualités technologiques,ACTUALITE_QUERY,10
+écoute le dernier podcast de vincent cassel,MUSIQUE_JOUER,11
+olly lance le podcast histoire de,MUSIQUE_JOUER,11
+montre moi les podcasts les mieux notés,MUSIQUE_JOUER,11
+réseau podcast,MUSIQUE_JOUER,11
+démarre le podcast m. l. b. daily,MUSIQUE_JOUER,11
+combien de mes podcasts de sport ont de nouveaux épisodes que je n' ai pas encore écouté,MUSIQUE_JOUER,11
+localise mon podcast,MUSIQUE_JOUER,11
+met le podcast,MUSIQUE_JOUER,11
+je veux entendre ce podcast,MUSIQUE_JOUER,11
+salut joue ce podcast que j'ai arrêté hier soir,MUSIQUE_JOUER,11
+termine ce podcast et commences-en un nouveau,MUSIQUE_JOUER,11
+lis le podcast de barack obama enregistré dans l'appareil,MUSIQUE_JOUER,11
+trouve le podcast et joue-le,MUSIQUE_JOUER,11
+joue le podcast good mythical morning,MUSIQUE_JOUER,11
+changer les couleurs de la lumière claire du bleu au blanc,LUMIERE_MODIFIER,11
+changer la couleur de la lumière en bleu,LUMIERE_MODIFIER,11
+change la couleur des lumières,LUMIERE_MODIFIER,11
+les lumières peuvent-elles être changées en vertes,LUMIERE_MODIFIER,11
+changer l'opacité de la couleur,LUMIERE_MODIFIER,11
+remplace la couleur de la lumière au foncé,LUMIERE_MODIFIER,11
+change la couleur des lumières,LUMIERE_MODIFIER,11
+activer une couleur de lumière différente,LUMIERE_MODIFIER,11
+va-t-il neiger cette semaine,NEIGE_QUERY,11
+va-t-il neiger la semaine prochaine,NEIGE_QUERY,11
+olly accumulation de prévisions de neige à buffle,NEIGE_QUERY,11
+y aura-t-il de la neige la semaine prochaine,NEIGE_QUERY,11
+combien de neige ontario a-t-il reçu jusqu'à aujourd'hui,NEIGE_QUERY,11
+est-ce qu'il doit neige cette semaine,NEIGE_QUERY,11
+dois-je acheter du sel de dégivrage au magasin,NEIGE_QUERY,11
+résout le calcul,MATHEMATIQUE_QUERY,12
+résoudre un problème de maths,MATHEMATIQUE_QUERY,12
+peux tu me dire comment trouver la réponse à ceci,MATHEMATIQUE_QUERY,12
+répond a cette question quel est le premier boss dans super mario bros,MATHEMATIQUE_QUERY,12
+cent mille deux cent dix sept,MATHEMATIQUE_QUERY,12
+combien c' est trois fois sept,MATHEMATIQUE_QUERY,12
+quelle est la racine carrée de quarante deux,MATHEMATIQUE_QUERY,12
+quelle est la réponse à deux plus deux,MATHEMATIQUE_QUERY,12
+combien c'est vingt-quatre fois vingt-quatre,MATHEMATIQUE_QUERY,12
+combien font six moins quatre,MATHEMATIQUE_QUERY,12
+quelle est la réponse à deux fois trois,MATHEMATIQUE_QUERY,12
+combien font douze divisé par quatre,MATHEMATIQUE_QUERY,12
+calcule la résistance de cette résistance,MATHEMATIQUE_QUERY,12
+calcule une intégrale fermée de la fonction exponentielle de zéro à cinq,MATHEMATIQUE_QUERY,12
+hé hé,GENERAL_QUERY,12
+très mouvementé,GENERAL_QUERY,12
+c'est très dur,GENERAL_QUERY,12
+court et simple,GENERAL_QUERY,12
+il y a t-il quelque nouveau,GENERAL_QUERY,12
+pas d'autres commentaires,GENERAL_QUERY,12
+tu étais en train de ramener de nouvelles manigances,GENERAL_QUERY,12
+niveaux de chauffage à quelles heures dans l' appartement,CUISINE_QUERY,13
+dis-moi comment faire du pain à l'ail,CUISINE_QUERY,13
+combien de temps pour cuisiner le pasta,CUISINE_QUERY,13
+que puis-je cuisiner avec du brocoli et du poulet,CUISINE_QUERY,13
+comment puis-je faire cuire des pâtes,CUISINE_QUERY,13
+comment est cuit le pav bhaji,CUISINE_QUERY,13
+pendant combien de temps dois-je cuire une pizza au four pour qu'elle soit parfaitement croustillante,CUISINE_QUERY,13
+comment cuisiner des pois aux yeux noirs,CUISINE_QUERY,13
+comment faire des biscuits,CUISINE_QUERY,13
+comment faire cuire une pomme de terre,CUISINE_QUERY,13
+comment faire du pain de viande,CUISINE_QUERY,13
+combien de temps dois-je refroidir une tarte glacière,CUISINE_QUERY,13
+obtenir la recette pour faire un hot-dog,CUISINE_QUERY,13
+pouvez-vous remonter une recette de spaghetti,CUISINE_QUERY,13
+combien de temps dois-je rôtir des poitrines de poulet,CUISINE_QUERY,13
+quel est le temps de cuisson des oeufs durs,CUISINE_QUERY,13
+recette de mijoteuse pour le poulet alfredo,CUISINE_QUERY,13
+trouver une recette facile pour le lait d'amande,CUISINE_QUERY,13
+quel ingrédient peut-on utiliser pour remplacer le vin blanc,CUISINE_QUERY,13
+j'ai besoin d'occuper deux bambins dis moi quoi faire,LOCAL_QUERY,13
+parlez-moi de mes événements,LOCAL_QUERY,13
+recherche de jours fériés dans ma région,LOCAL_QUERY,13
+dis-moi tous les événements locaux,LOCAL_QUERY,13
+qu'est-ce qui se passe autour de moi,LOCAL_QUERY,13
+dis-moi ce qui se passe dans ma ville,LOCAL_QUERY,13
+pouvez-vous avancer un épisode dans le podcast,MEDIA_PASSER,13
+passe à l'épisode suivant,MEDIA_PASSER,13
+passe au prochain épisode,MEDIA_PASSER,13
+passe au prochain podcast,MEDIA_PASSER,13
+rejouer le podcast suivant,MEDIA_PASSER,13
+passe au prochain podcast,MEDIA_PASSER,13
+passe à l'épisode suivant,MEDIA_PASSER,13
+derrière épisode un,MEDIA_PASSER,13
+ajouter des pâtisseries à la liste de noël,LISTE_CREER,13
+ajouter cet objet à la liste,LISTE_CREER,13
+ajouter quelque chose à ma liste,LISTE_CREER,13
+lire ma liste de course pour aujourd'hui,LISTE_CREER,13
+lire les objets de la liste de course,LISTE_CREER,13
+ajouter de la vodka à ma liste de courses de fête,LISTE_CREER,13
+mettre un crayon sur une nouvelle liste d' épicerie,LISTE_CREER,13
+ajouter l' épicerie à la liste,LISTE_CREER,13
+ajouter des céréales à ma liste de courses,LISTE_CREER,13
+s'il vous plaît ajouter du lait à la liste d' épicerie,LISTE_CREER,13
+crée une liste de courses mensuelles à acheter,LISTE_CREER,13
+ingrédients nécessaires à épicerie,LISTE_CREER,13
+ajouter acheter des courses à ma liste de choses à faire pour aujourd'hui,LISTE_CREER,13
+ajouter du lait à ma liste d' épicerie,LISTE_CREER,13
+les jello shots sont-ils sans calories,CUISINE_QUERY,13
+quel est la nourriture la plus sexy à cuisiner à un rendez-vous,CUISINE_QUERY,13
+que dois-je cuisiner ce soir,CUISINE_QUERY,13
+j'ai besoin d'idées pour le dîner qui sont mexicaines,CUISINE_QUERY,13
+pouvez-vous me suggérer des aliments sains pour le dîner,CUISINE_QUERY,13
+y a-t-il plus de circulation dans la place de la concorde,TRAFFIC_QUERY,14
+combien de trafic y a-t-il en ce moment dans la rue bowery,TRAFFIC_QUERY,14
+comment est le trafic,TRAFFIC_QUERY,14
+dites moi l'état du trafic d'ici à la domicile,TRAFFIC_QUERY,14
+j'aimerais connaitre l'état du trafic,TRAFFIC_QUERY,14
+donne-moi une idée de l'état actuel du trafic,TRAFFIC_QUERY,14
+comment est le trafic de la maison au travail,TRAFFIC_QUERY,14
+le trafic actuel,TRAFFIC_QUERY,14
+pourriez-vous s'il vous plaît vérifier le trafic vers notre maison,TRAFFIC_QUERY,14
+le trafic est dense,TRAFFIC_QUERY,14
+y a-t-il des problèmes de circulation,TRAFFIC_QUERY,14
+quel est le trafic ce matin,TRAFFIC_QUERY,14
+quel est le trafic maintenant,TRAFFIC_QUERY,14
+comment est le trafic près de chez moi,TRAFFIC_QUERY,14
+quelle route a moins de trafic aujourd'hui,TRAFFIC_QUERY,14
+quel jour tombe mon anniversaire l'année prochaine,DATE_QUERY,14
+quel jour est le jour du souvenir cette année,DATE_QUERY,14
+quel jour de la semaine est action de grâces,DATE_QUERY,14
+quand est le cycle de facturation,DATE_QUERY,14
+combien de semaines reste-t-il pour noël,DATE_QUERY,14
+quelle est la date de samedi prochain,DATE_QUERY,14
+est-il vrai que le anniversaire de susan est le premier mars,DATE_QUERY,14
+quel sera le jour du quinze mars,DATE_QUERY,14
+quel jour de la semaine est la saint valentin,DATE_QUERY,14
+je veux la date du dernier lundi de ce mois,DATE_QUERY,14
+quel jour était ma date de naissance,DATE_QUERY,14
+quel jour il est le cinq décembre,DATE_QUERY,14
+j'ai un vol à prendre le quinze,DATE_QUERY,14
+qu'est-ce qui s'est passé entre la deuxième et la quinzième,DATE_QUERY,14
+dites-moi tous les détails connus sur le tournoi du vingt-deux mars,DATE_QUERY,14
+quel jour de la semaine tombe le vingt deux mars,DATE_QUERY,14
+quel jour est le seize avril,DATE_QUERY,14
+quel jour de la semaine tombe le vingt-deux ce mois,DATE_QUERY,14
+jour du vingt-deux avril,DATE_QUERY,14
+quel jour de la semaine est le vingt-sept juin de cette année,DATE_QUERY,14
+est le vingt-trois avril un samedi,DATE_QUERY,14
+quand arrive le vingt-quatre la semaine prochaine,DATE_QUERY,14
+quel jour est le vingt-deux mai,DATE_QUERY,14
+quel jour de la semaine est le douze,DATE_QUERY,14
+qu'est-ce qu'il y a le vingt novembre,DATE_QUERY,14
+quand sommes-nous en vacances ce mois-ci,DATE_QUERY,14
+tamiser les lumières dans la salle,LUMIERE_MODIFIER,14
+augmente la luminosité du salon,LUMIERE_MODIFIER,14
+augmenter la lumière de la lampe,LUMIERE_MODIFIER,14
+rends le salon bleu,LUMIERE_MODIFIER,14
+tourner les lumières en bleu,LUMIERE_MODIFIER,14
+allumer les lumières du salon en rouge,LUMIERE_MODIFIER,14
+rendre les lumières de la maison rouges,LUMIERE_MODIFIER,14
+règle les lumières du salon au rouge,LUMIERE_MODIFIER,14
+il fait trop sombre ici,LUMIERE_MODIFIER,14
+s'il te plait augmente la lumière,LUMIERE_MODIFIER,14
+tamiser les lumières au niveau deux,LUMIERE_MODIFIER,14
+s'il vous plaît tamiser les lumières dans la chambre,LUMIERE_MODIFIER,14
+pouvez-vous éclairer les lumières s'il vous plaît,LUMIERE_MODIFIER,14
+s'il te plait baisse un peu les lumières,LUMIERE_MODIFIER,14
+j'ai besoin de plus de lumières,LUMIERE_MODIFIER,14
+augmenter les lumières s'il vous plaît,LUMIERE_MODIFIER,14
+allume les lumières ici s'il te plait,LUMIERE_MODIFIER,14
+donne-moi un faible éclairage dans la cuisine,LUMIERE_MODIFIER,14
+mets l'ambiance s'il te plaît,LUMIERE_MODIFIER,14
+s'il te plaît ajoute cette chanson à mes favoris de playlist,MUSIQUE_QUERY,14
+ajouter cette chanson dans ma liste de dix favoris,MUSIQUE_QUERY,14
+alexa s'il vous plaît enregistrer la chanson actuelle dans les favoris,MUSIQUE_QUERY,14
+mets cette musique dans les favoris,MUSIQUE_QUERY,14
+sauvegarde les infos fournies par joe dassin sur cette chanson,MUSIQUE_QUERY,14
+les favoris,MUSIQUE_QUERY,14
+j'aime écouter le jazz,MUSIQUE_QUERY,14
+je suis pour toujours hip hop,MUSIQUE_QUERY,14
+j'aime le hip hop,MUSIQUE_QUERY,14
+j'aime le jazz tu devrais savoir,MUSIQUE_QUERY,14
+j'aime le rnb,MUSIQUE_QUERY,14
+envoie-moi les paroles de cette chanson,MUSIQUE_QUERY,14
+écoute cette chanson,MUSIQUE_QUERY,14
+ecoutons la chanson de country non celui de western,MUSIQUE_QUERY,14
+écouter de la musique,MUSIQUE_QUERY,14
+olly augmente le volume,VOLUME_MODIFIER,15
+baisse le volume,VOLUME_MODIFIER,15
+je ne peux pas entendre augmente le volume,VOLUME_MODIFIER,15
+augmente juste un peu le volume,VOLUME_MODIFIER,15
+augmente le volume de la musique à quatre-vingt-dix,VOLUME_MODIFIER,15
+monte le volume,VOLUME_MODIFIER,15
+augmente le volume s'il te plaît,VOLUME_MODIFIER,15
+mets le volume sur le réglage le plus fort s'il te plaît,VOLUME_MODIFIER,15
+s'il te plaît monte les volume des hauts-parleurs,VOLUME_MODIFIER,15
+monte le son,VOLUME_MODIFIER,15
+monter le volume,VOLUME_MODIFIER,15
+ai- je une liste de contacts pour la fête que j'organise,CONTACT_QUERY,15
+s'il te plaît ajoute tom à ma liste de contacts,CONTACT_QUERY,15
+s'il te plaît donne-moi les détails de mon contact allen,CONTACT_QUERY,15
+y a-t-il un contact nommé allen dans ma liste,CONTACT_QUERY,15
+alexa ajoute erosser à hotmail dot com comme nouveau contact pour emily rosser,CONTACT_QUERY,15
+enregistre cet email parmi le contact,CONTACT_QUERY,15
+je voudrais ajouter ce nouvel email à mes contacts,CONTACT_QUERY,15
+puis-je trouver des informations sur un contact,CONTACT_QUERY,15
+combien de contacts ai- je dans mon répertoire,CONTACT_QUERY,15
+recherche l' e-mail pour contact,CONTACT_QUERY,15
+trouver un contact,CONTACT_QUERY,15
+merci d'ouvrir ma liste de contacts,CONTACT_QUERY,15
+enregistrer l'e-mail dans mon contact,CONTACT_QUERY,15
+enregistre dans les contacts,CONTACT_QUERY,15
+donnez-moi l'identifiant de l'adresse e-mail de contact,CONTACT_QUERY,15
+appele le numéro de téléphone de raju,CONTACT_QUERY,15
+la radio rtl,RADIO_ACTIVER,15
+jouer la nrj,RADIO_ACTIVER,15
+jouer b. b. c. nrj s'il vous plait,RADIO_ACTIVER,15
+allumer la radio fm nrj,RADIO_ACTIVER,15
+trouve-moi de la musique radio de nrj,RADIO_ACTIVER,15
+mets les informations sur nrj,RADIO_ACTIVER,15
+capter la radio nrj,RADIO_ACTIVER,15
+capter une station de radio d'information,RADIO_ACTIVER,15
+nrj,RADIO_ACTIVER,15
+capter la fréquence nrj,RADIO_ACTIVER,15
+capter la fréquence neuf cent quatre vingt dix sept,RADIO_ACTIVER,15
+montre moi le dernier épisode,SERIE_QUERY,15
+joue l' épisode le plus récent de plus belle la vie,SERIE_QUERY,15
+jouer le dernier danse prochaine,PODCAST_QUERY,16
+joue l' épisode de neal brennan attends ne me dis pas,PODCAST_QUERY,16
+jouer le prochain épisode,PODCAST_QUERY,16
+joue le dernier podcast de raison,PODCAST_QUERY,16
+joue le septième épisode du lendemain matin,PODCAST_QUERY,16
+jouer la dernière prochaine épisode,PODCAST_QUERY,16
+joue l' épisode de trucs que vous devriez savoir dans la file d'attente,PODCAST_QUERY,16
+supprimer mon événement de calendrier à une p. m. aujourd'hui,CALENDRIER_SUPPRIMER,16
+veuillez annuler le prochain événement du calendrier,CALENDRIER_SUPPRIMER,16
+supprimer le événement de anniversaire de mon calendrier,CALENDRIER_SUPPRIMER,16
+supprimer la fête d'anniversaire demain à deux heures du soir,CALENDRIER_SUPPRIMER,16
+supprimer le prochain événement du calendrier,CALENDRIER_SUPPRIMER,16
+supprimer mon événement à une p. m. dans mon calendrier,CALENDRIER_SUPPRIMER,16
+supprime le prochain événement du calendrier,CALENDRIER_SUPPRIMER,16
+supprimer du calendrier le prochain événement,CALENDRIER_SUPPRIMER,16
+enregistreur vocal orevena lance moi la page systeme qui est le lieu de sauvegarde des chansons,LIVRE_QUERY,16
+pouvez-vous jouer mon livre audio préféré de harry potter,LIVRE_QUERY,16
+pouvez-vous mettre le livre audio ça peut faire de mal,LIVRE_QUERY,16
+ouvrir da vinci code là où je l'ai laissé,LIVRE_QUERY,16
+jouer le livre audio récemment ajouté,LIVRE_QUERY,16
+reprends mon livre audio au début du dernier chapitre que j' ai commencé,LIVRE_QUERY,16
+ouvre le livre audio harrypotter et lis à partir de la dernière lecture,LIVRE_QUERY,16
+recherche ce playback dans livre audio et joue le moi,LIVRE_QUERY,16
+please reprendre ce playback in livre audionumérique,LIVRE_QUERY,16
+écoutez oscar et la dame rose sur downpour,LIVRE_QUERY,16
+reprendre un chant de michael jackson du livre audio,LIVRE_QUERY,16
+mets le livre audio snow white,LIVRE_QUERY,16
+peux tu continuer le livre audio le petit prince,LIVRE_QUERY,16
+continuer avec mon livre audio s'il te plait,LIVRE_QUERY,16
+jouer à partir de ce point de ce livre audio,LIVRE_QUERY,16
+peux-tu trouver une blague sur les animaux pour moi,BLAGUE_QUERY,16
+trouve-moi la meilleure blague toc toc sur internet,BLAGUE_QUERY,16
+recherche de nouvelles blagues,BLAGUE_QUERY,16
+une blague amusante,BLAGUE_QUERY,16
+hé partagez-moi une blague pour me faire plaisir,BLAGUE_QUERY,16
+hey olly dis moi une blague,BLAGUE_QUERY,16
+je veux une blague de nerd,BLAGUE_QUERY,16
+peux-tu me raconter une bonne blague,BLAGUE_QUERY,16
+ouvre certains blagues sympas,BLAGUE_QUERY,16
+dis-moi une blague,BLAGUE_QUERY,16
+dit une blague,BLAGUE_QUERY,16
+blagues sarcastiques,BLAGUE_QUERY,16
+blagues,BLAGUE_QUERY,16
+la blague du jour,BLAGUE_QUERY,16
+donnez-moi la description d'un circuit d'ordinateur portable,TECHNIQUE_QUERY,16
+donnez-moi la description du circuit d'ordinateur portable,TECHNIQUE_QUERY,16
+alexa joue aux échecs avec moi,JEUX_JOUER,16
+j'ai envie de jouer aux échecs peux-tu jouer ça,JEUX_JOUER,16
+veux-tu jouer à un jeu avec moi,JEUX_JOUER,16
+je veux jouer une partie de trivia,JEUX_JOUER,16
+joue à snake avec moi,JEUX_JOUER,16
+jouer les échecs avec moi s'il vous plaît,JEUX_JOUER,16
+pouvez-vous jouer du poker avec moi,JEUX_JOUER,16
+quels spectacles ou expositions sont prévus au théâtre métropolitain,CONCERT_QUERY,16
+théâtres proche de chez moi,CONCERT_QUERY,16
+ce qui se passe ce week-end,CONCERT_QUERY,16
+donne moi des informations sur le concert de mardi soir,CONCERT_QUERY,16
+en savoir plus sur le concert de rue pete,CONCERT_QUERY,16
+quels concerts sont prévus à proximité,CONCERT_QUERY,16
+quels événements se passent près de moi,CONCERT_QUERY,16
+quelles activités se déroulent dans ma région,CONCERT_QUERY,16
+parle moi des activités dans ma région ce week end,CONCERT_QUERY,16
+montre-moi tous les événements qui se passent à rhône-alpes,CONCERT_QUERY,16
+évènements locaux aujourd'hui,CONCERT_QUERY,16
+s'il vous plaît rechercher des événements dans mon emplacement,CONCERT_QUERY,16
+quel est le programme du prochain concert de maggie rogers,CONCERT_QUERY,16
+s'il te plaît joue le top country,MUSIQUE_JOUER,16
+ne plus jamais jouer n'importe quel country,MUSIQUE_JOUER,16
+joue des chansons de la liste de lecture,MUSIQUE_JOUER,16
+joue à partir de ma liste de lecture,MUSIQUE_JOUER,16
+joue des chansons classiques,MUSIQUE_JOUER,16
+joue les chansons de fête,MUSIQUE_JOUER,16
+joue ma playlist de country,MUSIQUE_JOUER,16
+joue une station de country,MUSIQUE_JOUER,16
+jouer une playlist romantique,MUSIQUE_JOUER,16
+bons assistants,ASSISTANT_QUERY,17
+comment paris hilton est devenu célèbre,CELEBRITE_QUERY,17
+quand est-ce que cotillard et canet se marier,CELEBRITE_QUERY,17
+est-ce que ben et jen se sont remis ensemble,CELEBRITE_QUERY,17
+est rose en train d'enregistrer un nouvel album,CELEBRITE_QUERY,17
+depuis combien de temps la princesse kate est-elle enceinte,CELEBRITE_QUERY,17
+de quoi mitterand s'est passé cette semaine,PERSONNE_QUERY,17
+dis-moi gerard départieu deuxième prénom,PERSONNE_QUERY,17
+quel est le nom de famille de jean,PERSONNE_QUERY,17
+en quelle année jean reno est-il né,PERSONNE_QUERY,17
+qui est jean-claude van damme,PERSONNE_QUERY,17
+montrer la biographie de céline,PERSONNE_QUERY,17
+de quel état est jean-luc godard,PERSONNE_QUERY,17
+quand est le coucher du soleil,GENERAL_QUERY,18
+est-ce que tu aimes ma petite amie,GENERAL_QUERY,18
+où est ma petite amie en ce moment,GENERAL_QUERY,18
+quelle est la date,GENERAL_QUERY,18
+puis-je avoir la date d'aujourd'hui,GENERAL_QUERY,18
+la date d' aujourd'hui,GENERAL_QUERY,18
+quelle est la date et l'heure d' aujourd'hui,GENERAL_QUERY,18
+dis-moi la date d' aujourd'hui,GENERAL_QUERY,18
+dites moi la date d' inauguration de mon ami sams business,GENERAL_QUERY,18
+laissez-moi savoir la date actuelle aujourd'hui,GENERAL_QUERY,18
+comment s'est passée ta journée,GENERAL_QUERY,18
+quelle est la semaine aujourd'hui,GENERAL_QUERY,18
+qu'y a t il aujourd'hui,GENERAL_QUERY,18
+le tube était super occupé aujourd'hui,GENERAL_QUERY,18
+aujourd'hui était une journée fatigante,GENERAL_QUERY,18
+quelle est la date d'aujourd'hui,GENERAL_QUERY,18
+quel jour sommes-nous aujourd'hui,GENERAL_QUERY,18
+aujourd'hui doit être marqué comme mon jour de triche,GENERAL_QUERY,18
+quel jour sommes-nous aujourd'hui,GENERAL_QUERY,18
+est-ce lundi aujourd'hui,GENERAL_QUERY,18
+efface l' ancienne liste de lecture et crées-en une nouvelle,LISTE_MODIFIER,18
+baisse le volume des haut-parleurs s'il vous plaît,VOLUME_ATTENUE,19
+peux-tu parler plus fort,VOLUME_ATTENUE,19
+coupe le son pour la prochaine heure s'il vous plaît,VOLUME_ATTENUE,19
+touche le bouton de sourdine,VOLUME_ATTENUE,19
+coupe le haut-parleur s'il vous plaît,VOLUME_ATTENUE,19
+mets en silencieux toutes les réponses maintenant,VOLUME_ATTENUE,19
+mets en sourdine jusqu'à nouvel ordre,VOLUME_ATTENUE,19
+peux-tu être mis en sourdine pendant un moment s'il te plaît,VOLUME_ATTENUE,19
+peux-tu mettre le son en pause,VOLUME_ATTENUE,19
+pourriez-vous baisser le ton s'il vous plaît,VOLUME_ATTENUE,19
+hey olly mets les hauts-parleurs en silencieux,VOLUME_ATTENUE,19
+ne parle pas s'il vous plaît,VOLUME_ATTENUE,19
+baisse d'un ton s'il te plaît,VOLUME_ATTENUE,19
+règle le volume sur le niveau bas,VOLUME_ATTENUE,19
+baisser le volume du haut parleur,VOLUME_ATTENUE,19
+parle-moi plus doucement s'il te plaît,VOLUME_ATTENUE,19
+quoi de neuf sur itunes,CINEMA_QUERY,19
+quels films sont projetés au cinéma de pathé beaugrenelle,CINEMA_QUERY,19
+hey quels sont les bons films qui sortent bientôt,CINEMA_QUERY,19
+quels nouveaux films sont diffusés dans les cinémas cette semaine,CINEMA_QUERY,19
+quels nouveaux films sont disponibles aujourd'hui,CINEMA_QUERY,19
+quel film rom com puis-je regarder dans les cinémas autour de new york,CINEMA_QUERY,19
+quels sont les films à l'affiche dans les cinémas proche de chez moi,CINEMA_QUERY,19
+quels films ayant de bonnes critiques sont diffusés près de chez moi,CINEMA_QUERY,19
+films avec de bonnes notes de tomates pourries,CINEMA_QUERY,19
+ce qui mérite d'être regardé,CINEMA_QUERY,19
+pouvez-vous me dire quels films sont diffusés au cinéma ce soir,CINEMA_QUERY,19
+va sur youtube et joue-moi les meilleures chansons de mariage,MUSIQUE_JOUER,19
+je veux écouter quelques musiques et si tu jouais ma playlist d'entraînement,MUSIQUE_JOUER,19
+joue ma playlist de gym,MUSIQUE_JOUER,19
+trouve et fais une liste de lecture de tous les derniers morceaux de danse,MUSIQUE_JOUER,19
+pouvez-vous jouer quelque dance music pour moi,MUSIQUE_JOUER,19
+joue de la liste de lecture de musique classique,MUSIQUE_JOUER,19
+entens-tu des chansons de musique a.r. rahman,MUSIQUE_JOUER,19
+va te coucher,SOMMEIL_CREER,20
+définir écarter,DEFINITION_QUERY,21
+définir le cadre,DEFINITION_QUERY,21
+définit xy,DEFINITION_QUERY,21
+régler la situation,DEFINITION_QUERY,21
+définir la lune pour moi,DEFINITION_QUERY,21
+nettoyer la télévision,NETTOYAGE_COMMENCER,21
+commencer le nettoyage de la maison,NETTOYAGE_COMMENCER,21
+fais le ménage,NETTOYAGE_COMMENCER,21
+commencer le nettoyage de la maison,NETTOYAGE_COMMENCER,21
+à quoi ressemblerait la voiture de golf volkswagen,TRAFFIC_QUERY,21
+comment est la situation de la circulation à rue de houston,TRAFFIC_QUERY,21
+comment il est le trafic à la route milligrams,TRAFFIC_QUERY,21
+quel est l'état du trafic du travail à au domicile,TRAFFIC_QUERY,21
+à paris le niveau de trafic est trop élevé,TRAFFIC_QUERY,21
+quel est le trafic actuel à paris,TRAFFIC_QUERY,21
+est ce que la route dans une zone particulière est large ou étroite,TRAFFIC_QUERY,21
+quel est le trafic habituel de bruxelles belgique,TRAFFIC_QUERY,21
+parlez-moi de la réunion que j'ai cette semaine,CALENDRIER_REUNION,21
+j'ai eu beaucoup de réunions aujourd'hui,CALENDRIER_REUNION,21
+est la réunion prévue pour demain,CALENDRIER_REUNION,21
+j avais besoin de préparer une réunion,CALENDRIER_REUNION,21
+quand est cette réunion avec mon boss la semaine prochaine,CALENDRIER_REUNION,21
+combien de réunions ai je la semaine prochaine,CALENDRIER_REUNION,21
+quand est ma prochaine réunion,CALENDRIER_REUNION,21
+ai-je une réunion pour aujourd'hui dans mon calendrier,CALENDRIER_REUNION,21
+ai-je des réunions demain à neuve heure du soir,CALENDRIER_REUNION,21
+combien de réunions ai-je cette semaine,CALENDRIER_REUNION,21
+au cours de la dernière année combien d'heures ai-je passé en réunion,CALENDRIER_REUNION,21
+à quelle heure est la réunion du soir que j'ai avec jonhatan,CALENDRIER_REUNION,21
+agenda,CALENDRIER_REUNION,21
+quelles réunions ai-je entre huit heures dix heures aujourd'hui,CALENDRIER_REUNION,21
+combien de miles y a-t-il entre lyon et la louisiane,GEOGRAPHIE_QUERY,22
+où est bordeaux,GEOGRAPHIE_QUERY,22
+quelle est l'altitude moyenne des etats-unis,GEOGRAPHIE_QUERY,22
+quelle est la plus grande ville du new hampshire,GEOGRAPHIE_QUERY,22
+où est le danemark,GEOGRAPHIE_QUERY,22
+où est le dakota du nord,GEOGRAPHIE_QUERY,22
+quel état américain est le plus au nord,GEOGRAPHIE_QUERY,22
+où est stonehenge,GEOGRAPHIE_QUERY,22
+quelle est la taille de angleterre,GEOGRAPHIE_QUERY,22
+quand la statue de la liberté a-t-elle fait,GEOGRAPHIE_QUERY,22
+quelle est la hauteur de l'empire state building,GEOGRAPHIE_QUERY,22
+où est la statue de la liberté,GEOGRAPHIE_QUERY,22
+quelle est la taille du japon,GEOGRAPHIE_QUERY,22
+calculer la distance entre paris et marseille,GEOGRAPHIE_QUERY,22
+combien de miles en cinq kilomètres,GEOGRAPHIE_QUERY,22
+combien de miles est la ville de new york de paris,GEOGRAPHIE_QUERY,22
+quelle distance y a-t-il entre paris et lyon,GEOGRAPHIE_QUERY,22
+quelle est la population de paris,GEOGRAPHIE_QUERY,22
+combien de personnes vivent à paris,GEOGRAPHIE_QUERY,22
+j'espère que nous pourrions déjeuner ensemble,RESTAURATION_ORGANISER,22
+qu'est-ce que l'ouragan,OBJET_QUERY,22
+qu'est-ce qu'une antenne-relais de téléphonie mobile,OBJET_QUERY,22
+à quoi ressemble une banane,OBJET_QUERY,22
+quel type de pantalon est une culotte,OBJET_QUERY,22
+à quoi ressemble la chemise,OBJET_QUERY,22
+caractéristiques de l' ipad air,OBJET_QUERY,22
+qu'est-ce qu'un par,OBJET_QUERY,22
+qu'est-ce qu'un ordinateur,OBJET_QUERY,22
+qu'est-ce qu'un ossau,OBJET_QUERY,22
+ouvre internet,APPLICATION_OUVRIR,22
+ouvre ma musique,APPLICATION_OUVRIR,22
+ouvre papa pear saga,APPLICATION_OUVRIR,22
+diffuse une vidéo sur youtube,APPLICATION_OUVRIR,22
+ouvre la galerie et poste le nom de la vidéo,APPLICATION_OUVRIR,22
+mon programme hebdomadaire,CALENDRIER_QUERY,22
+mon horaire de travail,CALENDRIER_QUERY,22
+mon planning de santé,CALENDRIER_QUERY,22
+rappelle moi le calendrier,CALENDRIER_QUERY,22
+olly quel est mon agenda pour le rappel de la semaine,CALENDRIER_QUERY,22
+quels sont mon événement de calendrier,CALENDRIER_QUERY,22
+olly envoie un e-mail à mes rendez-vous pour les reporter,EMAIL_CREER,23
+peux-tu envoyer un e-mail à mon ami pierre pour dire que je suis occupé demain,EMAIL_CREER,23
+ouvrir un nouveau e-mail à ce collègue à cet e-mail,EMAIL_CREER,23
+envoie un e-mail à mon manager,EMAIL_CREER,23
+envoyer un email au boss pour qu'il se rencontre pour une évaluation des performances,EMAIL_CREER,23
+envoie un e-mail à mon chef disant que je serai en retard,EMAIL_CREER,23
+envoyer un e mail à tous mes travailleurs de l'entreprise,EMAIL_CREER,23
+s'il vous plaît envoyez l' e-mail à ma mère,EMAIL_CREER,23
+publier un e-mail à mon travailleur de l'entreprise avec les informations sur la réunion prévue du aujourd'hui,EMAIL_CREER,23
+hé commence un e-mail à un collaborateur,EMAIL_CREER,23
+je veux envoyer un e-mail à jack arobase gmail point com,EMAIL_CREER,23
+commencer e-mail,EMAIL_CREER,23
+pouvez-vous créer une nouvelle liste,LISTE_CREER,23
+faire une liste,LISTE_CREER,23
+créer une nouvelle liste pour moi s'il vous plaît,LISTE_CREER,23
+créer une nouvelle liste d'ici demain,LISTE_CREER,23
+crée une nouvelle liste,LISTE_CREER,23
+crée une nouvelle liste de,LISTE_CREER,23
+créer une nouvelle liste de mes factures en attente,LISTE_CREER,23
+crée une liste pour le travail,LISTE_CREER,23
+créer une nouvelle liste de fournitures scolaires,LISTE_CREER,23
+ajouter ça à une liste,LISTE_CREER,23
+inclure un objet dans une liste,LISTE_CREER,23
+veuillez ajouter cet objet à la liste,LISTE_CREER,23
+pouvez-vous démarrer le roomba,DOMESTIQUE_ACTIVER,24
+salut olly comment puis-je démarrer le robot aspirateur,DOMESTIQUE_ACTIVER,24
+aidez-moi à allumer l' aspirateur robot s'il vous plaît,DOMESTIQUE_ACTIVER,24
+allumer le roomba,DOMESTIQUE_ACTIVER,24
+active le robot aspirateur,DOMESTIQUE_ACTIVER,24
+allume l'aspirateur,DOMESTIQUE_ACTIVER,24
+le nettoyage est bon la poussière est si mauvaise fais maintenant ta magie nettoie mon tapis,DOMESTIQUE_ACTIVER,24
+démarrez le robot aspirateur à treize heures aujourd'hui,DOMESTIQUE_ACTIVER,24
+olly démarrer l' aspirateur,DOMESTIQUE_ACTIVER,24
+démarrer mon aspirateur tous les jours de dix heures du matin à onze heures du matin,DOMESTIQUE_ACTIVER,24
+lance mon aspirateur robot,DOMESTIQUE_ACTIVER,24
+s'il vous plaît démarre l' aspirateur,DOMESTIQUE_ACTIVER,24
+démarrer l' aspirateur maintenant,DOMESTIQUE_ACTIVER,24
+faites passer l' aspirateur pendant une heure s'il vous plaît,DOMESTIQUE_ACTIVER,24
+prends le roomba pour nettoyer la cuisine,DOMESTIQUE_ACTIVER,24
+obtiens-moi des mises à jour du facebook de kenny du week end,SOCIALMEDIA_UPDATE,25
+trouvez-moi de nouveaux commentaires de mon facebook,SOCIALMEDIA_UPDATE,25
+ma mise à jour facebook toutes les trois heures devrait être disponible,SOCIALMEDIA_UPDATE,25
+mets ça sur facebook,SOCIALMEDIA_UPDATE,25
+cet article est super cool pouvez-vous partager le lien vers facebook pour moi,SOCIALMEDIA_UPDATE,25
+dernier fil d'actualité de facebook,SOCIALMEDIA_UPDATE,25
+sympa peux-tu poster ça sur mon facebook,SOCIALMEDIA_UPDATE,25
+s'il te plait soumets le statut sur facebook,SOCIALMEDIA_UPDATE,25
+veuillez m'informer de toute nouvelle mise à jour de statut,SOCIALMEDIA_UPDATE,25
+veuillez me mettre à jour sur mes comptes de médias sociaux,SOCIALMEDIA_UPDATE,25
+beaucoup plus clair et axé sur le sujet,GENERAL_QUERY,25
+c'est trop clair,GENERAL_QUERY,25
+ouvre la playlist,MUSIQUE_JOUER,26
+s'il te plaît joue de la musique populaire sur pandora,MUSIQUE_JOUER,26
+joue l' album le plus récent de jay z.,MUSIQUE_JOUER,26
+jouer mes chansons les plus écoutées,MUSIQUE_JOUER,26
+jouer ma deuxième playlist,MUSIQUE_JOUER,26
+lis la musique de cette playlist,MUSIQUE_JOUER,26
+jouer ma playlist utilisée dernièrement,MUSIQUE_JOUER,26
+joue la radio france trois,MUSIQUE_JOUER,26
+joue les top dix du billboard,MUSIQUE_JOUER,26
+ouvrir pandora et jouer les meilleurs tubes,MUSIQUE_JOUER,26
+jouer la radio france vingt-quatre,MUSIQUE_JOUER,26
+fais une playlist de toutes les chansons d'eminem et joue avec répétition,MUSIQUE_JOUER,26
+s'il te plait joue l'audio récemment mis en pause,MUSIQUE_JOUER,26
+assistant mélange la bibliothèque entière,MUSIQUE_JOUER,26
+joue ma playlist actuelle depuis le début,MUSIQUE_JOUER,26
+démarrer la lecture de la playlist récemment ajoutée,MUSIQUE_JOUER,26
+jouer le prochain musique,MUSIQUE_JOUER,26
+joue la playlist en cours,MUSIQUE_JOUER,26
+google mélange la playlist,MUSIQUE_JOUER,26
+mélange et joue la liste de lecture bleu,MUSIQUE_JOUER,26
+mélanger les chansons de l'album actuel,MUSIQUE_JOUER,26
+joue de la musique de la playlist,MUSIQUE_JOUER,26
+joue le quatrième album de daft punk,MUSIQUE_JOUER,26
+joue la quatrième chanson du même album après cette chanson,MUSIQUE_JOUER,26
+joue ensuite la chanson sélectionnée,MUSIQUE_JOUER,26
+combien de temps dure une journee terrestre,INFO_QUERY,26
+pourrais tu me dire quelle heure il est,INFO_QUERY,26
+dis moi la couleur porte bonheur d' aujourd'hui,INFO_QUERY,26
+peux tu mentir,INFO_QUERY,26
+comment est la journée aujourdhui,INFO_QUERY,26
+explique,INFO_QUERY,26
+parle moi de ma journée,INFO_QUERY,26
+montre diverses plantes dans la terre,INFO_QUERY,26
+dit moi quelle heure il est,INFO_QUERY,26
+dit moi quelle heure est il,INFO_QUERY,26
+parle moi de rihana,INFO_QUERY,26
+parle moi de lyon,INFO_QUERY,26
+puis-je connaître les dernières nouvelles de c. n. n.,ACTUALITE_RECENTE,27
+obtiens des nouvelles de b. b. c. news,ACTUALITE_RECENTE,27
+lire les gros titres du new york times,ACTUALITE_RECENTE,27
+quels sont les gros titres du new york times,ACTUALITE_RECENTE,27
+quels sont les derniers articles de yahoo news,ACTUALITE_RECENTE,27
+trouvez-moi des nouvelles de si nettoie dernier six heures,ACTUALITE_RECENTE,27
+quelles sont les dernières nouvelles de la syria,ACTUALITE_RECENTE,27
+y a-t-il de nouvelles vidéos sur youtube pour le new york times,ACTUALITE_RECENTE,27
+quel est le titre de chicago tribune,ACTUALITE_RECENTE,27
+alexa quelles sont les nouvelles dans ma région,ACTUALITE_RECENTE,27
+montre moi les nouvelles du new york times,ACTUALITE_RECENTE,27
+comment sont les nouvelles en ireland,ACTUALITE_RECENTE,27
+je veux lire yahoo news,ACTUALITE_RECENTE,27
+donne moi le dernier new york times,ACTUALITE_RECENTE,27
+titres technologie récent,ACTUALITE_RECENTE,27
+dis-moi une bonne boisson alcoolisée,DIVERTISSEMENT_QUERY,28
+lis un poème pour moi,DIVERTISSEMENT_QUERY,28
+sois drôle pour moi,DIVERTISSEMENT_QUERY,28
+dis à bob smith,DIVERTISSEMENT_QUERY,28
+montre -nous le rouge,DIVERTISSEMENT_QUERY,28
+quel est le groupe date et heure actuel,DIVERTISSEMENT_QUERY,28
+dit moi l'heure actuelle,DIVERTISSEMENT_QUERY,28
+am ou p. m.,DIVERTISSEMENT_QUERY,28
+dit moi l'heure,DIVERTISSEMENT_QUERY,28
+dit moi l'heure,DIVERTISSEMENT_QUERY,28
+fixer un reste à quinze heure choisir jo,DIVERTISSEMENT_QUERY,28
+seize heures,DIVERTISSEMENT_QUERY,28
+montre moi l'heure,DIVERTISSEMENT_QUERY,28
+dit moi l'heure qu'il est,DIVERTISSEMENT_QUERY,28
+horloge ouverte,DIVERTISSEMENT_QUERY,28
+il fait trop lumineux ici peux-tu éteindre une lumière,LUMIERE_MODIFIER,28
+veuillez éteindre les lumières de la chambre,LUMIERE_MODIFIER,28
+pouvez-vous s'il vous plaît éteindre la lumière de ma chambre,LUMIERE_MODIFIER,28
+voulez-vous éteindre toutes les lumières,LUMIERE_MODIFIER,28
+éteins ma lampe de chevet s'il te plait,LUMIERE_MODIFIER,28
+alexa éteins le ventilateur dans la chambre principale,LUMIERE_MODIFIER,28
+peux-tu éteindre ma lampe de bureau,LUMIERE_MODIFIER,28
+olly éteindre les lumières,LUMIERE_MODIFIER,28
+supprimer tous les événements et programmes,CALENDRIER_TOUTSUPPRIMER,29
+rappeler les événements requis à réinitialiser,CALENDRIER_TOUTSUPPRIMER,29
+supprimer eric b . jour du calendrier,CALENDRIER_TOUTSUPPRIMER,29
+tout supprimer du calendrier,CALENDRIER_TOUTSUPPRIMER,29
+effacer l' événement du calendrier et actualiser,CALENDRIER_TOUTSUPPRIMER,29
+hé siri assurez-vous que mon calendrier est complètement vide demain,CALENDRIER_TOUTSUPPRIMER,29
+effacer mon emploi du temps pour aujourd'hui,CALENDRIER_TOUTSUPPRIMER,29
+trouver et supprimer tous mes événements du week-end avec evan parker,CALENDRIER_TOUTSUPPRIMER,29
+supprime tous les événements de mon agenda,CALENDRIER_TOUTSUPPRIMER,29
+pouvez-vous supprimer tous les événements de mon calendrier,CALENDRIER_TOUTSUPPRIMER,29
+veuillez supprimer tous les événements de mon calendrier,CALENDRIER_TOUTSUPPRIMER,29
+veuillez supprimer les contacts auxquels je n'ai pas parlé depuis trois mois,CALENDRIER_TOUTSUPPRIMER,29
+supprimer tous les événements des cinq prochains jours,CALENDRIER_TOUTSUPPRIMER,29
+s'il vous plaît supprimer tous les rappels de dimanche,CALENDRIER_TOUTSUPPRIMER,29
+pouvez-vous effacer l'événement passé que j'ai visité,CALENDRIER_TOUTSUPPRIMER,29
+supprimer tous les événements et informations,CALENDRIER_TOUTSUPPRIMER,29
+supprimer toutes les données de mon calendrier,CALENDRIER_TOUTSUPPRIMER,29
+qu'est-ce qu'il y a avec ma commande de dîner,DOMINO_COMMANDER,30
+état de la commande au restaurant,DOMINO_COMMANDER,30
+commande à emporter,DOMINO_COMMANDER,30
+domino's fait des plats à emporter,DOMINO_COMMANDER,30
+quel est le statut de ma dernière commande,DOMINO_COMMANDER,30
+confirme la commande,DOMINO_COMMANDER,30
+j'ai besoin de deux pizzas stat,DOMINO_COMMANDER,30
+commande deux grandes pizzas et des morceaux d'ailes chaudes chez dominoes,DOMINO_COMMANDER,30
+vérifie si pizza hut a ma commande en route,DOMINO_COMMANDER,30
+ma commande est-elle prête chez domino's,DOMINO_COMMANDER,30
+ma commande est-elle prête à être récupérée maintenant,DOMINO_COMMANDER,30
+quand je veux qu'il prenne des notes,CALENDRIER_CREE,30

@@ -1,0 +1,15 @@
+{
+  "modele": "qwen2.5:14b",
+  "n_cas": 90,
+  "graine": 0,
+  "precision_pur": 0.7058823529411765,
+  "rappel_pur": 0.4,
+  "taux_bonnes_decisions_par_type": {
+    "pollue_facile": 0.9666666666666667,
+    "pur": 0.4,
+    "pollue_difficile": 0.8666666666666667
+  },
+  "taux_reponses_invalides": 0.022222222222222223,
+  "latence_moyenne_s": 4.445222222222222,
+  "note": "précision_pur = part des clusters acceptés qui étaient vraiment purs ; rappel_pur = part des clusters purs que le juge a acceptés."
+}

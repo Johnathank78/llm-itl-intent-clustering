@@ -1,0 +1,2 @@
+# Fine-tuning LoRA avec MLX : Mac Apple Silicon uniquement
+mlx_lm==0.29.1

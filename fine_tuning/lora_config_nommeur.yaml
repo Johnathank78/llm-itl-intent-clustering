@@ -1,0 +1,22 @@
+model: "./qwen-base-4bit"
+train: true
+data: "./fine_tuning/data/nommeur"
+fine_tune_type: "lora"
+adapter_path: "./adapters_nommeur"
+iters: 500
+batch_size: 1
+num_layers: 8
+learning_rate: 1.0e-4
+grad_checkpoint: true
+max_seq_length: 1280
+save_every: 100
+steps_per_eval: 50
+steps_per_report: 10
+mask_prompt: true
+optimizer: "adam"
+seed: 0
+val_batches: 21
+lora_parameters:
+  rank: 16
+  scale: 16.0
+  dropout: 0.05

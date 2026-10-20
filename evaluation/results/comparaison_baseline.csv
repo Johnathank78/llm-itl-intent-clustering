@@ -1,0 +1,16 @@
+perimetre,methode,info_K,K,ARI,NMI,purete,ecart_type_ARI
+phrases retenues,"UMAP 15D + K-Means, K choisi par Davies-Bouldin",aucune,30-40,0.5739,0.7784,0.7018,0.0344
+phrases retenues,Tamis LLM (79 tags),aucune,79,0.5606,0.7739,0.7620,0.0000
+phrases retenues,"UMAP 15D + K-Means, K choisi par silhouette",aucune,20-30,0.5317,0.7450,0.5858,0.0649
+phrases retenues,"UMAP 15D + K-Means, K = 59 (vrai nombre)",vrai K,59,0.5188,0.7800,0.7640,0.0093
+phrases retenues,"K-Means cosinus, K = 59 (vrai nombre)",vrai K,59,0.4713,0.7548,0.7352,0.0273
+phrases retenues,"UMAP 15D + K-Means, K = 79 (repris du tamis)",K du tamis,79,0.4534,0.7747,0.7980,0.0198
+phrases retenues,"K-Means cosinus, K = 79 (repris du tamis)",K du tamis,79,0.4267,0.7538,0.7616,0.0137
+phrases retenues,Tamis LLM sans fusion des tags entre itérations,aucune,117,0.3751,0.7619,0.8161,0.0000
+corpus complet,"UMAP 15D + K-Means, K choisi par Davies-Bouldin",aucune,30-40,0.5293,0.7626,0.6711,0.0328
+corpus complet,Tamis LLM (79 tags),aucune,79,0.5056,0.7530,0.7270,0.0000
+corpus complet,"UMAP 15D + K-Means, K = 59 (vrai nombre)",vrai K,59,0.4867,0.7645,0.7316,0.0075
+corpus complet,"UMAP 15D + K-Means, K choisi par silhouette",aucune,20-30,0.4790,0.7276,0.5512,0.0611
+corpus complet,"K-Means cosinus, K = 59 (vrai nombre)",vrai K,59,0.4378,0.7352,0.7009,0.0194
+corpus complet,"UMAP 15D + K-Means, K = 79 (repris du tamis)",K du tamis,79,0.4308,0.7613,0.7682,0.0169
+corpus complet,"K-Means cosinus, K = 79 (repris du tamis)",K du tamis,79,0.4031,0.7397,0.7367,0.0153

@@ -1,0 +1,549 @@
+{"text":"tamiser les lumières dans la salle","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.8162588299,"difficulty":"hard"}
+{"text":"nettoyer la télévision","intent":"NETTOYAGE_COMMENCER","iteration":21,"cosine_to_centroid":0.8608289577,"difficulty":"hard"}
+{"text":"le nettoyage est bon la poussière est si mauvaise fais maintenant ta magie nettoie mon tapis","intent":"DOMESTIQUE_ACTIVER","iteration":24,"cosine_to_centroid":0.7684649839,"difficulty":"hard"}
+{"text":"qu'est-ce qu'il y a avec ma commande de dîner","intent":"DOMINO_COMMANDER","iteration":30,"cosine_to_centroid":0.7919599192,"difficulty":"hard"}
+{"text":"règle le volume sur le niveau bas","intent":"VOLUME_ATTENUE","iteration":19,"cosine_to_centroid":0.8069467958,"difficulty":"hard"}
+{"text":"j'aime écouter le jazz","intent":"MUSIQUE_QUERY","iteration":14,"cosine_to_centroid":0.6924711082,"difficulty":"hard"}
+{"text":"hé hé","intent":"GENERAL_QUERY","iteration":12,"cosine_to_centroid":0.7277501659,"difficulty":"hard"}
+{"text":"quel jour est le jour du souvenir cette année","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.7895077971,"difficulty":"hard"}
+{"text":"il fait trop sombre ici","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.7406906499,"difficulty":"hard"}
+{"text":"quel jour de la semaine tombe le vingt deux mars","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.8642111888,"difficulty":"hard"}
+{"text":"est-ce lundi aujourd'hui","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.7416766565,"difficulty":"hard"}
+{"text":"quel jour sommes-nous aujourd'hui","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.8021246078,"difficulty":"hard"}
+{"text":"quelle est la date","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.8288745429,"difficulty":"hard"}
+{"text":"coupe le son pour la prochaine heure s'il vous plaît","intent":"VOLUME_ATTENUE","iteration":19,"cosine_to_centroid":0.8594901177,"difficulty":"hard"}
+{"text":"envoie-moi les paroles de cette chanson","intent":"MUSIQUE_QUERY","iteration":14,"cosine_to_centroid":0.7187570409,"difficulty":"hard"}
+{"text":"quel jour de la semaine est action de grâces","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.8136647834,"difficulty":"hard"}
+{"text":"peux-tu trouver une blague sur les animaux pour moi","intent":"BLAGUE_QUERY","iteration":16,"cosine_to_centroid":0.8451907889,"difficulty":"hard"}
+{"text":"baisse le volume","intent":"VOLUME_MODIFIER","iteration":15,"cosine_to_centroid":0.875779291,"difficulty":"hard"}
+{"text":"je ne peux pas entendre augmente le volume","intent":"VOLUME_MODIFIER","iteration":15,"cosine_to_centroid":0.8983420979,"difficulty":"hard"}
+{"text":"pouvez-vous éclairer les lumières s'il vous plaît","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.8854212547,"difficulty":"hard"}
+{"text":"lire les gros titres du new york times","intent":"ACTUALITE_RECENTE","iteration":27,"cosine_to_centroid":0.8805875987,"difficulty":"hard"}
+{"text":"puis-je connaître les dernières nouvelles de c. n. n.","intent":"ACTUALITE_RECENTE","iteration":27,"cosine_to_centroid":0.8284692444,"difficulty":"hard"}
+{"text":"pourriez-vous baisser le ton s'il vous plaît","intent":"VOLUME_ATTENUE","iteration":19,"cosine_to_centroid":0.8792263832,"difficulty":"hard"}
+{"text":"hey olly mets les hauts-parleurs en silencieux","intent":"VOLUME_ATTENUE","iteration":19,"cosine_to_centroid":0.830471085,"difficulty":"hard"}
+{"text":"baisse le volume des haut-parleurs s'il vous plaît","intent":"VOLUME_ATTENUE","iteration":19,"cosine_to_centroid":0.9018044783,"difficulty":"hard"}
+{"text":"s'il te plait baisse un peu les lumières","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.889903448,"difficulty":"hard"}
+{"text":"quels sont les gros titres du new york times","intent":"ACTUALITE_RECENTE","iteration":27,"cosine_to_centroid":0.9054175605,"difficulty":"hard"}
+{"text":"puis-je avoir la date d'aujourd'hui","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.7252970538,"difficulty":"hard"}
+{"text":"démarrez le robot aspirateur à treize heures aujourd'hui","intent":"DOMESTIQUE_ACTIVER","iteration":24,"cosine_to_centroid":0.8916457984,"difficulty":"hard"}
+{"text":"bons assistants","intent":"ASSISTANT_QUERY","iteration":17,"cosine_to_centroid":null,"difficulty":"hard"}
+{"text":"la date d' aujourd'hui","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.8012081227,"difficulty":"hard"}
+{"text":"ne plus jamais jouer n'importe quel country","intent":"MUSIQUE_JOUER","iteration":16,"cosine_to_centroid":0.6355439426,"difficulty":"hard"}
+{"text":"pouvez-vous me suggérer des aliments sains pour le dîner","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.7219833837,"difficulty":"hard"}
+{"text":"rends le salon bleu","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.6388377525,"difficulty":"hard"}
+{"text":"quel sera le jour du quinze mars","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.8686870715,"difficulty":"hard"}
+{"text":"je veux la date du dernier lundi de ce mois","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.7961232712,"difficulty":"hard"}
+{"text":"dit moi quelle heure il est","intent":"INFO_QUERY","iteration":26,"cosine_to_centroid":0.8460048197,"difficulty":"hard"}
+{"text":"trouve-moi la meilleure blague toc toc sur internet","intent":"BLAGUE_QUERY","iteration":16,"cosine_to_centroid":0.829307533,"difficulty":"hard"}
+{"text":"quel jour il est le cinq décembre","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.8080540096,"difficulty":"hard"}
+{"text":"cent mille deux cent dix sept","intent":"MATHEMATIQUE_QUERY","iteration":12,"cosine_to_centroid":0.7688262906,"difficulty":"hard"}
+{"text":"augmente juste un peu le volume","intent":"VOLUME_MODIFIER","iteration":15,"cosine_to_centroid":0.8961670771,"difficulty":"hard"}
+{"text":"fais une playlist de toutes les chansons d'eminem et joue avec répétition","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.7865936971,"difficulty":"hard"}
+{"text":"recherche de nouvelles blagues","intent":"BLAGUE_QUERY","iteration":16,"cosine_to_centroid":0.8349561214,"difficulty":"hard"}
+{"text":"joue les top dix du billboard","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.8471384151,"difficulty":"hard"}
+{"text":"joue de la musique de la playlist","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.8980309462,"difficulty":"hard"}
+{"text":"olly démarrer l' aspirateur","intent":"DOMESTIQUE_ACTIVER","iteration":24,"cosine_to_centroid":0.9173505961,"difficulty":"hard"}
+{"text":"pouvez-vous démarrer le roomba","intent":"DOMESTIQUE_ACTIVER","iteration":24,"cosine_to_centroid":0.8330277247,"difficulty":"hard"}
+{"text":"am ou p. m.","intent":"DIVERTISSEMENT_QUERY","iteration":28,"cosine_to_centroid":0.7544389569,"difficulty":"hard"}
+{"text":"quels sont les derniers articles de yahoo news","intent":"ACTUALITE_RECENTE","iteration":27,"cosine_to_centroid":0.8609756966,"difficulty":"hard"}
+{"text":"trouvez-moi des nouvelles de si nettoie dernier six heures","intent":"ACTUALITE_RECENTE","iteration":27,"cosine_to_centroid":0.8201779158,"difficulty":"hard"}
+{"text":"augmente le volume de la musique à quatre-vingt-dix","intent":"VOLUME_MODIFIER","iteration":15,"cosine_to_centroid":0.8342602474,"difficulty":"hard"}
+{"text":"démarrer mon aspirateur tous les jours de dix heures du matin à onze heures du matin","intent":"DOMESTIQUE_ACTIVER","iteration":24,"cosine_to_centroid":0.8972444406,"difficulty":"hard"}
+{"text":"quelles sont les dernières nouvelles de la syria","intent":"ACTUALITE_RECENTE","iteration":27,"cosine_to_centroid":0.8063985303,"difficulty":"hard"}
+{"text":"j'ai besoin de plus de lumières","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.7156676009,"difficulty":"hard"}
+{"text":"dit moi l'heure actuelle","intent":"DIVERTISSEMENT_QUERY","iteration":28,"cosine_to_centroid":0.8969768464,"difficulty":"hard"}
+{"text":"jouer mes chansons les plus écoutées","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.8624794158,"difficulty":"hard"}
+{"text":"va sur youtube et joue-moi les meilleures chansons de mariage","intent":"MUSIQUE_JOUER","iteration":19,"cosine_to_centroid":0.8132255114,"difficulty":"hard"}
+{"text":"ajouter cette chanson dans ma liste de dix favoris","intent":"MUSIQUE_QUERY","iteration":14,"cosine_to_centroid":0.8006809109,"difficulty":"hard"}
+{"text":"donne-moi un faible éclairage dans la cuisine","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.7346808505,"difficulty":"hard"}
+{"text":"état de la commande au restaurant","intent":"DOMINO_COMMANDER","iteration":30,"cosine_to_centroid":0.79200069,"difficulty":"hard"}
+{"text":"lance mon aspirateur robot","intent":"DOMESTIQUE_ACTIVER","iteration":24,"cosine_to_centroid":0.9067491373,"difficulty":"hard"}
+{"text":"quel est le groupe date et heure actuel","intent":"DIVERTISSEMENT_QUERY","iteration":28,"cosine_to_centroid":0.7534394552,"difficulty":"hard"}
+{"text":"une blague amusante","intent":"BLAGUE_QUERY","iteration":16,"cosine_to_centroid":0.8804297308,"difficulty":"hard"}
+{"text":"sauvegarde les infos fournies par joe dassin sur cette chanson","intent":"MUSIQUE_QUERY","iteration":14,"cosine_to_centroid":0.7476317857,"difficulty":"hard"}
+{"text":"est la réunion prévue pour demain","intent":"CALENDRIER_REUNION","iteration":21,"cosine_to_centroid":0.8737089351,"difficulty":"hard"}
+{"text":"touche le bouton de sourdine","intent":"VOLUME_ATTENUE","iteration":19,"cosine_to_centroid":0.7448602303,"difficulty":"hard"}
+{"text":"ecoutons la chanson de country non celui de western","intent":"MUSIQUE_QUERY","iteration":14,"cosine_to_centroid":0.8143631064,"difficulty":"hard"}
+{"text":"jouer ma playlist utilisée dernièrement","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.8679492058,"difficulty":"hard"}
+{"text":"mets l'ambiance s'il te plaît","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.6714273344,"difficulty":"hard"}
+{"text":"tourner les lumières en bleu","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.8557999096,"difficulty":"hard"}
+{"text":"allumer les lumières du salon en rouge","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.842243611,"difficulty":"hard"}
+{"text":"quel jour était ma date de naissance","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.8484630321,"difficulty":"hard"}
+{"text":"pourrais tu me dire quelle heure il est","intent":"INFO_QUERY","iteration":26,"cosine_to_centroid":0.8295404337,"difficulty":"hard"}
+{"text":"pouvez-vous s'il vous plaît éteindre la lumière de ma chambre","intent":"LUMIERE_MODIFIER","iteration":28,"cosine_to_centroid":0.8624053249,"difficulty":"hard"}
+{"text":"hé partagez-moi une blague pour me faire plaisir","intent":"BLAGUE_QUERY","iteration":16,"cosine_to_centroid":0.8647090146,"difficulty":"hard"}
+{"text":"combien de semaines reste-t-il pour noël","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.7627083327,"difficulty":"hard"}
+{"text":"je suis pour toujours hip hop","intent":"MUSIQUE_QUERY","iteration":14,"cosine_to_centroid":0.5906347963,"difficulty":"hard"}
+{"text":"coupe le haut-parleur s'il vous plaît","intent":"VOLUME_ATTENUE","iteration":19,"cosine_to_centroid":0.8577839982,"difficulty":"hard"}
+{"text":"mélanger les chansons de l'album actuel","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.5623518895,"difficulty":"hard"}
+{"text":"dit moi quelle heure est il","intent":"INFO_QUERY","iteration":26,"cosine_to_centroid":0.8506714973,"difficulty":"hard"}
+{"text":"olly éteindre les lumières","intent":"LUMIERE_MODIFIER","iteration":28,"cosine_to_centroid":0.819205293,"difficulty":"hard"}
+{"text":"commande à emporter","intent":"DOMINO_COMMANDER","iteration":30,"cosine_to_centroid":0.8357204729,"difficulty":"hard"}
+{"text":"voulez-vous éteindre toutes les lumières","intent":"LUMIERE_MODIFIER","iteration":28,"cosine_to_centroid":0.8138000819,"difficulty":"hard"}
+{"text":"salut olly comment puis-je démarrer le robot aspirateur","intent":"DOMESTIQUE_ACTIVER","iteration":24,"cosine_to_centroid":0.8979547425,"difficulty":"hard"}
+{"text":"quel est le statut de ma dernière commande","intent":"DOMINO_COMMANDER","iteration":30,"cosine_to_centroid":0.8318797791,"difficulty":"hard"}
+{"text":"quel jour de la semaine est la saint valentin","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.8403657103,"difficulty":"hard"}
+{"text":"je veux écouter quelques musiques et si tu jouais ma playlist d'entraînement","intent":"MUSIQUE_JOUER","iteration":19,"cosine_to_centroid":0.8641408674,"difficulty":"hard"}
+{"text":"s'il vous plaît tamiser les lumières dans la chambre","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.8812431335,"difficulty":"hard"}
+{"text":"éteins ma lampe de chevet s'il te plait","intent":"LUMIERE_MODIFIER","iteration":28,"cosine_to_centroid":0.838877047,"difficulty":"hard"}
+{"text":"démarrer l' aspirateur maintenant","intent":"DOMESTIQUE_ACTIVER","iteration":24,"cosine_to_centroid":0.911271493,"difficulty":"hard"}
+{"text":"mets en silencieux toutes les réponses maintenant","intent":"VOLUME_ATTENUE","iteration":19,"cosine_to_centroid":0.7183283755,"difficulty":"hard"}
+{"text":"ne parle pas s'il vous plaît","intent":"VOLUME_ATTENUE","iteration":19,"cosine_to_centroid":0.8095566469,"difficulty":"hard"}
+{"text":"obtiens des nouvelles de b. b. c. news","intent":"ACTUALITE_RECENTE","iteration":27,"cosine_to_centroid":0.797449269,"difficulty":"hard"}
+{"text":"ouvre la playlist","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.8594625852,"difficulty":"hard"}
+{"text":"confirme la commande","intent":"DOMINO_COMMANDER","iteration":30,"cosine_to_centroid":0.7355917451,"difficulty":"hard"}
+{"text":"montre moi l'heure","intent":"DIVERTISSEMENT_QUERY","iteration":28,"cosine_to_centroid":0.9139524408,"difficulty":"hard"}
+{"text":"quelle est la date de samedi prochain","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.8606363096,"difficulty":"hard"}
+{"text":"augmente la luminosité du salon","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.7031177078,"difficulty":"hard"}
+{"text":"changer les couleurs de la lumière claire du bleu au blanc","intent":"LUMIERE_MODIFIER","iteration":11,"cosine_to_centroid":0.8148150421,"difficulty":"hard"}
+{"text":"rendre les lumières de la maison rouges","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.7585941002,"difficulty":"hard"}
+{"text":"quel jour est le seize avril","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.8241216027,"difficulty":"hard"}
+{"text":"faites passer l' aspirateur pendant une heure s'il vous plaît","intent":"DOMESTIQUE_ACTIVER","iteration":24,"cosine_to_centroid":0.8853733932,"difficulty":"hard"}
+{"text":"dis-moi la date d' aujourd'hui","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.7752189849,"difficulty":"hard"}
+{"text":"règle les lumières du salon au rouge","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.8188901687,"difficulty":"hard"}
+{"text":"écoute cette chanson","intent":"MUSIQUE_QUERY","iteration":14,"cosine_to_centroid":0.8206783992,"difficulty":"hard"}
+{"text":"domino's fait des plats à emporter","intent":"DOMINO_COMMANDER","iteration":30,"cosine_to_centroid":0.7554496866,"difficulty":"hard"}
+{"text":"changer la couleur de la lumière en bleu","intent":"LUMIERE_MODIFIER","iteration":11,"cosine_to_centroid":0.8578748502,"difficulty":"hard"}
+{"text":"y a-t-il de nouvelles vidéos sur youtube pour le new york times","intent":"ACTUALITE_RECENTE","iteration":27,"cosine_to_centroid":0.7904285424,"difficulty":"hard"}
+{"text":"joue ma playlist de country","intent":"MUSIQUE_JOUER","iteration":16,"cosine_to_centroid":0.8156352267,"difficulty":"hard"}
+{"text":"jouer ma deuxième playlist","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.8683209512,"difficulty":"hard"}
+{"text":"quelle est la date d'aujourd'hui","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.8163776644,"difficulty":"hard"}
+{"text":"alexa éteins le ventilateur dans la chambre principale","intent":"LUMIERE_MODIFIER","iteration":28,"cosine_to_centroid":0.7206904056,"difficulty":"hard"}
+{"text":"alexa s'il vous plaît enregistrer la chanson actuelle dans les favoris","intent":"MUSIQUE_QUERY","iteration":14,"cosine_to_centroid":0.7555336013,"difficulty":"hard"}
+{"text":"j'aime le hip hop","intent":"MUSIQUE_QUERY","iteration":14,"cosine_to_centroid":0.6517345639,"difficulty":"hard"}
+{"text":"titres technologie récent","intent":"ACTUALITE_RECENTE","iteration":27,"cosine_to_centroid":0.7407703699,"difficulty":"hard"}
+{"text":"jouer le prochain musique","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.8382238919,"difficulty":"hard"}
+{"text":"olly accumulation de prévisions de neige à buffle","intent":"NEIGE_QUERY","iteration":11,"cosine_to_centroid":0.7759084654,"difficulty":"hard"}
+{"text":"j'ai besoin de deux pizzas stat","intent":"DOMINO_COMMANDER","iteration":30,"cosine_to_centroid":0.7339258226,"difficulty":"hard"}
+{"text":"baisse d'un ton s'il te plaît","intent":"VOLUME_ATTENUE","iteration":19,"cosine_to_centroid":0.8306153046,"difficulty":"hard"}
+{"text":"joue de la liste de lecture de musique classique","intent":"MUSIQUE_JOUER","iteration":19,"cosine_to_centroid":0.8710037119,"difficulty":"hard"}
+{"text":"j'aime le jazz tu devrais savoir","intent":"MUSIQUE_QUERY","iteration":14,"cosine_to_centroid":0.6481422935,"difficulty":"hard"}
+{"text":"augmenter les lumières s'il vous plaît","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.869525535,"difficulty":"hard"}
+{"text":"jouer une playlist romantique","intent":"MUSIQUE_JOUER","iteration":16,"cosine_to_centroid":0.8423656106,"difficulty":"hard"}
+{"text":"quel jour de la semaine tombe le vingt-deux ce mois","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.8755286521,"difficulty":"hard"}
+{"text":"va te coucher","intent":"SOMMEIL_CREER","iteration":20,"cosine_to_centroid":null,"difficulty":"hard"}
+{"text":"joue le quatrième album de daft punk","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.7349516876,"difficulty":"hard"}
+{"text":"c'est trop clair","intent":"GENERAL_QUERY","iteration":25,"cosine_to_centroid":0.6665408457,"difficulty":"hard"}
+{"text":"commande deux grandes pizzas et des morceaux d'ailes chaudes chez dominoes","intent":"DOMINO_COMMANDER","iteration":30,"cosine_to_centroid":0.8166350368,"difficulty":"hard"}
+{"text":"quelle est la date et l'heure d' aujourd'hui","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.8076109285,"difficulty":"hard"}
+{"text":"joue ma playlist actuelle depuis le début","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.8480739882,"difficulty":"hard"}
+{"text":"dit moi l'heure","intent":"DIVERTISSEMENT_QUERY","iteration":28,"cosine_to_centroid":0.9149830603,"difficulty":"hard"}
+{"text":"baisser le volume du haut parleur","intent":"VOLUME_ATTENUE","iteration":19,"cosine_to_centroid":0.8012281676,"difficulty":"hard"}
+{"text":"allumer le roomba","intent":"DOMESTIQUE_ACTIVER","iteration":24,"cosine_to_centroid":0.8730749734,"difficulty":"hard"}
+{"text":"quel est le titre de chicago tribune","intent":"ACTUALITE_RECENTE","iteration":27,"cosine_to_centroid":0.7567000543,"difficulty":"hard"}
+{"text":"s'il te plait augmente la lumière","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.8369526484,"difficulty":"hard"}
+{"text":"combien de neige ontario a-t-il reçu jusqu'à aujourd'hui","intent":"NEIGE_QUERY","iteration":11,"cosine_to_centroid":0.8437453909,"difficulty":"hard"}
+{"text":"alexa quelles sont les nouvelles dans ma région","intent":"ACTUALITE_RECENTE","iteration":27,"cosine_to_centroid":0.8199314506,"difficulty":"hard"}
+{"text":"fais le ménage","intent":"NETTOYAGE_COMMENCER","iteration":21,"cosine_to_centroid":0.9101014458,"difficulty":"hard"}
+{"text":"pouvez-vous jouer quelque dance music pour moi","intent":"MUSIQUE_JOUER","iteration":19,"cosine_to_centroid":0.8390709333,"difficulty":"hard"}
+{"text":"joue des chansons de la liste de lecture","intent":"MUSIQUE_JOUER","iteration":16,"cosine_to_centroid":0.8414633365,"difficulty":"hard"}
+{"text":"hey olly dis moi une blague","intent":"BLAGUE_QUERY","iteration":16,"cosine_to_centroid":0.8259782949,"difficulty":"hard"}
+{"text":"peux-tu éteindre ma lampe de bureau","intent":"LUMIERE_MODIFIER","iteration":28,"cosine_to_centroid":0.8122110218,"difficulty":"hard"}
+{"text":"joue l' album le plus récent de jay z.","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.8461988396,"difficulty":"hard"}
+{"text":"ouvre internet","intent":"APPLICATION_OUVRIR","iteration":22,"cosine_to_centroid":0.8472372118,"difficulty":"hard"}
+{"text":"augmenter la lumière de la lampe","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.7175707793,"difficulty":"hard"}
+{"text":"mets le volume sur le réglage le plus fort s'il te plaît","intent":"VOLUME_MODIFIER","iteration":15,"cosine_to_centroid":0.8881731748,"difficulty":"hard"}
+{"text":"donne moi le dernier new york times","intent":"ACTUALITE_RECENTE","iteration":27,"cosine_to_centroid":0.8896102424,"difficulty":"hard"}
+{"text":"jour du vingt-deux avril","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.7570358102,"difficulty":"hard"}
+{"text":"allume les lumières ici s'il te plait","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.8583058796,"difficulty":"hard"}
+{"text":"s'il te plaît monte les volume des hauts-parleurs","intent":"VOLUME_MODIFIER","iteration":15,"cosine_to_centroid":0.8839361471,"difficulty":"hard"}
+{"text":"vérifie si pizza hut a ma commande en route","intent":"DOMINO_COMMANDER","iteration":30,"cosine_to_centroid":0.8610558121,"difficulty":"hard"}
+{"text":"tamiser les lumières au niveau deux","intent":"LUMIERE_MODIFIER","iteration":14,"cosine_to_centroid":0.8502412518,"difficulty":"hard"}
+{"text":"veuillez éteindre les lumières de la chambre","intent":"LUMIERE_MODIFIER","iteration":28,"cosine_to_centroid":0.8745905759,"difficulty":"hard"}
+{"text":"ouvre ma musique","intent":"APPLICATION_OUVRIR","iteration":22,"cosine_to_centroid":0.8546173028,"difficulty":"hard"}
+{"text":"je veux une blague de nerd","intent":"BLAGUE_QUERY","iteration":16,"cosine_to_centroid":0.7791023391,"difficulty":"hard"}
+{"text":"peux-tu me raconter une bonne blague","intent":"BLAGUE_QUERY","iteration":16,"cosine_to_centroid":0.8737527849,"difficulty":"hard"}
+{"text":"quel jour de la semaine est le vingt-sept juin de cette année","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.8614125793,"difficulty":"hard"}
+{"text":"qu'y a t il aujourd'hui","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.7975429978,"difficulty":"hard"}
+{"text":"quand est le coucher du soleil","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.7270710262,"difficulty":"hard"}
+{"text":"les lumières peuvent-elles être changées en vertes","intent":"LUMIERE_MODIFIER","iteration":11,"cosine_to_centroid":0.7180986438,"difficulty":"hard"}
+{"text":"il y a t-il quelque nouveau","intent":"GENERAL_QUERY","iteration":12,"cosine_to_centroid":0.7084109375,"difficulty":"hard"}
+{"text":"ouvre certains blagues sympas","intent":"BLAGUE_QUERY","iteration":16,"cosine_to_centroid":0.7812497516,"difficulty":"hard"}
+{"text":"parle-moi plus doucement s'il te plaît","intent":"VOLUME_ATTENUE","iteration":19,"cosine_to_centroid":0.8365332169,"difficulty":"hard"}
+{"text":"j'aime le rnb","intent":"MUSIQUE_QUERY","iteration":14,"cosine_to_centroid":0.64483758,"difficulty":"hard"}
+{"text":"montre -nous le rouge","intent":"DIVERTISSEMENT_QUERY","iteration":28,"cosine_to_centroid":0.7765052054,"difficulty":"hard"}
+{"text":"est le vingt-trois avril un samedi","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.7920525219,"difficulty":"hard"}
+{"text":"quelle est la semaine aujourd'hui","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.7387203523,"difficulty":"hard"}
+{"text":"lis la musique de cette playlist","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.882033396,"difficulty":"hard"}
+{"text":"changer l'opacité de la couleur","intent":"LUMIERE_MODIFIER","iteration":11,"cosine_to_centroid":0.6673890142,"difficulty":"hard"}
+{"text":"remplace la couleur de la lumière au foncé","intent":"LUMIERE_MODIFIER","iteration":11,"cosine_to_centroid":0.732930119,"difficulty":"hard"}
+{"text":"olly augmente le volume","intent":"VOLUME_MODIFIER","iteration":15,"cosine_to_centroid":0.7712260494,"difficulty":"hard"}
+{"text":"google mélange la playlist","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.7346892715,"difficulty":"hard"}
+{"text":"jouer le dernier danse prochaine","intent":"PODCAST_QUERY","iteration":16,"cosine_to_centroid":0.8076845528,"difficulty":"hard"}
+{"text":"il fait trop lumineux ici peux-tu éteindre une lumière","intent":"LUMIERE_MODIFIER","iteration":28,"cosine_to_centroid":0.8583044561,"difficulty":"hard"}
+{"text":"s'il te plaît ajoute cette chanson à mes favoris de playlist","intent":"MUSIQUE_QUERY","iteration":14,"cosine_to_centroid":0.8094495819,"difficulty":"hard"}
+{"text":"dit une blague","intent":"BLAGUE_QUERY","iteration":16,"cosine_to_centroid":0.8509531538,"difficulty":"hard"}
+{"text":"joue ma playlist de gym","intent":"MUSIQUE_JOUER","iteration":19,"cosine_to_centroid":0.8540699632,"difficulty":"hard"}
+{"text":"démarrer la lecture de la playlist récemment ajoutée","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.8184911721,"difficulty":"hard"}
+{"text":"joue à partir de ma liste de lecture","intent":"MUSIQUE_JOUER","iteration":16,"cosine_to_centroid":0.8386865869,"difficulty":"hard"}
+{"text":"quand arrive le vingt-quatre la semaine prochaine","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.7282183009,"difficulty":"hard"}
+{"text":"quoi de neuf sur itunes","intent":"CINEMA_QUERY","iteration":19,"cosine_to_centroid":0.7108718951,"difficulty":"hard"}
+{"text":"comment sont les nouvelles en ireland","intent":"ACTUALITE_RECENTE","iteration":27,"cosine_to_centroid":0.7873534834,"difficulty":"hard"}
+{"text":"monte le son","intent":"VOLUME_MODIFIER","iteration":15,"cosine_to_centroid":0.9057390267,"difficulty":"hard"}
+{"text":"prends le roomba pour nettoyer la cuisine","intent":"DOMESTIQUE_ACTIVER","iteration":24,"cosine_to_centroid":0.875796804,"difficulty":"hard"}
+{"text":"je veux lire yahoo news","intent":"ACTUALITE_RECENTE","iteration":27,"cosine_to_centroid":0.8614430117,"difficulty":"hard"}
+{"text":"change la couleur des lumières","intent":"LUMIERE_MODIFIER","iteration":11,"cosine_to_centroid":0.8413968909,"difficulty":"hard"}
+{"text":"activer une couleur de lumière différente","intent":"LUMIERE_MODIFIER","iteration":11,"cosine_to_centroid":0.7410808125,"difficulty":"hard"}
+{"text":"mets cette musique dans les favoris","intent":"MUSIQUE_QUERY","iteration":14,"cosine_to_centroid":0.8038646462,"difficulty":"hard"}
+{"text":"quel jour est le vingt-deux mai","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.8472724891,"difficulty":"hard"}
+{"text":"mets en sourdine jusqu'à nouvel ordre","intent":"VOLUME_ATTENUE","iteration":19,"cosine_to_centroid":0.6823411472,"difficulty":"hard"}
+{"text":"est-ce que ben et jen se sont remis ensemble","intent":"CELEBRITE_QUERY","iteration":17,"cosine_to_centroid":0.7633619744,"difficulty":"hard"}
+{"text":"assistant mélange la bibliothèque entière","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.5307513875,"difficulty":"hard"}
+{"text":"mélange et joue la liste de lecture bleu","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.6464937451,"difficulty":"hard"}
+{"text":"dois-je acheter du sel de dégivrage au magasin","intent":"NEIGE_QUERY","iteration":11,"cosine_to_centroid":0.7289214096,"difficulty":"hard"}
+{"text":"laissez-moi savoir la date actuelle aujourd'hui","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.7678787631,"difficulty":"hard"}
+{"text":"joue les chansons de fête","intent":"MUSIQUE_JOUER","iteration":16,"cosine_to_centroid":0.7632908933,"difficulty":"hard"}
+{"text":"commencer le nettoyage de la maison","intent":"NETTOYAGE_COMMENCER","iteration":21,"cosine_to_centroid":0.8620701908,"difficulty":"hard"}
+{"text":"peux-tu parler plus fort","intent":"VOLUME_ATTENUE","iteration":19,"cosine_to_centroid":0.8077417381,"difficulty":"hard"}
+{"text":"enregistreur vocal orevena lance moi la page systeme qui est le lieu de sauvegarde des chansons","intent":"LIVRE_QUERY","iteration":16,"cosine_to_centroid":0.7513214717,"difficulty":"hard"}
+{"text":"quel jour tombe mon anniversaire l'année prochaine","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.8544672279,"difficulty":"hard"}
+{"text":"quel jour de la semaine est le douze","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.8778830859,"difficulty":"hard"}
+{"text":"joue la quatrième chanson du même album après cette chanson","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.8523204935,"difficulty":"hard"}
+{"text":"active le robot aspirateur","intent":"DOMESTIQUE_ACTIVER","iteration":24,"cosine_to_centroid":0.860611844,"difficulty":"hard"}
+{"text":"écouter de la musique","intent":"MUSIQUE_QUERY","iteration":14,"cosine_to_centroid":0.8028799514,"difficulty":"hard"}
+{"text":"peux-tu être mis en sourdine pendant un moment s'il te plaît","intent":"VOLUME_ATTENUE","iteration":19,"cosine_to_centroid":0.85297259,"difficulty":"hard"}
+{"text":"ma commande est-elle prête chez domino's","intent":"DOMINO_COMMANDER","iteration":30,"cosine_to_centroid":0.8751050384,"difficulty":"hard"}
+{"text":"horloge ouverte","intent":"DIVERTISSEMENT_QUERY","iteration":28,"cosine_to_centroid":0.6960634202,"difficulty":"hard"}
+{"text":"joue ensuite la chanson sélectionnée","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.8199975941,"difficulty":"hard"}
+{"text":"ma commande est-elle prête à être récupérée maintenant","intent":"DOMINO_COMMANDER","iteration":30,"cosine_to_centroid":0.8773784174,"difficulty":"hard"}
+{"text":"sois drôle pour moi","intent":"DIVERTISSEMENT_QUERY","iteration":28,"cosine_to_centroid":0.7051724027,"difficulty":"hard"}
+{"text":"allume l'aspirateur","intent":"DOMESTIQUE_ACTIVER","iteration":24,"cosine_to_centroid":0.8059871365,"difficulty":"hard"}
+{"text":"le tube était super occupé aujourd'hui","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.6110837757,"difficulty":"hard"}
+{"text":"parle moi de ma journée","intent":"INFO_QUERY","iteration":26,"cosine_to_centroid":0.7809212425,"difficulty":"hard"}
+{"text":"j'ai eu beaucoup de réunions aujourd'hui","intent":"CALENDRIER_REUNION","iteration":21,"cosine_to_centroid":0.7973212032,"difficulty":"hard"}
+{"text":"comment est la journée aujourdhui","intent":"INFO_QUERY","iteration":26,"cosine_to_centroid":0.8091166883,"difficulty":"hard"}
+{"text":"dis-moi une bonne boisson alcoolisée","intent":"DIVERTISSEMENT_QUERY","iteration":28,"cosine_to_centroid":0.7086803457,"difficulty":"hard"}
+{"text":"hey quels sont les bons films qui sortent bientôt","intent":"CINEMA_QUERY","iteration":19,"cosine_to_centroid":0.8753089685,"difficulty":"hard"}
+{"text":"quand je veux qu'il prenne des notes","intent":"CALENDRIER_CREE","iteration":30,"cosine_to_centroid":0.4946120933,"difficulty":"hard"}
+{"text":"mon programme hebdomadaire","intent":"CALENDRIER_QUERY","iteration":22,"cosine_to_centroid":0.7516697361,"difficulty":"hard"}
+{"text":"blagues sarcastiques","intent":"BLAGUE_QUERY","iteration":16,"cosine_to_centroid":0.8301686257,"difficulty":"hard"}
+{"text":"agenda","intent":"CALENDRIER_REUNION","iteration":21,"cosine_to_centroid":0.7718630913,"difficulty":"hard"}
+{"text":"aujourd'hui doit être marqué comme mon jour de triche","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.6088196873,"difficulty":"hard"}
+{"text":"aujourd'hui était une journée fatigante","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.7083552363,"difficulty":"hard"}
+{"text":"est-ce que tu aimes ma petite amie","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.6430987677,"difficulty":"hard"}
+{"text":"parle moi de rihana","intent":"INFO_QUERY","iteration":26,"cosine_to_centroid":0.7226313513,"difficulty":"hard"}
+{"text":"comment s'est passée ta journée","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.7348561906,"difficulty":"hard"}
+{"text":"niveaux de chauffage à quelles heures dans l' appartement","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.5875371638,"difficulty":"hard"}
+{"text":"blagues","intent":"BLAGUE_QUERY","iteration":16,"cosine_to_centroid":0.9046788436,"difficulty":"hard"}
+{"text":"très mouvementé","intent":"GENERAL_QUERY","iteration":12,"cosine_to_centroid":0.6349280387,"difficulty":"hard"}
+{"text":"la blague du jour","intent":"BLAGUE_QUERY","iteration":16,"cosine_to_centroid":0.857675953,"difficulty":"hard"}
+{"text":"ingrédients nécessaires à épicerie","intent":"LISTE_CREER","iteration":13,"cosine_to_centroid":0.7161518006,"difficulty":"hard"}
+{"text":"olly quel est mon agenda pour le rappel de la semaine","intent":"CALENDRIER_QUERY","iteration":22,"cosine_to_centroid":0.8547939827,"difficulty":"hard"}
+{"text":"parlez-moi de mes événements","intent":"LOCAL_QUERY","iteration":13,"cosine_to_centroid":0.820477953,"difficulty":"hard"}
+{"text":"pouvez-vous effacer l'événement passé que j'ai visité","intent":"CALENDRIER_TOUTSUPPRIMER","iteration":29,"cosine_to_centroid":0.7579445771,"difficulty":"hard"}
+{"text":"supprimer la fête d'anniversaire demain à deux heures du soir","intent":"CALENDRIER_SUPPRIMER","iteration":16,"cosine_to_centroid":0.8003200566,"difficulty":"hard"}
+{"text":"c'est très dur","intent":"GENERAL_QUERY","iteration":12,"cosine_to_centroid":0.6950843085,"difficulty":"hard"}
+{"text":"supprimer tous les événements et informations","intent":"CALENDRIER_TOUTSUPPRIMER","iteration":29,"cosine_to_centroid":0.8513264851,"difficulty":"hard"}
+{"text":"supprimer tous les événements et programmes","intent":"CALENDRIER_TOUTSUPPRIMER","iteration":29,"cosine_to_centroid":0.8615842183,"difficulty":"hard"}
+{"text":"quels sont mon événement de calendrier","intent":"CALENDRIER_QUERY","iteration":22,"cosine_to_centroid":0.8405699766,"difficulty":"hard"}
+{"text":"quand est cette réunion avec mon boss la semaine prochaine","intent":"CALENDRIER_REUNION","iteration":21,"cosine_to_centroid":0.8962797737,"difficulty":"hard"}
+{"text":"seize heures","intent":"DIVERTISSEMENT_QUERY","iteration":28,"cosine_to_centroid":0.7160311976,"difficulty":"hard"}
+{"text":"dites moi la date d' inauguration de mon ami sams business","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.7170920739,"difficulty":"hard"}
+{"text":"quand est le cycle de facturation","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.697417471,"difficulty":"hard"}
+{"text":"trouver et supprimer tous mes événements du week-end avec evan parker","intent":"CALENDRIER_TOUTSUPPRIMER","iteration":29,"cosine_to_centroid":0.8968718247,"difficulty":"hard"}
+{"text":"parlez-moi de la réunion que j'ai cette semaine","intent":"CALENDRIER_REUNION","iteration":21,"cosine_to_centroid":0.9094090549,"difficulty":"hard"}
+{"text":"j'ai un vol à prendre le quinze","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.5820315499,"difficulty":"hard"}
+{"text":"qu'est-ce qui s'est passé entre la deuxième et la quinzième","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.7387536069,"difficulty":"hard"}
+{"text":"qu'est-ce qu'il y a le vingt novembre","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.7153143877,"difficulty":"hard"}
+{"text":"quel est le programme du prochain concert de maggie rogers","intent":"CONCERT_QUERY","iteration":16,"cosine_to_centroid":0.7220240075,"difficulty":"hard"}
+{"text":"combien de réunions ai je la semaine prochaine","intent":"CALENDRIER_REUNION","iteration":21,"cosine_to_centroid":0.9162966605,"difficulty":"hard"}
+{"text":"ce qui se passe ce week-end","intent":"CONCERT_QUERY","iteration":16,"cosine_to_centroid":0.8130315684,"difficulty":"hard"}
+{"text":"dites-moi tous les détails connus sur le tournoi du vingt-deux mars","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.7215511724,"difficulty":"hard"}
+{"text":"olly envoie un e-mail à mes rendez-vous pour les reporter","intent":"EMAIL_CREER","iteration":23,"cosine_to_centroid":0.868792291,"difficulty":"hard"}
+{"text":"fixer un reste à quinze heure choisir jo","intent":"DIVERTISSEMENT_QUERY","iteration":28,"cosine_to_centroid":0.7290855431,"difficulty":"hard"}
+{"text":"donne moi des informations sur le concert de mardi soir","intent":"CONCERT_QUERY","iteration":16,"cosine_to_centroid":0.8313593268,"difficulty":"hard"}
+{"text":"à quelle heure est la réunion du soir que j'ai avec jonhatan","intent":"CALENDRIER_REUNION","iteration":21,"cosine_to_centroid":0.8427480639,"difficulty":"hard"}
+{"text":"en savoir plus sur le concert de rue pete","intent":"CONCERT_QUERY","iteration":16,"cosine_to_centroid":0.5910856358,"difficulty":"hard"}
+{"text":"est-il vrai que le anniversaire de susan est le premier mars","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.7514070829,"difficulty":"hard"}
+{"text":"tout supprimer du calendrier","intent":"CALENDRIER_TOUTSUPPRIMER","iteration":29,"cosine_to_centroid":0.9186733224,"difficulty":"hard"}
+{"text":"hé siri assurez-vous que mon calendrier est complètement vide demain","intent":"CALENDRIER_TOUTSUPPRIMER","iteration":29,"cosine_to_centroid":0.8422833602,"difficulty":"hard"}
+{"text":"rappelle moi le calendrier","intent":"CALENDRIER_QUERY","iteration":22,"cosine_to_centroid":0.8087996385,"difficulty":"hard"}
+{"text":"effacer l' événement du calendrier et actualiser","intent":"CALENDRIER_TOUTSUPPRIMER","iteration":29,"cosine_to_centroid":0.8601234249,"difficulty":"hard"}
+{"text":"veuillez annuler le prochain événement du calendrier","intent":"CALENDRIER_SUPPRIMER","iteration":16,"cosine_to_centroid":0.9122178241,"difficulty":"hard"}
+{"text":"au cours de la dernière année combien d'heures ai-je passé en réunion","intent":"CALENDRIER_REUNION","iteration":21,"cosine_to_centroid":0.830149868,"difficulty":"hard"}
+{"text":"j avais besoin de préparer une réunion","intent":"CALENDRIER_REUNION","iteration":21,"cosine_to_centroid":0.7786824815,"difficulty":"hard"}
+{"text":"recherche de jours fériés dans ma région","intent":"LOCAL_QUERY","iteration":13,"cosine_to_centroid":0.7787775125,"difficulty":"hard"}
+{"text":"s'il vous plaît supprimer tous les rappels de dimanche","intent":"CALENDRIER_TOUTSUPPRIMER","iteration":29,"cosine_to_centroid":0.8537995037,"difficulty":"hard"}
+{"text":"effacer mon emploi du temps pour aujourd'hui","intent":"CALENDRIER_TOUTSUPPRIMER","iteration":29,"cosine_to_centroid":0.8557186683,"difficulty":"hard"}
+{"text":"quand sommes-nous en vacances ce mois-ci","intent":"DATE_QUERY","iteration":14,"cosine_to_centroid":0.7924045363,"difficulty":"hard"}
+{"text":"supprimer eric b . jour du calendrier","intent":"CALENDRIER_TOUTSUPPRIMER","iteration":29,"cosine_to_centroid":0.7041877988,"difficulty":"hard"}
+{"text":"supprimer le événement de anniversaire de mon calendrier","intent":"CALENDRIER_SUPPRIMER","iteration":16,"cosine_to_centroid":0.873876193,"difficulty":"hard"}
+{"text":"rappeler les événements requis à réinitialiser","intent":"CALENDRIER_TOUTSUPPRIMER","iteration":29,"cosine_to_centroid":0.6776025615,"difficulty":"hard"}
+{"text":"la radio rtl","intent":"RADIO_ACTIVER","iteration":15,"cosine_to_centroid":0.7733081105,"difficulty":"hard"}
+{"text":"capter la fréquence neuf cent quatre vingt dix sept","intent":"RADIO_ACTIVER","iteration":15,"cosine_to_centroid":0.7019771887,"difficulty":"hard"}
+{"text":"jouer la nrj","intent":"RADIO_ACTIVER","iteration":15,"cosine_to_centroid":0.7807638375,"difficulty":"hard"}
+{"text":"jouer b. b. c. nrj s'il vous plait","intent":"RADIO_ACTIVER","iteration":15,"cosine_to_centroid":0.8170235055,"difficulty":"hard"}
+{"text":"joue la radio france trois","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.7392143109,"difficulty":"hard"}
+{"text":"allumer la radio fm nrj","intent":"RADIO_ACTIVER","iteration":15,"cosine_to_centroid":0.9105285331,"difficulty":"hard"}
+{"text":"combien de mes podcasts de sport ont de nouveaux épisodes que je n' ai pas encore écouté","intent":"MUSIQUE_JOUER","iteration":11,"cosine_to_centroid":0.6867008333,"difficulty":"hard"}
+{"text":"ouvrir pandora et jouer les meilleurs tubes","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.8347068499,"difficulty":"hard"}
+{"text":"s'il te plaît joue de la musique populaire sur pandora","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.8023874306,"difficulty":"hard"}
+{"text":"trouve-moi de la musique radio de nrj","intent":"RADIO_ACTIVER","iteration":15,"cosine_to_centroid":0.8482055603,"difficulty":"hard"}
+{"text":"s'il te plaît joue le top country","intent":"MUSIQUE_JOUER","iteration":16,"cosine_to_centroid":0.7295436313,"difficulty":"hard"}
+{"text":"joue la playlist en cours","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.8677978603,"difficulty":"hard"}
+{"text":"mets les informations sur nrj","intent":"RADIO_ACTIVER","iteration":15,"cosine_to_centroid":0.7908006421,"difficulty":"hard"}
+{"text":"joue l' épisode de neal brennan attends ne me dis pas","intent":"PODCAST_QUERY","iteration":16,"cosine_to_centroid":0.7071896685,"difficulty":"hard"}
+{"text":"capter la radio nrj","intent":"RADIO_ACTIVER","iteration":15,"cosine_to_centroid":0.8312411504,"difficulty":"hard"}
+{"text":"capter une station de radio d'information","intent":"RADIO_ACTIVER","iteration":15,"cosine_to_centroid":0.7455914228,"difficulty":"hard"}
+{"text":"nrj","intent":"RADIO_ACTIVER","iteration":15,"cosine_to_centroid":0.7481609255,"difficulty":"hard"}
+{"text":"capter la fréquence nrj","intent":"RADIO_ACTIVER","iteration":15,"cosine_to_centroid":0.8243554678,"difficulty":"hard"}
+{"text":"joue une station de country","intent":"MUSIQUE_JOUER","iteration":16,"cosine_to_centroid":0.591464582,"difficulty":"hard"}
+{"text":"jouer la radio france vingt-quatre","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.7598161167,"difficulty":"hard"}
+{"text":"pouvez-vous jouer mon livre audio préféré de harry potter","intent":"LIVRE_QUERY","iteration":16,"cosine_to_centroid":0.7661472096,"difficulty":"hard"}
+{"text":"pouvez-vous mettre le livre audio ça peut faire de mal","intent":"LIVRE_QUERY","iteration":16,"cosine_to_centroid":0.7730230737,"difficulty":"hard"}
+{"text":"peux-tu mettre le son en pause","intent":"VOLUME_ATTENUE","iteration":19,"cosine_to_centroid":0.7587701937,"difficulty":"hard"}
+{"text":"ouvrir da vinci code là où je l'ai laissé","intent":"LIVRE_QUERY","iteration":16,"cosine_to_centroid":0.6576688745,"difficulty":"hard"}
+{"text":"jouer le livre audio récemment ajouté","intent":"LIVRE_QUERY","iteration":16,"cosine_to_centroid":0.796695485,"difficulty":"hard"}
+{"text":"s'il te plait joue l'audio récemment mis en pause","intent":"MUSIQUE_JOUER","iteration":26,"cosine_to_centroid":0.7703912397,"difficulty":"hard"}
+{"text":"reprends mon livre audio au début du dernier chapitre que j' ai commencé","intent":"LIVRE_QUERY","iteration":16,"cosine_to_centroid":0.8294120767,"difficulty":"hard"}
+{"text":"ouvre le livre audio harrypotter et lis à partir de la dernière lecture","intent":"LIVRE_QUERY","iteration":16,"cosine_to_centroid":0.8283871176,"difficulty":"hard"}
+{"text":"recherche ce playback dans livre audio et joue le moi","intent":"LIVRE_QUERY","iteration":16,"cosine_to_centroid":0.8356935022,"difficulty":"hard"}
+{"text":"please reprendre ce playback in livre audionumérique","intent":"LIVRE_QUERY","iteration":16,"cosine_to_centroid":0.8338932159,"difficulty":"hard"}
+{"text":"écoutez oscar et la dame rose sur downpour","intent":"LIVRE_QUERY","iteration":16,"cosine_to_centroid":0.741274316,"difficulty":"hard"}
+{"text":"reprendre un chant de michael jackson du livre audio","intent":"LIVRE_QUERY","iteration":16,"cosine_to_centroid":0.7623470364,"difficulty":"hard"}
+{"text":"mets le livre audio snow white","intent":"LIVRE_QUERY","iteration":16,"cosine_to_centroid":0.8235654908,"difficulty":"hard"}
+{"text":"peux tu continuer le livre audio le petit prince","intent":"LIVRE_QUERY","iteration":16,"cosine_to_centroid":0.8097627543,"difficulty":"hard"}
+{"text":"continuer avec mon livre audio s'il te plait","intent":"LIVRE_QUERY","iteration":16,"cosine_to_centroid":0.7123011048,"difficulty":"hard"}
+{"text":"jouer à partir de ce point de ce livre audio","intent":"LIVRE_QUERY","iteration":16,"cosine_to_centroid":0.7691418623,"difficulty":"hard"}
+{"text":"dis-moi comment faire du pain à l'ail","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.7545503717,"difficulty":"hard"}
+{"text":"combien de temps pour cuisiner le pasta","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.8195690365,"difficulty":"hard"}
+{"text":"que puis-je cuisiner avec du brocoli et du poulet","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.7411649097,"difficulty":"hard"}
+{"text":"comment puis-je faire cuire des pâtes","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.7924236211,"difficulty":"hard"}
+{"text":"quel ingrédient peut-on utiliser pour remplacer le vin blanc","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.741774228,"difficulty":"hard"}
+{"text":"comment est cuit le pav bhaji","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.698280707,"difficulty":"hard"}
+{"text":"quel est la nourriture la plus sexy à cuisiner à un rendez-vous","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.7404746059,"difficulty":"hard"}
+{"text":"pendant combien de temps dois-je cuire une pizza au four pour qu'elle soit parfaitement croustillante","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.777821048,"difficulty":"hard"}
+{"text":"comment cuisiner des pois aux yeux noirs","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.7432715961,"difficulty":"hard"}
+{"text":"comment faire des biscuits","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.8132156623,"difficulty":"hard"}
+{"text":"comment faire cuire une pomme de terre","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.8153016201,"difficulty":"hard"}
+{"text":"comment faire du pain de viande","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.7818852429,"difficulty":"hard"}
+{"text":"combien de temps dois-je refroidir une tarte glacière","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.6585660765,"difficulty":"hard"}
+{"text":"obtenir la recette pour faire un hot-dog","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.7778142686,"difficulty":"hard"}
+{"text":"recette de mijoteuse pour le poulet alfredo","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.7190950056,"difficulty":"hard"}
+{"text":"pouvez-vous remonter une recette de spaghetti","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.7062564125,"difficulty":"hard"}
+{"text":"combien de temps dois-je rôtir des poitrines de poulet","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.7666160779,"difficulty":"hard"}
+{"text":"j'ai besoin d'idées pour le dîner qui sont mexicaines","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.7210244334,"difficulty":"hard"}
+{"text":"pas d'autres commentaires","intent":"GENERAL_QUERY","iteration":12,"cosine_to_centroid":0.6055643196,"difficulty":"hard"}
+{"text":"quel est le temps de cuisson des oeufs durs","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.8017360082,"difficulty":"hard"}
+{"text":"trouver une recette facile pour le lait d'amande","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.6780058041,"difficulty":"hard"}
+{"text":"alexa joue aux échecs avec moi","intent":"JEUX_JOUER","iteration":16,"cosine_to_centroid":0.8426245673,"difficulty":"hard"}
+{"text":"j'ai envie de jouer aux échecs peux-tu jouer ça","intent":"JEUX_JOUER","iteration":16,"cosine_to_centroid":0.8816812627,"difficulty":"hard"}
+{"text":"veux-tu jouer à un jeu avec moi","intent":"JEUX_JOUER","iteration":16,"cosine_to_centroid":0.8842096592,"difficulty":"hard"}
+{"text":"je veux jouer une partie de trivia","intent":"JEUX_JOUER","iteration":16,"cosine_to_centroid":0.7904746635,"difficulty":"hard"}
+{"text":"joue à snake avec moi","intent":"JEUX_JOUER","iteration":16,"cosine_to_centroid":0.8142166306,"difficulty":"hard"}
+{"text":"ouvre papa pear saga","intent":"APPLICATION_OUVRIR","iteration":22,"cosine_to_centroid":0.7315826412,"difficulty":"hard"}
+{"text":"jouer les échecs avec moi s'il vous plaît","intent":"JEUX_JOUER","iteration":16,"cosine_to_centroid":0.9050962713,"difficulty":"hard"}
+{"text":"pouvez-vous jouer du poker avec moi","intent":"JEUX_JOUER","iteration":16,"cosine_to_centroid":0.8342768102,"difficulty":"hard"}
+{"text":"ajouter de la vodka à ma liste de courses de fête","intent":"LISTE_CREER","iteration":13,"cosine_to_centroid":0.858732518,"difficulty":"hard"}
+{"text":"pouvez-vous créer une nouvelle liste","intent":"LISTE_CREER","iteration":23,"cosine_to_centroid":0.8478085144,"difficulty":"hard"}
+{"text":"faire une liste","intent":"LISTE_CREER","iteration":23,"cosine_to_centroid":0.8536400817,"difficulty":"hard"}
+{"text":"ajouter cet objet à la liste","intent":"LISTE_CREER","iteration":13,"cosine_to_centroid":0.8636304768,"difficulty":"hard"}
+{"text":"créer une nouvelle liste pour moi s'il vous plaît","intent":"LISTE_CREER","iteration":23,"cosine_to_centroid":0.8991770509,"difficulty":"hard"}
+{"text":"créer une nouvelle liste d'ici demain","intent":"LISTE_CREER","iteration":23,"cosine_to_centroid":0.7822803106,"difficulty":"hard"}
+{"text":"crée une nouvelle liste","intent":"LISTE_CREER","iteration":23,"cosine_to_centroid":0.8783092116,"difficulty":"hard"}
+{"text":"mettre un crayon sur une nouvelle liste d' épicerie","intent":"LISTE_CREER","iteration":13,"cosine_to_centroid":0.7931024644,"difficulty":"hard"}
+{"text":"ajouter l' épicerie à la liste","intent":"LISTE_CREER","iteration":13,"cosine_to_centroid":0.9143182845,"difficulty":"hard"}
+{"text":"veuillez ajouter cet objet à la liste","intent":"LISTE_CREER","iteration":23,"cosine_to_centroid":0.8274703175,"difficulty":"hard"}
+{"text":"ajouter quelque chose à ma liste","intent":"LISTE_CREER","iteration":13,"cosine_to_centroid":0.8975979433,"difficulty":"hard"}
+{"text":"lire les objets de la liste de course","intent":"LISTE_CREER","iteration":13,"cosine_to_centroid":0.8316892772,"difficulty":"hard"}
+{"text":"ajouter des céréales à ma liste de courses","intent":"LISTE_CREER","iteration":13,"cosine_to_centroid":0.8731545569,"difficulty":"hard"}
+{"text":"ai- je une liste de contacts pour la fête que j'organise","intent":"CONTACT_QUERY","iteration":15,"cosine_to_centroid":0.8239313721,"difficulty":"hard"}
+{"text":"s'il vous plaît ajouter du lait à la liste d' épicerie","intent":"LISTE_CREER","iteration":13,"cosine_to_centroid":0.8572989089,"difficulty":"hard"}
+{"text":"ajouter acheter des courses à ma liste de choses à faire pour aujourd'hui","intent":"LISTE_CREER","iteration":13,"cosine_to_centroid":0.874905318,"difficulty":"hard"}
+{"text":"crée une nouvelle liste de","intent":"LISTE_CREER","iteration":23,"cosine_to_centroid":0.8770344625,"difficulty":"hard"}
+{"text":"créer une nouvelle liste de mes factures en attente","intent":"LISTE_CREER","iteration":23,"cosine_to_centroid":0.838542402,"difficulty":"hard"}
+{"text":"crée une liste pour le travail","intent":"LISTE_CREER","iteration":23,"cosine_to_centroid":0.7697408816,"difficulty":"hard"}
+{"text":"créer une nouvelle liste de fournitures scolaires","intent":"LISTE_CREER","iteration":23,"cosine_to_centroid":0.7713424096,"difficulty":"hard"}
+{"text":"lire ma liste de course pour aujourd'hui","intent":"LISTE_CREER","iteration":13,"cosine_to_centroid":0.8090178245,"difficulty":"hard"}
+{"text":"inclure un objet dans une liste","intent":"LISTE_CREER","iteration":23,"cosine_to_centroid":0.8181546388,"difficulty":"hard"}
+{"text":"s'il te plaît ajoute tom à ma liste de contacts","intent":"CONTACT_QUERY","iteration":15,"cosine_to_centroid":0.8489240329,"difficulty":"hard"}
+{"text":"ajouter du lait à ma liste d' épicerie","intent":"LISTE_CREER","iteration":13,"cosine_to_centroid":0.898650025,"difficulty":"hard"}
+{"text":"ajouter ça à une liste","intent":"LISTE_CREER","iteration":23,"cosine_to_centroid":0.8830383891,"difficulty":"hard"}
+{"text":"crée une liste de courses mensuelles à acheter","intent":"LISTE_CREER","iteration":13,"cosine_to_centroid":0.8256907905,"difficulty":"hard"}
+{"text":"mon horaire de travail","intent":"CALENDRIER_QUERY","iteration":22,"cosine_to_centroid":0.747559259,"difficulty":"hard"}
+{"text":"mon planning de santé","intent":"CALENDRIER_QUERY","iteration":22,"cosine_to_centroid":0.6643085066,"difficulty":"hard"}
+{"text":"ajouter des pâtisseries à la liste de noël","intent":"LISTE_CREER","iteration":13,"cosine_to_centroid":0.7806212944,"difficulty":"hard"}
+{"text":"efface l' ancienne liste de lecture et crées-en une nouvelle","intent":"LISTE_MODIFIER","iteration":18,"cosine_to_centroid":null,"difficulty":"hard"}
+{"text":"pouvez-vous avancer un épisode dans le podcast","intent":"MEDIA_PASSER","iteration":13,"cosine_to_centroid":0.8658851146,"difficulty":"hard"}
+{"text":"jouer le prochain épisode","intent":"PODCAST_QUERY","iteration":16,"cosine_to_centroid":0.8404976497,"difficulty":"hard"}
+{"text":"localise mon podcast","intent":"MUSIQUE_JOUER","iteration":11,"cosine_to_centroid":0.6465080399,"difficulty":"hard"}
+{"text":"joue le dernier podcast de raison","intent":"PODCAST_QUERY","iteration":16,"cosine_to_centroid":0.8040155993,"difficulty":"hard"}
+{"text":"passe au prochain épisode","intent":"MEDIA_PASSER","iteration":13,"cosine_to_centroid":0.9182846784,"difficulty":"hard"}
+{"text":"joue le septième épisode du lendemain matin","intent":"PODCAST_QUERY","iteration":16,"cosine_to_centroid":0.8072965249,"difficulty":"hard"}
+{"text":"trouve et fais une liste de lecture de tous les derniers morceaux de danse","intent":"MUSIQUE_JOUER","iteration":19,"cosine_to_centroid":0.8208582738,"difficulty":"hard"}
+{"text":"met le podcast","intent":"MUSIQUE_JOUER","iteration":11,"cosine_to_centroid":0.6908889332,"difficulty":"hard"}
+{"text":"salut joue ce podcast que j'ai arrêté hier soir","intent":"MUSIQUE_JOUER","iteration":11,"cosine_to_centroid":0.7815345725,"difficulty":"hard"}
+{"text":"rejouer le podcast suivant","intent":"MEDIA_PASSER","iteration":13,"cosine_to_centroid":0.8474530722,"difficulty":"hard"}
+{"text":"passe au prochain podcast","intent":"MEDIA_PASSER","iteration":13,"cosine_to_centroid":0.8998742848,"difficulty":"hard"}
+{"text":"les favoris","intent":"MUSIQUE_QUERY","iteration":14,"cosine_to_centroid":0.5944486666,"difficulty":"hard"}
+{"text":"trouve le podcast et joue-le","intent":"MUSIQUE_JOUER","iteration":11,"cosine_to_centroid":0.7762673202,"difficulty":"hard"}
+{"text":"termine ce podcast et commences-en un nouveau","intent":"MUSIQUE_JOUER","iteration":11,"cosine_to_centroid":0.7155500378,"difficulty":"hard"}
+{"text":"écoute le dernier podcast de vincent cassel","intent":"MUSIQUE_JOUER","iteration":11,"cosine_to_centroid":0.6609723853,"difficulty":"hard"}
+{"text":"jouer la dernière prochaine épisode","intent":"PODCAST_QUERY","iteration":16,"cosine_to_centroid":0.9044701475,"difficulty":"hard"}
+{"text":"démarre le podcast m. l. b. daily","intent":"MUSIQUE_JOUER","iteration":11,"cosine_to_centroid":0.7302995628,"difficulty":"hard"}
+{"text":"montre moi les podcasts les mieux notés","intent":"MUSIQUE_JOUER","iteration":11,"cosine_to_centroid":0.7309556887,"difficulty":"hard"}
+{"text":"joue l' épisode de trucs que vous devriez savoir dans la file d'attente","intent":"PODCAST_QUERY","iteration":16,"cosine_to_centroid":0.7798258116,"difficulty":"hard"}
+{"text":"joue des chansons classiques","intent":"MUSIQUE_JOUER","iteration":16,"cosine_to_centroid":0.7208871473,"difficulty":"hard"}
+{"text":"joue le podcast good mythical morning","intent":"MUSIQUE_JOUER","iteration":11,"cosine_to_centroid":0.7440357877,"difficulty":"hard"}
+{"text":"derrière épisode un","intent":"MEDIA_PASSER","iteration":13,"cosine_to_centroid":0.6812933991,"difficulty":"hard"}
+{"text":"montre moi le dernier épisode","intent":"SERIE_QUERY","iteration":15,"cosine_to_centroid":null,"difficulty":"hard"}
+{"text":"olly lance le podcast histoire de","intent":"MUSIQUE_JOUER","iteration":11,"cosine_to_centroid":0.6097400528,"difficulty":"hard"}
+{"text":"lis le podcast de barack obama enregistré dans l'appareil","intent":"MUSIQUE_JOUER","iteration":11,"cosine_to_centroid":0.7692641758,"difficulty":"hard"}
+{"text":"réseau podcast","intent":"MUSIQUE_JOUER","iteration":11,"cosine_to_centroid":0.6236765806,"difficulty":"hard"}
+{"text":"beaucoup plus clair et axé sur le sujet","intent":"GENERAL_QUERY","iteration":25,"cosine_to_centroid":0.6155304321,"difficulty":"hard"}
+{"text":"court et simple","intent":"GENERAL_QUERY","iteration":12,"cosine_to_centroid":0.6804794533,"difficulty":"hard"}
+{"text":"joue l' épisode le plus récent de plus belle la vie","intent":"SERIE_QUERY","iteration":15,"cosine_to_centroid":null,"difficulty":"hard"}
+{"text":"je veux entendre ce podcast","intent":"MUSIQUE_JOUER","iteration":11,"cosine_to_centroid":0.7368535217,"difficulty":"hard"}
+{"text":"quels nouveaux films sont diffusés dans les cinémas cette semaine","intent":"CINEMA_QUERY","iteration":19,"cosine_to_centroid":0.8471745673,"difficulty":"hard"}
+{"text":"quels concerts sont prévus à proximité","intent":"CONCERT_QUERY","iteration":16,"cosine_to_centroid":0.8906139385,"difficulty":"hard"}
+{"text":"quels films sont projetés au cinéma de pathé beaugrenelle","intent":"CINEMA_QUERY","iteration":19,"cosine_to_centroid":0.7983767755,"difficulty":"hard"}
+{"text":"quels spectacles ou expositions sont prévus au théâtre métropolitain","intent":"CONCERT_QUERY","iteration":16,"cosine_to_centroid":0.7881322931,"difficulty":"hard"}
+{"text":"quels nouveaux films sont disponibles aujourd'hui","intent":"CINEMA_QUERY","iteration":19,"cosine_to_centroid":0.8333234867,"difficulty":"hard"}
+{"text":"dis-moi tous les événements locaux","intent":"LOCAL_QUERY","iteration":13,"cosine_to_centroid":0.8871604257,"difficulty":"hard"}
+{"text":"quel film rom com puis-je regarder dans les cinémas autour de new york","intent":"CINEMA_QUERY","iteration":19,"cosine_to_centroid":0.845512632,"difficulty":"hard"}
+{"text":"qu'est-ce qui se passe autour de moi","intent":"LOCAL_QUERY","iteration":13,"cosine_to_centroid":0.8586226641,"difficulty":"hard"}
+{"text":"théâtres proche de chez moi","intent":"CONCERT_QUERY","iteration":16,"cosine_to_centroid":0.8098578146,"difficulty":"hard"}
+{"text":"quels sont les films à l'affiche dans les cinémas proche de chez moi","intent":"CINEMA_QUERY","iteration":19,"cosine_to_centroid":0.8496031699,"difficulty":"hard"}
+{"text":"quels films ayant de bonnes critiques sont diffusés près de chez moi","intent":"CINEMA_QUERY","iteration":19,"cosine_to_centroid":0.8707113883,"difficulty":"hard"}
+{"text":"films avec de bonnes notes de tomates pourries","intent":"CINEMA_QUERY","iteration":19,"cosine_to_centroid":0.7549503983,"difficulty":"hard"}
+{"text":"quelles activités se déroulent dans ma région","intent":"CONCERT_QUERY","iteration":16,"cosine_to_centroid":0.8912017586,"difficulty":"hard"}
+{"text":"ce qui mérite d'être regardé","intent":"CINEMA_QUERY","iteration":19,"cosine_to_centroid":0.7224837808,"difficulty":"hard"}
+{"text":"parle moi des activités dans ma région ce week end","intent":"CONCERT_QUERY","iteration":16,"cosine_to_centroid":0.8875311198,"difficulty":"hard"}
+{"text":"montre-moi tous les événements qui se passent à rhône-alpes","intent":"CONCERT_QUERY","iteration":16,"cosine_to_centroid":0.835653059,"difficulty":"hard"}
+{"text":"dis-moi ce qui se passe dans ma ville","intent":"LOCAL_QUERY","iteration":13,"cosine_to_centroid":0.8782704286,"difficulty":"hard"}
+{"text":"évènements locaux aujourd'hui","intent":"CONCERT_QUERY","iteration":16,"cosine_to_centroid":0.834192415,"difficulty":"hard"}
+{"text":"s'il vous plaît rechercher des événements dans mon emplacement","intent":"CONCERT_QUERY","iteration":16,"cosine_to_centroid":0.8692864528,"difficulty":"hard"}
+{"text":"comment est la situation de la circulation à rue de houston","intent":"TRAFFIC_QUERY","iteration":21,"cosine_to_centroid":0.8173394026,"difficulty":"hard"}
+{"text":"y a-t-il plus de circulation dans la place de la concorde","intent":"TRAFFIC_QUERY","iteration":14,"cosine_to_centroid":0.757783114,"difficulty":"hard"}
+{"text":"combien de trafic y a-t-il en ce moment dans la rue bowery","intent":"TRAFFIC_QUERY","iteration":14,"cosine_to_centroid":0.7870360588,"difficulty":"hard"}
+{"text":"comment il est le trafic à la route milligrams","intent":"TRAFFIC_QUERY","iteration":21,"cosine_to_centroid":0.8426443813,"difficulty":"hard"}
+{"text":"dites moi l'état du trafic d'ici à la domicile","intent":"TRAFFIC_QUERY","iteration":14,"cosine_to_centroid":0.8895663854,"difficulty":"hard"}
+{"text":"à paris le niveau de trafic est trop élevé","intent":"TRAFFIC_QUERY","iteration":21,"cosine_to_centroid":0.8120137131,"difficulty":"hard"}
+{"text":"j'aimerais connaitre l'état du trafic","intent":"TRAFFIC_QUERY","iteration":14,"cosine_to_centroid":0.8404345787,"difficulty":"hard"}
+{"text":"donne-moi une idée de l'état actuel du trafic","intent":"TRAFFIC_QUERY","iteration":14,"cosine_to_centroid":0.8797880377,"difficulty":"hard"}
+{"text":"comment est le trafic de la maison au travail","intent":"TRAFFIC_QUERY","iteration":14,"cosine_to_centroid":0.8807004808,"difficulty":"hard"}
+{"text":"le trafic actuel","intent":"TRAFFIC_QUERY","iteration":14,"cosine_to_centroid":0.8049090792,"difficulty":"hard"}
+{"text":"pourriez-vous s'il vous plaît vérifier le trafic vers notre maison","intent":"TRAFFIC_QUERY","iteration":14,"cosine_to_centroid":0.8056217541,"difficulty":"hard"}
+{"text":"le trafic est dense","intent":"TRAFFIC_QUERY","iteration":14,"cosine_to_centroid":0.8314765006,"difficulty":"hard"}
+{"text":"quel est le trafic habituel de bruxelles belgique","intent":"TRAFFIC_QUERY","iteration":21,"cosine_to_centroid":0.7941190112,"difficulty":"hard"}
+{"text":"y a-t-il des problèmes de circulation","intent":"TRAFFIC_QUERY","iteration":14,"cosine_to_centroid":0.8484500188,"difficulty":"hard"}
+{"text":"quel est le trafic maintenant","intent":"TRAFFIC_QUERY","iteration":14,"cosine_to_centroid":0.8947373889,"difficulty":"hard"}
+{"text":"comment est le trafic près de chez moi","intent":"TRAFFIC_QUERY","iteration":14,"cosine_to_centroid":0.9132074641,"difficulty":"hard"}
+{"text":"quel est le trafic actuel à paris","intent":"TRAFFIC_QUERY","iteration":21,"cosine_to_centroid":0.896494648,"difficulty":"hard"}
+{"text":"quelle route a moins de trafic aujourd'hui","intent":"TRAFFIC_QUERY","iteration":14,"cosine_to_centroid":0.8515821642,"difficulty":"hard"}
+{"text":"est ce que la route dans une zone particulière est large ou étroite","intent":"TRAFFIC_QUERY","iteration":21,"cosine_to_centroid":0.7535401513,"difficulty":"hard"}
+{"text":"calcule la résistance de cette résistance","intent":"MATHEMATIQUE_QUERY","iteration":12,"cosine_to_centroid":0.7517691023,"difficulty":"hard"}
+{"text":"combien c' est trois fois sept","intent":"MATHEMATIQUE_QUERY","iteration":12,"cosine_to_centroid":0.8632175373,"difficulty":"hard"}
+{"text":"que dois-je cuisiner ce soir","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.8070782629,"difficulty":"hard"}
+{"text":"de quel état est jean-luc godard","intent":"PERSONNE_QUERY","iteration":17,"cosine_to_centroid":0.7748006216,"difficulty":"hard"}
+{"text":"quelle est la racine carrée de quarante deux","intent":"MATHEMATIQUE_QUERY","iteration":12,"cosine_to_centroid":0.8542593908,"difficulty":"hard"}
+{"text":"dis-moi gerard départieu deuxième prénom","intent":"PERSONNE_QUERY","iteration":17,"cosine_to_centroid":0.8177190837,"difficulty":"hard"}
+{"text":"entens-tu des chansons de musique a.r. rahman","intent":"MUSIQUE_JOUER","iteration":19,"cosine_to_centroid":0.639792145,"difficulty":"hard"}
+{"text":"peux tu mentir","intent":"INFO_QUERY","iteration":26,"cosine_to_centroid":0.748517323,"difficulty":"hard"}
+{"text":"qu'est-ce que l'ouragan","intent":"OBJET_QUERY","iteration":22,"cosine_to_centroid":0.7159997648,"difficulty":"hard"}
+{"text":"calculer la distance entre paris et marseille","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.7946764474,"difficulty":"hard"}
+{"text":"résout le calcul","intent":"MATHEMATIQUE_QUERY","iteration":12,"cosine_to_centroid":0.7298346386,"difficulty":"hard"}
+{"text":"quelle est la population de paris","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.8400788606,"difficulty":"hard"}
+{"text":"répond a cette question quel est le premier boss dans super mario bros","intent":"MATHEMATIQUE_QUERY","iteration":12,"cosine_to_centroid":0.7048683777,"difficulty":"hard"}
+{"text":"quelle est la réponse à deux plus deux","intent":"MATHEMATIQUE_QUERY","iteration":12,"cosine_to_centroid":0.8399864616,"difficulty":"hard"}
+{"text":"définir écarter","intent":"DEFINITION_QUERY","iteration":21,"cosine_to_centroid":0.8090946774,"difficulty":"hard"}
+{"text":"peux tu me dire comment trouver la réponse à ceci","intent":"MATHEMATIQUE_QUERY","iteration":12,"cosine_to_centroid":0.8517962865,"difficulty":"hard"}
+{"text":"résoudre un problème de maths","intent":"MATHEMATIQUE_QUERY","iteration":12,"cosine_to_centroid":0.8010547278,"difficulty":"hard"}
+{"text":"dis moi la couleur porte bonheur d' aujourd'hui","intent":"INFO_QUERY","iteration":26,"cosine_to_centroid":0.7981479535,"difficulty":"hard"}
+{"text":"lis un poème pour moi","intent":"DIVERTISSEMENT_QUERY","iteration":28,"cosine_to_centroid":0.7533857596,"difficulty":"hard"}
+{"text":"combien c'est vingt-quatre fois vingt-quatre","intent":"MATHEMATIQUE_QUERY","iteration":12,"cosine_to_centroid":0.779483004,"difficulty":"hard"}
+{"text":"combien de temps dure une journee terrestre","intent":"INFO_QUERY","iteration":26,"cosine_to_centroid":0.7677589523,"difficulty":"hard"}
+{"text":"j'espère que nous pourrions déjeuner ensemble","intent":"RESTAURATION_ORGANISER","iteration":22,"cosine_to_centroid":null,"difficulty":"hard"}
+{"text":"où est ma petite amie en ce moment","intent":"GENERAL_QUERY","iteration":18,"cosine_to_centroid":0.6870047239,"difficulty":"hard"}
+{"text":"les jello shots sont-ils sans calories","intent":"CUISINE_QUERY","iteration":13,"cosine_to_centroid":0.6352495668,"difficulty":"hard"}
+{"text":"définir le cadre","intent":"DEFINITION_QUERY","iteration":21,"cosine_to_centroid":0.8536695876,"difficulty":"hard"}
+{"text":"combien de miles en cinq kilomètres","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.7088589416,"difficulty":"hard"}
+{"text":"où est bordeaux","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.7792063972,"difficulty":"hard"}
+{"text":"qu'est-ce qu'une antenne-relais de téléphonie mobile","intent":"OBJET_QUERY","iteration":22,"cosine_to_centroid":0.6920339446,"difficulty":"hard"}
+{"text":"combien de miles est la ville de new york de paris","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.8812565261,"difficulty":"hard"}
+{"text":"quelle est l'altitude moyenne des etats-unis","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.7943972629,"difficulty":"hard"}
+{"text":"combien de personnes vivent à paris","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.8388892614,"difficulty":"hard"}
+{"text":"en quelle année jean reno est-il né","intent":"PERSONNE_QUERY","iteration":17,"cosine_to_centroid":0.8340816974,"difficulty":"hard"}
+{"text":"combien de miles y a-t-il entre lyon et la louisiane","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.8063409796,"difficulty":"hard"}
+{"text":"j'ai besoin d'occuper deux bambins dis moi quoi faire","intent":"LOCAL_QUERY","iteration":13,"cosine_to_centroid":0.7458575555,"difficulty":"hard"}
+{"text":"quelle est la plus grande ville du new hampshire","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.7642716267,"difficulty":"hard"}
+{"text":"à quoi ressemble une banane","intent":"OBJET_QUERY","iteration":22,"cosine_to_centroid":0.7290459303,"difficulty":"hard"}
+{"text":"où est le danemark","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.7784962055,"difficulty":"hard"}
+{"text":"qu'est-ce qu'un ossau","intent":"OBJET_QUERY","iteration":22,"cosine_to_centroid":0.602583025,"difficulty":"hard"}
+{"text":"où est le dakota du nord","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.7674376399,"difficulty":"hard"}
+{"text":"quel état américain est le plus au nord","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.7761511372,"difficulty":"hard"}
+{"text":"où est stonehenge","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.796038234,"difficulty":"hard"}
+{"text":"montrer la biographie de céline","intent":"PERSONNE_QUERY","iteration":17,"cosine_to_centroid":0.6745335196,"difficulty":"hard"}
+{"text":"quel type de pantalon est une culotte","intent":"OBJET_QUERY","iteration":22,"cosine_to_centroid":0.7155437093,"difficulty":"hard"}
+{"text":"à quoi ressemble la chemise","intent":"OBJET_QUERY","iteration":22,"cosine_to_centroid":0.7249883212,"difficulty":"hard"}
+{"text":"combien font six moins quatre","intent":"MATHEMATIQUE_QUERY","iteration":12,"cosine_to_centroid":0.8874404519,"difficulty":"hard"}
+{"text":"quelle est la taille de angleterre","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.7740608367,"difficulty":"hard"}
+{"text":"parle moi de lyon","intent":"INFO_QUERY","iteration":26,"cosine_to_centroid":0.717498266,"difficulty":"hard"}
+{"text":"montre diverses plantes dans la terre","intent":"INFO_QUERY","iteration":26,"cosine_to_centroid":0.6802416563,"difficulty":"hard"}
+{"text":"quand la statue de la liberté a-t-elle fait","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.7217917107,"difficulty":"hard"}
+{"text":"qui est jean-claude van damme","intent":"PERSONNE_QUERY","iteration":17,"cosine_to_centroid":0.7948236345,"difficulty":"hard"}
+{"text":"quelle est la hauteur de l'empire state building","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.7916655487,"difficulty":"hard"}
+{"text":"est rose en train d'enregistrer un nouvel album","intent":"CELEBRITE_QUERY","iteration":17,"cosine_to_centroid":0.7262367857,"difficulty":"hard"}
+{"text":"à quoi ressemblerait la voiture de golf volkswagen","intent":"TRAFFIC_QUERY","iteration":21,"cosine_to_centroid":0.6551510261,"difficulty":"hard"}
+{"text":"caractéristiques de l' ipad air","intent":"OBJET_QUERY","iteration":22,"cosine_to_centroid":0.5790798642,"difficulty":"hard"}
+{"text":"donnez-moi la description d'un circuit d'ordinateur portable","intent":"TECHNIQUE_QUERY","iteration":16,"cosine_to_centroid":null,"difficulty":"hard"}
+{"text":"explique","intent":"INFO_QUERY","iteration":26,"cosine_to_centroid":0.7094167216,"difficulty":"hard"}
+{"text":"quand est-ce que cotillard et canet se marier","intent":"CELEBRITE_QUERY","iteration":17,"cosine_to_centroid":0.6992132255,"difficulty":"hard"}
+{"text":"donnez-moi la description du circuit d'ordinateur portable","intent":"TECHNIQUE_QUERY","iteration":16,"cosine_to_centroid":null,"difficulty":"hard"}
+{"text":"définit xy","intent":"DEFINITION_QUERY","iteration":21,"cosine_to_centroid":0.7773902407,"difficulty":"hard"}
+{"text":"où est la statue de la liberté","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.8293250599,"difficulty":"hard"}
+{"text":"tu étais en train de ramener de nouvelles manigances","intent":"GENERAL_QUERY","iteration":12,"cosine_to_centroid":0.511135674,"difficulty":"hard"}
+{"text":"comment paris hilton est devenu célèbre","intent":"CELEBRITE_QUERY","iteration":17,"cosine_to_centroid":0.7805793176,"difficulty":"hard"}
+{"text":"quelle est la réponse à deux fois trois","intent":"MATHEMATIQUE_QUERY","iteration":12,"cosine_to_centroid":0.8422780732,"difficulty":"hard"}
+{"text":"combien font douze divisé par quatre","intent":"MATHEMATIQUE_QUERY","iteration":12,"cosine_to_centroid":0.8800712541,"difficulty":"hard"}
+{"text":"définir la lune pour moi","intent":"DEFINITION_QUERY","iteration":21,"cosine_to_centroid":0.7942196379,"difficulty":"hard"}
+{"text":"depuis combien de temps la princesse kate est-elle enceinte","intent":"CELEBRITE_QUERY","iteration":17,"cosine_to_centroid":0.7448234795,"difficulty":"hard"}
+{"text":"de quoi mitterand s'est passé cette semaine","intent":"PERSONNE_QUERY","iteration":17,"cosine_to_centroid":0.7276145083,"difficulty":"hard"}
+{"text":"qu'est-ce qu'un par","intent":"OBJET_QUERY","iteration":22,"cosine_to_centroid":0.6729194487,"difficulty":"hard"}
+{"text":"qu'est-ce qu'un ordinateur","intent":"OBJET_QUERY","iteration":22,"cosine_to_centroid":0.7634492194,"difficulty":"hard"}
+{"text":"quelle est la taille du japon","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.7941910697,"difficulty":"hard"}
+{"text":"quelle distance y a-t-il entre paris et lyon","intent":"GEOGRAPHIE_QUERY","iteration":22,"cosine_to_centroid":0.8346010213,"difficulty":"hard"}
+{"text":"pouvez-vous me dire quels films sont diffusés au cinéma ce soir","intent":"CINEMA_QUERY","iteration":19,"cosine_to_centroid":0.8062133363,"difficulty":"hard"}
+{"text":"calcule une intégrale fermée de la fonction exponentielle de zéro à cinq","intent":"MATHEMATIQUE_QUERY","iteration":12,"cosine_to_centroid":0.7585063918,"difficulty":"hard"}
+{"text":"obtiens-moi des mises à jour du facebook de kenny du week end","intent":"SOCIALMEDIA_UPDATE","iteration":25,"cosine_to_centroid":0.7737921361,"difficulty":"hard"}
+{"text":"trouvez-moi de nouveaux commentaires de mon facebook","intent":"SOCIALMEDIA_UPDATE","iteration":25,"cosine_to_centroid":0.8574516946,"difficulty":"hard"}
+{"text":"ma mise à jour facebook toutes les trois heures devrait être disponible","intent":"SOCIALMEDIA_UPDATE","iteration":25,"cosine_to_centroid":0.8542178558,"difficulty":"hard"}
+{"text":"mets ça sur facebook","intent":"SOCIALMEDIA_UPDATE","iteration":25,"cosine_to_centroid":0.8384694072,"difficulty":"hard"}
+{"text":"cet article est super cool pouvez-vous partager le lien vers facebook pour moi","intent":"SOCIALMEDIA_UPDATE","iteration":25,"cosine_to_centroid":0.8291062094,"difficulty":"hard"}
+{"text":"diffuse une vidéo sur youtube","intent":"APPLICATION_OUVRIR","iteration":22,"cosine_to_centroid":0.7777633574,"difficulty":"hard"}
+{"text":"s'il te plait soumets le statut sur facebook","intent":"SOCIALMEDIA_UPDATE","iteration":25,"cosine_to_centroid":0.8330826067,"difficulty":"hard"}
+{"text":"dernier fil d'actualité de facebook","intent":"SOCIALMEDIA_UPDATE","iteration":25,"cosine_to_centroid":0.8026827166,"difficulty":"hard"}
+{"text":"sympa peux-tu poster ça sur mon facebook","intent":"SOCIALMEDIA_UPDATE","iteration":25,"cosine_to_centroid":0.8484200515,"difficulty":"hard"}
+{"text":"veuillez m'informer de toute nouvelle mise à jour de statut","intent":"SOCIALMEDIA_UPDATE","iteration":25,"cosine_to_centroid":0.8110549267,"difficulty":"hard"}
+{"text":"veuillez me mettre à jour sur mes comptes de médias sociaux","intent":"SOCIALMEDIA_UPDATE","iteration":25,"cosine_to_centroid":0.8471721078,"difficulty":"hard"}
+{"text":"régler la situation","intent":"DEFINITION_QUERY","iteration":21,"cosine_to_centroid":0.7836551701,"difficulty":"hard"}
+{"text":"ouvre la galerie et poste le nom de la vidéo","intent":"APPLICATION_OUVRIR","iteration":22,"cosine_to_centroid":0.8470837846,"difficulty":"hard"}
+{"text":"s'il te plaît donne-moi les détails de mon contact allen","intent":"CONTACT_QUERY","iteration":15,"cosine_to_centroid":0.8058805153,"difficulty":"hard"}
+{"text":"y a-t-il un contact nommé allen dans ma liste","intent":"CONTACT_QUERY","iteration":15,"cosine_to_centroid":0.8458608328,"difficulty":"hard"}
+{"text":"quel est le nom de famille de jean","intent":"PERSONNE_QUERY","iteration":17,"cosine_to_centroid":0.8196938291,"difficulty":"hard"}
+{"text":"alexa ajoute erosser à hotmail dot com comme nouveau contact pour emily rosser","intent":"CONTACT_QUERY","iteration":15,"cosine_to_centroid":0.8315879622,"difficulty":"hard"}
+{"text":"enregistre cet email parmi le contact","intent":"CONTACT_QUERY","iteration":15,"cosine_to_centroid":0.8693382406,"difficulty":"hard"}
+{"text":"peux-tu envoyer un e-mail à mon ami pierre pour dire que je suis occupé demain","intent":"EMAIL_CREER","iteration":23,"cosine_to_centroid":0.8900293636,"difficulty":"hard"}
+{"text":"hé commence un e-mail à un collaborateur","intent":"EMAIL_CREER","iteration":23,"cosine_to_centroid":0.8325634305,"difficulty":"hard"}
+{"text":"ouvrir un nouveau e-mail à ce collègue à cet e-mail","intent":"EMAIL_CREER","iteration":23,"cosine_to_centroid":0.8920348274,"difficulty":"hard"}
+{"text":"envoie un e-mail à mon manager","intent":"EMAIL_CREER","iteration":23,"cosine_to_centroid":0.886051192,"difficulty":"hard"}
+{"text":"je voudrais ajouter ce nouvel email à mes contacts","intent":"CONTACT_QUERY","iteration":15,"cosine_to_centroid":0.8438796975,"difficulty":"hard"}
+{"text":"envoyer un email au boss pour qu'il se rencontre pour une évaluation des performances","intent":"EMAIL_CREER","iteration":23,"cosine_to_centroid":0.793505654,"difficulty":"hard"}
+{"text":"puis-je trouver des informations sur un contact","intent":"CONTACT_QUERY","iteration":15,"cosine_to_centroid":0.8373347931,"difficulty":"hard"}
+{"text":"dis à bob smith","intent":"DIVERTISSEMENT_QUERY","iteration":28,"cosine_to_centroid":0.5373048273,"difficulty":"hard"}
+{"text":"commencer e-mail","intent":"EMAIL_CREER","iteration":23,"cosine_to_centroid":0.7752824453,"difficulty":"hard"}
+{"text":"envoie un e-mail à mon chef disant que je serai en retard","intent":"EMAIL_CREER","iteration":23,"cosine_to_centroid":0.8781251078,"difficulty":"hard"}
+{"text":"envoyer un e mail à tous mes travailleurs de l'entreprise","intent":"EMAIL_CREER","iteration":23,"cosine_to_centroid":0.8666051375,"difficulty":"hard"}
+{"text":"veuillez supprimer les contacts auxquels je n'ai pas parlé depuis trois mois","intent":"CALENDRIER_TOUTSUPPRIMER","iteration":29,"cosine_to_centroid":0.7712052948,"difficulty":"hard"}
+{"text":"je veux envoyer un e-mail à jack arobase gmail point com","intent":"EMAIL_CREER","iteration":23,"cosine_to_centroid":0.8768395912,"difficulty":"hard"}
+{"text":"combien de contacts ai- je dans mon répertoire","intent":"CONTACT_QUERY","iteration":15,"cosine_to_centroid":0.860627342,"difficulty":"hard"}
+{"text":"s'il vous plaît envoyez l' e-mail à ma mère","intent":"EMAIL_CREER","iteration":23,"cosine_to_centroid":0.8800125077,"difficulty":"hard"}
+{"text":"recherche l' e-mail pour contact","intent":"CONTACT_QUERY","iteration":15,"cosine_to_centroid":0.8246680629,"difficulty":"hard"}
+{"text":"trouver un contact","intent":"CONTACT_QUERY","iteration":15,"cosine_to_centroid":0.8214967182,"difficulty":"hard"}
+{"text":"merci d'ouvrir ma liste de contacts","intent":"CONTACT_QUERY","iteration":15,"cosine_to_centroid":0.738640789,"difficulty":"hard"}
+{"text":"enregistrer l'e-mail dans mon contact","intent":"CONTACT_QUERY","iteration":15,"cosine_to_centroid":0.8698701924,"difficulty":"hard"}
+{"text":"enregistre dans les contacts","intent":"CONTACT_QUERY","iteration":15,"cosine_to_centroid":0.8400565697,"difficulty":"hard"}
+{"text":"donnez-moi l'identifiant de l'adresse e-mail de contact","intent":"CONTACT_QUERY","iteration":15,"cosine_to_centroid":0.8485538937,"difficulty":"hard"}
+{"text":"publier un e-mail à mon travailleur de l'entreprise avec les informations sur la réunion prévue du aujourd'hui","intent":"EMAIL_CREER","iteration":23,"cosine_to_centroid":0.8536603602,"difficulty":"hard"}
+{"text":"appele le numéro de téléphone de raju","intent":"CONTACT_QUERY","iteration":15,"cosine_to_centroid":0.632943437,"difficulty":"hard"}
