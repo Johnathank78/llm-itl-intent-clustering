@@ -9,7 +9,7 @@ contrôle et nomme les clusters. Le projet adapte au français la méthode *Dial
 nombre de clusters est choisi automatiquement, mais il produit une taxonomie **nommée, plus fine et plus
 pure**, et il mesure lui-même ses limites (évaluation du juge LLM contre la vérité terrain).
 
-**Application de démonstration :** [llm-itl-intent-clustering-g3vgnyyd96mhjwp73trl4c.streamlit.app](https://llm-itl-intent-clustering-g3vgnyyd96mhjwp73trl4c.streamlit.app/)
+**Application de démonstration :** [llm-itl-intent-clustering-g3vgnyyd96mhjwp73trl4c.streamlit.app](https://llm-itl-intent-clustering.streamlit.app/)
 
 **Projet de fin d'année, Master 2 MLSD, Université Paris Cité, 2025-2026.**
 Équipe : Ibrahim Assebbane, Rayane Zekri, Johnathan Kancel, Jibril Ben Dhaou.
